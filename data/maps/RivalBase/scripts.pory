@@ -160,6 +160,25 @@ script NicknameBoxMon{
  
 }
  
+//ITEM LISTS
+script MegaStones_Bag_One_Items{
+    lock
+    msgbox("Great! Someone must have left these to pick up.")
+    finditem(ITEM_BLASTOISINITE, 1)
+    finditem(ITEM_REVIVE,10)
+    setflag(FLAG_ITEMBAG_MEGASTONES_ONE)
+    waitmessage
+    release
+}
+
+script Find_TM_TAILWIND{
+    lock
+    finditem(ITEM_TM100)
+    setflag(FLAG_ITEM_TM_TAILWIND)
+    release
+}
+
+
 text NewProfessor_NotChosen{
     "You did not choose the Pokemon"
 }

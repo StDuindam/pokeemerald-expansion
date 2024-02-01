@@ -1081,3 +1081,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Fortree_GrassyArea/scripts.inc"
 
 	.include "data/maps/FireZone/scripts.inc"
+
+	.include "data/maps/WaterZone/scripts.inc"

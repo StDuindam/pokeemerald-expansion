@@ -280,6 +280,36 @@ NicknameBoxMon_2:
 	goto NicknameBoxMon_1
 
 
+MegaStones_Bag_One_Items::
+# 165 "data/maps/RivalBase/scripts.pory"
+	lock
+# 166 "data/maps/RivalBase/scripts.pory"
+	msgbox MegaStones_Bag_One_Items_Text_0
+# 167 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_BLASTOISINITE, 1
+# 168 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_REVIVE, 10
+# 169 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEMBAG_MEGASTONES_ONE
+# 170 "data/maps/RivalBase/scripts.pory"
+	waitmessage
+# 171 "data/maps/RivalBase/scripts.pory"
+	release
+	return
+
+
+Find_TM_TAILWIND::
+# 175 "data/maps/RivalBase/scripts.pory"
+	lock
+# 176 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_TM100
+# 177 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEM_TM_TAILWIND
+# 178 "data/maps/RivalBase/scripts.pory"
+	release
+	return
+
+
 Starter_EventScript_Sten_Text_0:
 # 18 "data/maps/RivalBase/scripts.pory"
 	.string "Yo, I'm Sten. Looks like you are going on\n"
@@ -356,6 +386,10 @@ NicknamePartyMon_Text_0:
 # 142 "data/maps/RivalBase/scripts.pory"
 	.string "Give it a nickname?$"
 
+MegaStones_Bag_One_Items_Text_0:
+# 166 "data/maps/RivalBase/scripts.pory"
+	.string "Great! Someone must have left these to pick up.$"
+
 NewProfessor_NotChosen::
-# 163 "data/maps/RivalBase/scripts.pory"
+# 182 "data/maps/RivalBase/scripts.pory"
 	.string "You did not choose the Pokemon$"

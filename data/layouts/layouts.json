@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FireZone/border.bin",
       "blockdata_filepath": "data/layouts/FireZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATER_ZONE",
+      "name": "WaterZone_Layout",
+      "width": 30,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/WaterZone/border.bin",
+      "blockdata_filepath": "data/layouts/WaterZone/map.bin"
     }
   ]
 }

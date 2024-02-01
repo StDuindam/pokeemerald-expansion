@@ -590,7 +590,8 @@
     "TrainerHill_Elevator",
     "DebugArea",
     "DusclopsHideout",
-    "FireZone"
+    "FireZone",
+    "WaterZone"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

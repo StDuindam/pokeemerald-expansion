@@ -4265,6 +4265,6 @@ void CallDusclopsFunction(void)
     CreateMon(&gPlayerParty[4], SPECIES_SUICUNE, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     CreateMon(&gPlayerParty[5], SPECIES_MOLTRES_GALARIAN, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
 
-    SetMonMoveSlot(&gPlayerParty[3], MOVE_ORIGIN_PULSE,1);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_SURF,1);
     SetMonMoveSlot(&gPlayerParty[3], MOVE_ANCIENT_POWER,2);
 }
