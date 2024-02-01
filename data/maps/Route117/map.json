@@ -347,15 +347,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 2,
-      "elevation": 0,
-      "dest_map": "MAP_TREECKO_HIDEOUT",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 19,
-      "y": 2,
+      "x": 20,
+      "y": 0,
       "elevation": 0,
       "dest_map": "MAP_TREECKO_HIDEOUT",
       "dest_warp_id": "0"

@@ -502,6 +502,24 @@ Find_BlackSludge::
 	return
 
 
+Find_Seeds::
+# 287 "data/maps/RivalBase/scripts.pory"
+	lock
+# 288 "data/maps/RivalBase/scripts.pory"
+	msgbox Find_Seeds_Text_0
+# 289 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_ELECTRIC_SEED
+# 290 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_PSYCHIC_SEED
+# 291 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_PSYCHIC_SEED
+# 292 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEM_SEEDS_ELECTRICPSYCHICGRASSY
+# 293 "data/maps/RivalBase/scripts.pory"
+	release
+	return
+
+
 Starter_EventScript_Sten_Text_0:
 # 18 "data/maps/RivalBase/scripts.pory"
 	.string "Yo, I'm Sten. Looks like you are going on\n"
@@ -599,6 +617,10 @@ Megastones_Bag_Five_Items_Text_0:
 # 224 "data/maps/RivalBase/scripts.pory"
 	.string "Megastone jackpot!$"
 
+Find_Seeds_Text_0:
+# 288 "data/maps/RivalBase/scripts.pory"
+	.string "Neat, some seeds!$"
+
 NewProfessor_NotChosen::
-# 286 "data/maps/RivalBase/scripts.pory"
+# 296 "data/maps/RivalBase/scripts.pory"
 	.string "You did not choose the Pokemon$"
