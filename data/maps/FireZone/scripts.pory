@@ -1,0 +1,80 @@
+mapscripts FireZone_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Setup_FireZone_Mats
+
+}
+
+    script Setup_FireZone_Mats{
+        if(var(RIVAL_STATE_MATS) != 1) 
+        { 
+            setflag(FLAG_MATS_BATTLE_TWO)
+        }else{
+            clearflag(FLAG_MATS_BATTLE_TWO)
+        }
+    }
+
+
+    script StartMatsFireZone{
+        lock
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceLeft_FireZone)
+        waitmovement(0)
+        applymovement(1, MatsMoveTo_Player)
+        waitmovement(0)
+        faceplayer
+        msgbox(MatsFireZone_AboutFireZone)
+        waitmessage
+        call(MatsBattleTwo_FireZone)
+    }
+
+    script MatsBattleTwo_FireZone{
+        trainerbattle_single(TRAINER_MATS_SECOND_BATTLE, MatsFireZone_Intro, MatsFireZone_Outro, MatsBattleTwo_FireZoneOver)
+    }
+
+    script MatsBattleTwo_FireZoneOver{
+        lockall
+	    setvar(RIVAL_STATE_MATS,2)
+        msgbox(MatsFireZone_Goodbye)
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerOneUp_FireZone)
+        waitmovement(0)
+        applymovement(1,MatsLeave_FireZone)
+        waitmovement(0)
+        removeobject(1)
+        release
+    }
+
+    text MatsFireZone_Intro{
+        format("Let's see if you deserve these strong fire types!")
+    }
+
+    text MatsFireZone_Outro{
+        format("Your team is coming along nicely! Keep it up.")
+    }
+
+    text MatsFireZone_AboutFireZone{
+        format("Nice {PLAYER}, you found me. Some of the pokes on this route are unique, you will not see them often. Just my kind of poke.")
+    }
+
+    text MatsFireZone_Goodbye{
+        format("Alright, you are getting stronger. I like it! See you around, keep an eye open when you are able to first surf.")
+    }
+
+
+    movement PlayerFaceLeft_FireZone{
+        walk_in_place_left
+    }
+
+    movement PlayerOneUp_FireZone {
+        walk_up
+        walk_in_place_down
+        
+    }
+    movement MatsLeave_FireZone{
+        walk_right
+        walk_down
+        walk_right * 7
+    }
+
+    movement MatsMoveTo_Player{
+        walk_up
+        walk_right * 3
+    }

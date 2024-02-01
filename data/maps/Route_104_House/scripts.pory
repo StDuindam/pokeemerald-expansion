@@ -75,5 +75,5 @@ text MatsGiveShinyCharm {
 
 text MatsUpgradePokedex {
     format(
-            "Oh by the way, let me upgrade that pokedex of yours too. So you know where to find all these rare pokes. See you around!")
+            "Oh by the way, let me upgrade that pokedex of yours too. So you know where to find all these rare pokes. See you around, maybe Lavaridge?")
 }

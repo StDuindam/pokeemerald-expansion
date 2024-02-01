@@ -168,6 +168,20 @@ EventScript_SetFlag_Gym8::
 	return
 
 
+EventScript_SetVar_MatsRival::
+# 94 "data/maps/DebugArea/scripts.pory"
+	lock
+# 95 "data/maps/DebugArea/scripts.pory"
+	setvar RIVAL_STATE_MATS, 1
+# 96 "data/maps/DebugArea/scripts.pory"
+	msgbox EventScript_SetVar_MatsRival_Text_0
+# 97 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 98 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
 CallGengarParty_Text_0:
 # 11 "data/maps/DebugArea/scripts.pory"
 	.string "Party reset$"
@@ -207,3 +221,7 @@ EventScript_SetFlag_Gym7_Text_0:
 EventScript_SetFlag_Gym8_Text_0:
 # 89 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 8 completed$"
+
+EventScript_SetVar_MatsRival_Text_0:
+# 96 "data/maps/DebugArea/scripts.pory"
+	.string "Updated Mats_Rival_State by one$"

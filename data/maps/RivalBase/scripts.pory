@@ -171,13 +171,20 @@ script MegaStones_Bag_One_Items{
     release
 }
 
-script Find_TM_TAILWIND{
+script Find_Ability_Capsule{
     lock
-    finditem(ITEM_TM100)
-    setflag(FLAG_ITEM_TM_TAILWIND)
+    finditem(ITEM_ABILITY_CAPSULE)
+    setflag(FLAG_ITEM_ABILITY_CAPSULE)
     release
 }
 
+script Find_CharcadetEvoStuff{
+    lock
+    finditem(ITEM_AUSPICIOUS_ARMOR)
+    finditem(ITEM_MALICIOUS_ARMOR)
+    setflag(FLAG_ITEM_ARMAROUGE_SET)
+    release
+}
 
 text NewProfessor_NotChosen{
     "You did not choose the Pokemon"

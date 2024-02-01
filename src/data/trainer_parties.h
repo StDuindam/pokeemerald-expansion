@@ -12696,6 +12696,105 @@ static const struct TrainerMon sParty_MatsBattleOne[] = {
     }
 };
 
+static const struct TrainerMon sParty_MatsBattleTwo[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_ORAN_BERRY,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PIDGEOTTO,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 15,
+    .species = SPECIES_BAGON,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 16,
+    .heldItem = ITEM_CHARCOAL,
+    .species = SPECIES_CHARMELEON,
+    }
+};
+
+static const struct TrainerMon sParty_MatsBattleThree[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_ORAN_BERRY,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PIDGEOTTO,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 15,
+    .species = SPECIES_BAGON,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 16,
+    .heldItem = ITEM_CHARCOAL,
+    .species = SPECIES_CHARMELEON,
+    }
+};
+
+static const struct TrainerMon sParty_MatsBattleFour[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_ORAN_BERRY,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PIDGEOTTO,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 15,
+    .species = SPECIES_BAGON,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 16,
+    .heldItem = ITEM_CHARCOAL,
+    .species = SPECIES_CHARMELEON,
+    }
+};
+
+static const struct TrainerMon sParty_MatsBattleFive[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_ORAN_BERRY,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 14,
+    .species = SPECIES_PIDGEOTTO,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 15,
+    .species = SPECIES_BAGON,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 16,
+    .heldItem = ITEM_CHARCOAL,
+    .species = SPECIES_CHARMELEON,
+    }
+};
 static const struct TrainerMon sParty_JensBattleOne[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

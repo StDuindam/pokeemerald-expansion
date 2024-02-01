@@ -149,4 +149,4 @@ MatsUpgradePokedex::
 	.string "Oh by the way, let me upgrade that\n"
 	.string "pokedex of yours too. So you know where\l"
 	.string "to find all these rare pokes. See you\l"
-	.string "around!$"
+	.string "around, maybe Lavaridge?$"

@@ -1,0 +1,31 @@
+mapscripts WaterZone_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Setup_WaterZone_Mats
+
+}
+
+    script Setup_WaterZone_Mats{
+
+    }
+    script MatsBattleTwo_WaterZone{
+        
+    }
+
+    script MatsBattleTwoWaterZoneOver{
+	setvar(RIVAL_STATE_MATS,2)
+    }
+
+    text MatsWaterZone_Intro{
+        format("Hello")
+    }
+
+    text MatsWaterZone_Outro{
+        format("Hello")
+    }
+
+    text MatsWaterZone_AboutWaterZone{
+        format("Hello")
+    }
+
+    movement MatsLeave_WaterZone{
+        walk_up
+    }

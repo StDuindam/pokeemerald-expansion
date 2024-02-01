@@ -90,3 +90,10 @@ script EventScript_SetFlag_Gym8{
     waitmessage
     release
 }
+script EventScript_SetVar_MatsRival{
+    lock
+    setvar(RIVAL_STATE_MATS, 1)
+    msgbox("Updated Mats_Rival_State by one")
+    waitmessage
+    release
+}

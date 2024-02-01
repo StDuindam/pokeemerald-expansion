@@ -1,0 +1,30 @@
+mapscripts Fortree_GrassyArea_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Setup_GrassZone_Mats
+}
+
+    script Setup_GrassZone_Mats{
+
+    }
+    script MatsBattleTwo_GrassZone{
+        
+    }
+
+    script MatsBattleTwoGrassZoneOver{
+	setvar(RIVAL_STATE_MATS,2)
+    }
+
+    text MatsGrassZone_Intro{
+        format("Hello")
+    }
+
+    text MatsGrassZone_Outro{
+        format("Hello")
+    }
+
+    text MatsGrassZone_AboutGrassZone{
+        format("Hello")
+    }
+
+    movement MatsLeave_GrassZone{
+        walk_up
+    }
