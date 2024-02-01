@@ -2025,3 +2025,8 @@
 	callnative CreateTrainerPartyForPlayer
 	trainerbattle_no_intro \trainer2, NULL
 	.endm
+
+	@ Select the initial rental mons for the challenge of dusclops
+	.macro dusclops_rentmons
+	special CallDusclopsTeamSwap
+	.endm

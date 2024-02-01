@@ -1067,3 +1067,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/NewHouse/scripts.inc"
+
+	.include "data/maps/RivalBase/scripts.inc"
+
+	.include "data/maps/Route_104_House/scripts.inc"
+
+	.include "data/maps/DebugArea/scripts.inc"
+
+	.include "data/maps/DusclopsHideout/scripts.inc"
+
+	.include "data/maps/Fortree_GrassyArea/scripts.inc"

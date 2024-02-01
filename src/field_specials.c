@@ -4253,3 +4253,18 @@ void PreparePartyForSkyBattle(void)
     VarSet(B_VAR_SKY_BATTLE,participatingPokemonSlot);
     CompactPartySlots();
 }
+
+//Make sure you first call the special 'SavePlayerParty'
+void CallDusclopsFunction(void)
+{
+    ZeroPlayerPartyMons();
+    CreateMon(&gPlayerParty[0], SPECIES_GARDEVOIR, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[1], SPECIES_ZAPDOS, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[2], SPECIES_PORYGON2, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[3], SPECIES_KYOGRE, 100, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[4], SPECIES_SUICUNE, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[5], SPECIES_MOLTRES_GALARIAN, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_ORIGIN_PULSE,1);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_ANCIENT_POWER,2);
+}

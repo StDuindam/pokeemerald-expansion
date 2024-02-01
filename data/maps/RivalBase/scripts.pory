@@ -1,0 +1,165 @@
+mapscripts RivalBase_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Starter_EventScript_Obtained
+}
+ 
+script Starter_EventScript_Obtained{
+    if(flag(FLAG_STARTER_OBTAINED)){
+        removeobject(1)
+        removeobject(2)
+        removeobject(3)
+    }
+}
+script Starter_EventScript_Sten{
+ 
+    lock
+    faceplayer
+    waitmessage
+    if(flag(FLAG_STARTER_OBTAINED) == false){
+    msgbox(format("Yo, I'm Sten. Looks like you are going on an adventure? I got something to get you started with."))
+    showmonpic(SPECIES_MACHOP,10,3)
+    msgbox("Do you want to choose Machop?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_MACHOP, 5, ITEM_SITRUS_BERRY)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Machop!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Machop!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("All good.")
+    }
+    }
+    else{
+            msgbox("Good luck, champ!")
+    }
+        waitmessage
+    release
+    end
+}
+ 
+script Starter_EventScript_Jens{
+ 
+    lock
+    faceplayer
+    if(flag(FLAG_STARTER_OBTAINED) == false){
+    msgbox(format("Hey, my name is Jens. I'm the strongest and always chase legendaries. The best defense is offense! Want a headstart?"))
+    showmonpic(SPECIES_KYOGRE,10,3)
+    msgbox("Do you want to choose Kyogre?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_KYOGRE, 5, ITEM_BLUE_ORB)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Kyogre!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Kyogre!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("Don't cry when you lose.")
+    }
+    }
+    else{
+            msgbox("Remember, hit 'em hard!")
+    }
+        waitmessage
+    release
+    end
+}
+
+script Starter_EventScript_Mats{
+ 
+    lock
+    faceplayer
+    if(flag(FLAG_STARTER_OBTAINED) == false){
+    msgbox(format("Hello, I'm Mats. Rare pokes are what keeps me excited. I chase them all around. This one used to be my favourite, take it if you want."))
+    showmonpic(SPECIES_CHARMANDER,10,3)
+    msgbox("Do you want to choose Charmander?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_CHARMANDER, 5, ITEM_SITRUS_BERRY)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Charmander!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained Charmander!")
+            setflag(FLAG_STARTER_OBTAINED)
+            setflag(FLAG_SYS_POKEMON_GET)
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room.")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox("No problem.")
+    }
+    }
+    else{
+            msgbox("Keep an eye out for rare coloured\n"
+                    "Pokemon!")
+    }
+        waitmessage
+    release
+    end
+}
+
+script NicknamePartyMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+ 
+ 
+}
+ 
+script NicknameBoxMon{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+ 
+}
+ 
+text NewProfessor_NotChosen{
+    "You did not choose the Pokemon"
+}

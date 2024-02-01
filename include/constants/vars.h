@@ -264,17 +264,34 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
-#define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
+#define RIVAL_STATE_STEN                                0x40F7 // Unused Var
+#define DUSCLOPS_STATE                                0x40F8 // Unused Var
+#define RIVAL_STATE_MATS                                0x40F9 // Unused Var
+#define RIVAL_STATE_JENS                                0x40FA // Unused Var
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
-#define VARS_END                                         0x40FF
+#define VAR_NEW0                                        0x4100 // Unused Var
+#define VAR_NEW1                                        0x4101 // Unused Var
+#define VAR_NEW2                                        0x4102 // Unused Var
+#define VAR_NEW3                                        0x4103 // Unused Var
+#define VAR_NEW4                                        0x4104 // Unused Var
+#define VAR_NEW5                                        0x4105 // Unused Var
+#define VAR_NEW6                                        0x4106 // Unused Var
+#define VAR_NEW7                                        0x4107 // Unused Var
+#define VAR_NEW8                                        0x4108 // Unused Var
+#define VAR_NEW9                                        0x4109 // Unused Var
+#define VAR_NEW10                                        0x410A // Unused Var
+#define VAR_NEW11                                       0x410B // Unused Var
+#define VAR_NEW12                                        0x410C // Unused Var
+#define VAR_NEW13                                        0x410D // Unused Var
+#define VAR_NEW14                                        0x410E // Unused Var
+#define VAR_NEW15                                       0x410F // Unused Var
+
+#define VARS_END                                         0x410F
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000

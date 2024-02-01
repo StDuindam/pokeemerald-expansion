@@ -856,12 +856,24 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
-
+#define TRAINER_STEN_FIRST_BATTLE           856
+#define TRAINER_MATS_FIRST_BATTLE           857
+#define TRAINER_JENS_FIRST_BATTLE           858
+#define TRAINER_GENGAR_FIRST_BATTLE         859
+#define TRAINER_GENGAR_SECOND_BATTLE        860
+#define TRAINER_GENGAR_THIRD_BATTLE         861
+#define TRAINER_GENGAR_FOURTH_BATTLE        862
+#define TRAINER_GENGAR_FIFTH_BATTLE         863
+#define TRAINER_GENGAR_SIXTH_BATTLE        864
+#define TRAINER_GENGAR_SEVENTH_BATTLE      865
+#define TRAINER_GENGAR_EIGHT_BATTLE        866
+#define TRAINER_GENGAR_NINETH_BATTLE       867
+#define TRAINER_GENGAR_TENTH_BATTLE        868
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
-#define MAX_TRAINERS_COUNT                  864
+#define TRAINERS_COUNT                      868
+#define MAX_TRAINERS_COUNT                  1000
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

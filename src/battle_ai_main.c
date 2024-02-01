@@ -5,7 +5,6 @@
 #include "battle_anim.h"
 #include "battle_ai_util.h"
 #include "battle_ai_main.h"
-#include "battle_controllers.h"
 #include "battle_factory.h"
 #include "battle_setup.h"
 #include "battle_z_move.h"
@@ -415,21 +414,11 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
     }
 }
 
-static bool32 AI_SwitchMonIfSuitable(u32 battler, bool32 doubleBattle)
+static bool32 AI_SwitchMonIfSuitable(u32 battler)
 {
-    u32 monToSwitchId = AI_DATA->mostSuitableMonId[battler];
-    if (monToSwitchId != PARTY_SIZE && IsValidForBattle(&GetBattlerParty(battler)[monToSwitchId]))
+    u32 monToSwitchId = AI_DATA->mostSuitableMonId;
+    if (monToSwitchId != PARTY_SIZE)
     {
-        gBattleMoveDamage = monToSwitchId;
-        // Edge case: See if partner already chose to switch into the same mon
-        if (doubleBattle)
-        {
-            u32 partner = BATTLE_PARTNER(battler);
-            if (AI_DATA->shouldSwitchMon & gBitTable[partner] && AI_DATA->monToSwitchId[partner] == monToSwitchId)
-            {
-                return FALSE;
-            }
-        }
         AI_DATA->shouldSwitchMon |= gBitTable[battler];
         AI_DATA->monToSwitchId[battler] = monToSwitchId;
         return TRUE;
@@ -466,7 +455,7 @@ static bool32 AI_ShouldSwitchIfBadMoves(u32 battler, bool32 doubleBattle)
                             break;
                     }
                 }
-                if (i == MAX_BATTLERS_COUNT && AI_SwitchMonIfSuitable(battler, doubleBattle))
+                if (i == MAX_BATTLERS_COUNT && AI_SwitchMonIfSuitable(battler))
                     return TRUE;
             }
             else
@@ -477,7 +466,7 @@ static bool32 AI_ShouldSwitchIfBadMoves(u32 battler, bool32 doubleBattle)
                         break;
                 }
 
-                if (i == MAX_MON_MOVES && AI_SwitchMonIfSuitable(battler, doubleBattle))
+                if (i == MAX_MON_MOVES && AI_SwitchMonIfSuitable(battler))
                     return TRUE;
             }
 
@@ -489,7 +478,7 @@ static bool32 AI_ShouldSwitchIfBadMoves(u32 battler, bool32 doubleBattle)
             && IsTruantMonVulnerable(battler, gBattlerTarget)
             && gDisableStructs[battler].truantCounter
             && gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 2
-            && AI_SwitchMonIfSuitable(battler, doubleBattle))
+            && AI_SwitchMonIfSuitable(battler))
         {
             return TRUE;
         }

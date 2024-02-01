@@ -1,0 +1,79 @@
+mapscripts Route_104_House_MapScripts {
+        MAP_SCRIPT_ON_TRANSITION: Setup_RivalBattle_MatsFirst
+}
+
+
+script Setup_RivalBattle_MatsFirst{
+	if(!(flag(FLAG_STARTER_OBTAINED)))
+	{
+		//hide
+		setflag(FLAG_MATS_BATTLE_ONE)
+		setvar(RIVAL_STATE_MATS, 0)
+	}else{
+		//show
+		if(var(RIVAL_STATE_MATS) == 0){
+			clearflag(FLAG_MATS_BATTLE_ONE)
+		}else{
+			setflag(FLAG_MATS_BATTLE_ONE)
+		}
+	}
+}
+
+script Starter_ShinyIntroDialogue_Mats{
+    lock
+    faceplayer
+    msgbox(MatsGiveShinyCharm)
+    waitmessage
+    msgbox("Do you want to battle Mats?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        call(Starter_RivalBattleMats_One)
+    }else{
+        msgbox("Some other time maybe.")
+    }
+    waitmessage
+    release
+}
+
+
+script Starter_RivalBattleMats_One{
+        trainerbattle_single(TRAINER_MATS_FIRST_BATTLE, Mats_Intro, Mats_Outro, RivalBattle_EventScript_MatsBattleOver)
+}
+
+script RivalBattle_EventScript_MatsBattleOver{
+	lockall
+    giveitem(ITEM_SHINY_CHARM)
+    msgbox(MatsUpgradePokedex)
+    setflag(FLAG_SYS_NATIONAL_DEX)
+	special(EnableNationalPokedex)
+    msgbox("Your Pokedex has been upgraded!")
+	applymovement(1, MatsLeave)
+	waitmovement(0)
+	removeobject(1)
+	setflag(FLAG_MATS_BATTLE_ONE)
+	setvar(RIVAL_STATE_MATS,1)
+	release
+}
+
+text Mats_Intro{
+    "Let's see how you battle!"
+}
+
+text Mats_Outro{
+    "Ha! That was great..."
+}
+
+movement MatsLeave{
+    walk_up
+    walk_left * 6
+    walk_down * 3
+}
+
+text MatsGiveShinyCharm {
+    format(
+            "Hey, of the three brothers I am the one always hunting for rare versions of Pokemon, maybe you have seen them. Specifically with a different colour. Beat me in a battle and I will give you an item that might help encountering them.")
+}
+
+text MatsUpgradePokedex {
+    format(
+            "Oh by the way, let me upgrade that pokedex of yours too. So you know where to find all these rare pokes. See you around!")
+}

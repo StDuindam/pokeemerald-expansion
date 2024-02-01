@@ -1,0 +1,92 @@
+mapscripts DebugArea_MapScripts {
+}
+
+script EventScript_SetFlag_Any{
+    setflag(FLAG_SYS_NATIONAL_DEX)
+	special(EnableNationalPokedex)
+}
+
+script CallGengarParty{
+    lock
+    msgbox("Party reset")
+    special(SavePlayerParty)
+    special(CallDusclopsFunction)
+    waitmessage
+    release
+}
+
+script RestoreParty{
+    lock
+    msgbox("Party Restored")
+    special(LoadPlayerParty)
+    waitmessage
+    release
+}
+
+script EventScript_SetFlag_Gym1{
+    lock
+    setflag(FLAG_DEFEATED_RUSTBORO_GYM)
+    setflag(FLAG_BADGE01_GET)
+    msgbox("Gym 1 completed")
+    waitmessage
+    release
+    }
+script EventScript_SetFlag_Gym2{
+    lock
+    setflag(FLAG_DEFEATED_DEWFORD_GYM)
+    setflag(FLAG_BADGE02_GET)
+    msgbox("Gym 2 completed")
+    waitmessage
+    release
+}
+script EventScript_SetFlag_Gym3{
+    lock
+    setflag(FLAG_DEFEATED_MAUVILLE_GYM)
+    setflag(FLAG_BADGE03_GET)
+    msgbox("Gym 3 completed")
+    waitmessage
+    release
+}
+
+script EventScript_SetFlag_Gym4{
+    lock
+    setflag(FLAG_DEFEATED_LAVARIDGE_GYM)
+    setflag(FLAG_BADGE04_GET)
+    msgbox("Gym 4 completed")
+    waitmessage
+    release
+}
+
+script EventScript_SetFlag_Gym5{
+    lock
+    setflag(FLAG_DEFEATED_PETALBURG_GYM)
+    setflag(FLAG_BADGE05_GET)
+    msgbox("Gym 5 completed")
+    waitmessage
+    release
+}
+
+script EventScript_SetFlag_Gym6{
+    lock
+    setflag(FLAG_DEFEATED_FORTREE_GYM)
+    setflag(FLAG_BADGE06_GET)
+    msgbox("Gym 6 completed")
+    waitmessage
+    release
+}
+script EventScript_SetFlag_Gym7{
+    lock
+    setflag(FLAG_DEFEATED_MOSSDEEP_GYM)
+    setflag(FLAG_BADGE07_GET)
+    msgbox("Gym 7 completed")
+    waitmessage
+    release
+}
+script EventScript_SetFlag_Gym8{
+    lock
+    setflag(FLAG_DEFEATED_SOOTOPOLIS_GYM)
+    setflag(FLAG_BADGE08_GET)
+    msgbox("Gym 8 completed")
+    waitmessage
+    release
+}

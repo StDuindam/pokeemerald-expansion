@@ -323,6 +323,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route115_EventScript_ItemHealPowder",
       "flag": "FLAG_ITEM_ROUTE_115_HEAL_POWDER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENGAR",
+      "x": 21,
+      "y": 70,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Script_Event_DusclopsTriggerWalkAway",
+      "flag": "DUSCLOPS_ROUTE115_1"
     }
   ],
   "warp_events": [
@@ -348,7 +361,44 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 72,
+      "elevation": 0,
+      "var": "DUSCLOPS_STATE",
+      "var_value": "1",
+      "script": "Script_Event_DusclopsTriggerWalkAway"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 72,
+      "elevation": 0,
+      "var": "DUSCLOPS_STATE",
+      "var_value": "1",
+      "script": "Script_Event_DusclopsTriggerWalkAway"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 72,
+      "elevation": 0,
+      "var": "DUSCLOPS_STATE",
+      "var_value": "1",
+      "script": "Script_Event_DusclopsTriggerWalkAway"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 71,
+      "elevation": 0,
+      "var": "DUSCLOPS_STATE",
+      "var_value": "1",
+      "script": "Script_Event_DusclopsTriggerWalkAway"
+    }
+  ],
   "bg_events": [
     {
       "type": "secret_base",
