@@ -68,45 +68,49 @@ RivalBattle_EventScript_MatsBattleOver::
 # 44 "data/maps/Route_104_House/scripts.pory"
 	giveitem ITEM_SHINY_CHARM
 # 45 "data/maps/Route_104_House/scripts.pory"
-	setflag FLAG_SYS_NATIONAL_DEX
+	msgbox MatsUpgradePokedex
 # 46 "data/maps/Route_104_House/scripts.pory"
-	special EnableNationalPokedex
+	setflag FLAG_SYS_NATIONAL_DEX
 # 47 "data/maps/Route_104_House/scripts.pory"
-	applymovement 1, MatsLeave
+	special EnableNationalPokedex
 # 48 "data/maps/Route_104_House/scripts.pory"
-	waitmovement 0
+	msgbox RivalBattle_EventScript_MatsBattleOver_Text_0
 # 49 "data/maps/Route_104_House/scripts.pory"
-	removeobject 1
+	applymovement 1, MatsLeave
 # 50 "data/maps/Route_104_House/scripts.pory"
-	setflag FLAG_MATS_BATTLE_ONE
+	waitmovement 0
 # 51 "data/maps/Route_104_House/scripts.pory"
-	setvar RIVAL_STATE_MATS, 1
+	removeobject 1
 # 52 "data/maps/Route_104_House/scripts.pory"
+	setflag FLAG_MATS_BATTLE_ONE
+# 53 "data/maps/Route_104_House/scripts.pory"
+	setvar RIVAL_STATE_MATS, 1
+# 54 "data/maps/Route_104_House/scripts.pory"
 	release
 	return
 
 
-# 63 "data/maps/Route_104_House/scripts.pory"
+# 65 "data/maps/Route_104_House/scripts.pory"
 MatsLeave:
-# 64 "data/maps/Route_104_House/scripts.pory"
+# 66 "data/maps/Route_104_House/scripts.pory"
 	walk_up
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 65 "data/maps/Route_104_House/scripts.pory"
+# 67 "data/maps/Route_104_House/scripts.pory"
 	walk_left
-# 66 "data/maps/Route_104_House/scripts.pory"
+# 68 "data/maps/Route_104_House/scripts.pory"
 	walk_down
-# 66 "data/maps/Route_104_House/scripts.pory"
+# 68 "data/maps/Route_104_House/scripts.pory"
 	walk_down
-# 66 "data/maps/Route_104_House/scripts.pory"
+# 68 "data/maps/Route_104_House/scripts.pory"
 	walk_down
 	step_end
 
@@ -118,16 +122,20 @@ Starter_ShinyIntroDialogue_Mats_Text_1:
 # 31 "data/maps/Route_104_House/scripts.pory"
 	.string "Some other time maybe.$"
 
+RivalBattle_EventScript_MatsBattleOver_Text_0:
+# 48 "data/maps/Route_104_House/scripts.pory"
+	.string "Your Pokedex has been upgraded!$"
+
 Mats_Intro::
-# 55 "data/maps/Route_104_House/scripts.pory"
+# 57 "data/maps/Route_104_House/scripts.pory"
 	.string "Let's see how you battle!$"
 
 Mats_Outro::
-# 59 "data/maps/Route_104_House/scripts.pory"
+# 61 "data/maps/Route_104_House/scripts.pory"
 	.string "Ha! That was great...$"
 
 MatsGiveShinyCharm::
-# 69 "data/maps/Route_104_House/scripts.pory"
+# 71 "data/maps/Route_104_House/scripts.pory"
 	.string "Hey, of the three brothers I am the one\n"
 	.string "always hunting for rare versions of\l"
 	.string "Pokemon, maybe you have seen them.\l"
@@ -135,3 +143,10 @@ MatsGiveShinyCharm::
 	.string "Beat me in a battle and I will give you\l"
 	.string "an item that might help encountering\l"
 	.string "them.$"
+
+MatsUpgradePokedex::
+# 76 "data/maps/Route_104_House/scripts.pory"
+	.string "Oh by the way, let me upgrade that\n"
+	.string "pokedex of yours too. So you know where\l"
+	.string "to find all these rare pokes. See you\l"
+	.string "around!$"
