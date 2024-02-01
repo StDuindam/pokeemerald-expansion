@@ -164,10 +164,24 @@ script NicknameBoxMon{
 script MegaStones_Bag_One_Items{
     lock
     msgbox("Great! Someone must have left these to pick up.")
-    finditem(ITEM_BLASTOISINITE, 1)
-    finditem(ITEM_REVIVE,10)
+    finditem(ITEM_PIDGEOTITE, 1)
+    finditem(ITEM_SCIZORITE, 1)
+    finditem(ITEM_PINSIRITE, 1)
+    finditem(ITEM_HERACRONITE, 1)
+    finditem(ITEM_SCIZORITE, 1)
+    finditem(ITEM_BEEDRILLITE, 1)
+    finditem(ITEM_ALTARIANITE, 1)
     setflag(FLAG_ITEMBAG_MEGASTONES_ONE)
     waitmessage
+    release
+}
+
+script Find_Applin_Items{
+    lock
+    finditem(ITEM_TART_APPLE)
+    finditem(ITEM_SWEET_APPLE)
+    finditem(ITEM_SYRUPY_APPLE)
+    setflag(FLAG_ITEM_APPLIN_SET)
     release
 }
 

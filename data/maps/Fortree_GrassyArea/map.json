@@ -22,23 +22,66 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_3",
-      "x": 9,
-      "y": 17,
+      "x": 6,
+      "y": 15,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MATS_BATTLE_FOUR"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Find_Applin_Items",
+      "flag": "FLAG_ITEM_APPLIN_SET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MegaStones_Bag_One_Items",
+      "flag": "FLAG_ITEMBAG_MEGASTONES_ONE"
     }
   ],
   "warp_events": [
 
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 14,
+      "elevation": 0,
+      "var": "RIVAL_STATE_MATS",
+      "var_value": "3",
+      "script": "MatsMoveToPlayer_A"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 14,
+      "elevation": 0,
+      "var": "RIVAL_STATE_MATS",
+      "var_value": "3",
+      "script": "MatsMoveToPlayer_B"
+    }
   ],
   "bg_events": [
 

@@ -172,7 +172,7 @@ EventScript_SetVar_MatsRival::
 # 94 "data/maps/DebugArea/scripts.pory"
 	lock
 # 95 "data/maps/DebugArea/scripts.pory"
-	setvar RIVAL_STATE_MATS, 1
+	setvar RIVAL_STATE_MATS, 3
 # 96 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetVar_MatsRival_Text_0
 # 97 "data/maps/DebugArea/scripts.pory"

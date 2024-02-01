@@ -3,28 +3,86 @@ mapscripts Fortree_GrassyArea_MapScripts {
 }
 
     script Setup_GrassZone_Mats{
-
-    }
-    script MatsBattleTwo_GrassZone{
-        
-    }
-
-    script MatsBattleTwoGrassZoneOver{
-	setvar(RIVAL_STATE_MATS,2)
+        if(var(RIVAL_STATE_MATS) != 3)
+        {
+            setflag(FLAG_MATS_BATTLE_FOUR)
+        }else{
+            clearflag(FLAG_MATS_BATTLE_FOUR)
+        }
     }
 
-    text MatsGrassZone_Intro{
-        format("Hello")
+    script MatsMoveToPlayer_A{
+        lock
+        applymovement(1,MatsWalkingA_GrassZone)
+        waitmovement(0)
+        faceplayer
+        call(MatsTalkToPlayerAndBattle_GrassZone)
+        release
     }
 
-    text MatsGrassZone_Outro{
-        format("Hello")
+    script MatsMoveToPlayer_B{
+        lock
+        applymovement(1,MatsWalkingB_GrassZone)
+        waitmovement(0)
+        faceplayer
+        call(MatsTalkToPlayerAndBattle_GrassZone)
+        release
+    }
+
+    script MatsTalkToPlayerAndBattle_GrassZone{
+        lock
+        faceplayer
+        msgbox(MatsGrassZone_AboutGrassZone)
+        waitmessage
+        call(MatsBattleFour_GrassZone)
+        release
+    }
+
+    script MatsBattleFour_GrassZone{
+        trainerbattle_single(TRAINER_MATS_FOURTH_BATTLE, MatsGrassZone_Intro, MatsGrassZone_Outro, MatsBattleFourGrassZoneOver)
+    }
+
+    script MatsBattleFourGrassZoneOver{
+        lock
+        msgbox(MatsGrassZone_BeforeLeaving)
+        waitmessage
+        applymovement(1, MatsLeave_GrassZone)
+        waitmovement(0)
+        removeobject(1)
+        setvar(RIVAL_STATE_MATS,4)
+        setflag(FLAG_MATS_BATTLE_FOUR)
+        release
     }
 
     text MatsGrassZone_AboutGrassZone{
-        format("Hello")
+        format("Look at that, all the way to Fortree, huh? You might just make it to the league if you keep it up. There's some neat grass pokemon around here.")
+    }
+
+    text MatsGrassZone_Intro{
+        format("Show me what team you are rocking with now.")
+    }
+
+    text MatsGrassZone_Outro{
+        format("Those are some strong and unique Pokemon!")
+    }
+
+    text MatsGrassZone_BeforeLeaving{
+        format("I think you should focus on taking those aqua and magma nerds out. Then maybe try the league? Later skater!")
+    }
+
+    movement MatsWalkingA_GrassZone{
+        walk_left * 5
+        walk_up * 2
+        walk_left * 3 
+    }
+
+        movement MatsWalkingB_GrassZone{
+        walk_left * 5
+        walk_up * 2
+        walk_left * 4
     }
 
     movement MatsLeave_GrassZone{
-        walk_up
+        walk_right * 6
+        walk_down * 7
     }

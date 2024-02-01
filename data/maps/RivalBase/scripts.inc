@@ -286,40 +286,66 @@ MegaStones_Bag_One_Items::
 # 166 "data/maps/RivalBase/scripts.pory"
 	msgbox MegaStones_Bag_One_Items_Text_0
 # 167 "data/maps/RivalBase/scripts.pory"
-	finditem ITEM_BLASTOISINITE, 1
+	finditem ITEM_PIDGEOTITE, 1
 # 168 "data/maps/RivalBase/scripts.pory"
-	finditem ITEM_REVIVE, 10
+	finditem ITEM_SCIZORITE, 1
 # 169 "data/maps/RivalBase/scripts.pory"
-	setflag FLAG_ITEMBAG_MEGASTONES_ONE
+	finditem ITEM_PINSIRITE, 1
 # 170 "data/maps/RivalBase/scripts.pory"
-	waitmessage
+	finditem ITEM_HERACRONITE, 1
 # 171 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_SCIZORITE, 1
+# 172 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_BEEDRILLITE, 1
+# 173 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_ALTARIANITE, 1
+# 174 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEMBAG_MEGASTONES_ONE
+# 175 "data/maps/RivalBase/scripts.pory"
+	waitmessage
+# 176 "data/maps/RivalBase/scripts.pory"
+	release
+	return
+
+
+Find_Applin_Items::
+# 180 "data/maps/RivalBase/scripts.pory"
+	lock
+# 181 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_TART_APPLE
+# 182 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_SWEET_APPLE
+# 183 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_SYRUPY_APPLE
+# 184 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEM_APPLIN_SET
+# 185 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_Ability_Capsule::
-# 175 "data/maps/RivalBase/scripts.pory"
+# 189 "data/maps/RivalBase/scripts.pory"
 	lock
-# 176 "data/maps/RivalBase/scripts.pory"
+# 190 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ABILITY_CAPSULE
-# 177 "data/maps/RivalBase/scripts.pory"
+# 191 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_ABILITY_CAPSULE
-# 178 "data/maps/RivalBase/scripts.pory"
+# 192 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_CharcadetEvoStuff::
-# 182 "data/maps/RivalBase/scripts.pory"
+# 196 "data/maps/RivalBase/scripts.pory"
 	lock
-# 183 "data/maps/RivalBase/scripts.pory"
+# 197 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_AUSPICIOUS_ARMOR
-# 184 "data/maps/RivalBase/scripts.pory"
+# 198 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MALICIOUS_ARMOR
-# 185 "data/maps/RivalBase/scripts.pory"
+# 199 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_ARMAROUGE_SET
-# 186 "data/maps/RivalBase/scripts.pory"
+# 200 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
@@ -405,5 +431,5 @@ MegaStones_Bag_One_Items_Text_0:
 	.string "Great! Someone must have left these to pick up.$"
 
 NewProfessor_NotChosen::
-# 189 "data/maps/RivalBase/scripts.pory"
+# 203 "data/maps/RivalBase/scripts.pory"
 	.string "You did not choose the Pokemon$"

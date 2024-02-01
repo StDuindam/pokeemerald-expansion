@@ -1,29 +1,55 @@
 mapscripts WaterZone_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Setup_WaterZone_Mats
-
 }
 
     script Setup_WaterZone_Mats{
-
+        if(var(RIVAL_STATE_MATS) != 2)
+        {
+            setflag(FLAG_MATS_BATTLE_THREE)
+        }else{
+            clearflag(FLAG_MATS_BATTLE_THREE)
+        }
     }
-    script MatsBattleTwo_WaterZone{
-        
+
+    script MatsIntro_WaterZone{
+        lock
+        faceplayer
+        msgbox(MatsWaterZone_FirstChat)
+        waitmessage
+        call(MatsBattleThree_WaterZone)
+        release
     }
 
-    script MatsBattleTwoWaterZoneOver{
-	setvar(RIVAL_STATE_MATS,2)
+    script MatsBattleThree_WaterZone{
+        trainerbattle_single(TRAINER_MATS_THIRD_BATTLE, MatsWaterZone_Intro, MatsWaterZone_Outro, MatsBattleThreeWaterZoneOver)
+    }
+
+    script MatsBattleThreeWaterZoneOver{
+        lock
+        msgbox(MatsWaterZone_Warning)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        setflag(FLAG_MATS_BATTLE_THREE)
+        setvar(RIVAL_STATE_MATS,3)
+        fadescreen(FADE_FROM_BLACK)
+        release
+    }
+
+    text MatsWaterZone_Warning{
+        format("Don't break your back trying to find the Hoenn starter, by the way, they don't like to hang with the others.")
+    }
+
+    text MatsWaterZone_FirstChat{
+        format("Easy, {PLAYER}, looks like you mastered SURF. This is my go to spot if I need a strong and rare water type. Maybe you will find one you like too!")
     }
 
     text MatsWaterZone_Intro{
-        format("Hello")
+        format("I'm starting to use some power here!")
     }
 
     text MatsWaterZone_Outro{
-        format("Hello")
-    }
-
-    text MatsWaterZone_AboutWaterZone{
-        format("Hello")
+        format("I guess you are almost ready to battle with the best.")
     }
 
     movement MatsLeave_WaterZone{
