@@ -16,20 +16,20 @@ script Starter_EventScript_Sten{
     waitmessage
     if(flag(FLAG_STARTER_OBTAINED) == false){
     msgbox(format("Yo, I'm Sten. Looks like you are going on an adventure? I got something to get you started with."))
-    showmonpic(SPECIES_MACHOP,10,3)
-    msgbox("Do you want to choose Machop?", MSGBOX_YESNO)
+    showmonpic(SPECIES_LARVESTA,10,3)
+    msgbox("Do you want to choose Larvesta?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_MACHOP, 5, ITEM_SITRUS_BERRY)
+        givemon(SPECIES_LARVESTA, 5, ITEM_SITRUS_BERRY)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Machop!")
+            msgbox("Obtained Larvesta!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Machop!")
+            msgbox("Obtained Larvesta!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknameBoxMon)
@@ -58,20 +58,20 @@ script Starter_EventScript_Jens{
     faceplayer
     if(flag(FLAG_STARTER_OBTAINED) == false){
     msgbox(format("Hey, my name is Jens. I'm the strongest and always chase legendaries. The best defense is offense! Want a headstart?"))
-    showmonpic(SPECIES_KYOGRE,10,3)
-    msgbox("Do you want to choose Kyogre?", MSGBOX_YESNO)
+    showmonpic(SPECIES_DRATINI,10,3)
+    msgbox("Do you want to choose Dratini?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_KYOGRE, 5, ITEM_BLUE_ORB)
+        givemon(SPECIES_DRATINI, 5, ITEM_BLUE_ORB)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Kyogre!")
+            msgbox("Obtained Dratini!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Kyogre!")
+            msgbox("Obtained Dratini!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknameBoxMon)
@@ -100,20 +100,20 @@ script Starter_EventScript_Mats{
     faceplayer
     if(flag(FLAG_STARTER_OBTAINED) == false){
     msgbox(format("Hello, I'm Mats. Rare pokes are what keeps me excited. I chase them all around. This one used to be my favourite, take it if you want."))
-    showmonpic(SPECIES_CHARMANDER,10,3)
-    msgbox("Do you want to choose Charmander?", MSGBOX_YESNO)
+    showmonpic(SPECIES_RIOLU,10,3)
+    msgbox("Do you want to choose Riolu?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_CHARMANDER, 5, ITEM_SITRUS_BERRY)
+        givemon(SPECIES_RIOLU, 5, ITEM_SITRUS_BERRY)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Charmander!")
+            msgbox("Obtained Riolu!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknamePartyMon)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Obtained Charmander!")
+            msgbox("Obtained Riolu!")
             setflag(FLAG_STARTER_OBTAINED)
             setflag(FLAG_SYS_POKEMON_GET)
             call(NicknameBoxMon)
