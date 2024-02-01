@@ -1079,3 +1079,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DusclopsHideout/scripts.inc"
 
 	.include "data/maps/Fortree_GrassyArea/scripts.inc"
+
+	.include "data/maps/FireZone/scripts.inc"

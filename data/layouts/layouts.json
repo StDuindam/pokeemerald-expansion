@@ -4470,6 +4470,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Fortree_GrassyArea/border.bin",
       "blockdata_filepath": "data/layouts/Fortree_GrassyArea/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIRE_ZONE",
+      "name": "FireZone_Layout",
+      "width": 15,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/FireZone/border.bin",
+      "blockdata_filepath": "data/layouts/FireZone/map.bin"
     }
   ]
 }

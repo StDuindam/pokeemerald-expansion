@@ -560,6 +560,7 @@
 #define MAP_TRAINER_HILL_ELEVATOR                           (88 | (26 << 8))
 #define MAP_DEBUG_AREA                                      (89 | (26 << 8))
 #define MAP_DUSCLOPS_HIDEOUT                                (90 | (26 << 8))
+#define MAP_FIRE_ZONE                                       (91 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

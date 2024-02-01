@@ -589,7 +589,8 @@
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
     "DebugArea",
-    "DusclopsHideout"
+    "DusclopsHideout",
+    "FireZone"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
