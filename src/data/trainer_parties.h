@@ -12793,7 +12793,7 @@ static const struct TrainerMon sParty_MatsBattleFour[] = {
     .lvl = 36,
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_FLAME_ORB,
-    .ability = ABILITY_GUTS
+    .ability = ABILITY_GUTS,
     .moves = {MOVE_BRICK_BREAK, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE, MOVE_FACADE}
     },
     {
@@ -12806,7 +12806,7 @@ static const struct TrainerMon sParty_MatsBattleFour[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 36,
     .species = SPECIES_ARON,
-    .heldItem = ITEM_ROCKY_HELMET
+    .heldItem = ITEM_ROCKY_HELMET,
     .ability = ABILITY_STURDY,
     .moves = {MOVE_ENDEAVOR, MOVE_ROCK_SLIDE, MOVE_BULLDOZE, MOVE_STRENGTH}
     },
@@ -12839,7 +12839,7 @@ static const struct TrainerMon sParty_MatsBattleFive[] = {
     .lvl = 60,
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_FLAME_ORB,
-    .ability = ABILITY_GUTS
+    .ability = ABILITY_GUTS,
     .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_MEGA_HORN, MOVE_FACADE}
     },
     {
@@ -12860,7 +12860,7 @@ static const struct TrainerMon sParty_MatsBattleFive[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 62,
     .species = SPECIES_HYDREIGON,
-    .heldItem = ITEM_LEFTOVERS
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_DARK_PULSE, MOVE_NASTY_PLOT, MOVE_FLASH_CANNON, MOVE_DRACO_METEOR}
     },
     {
