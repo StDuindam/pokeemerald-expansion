@@ -12702,7 +12702,7 @@ static const struct TrainerMon sParty_MatsBattleTwo[] = {
     .lvl = 26,
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_FLAME_ORB,
-    .ability = ABILITY_GUTS
+    .ability = ABILITY_GUTS,
     .moves = {MOVE_BRICK_BREAK, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE, MOVE_PIN_MISSILE}
     },
     {
@@ -12747,7 +12747,7 @@ static const struct TrainerMon sParty_MatsBattleThree[] = {
     .lvl = 33,
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_FLAME_ORB,
-    .ability = ABILITY_GUTS
+    .ability = ABILITY_GUTS,
     .moves = {MOVE_BRICK_BREAK, MOVE_AERIAL_ACE, MOVE_SWORDS_DANCE, MOVE_FACADE}
     },
     {
@@ -12760,7 +12760,7 @@ static const struct TrainerMon sParty_MatsBattleThree[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 33,
     .species = SPECIES_ARON,
-    .heldItem = ITEM_ROCKY_HELMET
+    .heldItem = ITEM_ROCKY_HELMET,
     .ability = ABILITY_STURDY,
     .moves = {MOVE_ENDEAVOR, MOVE_ROCK_SLIDE, MOVE_BULLDOZE, MOVE_STRENGTH}
     },
@@ -12840,7 +12840,7 @@ static const struct TrainerMon sParty_MatsBattleFive[] = {
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_FLAME_ORB,
     .ability = ABILITY_GUTS,
-    .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_MEGA_HORN, MOVE_FACADE}
+    .moves = {MOVE_CLOSE_COMBAT, MOVE_EARTHQUAKE, MOVE_MEGAHORN, MOVE_FACADE}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -12852,7 +12852,7 @@ static const struct TrainerMon sParty_MatsBattleFive[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 60,
     .species = SPECIES_AGGRON,
-    .heldItem = ITEM_ROCKY_HELMET
+    .heldItem = ITEM_ROCKY_HELMET,
     .ability = ABILITY_STURDY,
     .moves = {MOVE_IRON_DEFENSE, MOVE_ROCK_SLIDE, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS}
     },

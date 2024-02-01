@@ -591,7 +591,9 @@
     "DebugArea",
     "DusclopsHideout",
     "FireZone",
-    "WaterZone"
+    "WaterZone",
+    "TorchicCave",
+    "TreeckoHideout"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

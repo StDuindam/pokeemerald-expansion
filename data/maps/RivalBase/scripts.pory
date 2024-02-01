@@ -163,7 +163,7 @@ script NicknameBoxMon{
 //ITEM LISTS
 script MegaStones_Bag_One_Items{
     lock
-    msgbox("Great! Someone must have left these to pick up.")
+    msgbox(format("Great! Someone must have left these to pick up."))
     finditem(ITEM_PIDGEOTITE, 1)
     finditem(ITEM_SCIZORITE, 1)
     finditem(ITEM_PINSIRITE, 1)
@@ -172,6 +172,66 @@ script MegaStones_Bag_One_Items{
     finditem(ITEM_BEEDRILLITE, 1)
     finditem(ITEM_ALTARIANITE, 1)
     setflag(FLAG_ITEMBAG_MEGASTONES_ONE)
+    waitmessage
+    release
+}
+
+script MegaStones_Bag_Two_Items{
+    lock
+    msgbox(format("Wow, some spooky mega stones!"))
+    finditem(ITEM_GENGARITE)
+    finditem(ITEM_BANETTITE)
+    finditem(ITEM_SABLENITE)
+    finditem(ITEM_ABSOLITE)
+    finditem(ITEM_GARDEVOIRITE)
+    finditem(ITEM_GALLADITE)
+    finditem(ITEM_ALAKAZITE)
+    setflag(FLAG_ITEMBAG_MEGASTONES_TWO)
+    waitmessage
+    release
+}
+
+script MegaStones_Bag_Three_items{
+    lock
+    msgbox(format("This bag is on fire!"))
+    finditem(ITEM_CAMERUPTITE)
+    finditem(ITEM_HOUNDOOMINITE)
+    setflag(FLAG_ITEMBAG_MEGASTONES_THREE)
+    waitmessage
+    release
+}
+
+script Megastones_Bag_Four_Items{
+    lock
+    msgbox(format("A collection of rare stones!"))
+    finditem(ITEM_AMPHAROSITE)
+    finditem(ITEM_MAWILITE)
+    finditem(ITEM_MEDICHAMITE)
+    finditem(ITEM_PIDGEOTITE)
+    finditem(ITEM_STEELIXITE)
+    finditem(ITEM_SLOWBRONITE)
+    finditem(ITEM_AGGRONITE)
+    finditem(ITEM_LOPUNNITE)
+    finditem(ITEM_MANECTITE)
+    finditem(ITEM_SHARPEDONITE)
+    setflag(FLAG_ITEMBAG_MEGASTONES_FOUR)
+    waitmessage
+    release
+}
+
+script Megastones_Bag_Five_Items{
+    lock
+    msgbox(format("Megastone jackpot!"))
+    finditem(ITEM_GLALITITE)
+    finditem(ITEM_LUCARIONITE)
+    finditem(ITEM_METAGROSSITE)
+    finditem(ITEM_TYRANITARITE)
+    finditem(ITEM_GYARADOSITE)
+    finditem(ITEM_SALAMENCITE)
+    finditem(ITEM_KANGASKHANITE)
+    finditem(ITEM_GARCHOMPITE)
+    setflag(FLAG_ITEMBAG_FIVE)
+    finditem(ITEM_ABOMASITE)
     waitmessage
     release
 }
@@ -197,6 +257,39 @@ script Find_CharcadetEvoStuff{
     finditem(ITEM_AUSPICIOUS_ARMOR)
     finditem(ITEM_MALICIOUS_ARMOR)
     setflag(FLAG_ITEM_ARMAROUGE_SET)
+    release
+}
+
+script Find_SinisteaSet{
+    lock
+    finditem(ITEM_CRACKED_POT)
+    finditem(ITEM_CHIPPED_POT)
+    setflag(FLAG_ITEM_SINISTEA_SET)
+    release
+}
+
+script Find_TeacupSet{
+    lock
+    finditem(ITEM_UNREMARKABLE_TEACUP)
+    finditem(ITEM_MASTERPIECE_TEACUP)
+    setflag(FLAG_ITEM_TEACUP_CRACKEDPOT_CHIPPEDPOT_SET)
+    release
+}
+
+script Find_BlackSludge{
+    lock
+    finditem(ITEM_BLACK_SLUDGE)
+    setflag(FLAG_ITEM_BLACK_SLUDGE)
+    release
+}
+
+script Find_Seeds{
+    lock
+    msgbox(format("Neat, some seeds!"))
+    finditem(ITEM_ELECTRIC_SEED)
+    finditem(ITEM_PSYCHIC_SEED)
+    finditem(ITEM_PSYCHIC_SEED)
+    setflag(FLAG_ITEM_SEEDS_ELECTRICPSYCHICGRASSY)
     release
 }
 

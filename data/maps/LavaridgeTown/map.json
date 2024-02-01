@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE112",
       "offset": -40,
       "direction": "right"
+    },
+    {
+      "map": "MAP_TORCHIC_CAVE",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -180,6 +185,13 @@
       "elevation": 3,
       "dest_map": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_TORCHIC_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -4490,6 +4490,26 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/WaterZone/border.bin",
       "blockdata_filepath": "data/layouts/WaterZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_TORCHIC_CAVE",
+      "name": "TorchicCave_Layout",
+      "width": 15,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TorchicCave/border.bin",
+      "blockdata_filepath": "data/layouts/TorchicCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREECKO_HIDEOUT",
+      "name": "TreeckoHideout_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SecretBaseShrub",
+      "border_filepath": "data/layouts/TreeckoHideout/border.bin",
+      "blockdata_filepath": "data/layouts/TreeckoHideout/map.bin"
     }
   ]
 }

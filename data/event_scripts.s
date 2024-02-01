@@ -1083,3 +1083,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FireZone/scripts.inc"
 
 	.include "data/maps/WaterZone/scripts.inc"
+
+	.include "data/maps/TorchicCave/scripts.inc"
+
+	.include "data/maps/TreeckoHideout/scripts.inc"

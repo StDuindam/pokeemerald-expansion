@@ -315,6 +315,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_Jens_Encounter_One",
       "flag": "FLAG_JENS_BATTLE_ONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "x": 59,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Megastones_Bag_Four_Items",
+      "flag": "FLAG_ITEMBAG_MEGASTONES_FOUR"
     }
   ],
   "warp_events": [
