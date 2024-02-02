@@ -1,0 +1,41 @@
+mapscripts FallarborTown_ShadyTrader_MapScripts {
+    
+}
+
+script FallarbortTown_ShadyTrader{
+    lock
+    faceplayer
+    msgbox(ShadyTraderIntro)
+    waitmessage
+    pokemart(ShadyTraderItems)
+    msgbox(ShadyTraderOutro)
+    waitmessage
+    release
+    end
+}
+
+
+mart ShadyTraderItems{ 
+    ITEM_ROCKY_HELMET
+    ITEM_EVIOLITE
+    ITEM_CHOICE_BAND
+    ITEM_CHOICE_SCARF
+    ITEM_CHOICE_SPECS
+    ITEM_LEFTOVERS
+    ITEM_ASSAULT_VEST
+    ITEM_WEAKNESS_POLICY
+    ITEM_CLEAR_AMULET
+    ITEM_COVERT_CLOAK
+    ITEM_LIFE_ORB
+    ITEM_LOADED_DICE
+    ITEM_HEAVY_DUTY_BOOTS
+    ITEM_MIRROR_HERB
+}
+
+text ShadyTraderIntro{
+    format("Listen, don't tell anyone about my little business, ok?")
+}
+
+text ShadyTraderOutro{
+    format("See you around, remember to keep hush.")
+}

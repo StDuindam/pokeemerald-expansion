@@ -11,6 +11,7 @@ script CallGengarParty{
     msgbox("Party reset")
     special(SavePlayerParty)
     special(CallDusclopsFunction)
+    giveitem(ITEM_MASTER_BALL,2)
     waitmessage
     release
 }

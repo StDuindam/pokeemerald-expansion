@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_SecretBaseShrub",
       "border_filepath": "data/layouts/TreeckoHideout/border.bin",
       "blockdata_filepath": "data/layouts/TreeckoHideout/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALLARBOR_TOWN_SHADY_TRADER",
+      "name": "FallarborTown_ShadyTrader_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FallarborTown_ShadyTrader/border.bin",
+      "blockdata_filepath": "data/layouts/FallarborTown_ShadyTrader/map.bin"
     }
   ]
 }

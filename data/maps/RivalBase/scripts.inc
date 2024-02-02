@@ -41,7 +41,7 @@ Starter_EventScript_Sten_2:
 # 18 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Sten_Text_0
 # 19 "data/maps/RivalBase/scripts.pory"
-	showmonpic SPECIES_MACHOP, 10, 3
+	showmonpic SPECIES_LARVESTA, 10, 3
 # 20 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Sten_Text_1, MSGBOX_YESNO
 # 21 "data/maps/RivalBase/scripts.pory"
@@ -55,7 +55,7 @@ Starter_EventScript_Sten_2:
 
 Starter_EventScript_Sten_5:
 # 22 "data/maps/RivalBase/scripts.pory"
-	givemon SPECIES_MACHOP, 5, ITEM_SITRUS_BERRY
+	givemon SPECIES_LARVESTA, 5, ITEM_SITRUS_BERRY
 # 23 "data/maps/RivalBase/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Starter_EventScript_Sten_8
@@ -115,7 +115,7 @@ Starter_EventScript_Jens_2:
 # 60 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Jens_Text_0
 # 61 "data/maps/RivalBase/scripts.pory"
-	showmonpic SPECIES_KYOGRE, 10, 3
+	showmonpic SPECIES_DRATINI, 10, 3
 # 62 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Jens_Text_1, MSGBOX_YESNO
 # 63 "data/maps/RivalBase/scripts.pory"
@@ -129,7 +129,7 @@ Starter_EventScript_Jens_2:
 
 Starter_EventScript_Jens_5:
 # 64 "data/maps/RivalBase/scripts.pory"
-	givemon SPECIES_KYOGRE, 5, ITEM_BLUE_ORB
+	givemon SPECIES_DRATINI, 5, ITEM_BLUE_ORB
 # 65 "data/maps/RivalBase/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Starter_EventScript_Jens_8
@@ -189,7 +189,7 @@ Starter_EventScript_Mats_2:
 # 102 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Mats_Text_0
 # 103 "data/maps/RivalBase/scripts.pory"
-	showmonpic SPECIES_CHARMANDER, 10, 3
+	showmonpic SPECIES_RIOLU, 10, 3
 # 104 "data/maps/RivalBase/scripts.pory"
 	msgbox Starter_EventScript_Mats_Text_1, MSGBOX_YESNO
 # 105 "data/maps/RivalBase/scripts.pory"
@@ -203,7 +203,7 @@ Starter_EventScript_Mats_2:
 
 Starter_EventScript_Mats_5:
 # 106 "data/maps/RivalBase/scripts.pory"
-	givemon SPECIES_CHARMANDER, 5, ITEM_SITRUS_BERRY
+	givemon SPECIES_RIOLU, 5, ITEM_SITRUS_BERRY
 # 107 "data/maps/RivalBase/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq Starter_EventScript_Mats_8
@@ -528,11 +528,11 @@ Starter_EventScript_Sten_Text_0:
 
 Starter_EventScript_Sten_Text_1:
 # 20 "data/maps/RivalBase/scripts.pory"
-	.string "Do you want to choose Machop?$"
+	.string "Do you want to choose Larvesta?$"
 
 Starter_EventScript_Sten_Text_2:
 # 25 "data/maps/RivalBase/scripts.pory"
-	.string "Obtained Machop!$"
+	.string "Obtained Larvesta!$"
 
 Starter_EventScript_Sten_Text_3:
 # 39 "data/maps/RivalBase/scripts.pory"
@@ -554,11 +554,11 @@ Starter_EventScript_Jens_Text_0:
 
 Starter_EventScript_Jens_Text_1:
 # 62 "data/maps/RivalBase/scripts.pory"
-	.string "Do you want to choose Kyogre?$"
+	.string "Do you want to choose Dratini?$"
 
 Starter_EventScript_Jens_Text_2:
 # 67 "data/maps/RivalBase/scripts.pory"
-	.string "Obtained Kyogre!$"
+	.string "Obtained Dratini!$"
 
 Starter_EventScript_Jens_Text_3:
 # 86 "data/maps/RivalBase/scripts.pory"
@@ -577,11 +577,11 @@ Starter_EventScript_Mats_Text_0:
 
 Starter_EventScript_Mats_Text_1:
 # 104 "data/maps/RivalBase/scripts.pory"
-	.string "Do you want to choose Charmander?$"
+	.string "Do you want to choose Riolu?$"
 
 Starter_EventScript_Mats_Text_2:
 # 109 "data/maps/RivalBase/scripts.pory"
-	.string "Obtained Charmander!$"
+	.string "Obtained Riolu!$"
 
 Starter_EventScript_Mats_Text_3:
 # 128 "data/maps/RivalBase/scripts.pory"

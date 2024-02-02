@@ -1087,3 +1087,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TorchicCave/scripts.inc"
 
 	.include "data/maps/TreeckoHideout/scripts.inc"
+
+	.include "data/maps/FallarborTown_ShadyTrader/scripts.inc"
