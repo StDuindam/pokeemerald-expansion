@@ -667,41 +667,81 @@ EventScript_Jens_PostBattle::
 # 341 "data/maps/Route118/scripts.pory"
 	msgbox EventScript_Jens_PostBattle_Text_0
 # 342 "data/maps/Route118/scripts.pory"
-	applymovement 22, JensWalkAway
+	waitmessage
 # 343 "data/maps/Route118/scripts.pory"
-	waitmovement 0
+	call GIVE_AERODACTYL
 # 344 "data/maps/Route118/scripts.pory"
-	removeobject 22
+	giveitem ITEM_AERODACTYLITE, 1
 # 345 "data/maps/Route118/scripts.pory"
-	setflag FLAG_JENS_BATTLE_ONE
+	applymovement 22, JensWalkAway
 # 346 "data/maps/Route118/scripts.pory"
-	setvar RIVAL_STATE_JENS, 1
+	waitmovement 0
 # 347 "data/maps/Route118/scripts.pory"
+	removeobject 22
+# 348 "data/maps/Route118/scripts.pory"
+	setflag FLAG_JENS_BATTLE_ONE
+# 349 "data/maps/Route118/scripts.pory"
+	setvar RIVAL_STATE_JENS, 1
+# 350 "data/maps/Route118/scripts.pory"
 	release
 	return
 
 
-# 350 "data/maps/Route118/scripts.pory"
+GIVE_AERODACTYL::
+# 354 "data/maps/Route118/scripts.pory"
+	givemon SPECIES_AERODACTYL, 5, ITEM_NONE
+# 355 "data/maps/Route118/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PARTY
+	goto_if_eq GIVE_AERODACTYL_1
+# 360 "data/maps/Route118/scripts.pory"
+	compare VAR_RESULT, MON_GIVEN_TO_PC
+	goto_if_eq GIVE_AERODACTYL_2
+# 366 "data/maps/Route118/scripts.pory"
+	hidemonpic
+# 367 "data/maps/Route118/scripts.pory"
+	msgbox GIVE_AERODACTYL_Text_1
+	return
+
+GIVE_AERODACTYL_1:
+# 356 "data/maps/Route118/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 357 "data/maps/Route118/scripts.pory"
+	msgbox GIVE_AERODACTYL_Text_0
+# 358 "data/maps/Route118/scripts.pory"
+	call NicknamePartyMon
+	return
+
+GIVE_AERODACTYL_2:
+# 361 "data/maps/Route118/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 362 "data/maps/Route118/scripts.pory"
+	msgbox GIVE_AERODACTYL_Text_0
+# 363 "data/maps/Route118/scripts.pory"
+	call NicknameBoxMon
+	return
+
+
+# 371 "data/maps/Route118/scripts.pory"
 JensWalkAway:
-# 351 "data/maps/Route118/scripts.pory"
+# 372 "data/maps/Route118/scripts.pory"
 	walk_right
-# 352 "data/maps/Route118/scripts.pory"
+# 373 "data/maps/Route118/scripts.pory"
 	walk_down
-# 352 "data/maps/Route118/scripts.pory"
+# 373 "data/maps/Route118/scripts.pory"
 	walk_down
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
-# 353 "data/maps/Route118/scripts.pory"
+# 374 "data/maps/Route118/scripts.pory"
 	walk_left
 	step_end
 
@@ -715,20 +755,29 @@ EventScript_Jens_Encounter_One_Text_1:
 
 EventScript_Jens_PostBattle_Text_0:
 # 341 "data/maps/Route118/scripts.pory"
-	.string "See you around noob.$"
+	.string "Take this 'mon too, it's fun to use. See\n"
+	.string "you around noob.$"
+
+GIVE_AERODACTYL_Text_0:
+# 357 "data/maps/Route118/scripts.pory"
+	.string "Obtained AERODACTYL!$"
+
+GIVE_AERODACTYL_Text_1:
+# 367 "data/maps/Route118/scripts.pory"
+	.string "No More Room.$"
 
 JensBattleIntro::
-# 356 "data/maps/Route118/scripts.pory"
+# 377 "data/maps/Route118/scripts.pory"
 	.string "LETS SEE HOW YOU PERFORM UNDER\n"
 	.string "PRESSURE!$"
 
 JensBattleOutro::
-# 360 "data/maps/Route118/scripts.pory"
+# 381 "data/maps/Route118/scripts.pory"
 	.string "Heh, I guess next time I will bring my\n"
 	.string "better team. Enjoy your mega ring!$"
 
 JensDialogue::
-# 364 "data/maps/Route118/scripts.pory"
+# 385 "data/maps/Route118/scripts.pory"
 	.string "Having a good time? Four badges\n"
 	.string "already... Impressive! You must have\l"
 	.string "noticed that some trainers you have\l"

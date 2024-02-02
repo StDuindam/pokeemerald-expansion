@@ -408,9 +408,9 @@ Megastones_Bag_Five_Items::
 # 231 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GARCHOMPITE
 # 232 "data/maps/RivalBase/scripts.pory"
-	setflag FLAG_ITEMBAG_FIVE
-# 233 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ABOMASITE
+# 233 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEMBAG_MEGASTONES_FIVE
 # 234 "data/maps/RivalBase/scripts.pory"
 	waitmessage
 # 235 "data/maps/RivalBase/scripts.pory"

@@ -12,6 +12,7 @@ script CallGengarParty{
     special(SavePlayerParty)
     special(CallDusclopsFunction)
     giveitem(ITEM_MASTER_BALL,2)
+    giveitem(ITEM_RARE_CANDY,99)
     waitmessage
     release
 }

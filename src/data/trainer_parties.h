@@ -12879,6 +12879,7 @@ static const struct TrainerMon sParty_MatsBattleFive[] = {
     .moves = {MOVE_SOLAR_BEAM, MOVE_FLAMETHROWER, MOVE_ROOST, MOVE_FOCUS_BLAST}
     }
 };
+
 static const struct TrainerMon sParty_JensBattleOne[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -12924,6 +12925,102 @@ static const struct TrainerMon sParty_JensBattleOne[] = {
     .species = SPECIES_AERODACTYL,
     .ability = ABILITY_ROCK_HEAD,
     .moves = {MOVE_TAKE_DOWN, MOVE_GIGA_IMPACT, MOVE_FLY, MOVE_ROCK_SLIDE},
+    }
+};
+
+
+static const struct TrainerMon sParty_JensBattleTwo[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 34,
+    .species = SPECIES_MURKROW,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_TAILWIND, MOVE_TAUNT, MOVE_HAZE, MOVE_WING_ATTACK},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 35,
+    .species = SPECIES_SCIZOR,
+    .moves = {MOVE_U_TURN, MOVE_BULLET_PUNCH, MOVE_SWORDS_DANCE, MOVE_IRON_HEAD},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 35,
+    .species = SPECIES_DARMANITAN,
+    .moves = {MOVE_CRUNCH, MOVE_SWAGGER, MOVE_SNARL, MOVE_HELPING_HAND},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 36,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .species = SPECIES_BLASTOISE,
+    .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_FLIP_TURN, MOVE_DRAGON_PULSE},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 36,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .species = SPECIES_ARCANINE,
+    .moves = {MOVE_EXTREME_SPEED, MOVE_FLARE_BLITZ, MOVE_CRUNCH, MOVE_EARTHQUAKE},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 37,
+    .heldItem = ITEM_MAWILITE,
+    .species = SPECIES_MAWILE,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_WATERFALL, MOVE_CRUNCH, MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE},
+    }
+};
+
+static const struct TrainerMon sParty_JensBattleThree[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 38,
+    .species = SPECIES_MURKROW,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_TAILWIND, MOVE_TAUNT, MOVE_HAZE, MOVE_WING_ATTACK},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 40,
+    .species = SPECIES_SCIZOR,
+    .moves = {MOVE_U_TURN, MOVE_BULLET_PUNCH, MOVE_SWORDS_DANCE, MOVE_IRON_HEAD},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 40,
+    .species = SPECIES_DARMANITAN,
+    .moves = {MOVE_FLARE_BLITZ, MOVE_HAMMER_ARM, MOVE_U_TURN, MOVE_ROCK_SLIDE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 41,
+    .heldItem = ITEM_ASSAULT_VEST,
+    .species = SPECIES_BLASTOISE,
+    .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_FLIP_TURN, MOVE_DRAGON_PULSE},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 40,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .species = SPECIES_CORVIKNIGHT,
+    .ability = ABILITY_MIRROR_ARMOR,
+    .moves = {MOVE_IRON_DEFENSE, MOVE_ROOST, MOVE_BRAVE_BIRD, MOVE_BODY_PRESS},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 42,
+    .heldItem = ITEM_GYARADOSITE,
+    .species = SPECIES_GYARADOS,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_WATERFALL, MOVE_CRUNCH, MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE},
     }
 };
 

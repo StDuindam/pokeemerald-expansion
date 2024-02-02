@@ -229,8 +229,8 @@ script Megastones_Bag_Five_Items{
     finditem(ITEM_SALAMENCITE)
     finditem(ITEM_KANGASKHANITE)
     finditem(ITEM_GARCHOMPITE)
-    setflag(FLAG_ITEMBAG_FIVE)
     finditem(ITEM_ABOMASITE)
+    setflag(FLAG_ITEMBAG_MEGASTONES_FIVE)
     waitmessage
     release
 }

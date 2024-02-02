@@ -1415,6 +1415,7 @@ mart EvolutionTraderItems{
     ITEM_HARD_STONE
     ITEM_DUSK_STONE
     ITEM_METAL_COAT
+    ITEM_LINKING_CORD
 }
 
 text EvolutionTraderIntro{

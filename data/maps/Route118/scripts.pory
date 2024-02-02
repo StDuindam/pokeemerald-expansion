@@ -338,13 +338,34 @@ script EventScript_Jens_Battle{
 script EventScript_Jens_PostBattle{
 	lockall
     giveitem(ITEM_MEGA_RING)
-    msgbox("See you around noob.")
+    msgbox(format("Take this 'mon too, it's fun to use. See you around noob."))
+	waitmessage
+	call(GIVE_AERODACTYL)
+	giveitem(ITEM_AERODACTYLITE, 1)
     applymovement(22,JensWalkAway)
     waitmovement(0)
     removeobject(22)
     setflag(FLAG_JENS_BATTLE_ONE)
     setvar(RIVAL_STATE_JENS,1)
     release
+}
+
+script GIVE_AERODACTYL{
+	givemon(SPECIES_AERODACTYL, 5, ITEM_NONE)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained AERODACTYL!")
+            call(NicknamePartyMon)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Obtained AERODACTYL!")
+            call(NicknameBoxMon)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room.")
+        }
 }
 
 movement JensWalkAway{
