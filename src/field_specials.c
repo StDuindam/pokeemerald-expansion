@@ -4257,12 +4257,12 @@ void PreparePartyForSkyBattle(void)
 //Make sure you first call the special 'SavePlayerParty'
 void CallDusclopsFunction(void)
 {
-    CreateMon(&gPlayerParty[0], SPECIES_ROSERADE, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[1], SPECIES_JOLTEON, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[2], SPECIES_ARAQUANID, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[3], SPECIES_MACHAMP, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[4], SPECIES_CLEFAIRY, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[5], SPECIES_ALAKAZAM, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_ROSERADE, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[1], SPECIES_JOLTEON, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[2], SPECIES_ARAQUANID, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[3], SPECIES_MACHAMP, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[4], SPECIES_CLEFAIRY, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[5], SPECIES_ALAKAZAM, 50, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     
     SetMonMoveSlot(&gPlayerParty[0], MOVE_SEED_BOMB,0);
     SetMonMoveSlot(&gPlayerParty[0], MOVE_LEAF_STORM,1);
