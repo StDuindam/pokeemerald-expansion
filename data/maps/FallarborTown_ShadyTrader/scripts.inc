@@ -57,13 +57,39 @@ ShadyTraderItems:
 	.2byte ITEM_MIRROR_HERB
 # 34 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.2byte ITEM_AIR_BALLOON
+# 35 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_LIGHT_CLAY
+# 36 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_ZOOM_LENS
+# 37 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_RED_CARD
+# 38 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_SAFETY_GOGGLES
+# 39 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_POWER_HERB
+# 40 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_THROAT_SPRAY
+# 41 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_TERRAIN_EXTENDER
+# 42 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_EXPERT_BELT
+# 43 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_WIDE_LENS
+# 44 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_AMULET_COIN
+# 45 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_KINGS_ROCK
+# 46 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_MENTAL_HERB
+# 47 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_WHITE_HERB
 	.2byte ITEM_NONE
 
 ShadyTraderIntro::
-# 37 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+# 50 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.string "Listen, don't tell anyone about my\n"
 	.string "little business, ok?$"
 
 ShadyTraderOutro::
-# 41 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+# 54 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.string "See you around, remember to keep hush.$"
