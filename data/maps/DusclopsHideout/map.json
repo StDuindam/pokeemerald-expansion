@@ -2,7 +2,7 @@
   "id": "MAP_DUSCLOPS_HIDEOUT",
   "name": "DusclopsHideout",
   "layout": "LAYOUT_DUSCLOPS_HIDEOUT",
-  "music": "MUS_AWAKEN_LEGEND",
+  "music": "MUS_MT_PYRE",
   "region_map_section": "MAPSEC_ROUTE_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
+      "graphics_id": "OBJ_EVENT_GFX_GENGAR",
       "x": 17,
       "y": 2,
       "elevation": 0,
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_3",
-      "x": 17,
-      "y": 9,
+      "x": 31,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 31,
-      "y": 35,
+      "x": 17,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -134,7 +134,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
       "x": 16,
-      "y": 28,
+      "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -159,8 +159,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
-      "x": 15,
-      "y": 28,
+      "x": 19,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -172,8 +172,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
-      "x": 14,
-      "y": 28,
+      "x": 11,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
-      "x": 13,
+      "x": 12,
       "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -198,7 +198,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
-      "x": 17,
+      "x": 7,
       "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -211,7 +211,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 36,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_DUSCLOPS_HIDEOUT",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

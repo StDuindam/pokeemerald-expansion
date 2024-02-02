@@ -878,9 +878,12 @@
 #define TRAINER_JENS_FOURTH_BATTLE           875
 #define TRAINER_JENS_FIFTH_BATTLE           876
 #define TRAINER_STEN_SECOND_BATTLE           877
-#define TRAINER_STEN_THIRD_BATTLE           878
-#define TRAINER_STEN_FOURTH_BATTLE           879
-
+#define TRAINER_STEN_THIRD_BATTLE          878
+#define TRAINER_STEN_FOURTH_BATTLE         879
+#define TRAINER_GENGAR_FIRSTPOSSESED       880
+#define TRAINER_GENGAR_SECONDPOSSESED     881
+#define TRAINER_GENGAR_THIRDPOSSESED      882
+#define TRAINER_GENGAR_FINAL_BATTLE         883
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

@@ -184,6 +184,20 @@ EventScript_SetVar_MatsRival::
 	return
 
 
+EventScript_SetVar_Dusclops::
+# 103 "data/maps/DebugArea/scripts.pory"
+	lock
+# 104 "data/maps/DebugArea/scripts.pory"
+	setvar DUSCLOPS_STATE, 2
+# 105 "data/maps/DebugArea/scripts.pory"
+	msgbox EventScript_SetVar_Dusclops_Text_0
+# 106 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 107 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
 CallGengarParty_Text_0:
 # 11 "data/maps/DebugArea/scripts.pory"
 	.string "Party reset$"
@@ -227,3 +241,7 @@ EventScript_SetFlag_Gym8_Text_0:
 EventScript_SetVar_MatsRival_Text_0:
 # 97 "data/maps/DebugArea/scripts.pory"
 	.string "Updated Mats_Rival_State by one$"
+
+EventScript_SetVar_Dusclops_Text_0:
+# 105 "data/maps/DebugArea/scripts.pory"
+	.string "Updated DUSCLOPS_STATE by one$"

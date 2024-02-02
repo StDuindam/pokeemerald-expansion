@@ -98,3 +98,11 @@ script EventScript_SetVar_MatsRival{
     waitmessage
     release
 }
+
+script EventScript_SetVar_Dusclops{
+    lock
+    setvar(DUSCLOPS_STATE, 2)
+    msgbox("Updated DUSCLOPS_STATE by one")
+    waitmessage
+    release
+}

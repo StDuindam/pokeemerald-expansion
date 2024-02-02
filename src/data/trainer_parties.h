@@ -12926,3 +12926,119 @@ static const struct TrainerMon sParty_JensBattleOne[] = {
     .moves = {MOVE_TAKE_DOWN, MOVE_GIGA_IMPACT, MOVE_FLY, MOVE_ROCK_SLIDE},
     }
 };
+
+static const struct TrainerMon sParty_GengarBattleOne[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 30,
+    .species = SPECIES_GASTLY,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 33,
+    .species = SPECIES_MISDREAVUS,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 33,
+    .species = SPECIES_HAUNTER,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 34,
+    .species = SPECIES_JYNX,
+    }
+};
+
+static const struct TrainerMon sParty_GengarBattleTwo[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_GOURGEIST,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_MISMAGIUS,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_CURSOLA,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_CHANDELURE,
+    }
+};
+
+static const struct TrainerMon sParty_GengarBattleThree[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_TREVENANT,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_HARVEST,
+    .moves = {MOVE_FORESTS_CURSE, MOVE_DESTINY_BOND, MOVE_LEECH_SEED, MOVE_WILL_O_WISP}
+
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_DUSCLOPS,
+    .heldItem = ITEM_EVIOLITE,
+    .moves = {MOVE_NIGHT_SHADE, MOVE_WILL_O_WISP, MOVE_SUBSTITUTE, MOVE_PAIN_SPLIT},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_BANETTE,
+    .heldItem = ITEM_BANETTITE,
+    .moves = {MOVE_SUCKER_PUNCH, MOVE_SHADOW_SNEAK, MOVE_KNOCK_OFF, MOVE_SHADOW_BALL},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_ZOROARK,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_FLAMETHROWER, MOVE_U_TURN},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_SABLEYE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_QUASH, MOVE_BRICK_BREAK, MOVE_TAUNT, MOVE_RECOVER}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_ANNIHILAPE,
+    .heldItem = ITEM_CLEAR_AMULET,
+    .moves = {MOVE_RAGE_FIST, MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BRICK_BREAK}
+    }
+};
+
+static const struct TrainerMon sParty_GengarBattleFinal[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_GASTLY,
+    .moves = {MOVE_DESTINY_BOND, MOVE_WILL_O_WISP, MOVE_NONE, MOVE_NONE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 50,
+    .species = SPECIES_HAUNTER,
+    .heldItem = ITEM_CHOICE_SCARF,
+    .moves = {MOVE_SHADOW_CLAW, MOVE_CONFUSE_RAY, MOVE_DARK_PULSE, MOVE_THUNDER_WAVE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_GENGARITE,
+    .moves = {MOVE_SHADOW_BALL, MOVE_SUBSTITUTE, MOVE_HYPNOSIS, MOVE_DAZZLING_GLEAM}
+    }
+};
