@@ -31,6 +31,7 @@ script PickUpPokemonBag{
 script FinishDusclopsHideout{
     special(LoadPlayerParty)
     msgbox(format("You quickly grab your own Pokeballs again."))
+    waitmessage
 }
 
 script TalkToMats_DusclopsHideout{
@@ -191,10 +192,11 @@ script GENGAR_BATTLE_FINAL_FINISHED{
     special(LoadPlayerParty)
     setvar(DUSCLOPS_STATE, 6)
     msgbox(format("Okay I will also return everyone..."))
+    call(FinishDusclopsHideout)
     waitmessage
     fadescreen(FADE_TO_BLACK)
     warpteleport(MAP_FORTREE_CITY, 9) //FIGURE OUT HOW TO WARP
-    setvar(DUSCLOPS_STATE, 3)
+    setvar(DUSCLOPS_STATE, 6)
     setflag(FLAG_DUSCLOPS_COMPLETED)
     fadescreen(FADE_FROM_BLACK)
     release
