@@ -315,176 +315,210 @@ FortreeCity_Text_GymSign:
 
 GENGAR_SETUP_FASE_3::
 # 162 "data/maps/FortreeCity/scripts.pory"
+	setflag RETURN_DUSCLOPS
+# 163 "data/maps/FortreeCity/scripts.pory"
 	compare DUSCLOPS_STATE, 2
-	goto_if_eq GENGAR_SETUP_FASE_3_1
-# 166 "data/maps/FortreeCity/scripts.pory"
+	goto_if_eq GENGAR_SETUP_FASE_3_2
+# 167 "data/maps/FortreeCity/scripts.pory"
 	setflag FLAG_DUSCLOPS_FORTREE
+GENGAR_SETUP_FASE_3_1:
+# 170 "data/maps/FortreeCity/scripts.pory"
+	compare DUSCLOPS_STATE, 4
+	goto_if_eq GENGAR_SETUP_FASE_3_6
+GENGAR_SETUP_FASE_3_5:
+# 175 "data/maps/FortreeCity/scripts.pory"
+	compare DUSCLOPS_STATE, 5
+	goto_if_eq GENGAR_SETUP_FASE_3_8
 	return
 
-GENGAR_SETUP_FASE_3_1:
-# 164 "data/maps/FortreeCity/scripts.pory"
+GENGAR_SETUP_FASE_3_2:
+# 165 "data/maps/FortreeCity/scripts.pory"
 	clearflag FLAG_DUSCLOPS_FORTREE
+	goto GENGAR_SETUP_FASE_3_1
+
+GENGAR_SETUP_FASE_3_6:
+# 172 "data/maps/FortreeCity/scripts.pory"
+	clearflag RETURN_DUSCLOPS
+	goto GENGAR_SETUP_FASE_3_5
+
+GENGAR_SETUP_FASE_3_8:
+# 177 "data/maps/FortreeCity/scripts.pory"
+	clearflag RETURN_DUSCLOPS
 	return
 
 
 GENGAR_FORTREE_START_A::
-# 171 "data/maps/FortreeCity/scripts.pory"
+# 182 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 172 "data/maps/FortreeCity/scripts.pory"
+# 183 "data/maps/FortreeCity/scripts.pory"
 	applymovement 8, GENGAR_FORTREE_TRIGGER_A
-# 173 "data/maps/FortreeCity/scripts.pory"
+# 184 "data/maps/FortreeCity/scripts.pory"
 	waitmovement 0
-# 174 "data/maps/FortreeCity/scripts.pory"
+# 185 "data/maps/FortreeCity/scripts.pory"
 	applymovement 9, OLD_MAN_FORTREE_TRIGGER_A
-# 175 "data/maps/FortreeCity/scripts.pory"
+# 186 "data/maps/FortreeCity/scripts.pory"
 	call GENGAR_FORTREE_PREBATTLE_SCENE
-# 176 "data/maps/FortreeCity/scripts.pory"
+# 187 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
 GENGAR_FORTREE_START_B::
-# 180 "data/maps/FortreeCity/scripts.pory"
+# 191 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 181 "data/maps/FortreeCity/scripts.pory"
+# 192 "data/maps/FortreeCity/scripts.pory"
 	applymovement 8, GENGAR_FORTREE_TRIGGER_A
-# 182 "data/maps/FortreeCity/scripts.pory"
+# 193 "data/maps/FortreeCity/scripts.pory"
 	waitmovement 0
-# 183 "data/maps/FortreeCity/scripts.pory"
+# 194 "data/maps/FortreeCity/scripts.pory"
 	applymovement 9, OLD_MAN_FORTREE_TRIGGER_B
-# 184 "data/maps/FortreeCity/scripts.pory"
+# 195 "data/maps/FortreeCity/scripts.pory"
 	call GENGAR_FORTREE_PREBATTLE_SCENE
-# 185 "data/maps/FortreeCity/scripts.pory"
+# 196 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
 GENGAR_FORTREE_START_C::
-# 189 "data/maps/FortreeCity/scripts.pory"
+# 200 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 190 "data/maps/FortreeCity/scripts.pory"
+# 201 "data/maps/FortreeCity/scripts.pory"
 	applymovement 8, GENGAR_FORTREE_TRIGGER_A
-# 191 "data/maps/FortreeCity/scripts.pory"
+# 202 "data/maps/FortreeCity/scripts.pory"
 	waitmovement 0
-# 192 "data/maps/FortreeCity/scripts.pory"
+# 203 "data/maps/FortreeCity/scripts.pory"
 	applymovement 9, OLD_MAN_FORTREE_TRIGGER_C
-# 193 "data/maps/FortreeCity/scripts.pory"
+# 204 "data/maps/FortreeCity/scripts.pory"
 	call GENGAR_FORTREE_PREBATTLE_SCENE
-# 194 "data/maps/FortreeCity/scripts.pory"
+# 205 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
 GENGAR_FORTREE_PREBATTLE_SCENE::
-# 198 "data/maps/FortreeCity/scripts.pory"
+# 209 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 199 "data/maps/FortreeCity/scripts.pory"
+# 210 "data/maps/FortreeCity/scripts.pory"
 	msgbox GENGAR_FORTREE_INTRO
-# 200 "data/maps/FortreeCity/scripts.pory"
+# 211 "data/maps/FortreeCity/scripts.pory"
 	waitmessage
-# 201 "data/maps/FortreeCity/scripts.pory"
+# 212 "data/maps/FortreeCity/scripts.pory"
 	call GENGAR_FORTREE_BATTLE
-# 202 "data/maps/FortreeCity/scripts.pory"
+# 213 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
 GENGAR_FORTREE_BATTLE::
-# 206 "data/maps/FortreeCity/scripts.pory"
+# 217 "data/maps/FortreeCity/scripts.pory"
 	trainerbattle_single TRAINER_GENGAR_FIRSTPOSSESED, GENGAR_FORTREE_BATTLE_INTRO, GENGAR_FORTREE_BATTLE_OUTRO, GENGAR_FORTREE_POST_BATTLE
 	return
 
 
 GENGAR_FORTREE_POST_BATTLE::
-# 210 "data/maps/FortreeCity/scripts.pory"
+# 221 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 211 "data/maps/FortreeCity/scripts.pory"
+# 222 "data/maps/FortreeCity/scripts.pory"
 	msgbox GENGAR_FORTREE_OUTRO
-# 212 "data/maps/FortreeCity/scripts.pory"
+# 223 "data/maps/FortreeCity/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 213 "data/maps/FortreeCity/scripts.pory"
-	warpteleport MAP_DUSCLOPS_HIDEOUT, 0
-# 214 "data/maps/FortreeCity/scripts.pory"
+# 224 "data/maps/FortreeCity/scripts.pory"
 	setvar DUSCLOPS_STATE, 3
-# 215 "data/maps/FortreeCity/scripts.pory"
+# 225 "data/maps/FortreeCity/scripts.pory"
+	warpteleport MAP_DUSCLOPS_HIDEOUT, 0
+# 226 "data/maps/FortreeCity/scripts.pory"
+	setflag FLAG_DUSCLOPS_FORTREE
+# 227 "data/maps/FortreeCity/scripts.pory"
 	fadescreen FADE_FROM_BLACK
-# 216 "data/maps/FortreeCity/scripts.pory"
-	msgbox GENGAR_FORTREE_POST_BATTLE_Text_0
-# 217 "data/maps/FortreeCity/scripts.pory"
+# 228 "data/maps/FortreeCity/scripts.pory"
+	release
+	return
+
+
+GENGAR_RETURN_AFTER_WIPE::
+# 232 "data/maps/FortreeCity/scripts.pory"
+	lock
+# 233 "data/maps/FortreeCity/scripts.pory"
+	msgbox GENGAR_RETURN_AFTER_WIPE_Text_0
+# 234 "data/maps/FortreeCity/scripts.pory"
+	waitmessage
+# 235 "data/maps/FortreeCity/scripts.pory"
+	warpteleport MAP_DUSCLOPS_HIDEOUT, 0
+# 236 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
 Fortree_SavedMan::
-# 225 "data/maps/FortreeCity/scripts.pory"
+# 244 "data/maps/FortreeCity/scripts.pory"
 	lock
-# 226 "data/maps/FortreeCity/scripts.pory"
+# 245 "data/maps/FortreeCity/scripts.pory"
 	faceplayer
-# 227 "data/maps/FortreeCity/scripts.pory"
+# 246 "data/maps/FortreeCity/scripts.pory"
 	msgbox Fortree_SavedMan_Text_0
-# 228 "data/maps/FortreeCity/scripts.pory"
+# 247 "data/maps/FortreeCity/scripts.pory"
 	waitmessage
-# 229 "data/maps/FortreeCity/scripts.pory"
+# 248 "data/maps/FortreeCity/scripts.pory"
 	release
 	return
 
 
-# 244 "data/maps/FortreeCity/scripts.pory"
+# 263 "data/maps/FortreeCity/scripts.pory"
 GENGAR_FORTREE_TRIGGER_A:
-# 245 "data/maps/FortreeCity/scripts.pory"
+# 264 "data/maps/FortreeCity/scripts.pory"
 	walk_down
-# 246 "data/maps/FortreeCity/scripts.pory"
+# 265 "data/maps/FortreeCity/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 249 "data/maps/FortreeCity/scripts.pory"
+# 268 "data/maps/FortreeCity/scripts.pory"
 OLD_MAN_FORTREE_TRIGGER_A:
-# 250 "data/maps/FortreeCity/scripts.pory"
+# 269 "data/maps/FortreeCity/scripts.pory"
 	walk_left
-# 251 "data/maps/FortreeCity/scripts.pory"
+# 270 "data/maps/FortreeCity/scripts.pory"
 	walk_up
-# 252 "data/maps/FortreeCity/scripts.pory"
+# 271 "data/maps/FortreeCity/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 254 "data/maps/FortreeCity/scripts.pory"
+# 273 "data/maps/FortreeCity/scripts.pory"
 OLD_MAN_FORTREE_TRIGGER_B:
-# 255 "data/maps/FortreeCity/scripts.pory"
+# 274 "data/maps/FortreeCity/scripts.pory"
 	walk_left
 	step_end
 
-# 257 "data/maps/FortreeCity/scripts.pory"
+# 276 "data/maps/FortreeCity/scripts.pory"
 OLD_MAN_FORTREE_TRIGGER_C:
-# 258 "data/maps/FortreeCity/scripts.pory"
+# 277 "data/maps/FortreeCity/scripts.pory"
 	walk_down
-# 259 "data/maps/FortreeCity/scripts.pory"
+# 278 "data/maps/FortreeCity/scripts.pory"
 	walk_in_place_left
 	step_end
 
-GENGAR_FORTREE_POST_BATTLE_Text_0:
-# 216 "data/maps/FortreeCity/scripts.pory"
-	.string "Wow... where am I?$"
+GENGAR_RETURN_AFTER_WIPE_Text_0:
+# 233 "data/maps/FortreeCity/scripts.pory"
+	.string "KEKEKE... Let's try that again$"
 
 Fortree_SavedMan_Text_0:
-# 227 "data/maps/FortreeCity/scripts.pory"
+# 246 "data/maps/FortreeCity/scripts.pory"
 	.string "Gee... thanks for saving me from that nightmare.$"
 
 GENGAR_FORTREE_INTRO::
-# 220 "data/maps/FortreeCity/scripts.pory"
+# 239 "data/maps/FortreeCity/scripts.pory"
 	.string "KEKEKE... I have been watching you too,\n"
 	.string "{PLAYER}. You would make a fine\l"
 	.string "addition to my collection. Much better\l"
 	.string "than this old man, right? Let's find out!$"
 
 GENGAR_FORTREE_OUTRO::
-# 232 "data/maps/FortreeCity/scripts.pory"
+# 251 "data/maps/FortreeCity/scripts.pory"
 	.string "KEKEKE... JUST AS I EXPECTED, YOU WILL\n"
 	.string "DO!$"
 
 GENGAR_FORTREE_BATTLE_INTRO::
-# 236 "data/maps/FortreeCity/scripts.pory"
+# 255 "data/maps/FortreeCity/scripts.pory"
 	.string "MUST... OBEY... GENGAR...$"
 
 GENGAR_FORTREE_BATTLE_OUTRO::
-# 240 "data/maps/FortreeCity/scripts.pory"
+# 259 "data/maps/FortreeCity/scripts.pory"
 	.string "I... WHERE... AM... I?$"

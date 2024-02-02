@@ -314,208 +314,206 @@ MegaStones_Bag_Two_Items::
 # 181 "data/maps/RivalBase/scripts.pory"
 	msgbox MegaStones_Bag_Two_Items_Text_0
 # 182 "data/maps/RivalBase/scripts.pory"
-	finditem ITEM_GENGARITE
-# 183 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_BANETTITE
-# 184 "data/maps/RivalBase/scripts.pory"
+# 183 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SABLENITE
-# 185 "data/maps/RivalBase/scripts.pory"
+# 184 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ABSOLITE
-# 186 "data/maps/RivalBase/scripts.pory"
+# 185 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GARDEVOIRITE
-# 187 "data/maps/RivalBase/scripts.pory"
+# 186 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GALLADITE
-# 188 "data/maps/RivalBase/scripts.pory"
+# 187 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ALAKAZITE
-# 189 "data/maps/RivalBase/scripts.pory"
+# 188 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEMBAG_MEGASTONES_TWO
-# 190 "data/maps/RivalBase/scripts.pory"
+# 189 "data/maps/RivalBase/scripts.pory"
 	waitmessage
-# 191 "data/maps/RivalBase/scripts.pory"
+# 190 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 MegaStones_Bag_Three_items::
-# 195 "data/maps/RivalBase/scripts.pory"
+# 194 "data/maps/RivalBase/scripts.pory"
 	lock
-# 196 "data/maps/RivalBase/scripts.pory"
+# 195 "data/maps/RivalBase/scripts.pory"
 	msgbox MegaStones_Bag_Three_items_Text_0
-# 197 "data/maps/RivalBase/scripts.pory"
+# 196 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_CAMERUPTITE
-# 198 "data/maps/RivalBase/scripts.pory"
+# 197 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_HOUNDOOMINITE
-# 199 "data/maps/RivalBase/scripts.pory"
+# 198 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEMBAG_MEGASTONES_THREE
-# 200 "data/maps/RivalBase/scripts.pory"
+# 199 "data/maps/RivalBase/scripts.pory"
 	waitmessage
-# 201 "data/maps/RivalBase/scripts.pory"
+# 200 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Megastones_Bag_Four_Items::
-# 205 "data/maps/RivalBase/scripts.pory"
+# 204 "data/maps/RivalBase/scripts.pory"
 	lock
-# 206 "data/maps/RivalBase/scripts.pory"
+# 205 "data/maps/RivalBase/scripts.pory"
 	msgbox Megastones_Bag_Four_Items_Text_0
-# 207 "data/maps/RivalBase/scripts.pory"
+# 206 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_AMPHAROSITE
-# 208 "data/maps/RivalBase/scripts.pory"
+# 207 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MAWILITE
-# 209 "data/maps/RivalBase/scripts.pory"
+# 208 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MEDICHAMITE
-# 210 "data/maps/RivalBase/scripts.pory"
+# 209 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_PIDGEOTITE
-# 211 "data/maps/RivalBase/scripts.pory"
+# 210 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_STEELIXITE
-# 212 "data/maps/RivalBase/scripts.pory"
+# 211 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SLOWBRONITE
-# 213 "data/maps/RivalBase/scripts.pory"
+# 212 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_AGGRONITE
-# 214 "data/maps/RivalBase/scripts.pory"
+# 213 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_LOPUNNITE
-# 215 "data/maps/RivalBase/scripts.pory"
+# 214 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MANECTITE
-# 216 "data/maps/RivalBase/scripts.pory"
+# 215 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SHARPEDONITE
-# 217 "data/maps/RivalBase/scripts.pory"
+# 216 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEMBAG_MEGASTONES_FOUR
-# 218 "data/maps/RivalBase/scripts.pory"
+# 217 "data/maps/RivalBase/scripts.pory"
 	waitmessage
-# 219 "data/maps/RivalBase/scripts.pory"
+# 218 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Megastones_Bag_Five_Items::
-# 223 "data/maps/RivalBase/scripts.pory"
+# 222 "data/maps/RivalBase/scripts.pory"
 	lock
-# 224 "data/maps/RivalBase/scripts.pory"
+# 223 "data/maps/RivalBase/scripts.pory"
 	msgbox Megastones_Bag_Five_Items_Text_0
-# 225 "data/maps/RivalBase/scripts.pory"
+# 224 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GLALITITE
-# 226 "data/maps/RivalBase/scripts.pory"
+# 225 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_LUCARIONITE
-# 227 "data/maps/RivalBase/scripts.pory"
+# 226 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_METAGROSSITE
-# 228 "data/maps/RivalBase/scripts.pory"
+# 227 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_TYRANITARITE
-# 229 "data/maps/RivalBase/scripts.pory"
+# 228 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GYARADOSITE
-# 230 "data/maps/RivalBase/scripts.pory"
+# 229 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SALAMENCITE
-# 231 "data/maps/RivalBase/scripts.pory"
+# 230 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_KANGASKHANITE
-# 232 "data/maps/RivalBase/scripts.pory"
+# 231 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_GARCHOMPITE
-# 233 "data/maps/RivalBase/scripts.pory"
+# 232 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEMBAG_FIVE
-# 234 "data/maps/RivalBase/scripts.pory"
+# 233 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ABOMASITE
-# 235 "data/maps/RivalBase/scripts.pory"
+# 234 "data/maps/RivalBase/scripts.pory"
 	waitmessage
-# 236 "data/maps/RivalBase/scripts.pory"
+# 235 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_Applin_Items::
-# 240 "data/maps/RivalBase/scripts.pory"
+# 239 "data/maps/RivalBase/scripts.pory"
 	lock
-# 241 "data/maps/RivalBase/scripts.pory"
+# 240 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_TART_APPLE
-# 242 "data/maps/RivalBase/scripts.pory"
+# 241 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SWEET_APPLE
-# 243 "data/maps/RivalBase/scripts.pory"
+# 242 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_SYRUPY_APPLE
-# 244 "data/maps/RivalBase/scripts.pory"
+# 243 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_APPLIN_SET
-# 245 "data/maps/RivalBase/scripts.pory"
+# 244 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_Ability_Capsule::
-# 249 "data/maps/RivalBase/scripts.pory"
+# 248 "data/maps/RivalBase/scripts.pory"
 	lock
-# 250 "data/maps/RivalBase/scripts.pory"
+# 249 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ABILITY_CAPSULE
-# 251 "data/maps/RivalBase/scripts.pory"
+# 250 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_ABILITY_CAPSULE
-# 252 "data/maps/RivalBase/scripts.pory"
+# 251 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_CharcadetEvoStuff::
-# 256 "data/maps/RivalBase/scripts.pory"
+# 255 "data/maps/RivalBase/scripts.pory"
 	lock
-# 257 "data/maps/RivalBase/scripts.pory"
+# 256 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_AUSPICIOUS_ARMOR
-# 258 "data/maps/RivalBase/scripts.pory"
+# 257 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MALICIOUS_ARMOR
-# 259 "data/maps/RivalBase/scripts.pory"
+# 258 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_ARMAROUGE_SET
-# 260 "data/maps/RivalBase/scripts.pory"
+# 259 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_SinisteaSet::
-# 264 "data/maps/RivalBase/scripts.pory"
+# 263 "data/maps/RivalBase/scripts.pory"
 	lock
-# 265 "data/maps/RivalBase/scripts.pory"
+# 264 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_CRACKED_POT
-# 266 "data/maps/RivalBase/scripts.pory"
+# 265 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_CHIPPED_POT
-# 267 "data/maps/RivalBase/scripts.pory"
+# 266 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_SINISTEA_SET
-# 268 "data/maps/RivalBase/scripts.pory"
+# 267 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_TeacupSet::
-# 272 "data/maps/RivalBase/scripts.pory"
+# 271 "data/maps/RivalBase/scripts.pory"
 	lock
-# 273 "data/maps/RivalBase/scripts.pory"
+# 272 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_UNREMARKABLE_TEACUP
-# 274 "data/maps/RivalBase/scripts.pory"
+# 273 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_MASTERPIECE_TEACUP
-# 275 "data/maps/RivalBase/scripts.pory"
+# 274 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_TEACUP_CRACKEDPOT_CHIPPEDPOT_SET
-# 276 "data/maps/RivalBase/scripts.pory"
+# 275 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_BlackSludge::
-# 280 "data/maps/RivalBase/scripts.pory"
+# 279 "data/maps/RivalBase/scripts.pory"
 	lock
-# 281 "data/maps/RivalBase/scripts.pory"
+# 280 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_BLACK_SLUDGE
-# 282 "data/maps/RivalBase/scripts.pory"
+# 281 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_BLACK_SLUDGE
-# 283 "data/maps/RivalBase/scripts.pory"
+# 282 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
 
 Find_Seeds::
-# 287 "data/maps/RivalBase/scripts.pory"
+# 286 "data/maps/RivalBase/scripts.pory"
 	lock
-# 288 "data/maps/RivalBase/scripts.pory"
+# 287 "data/maps/RivalBase/scripts.pory"
 	msgbox Find_Seeds_Text_0
-# 289 "data/maps/RivalBase/scripts.pory"
+# 288 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_ELECTRIC_SEED
+# 289 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_PSYCHIC_SEED
 # 290 "data/maps/RivalBase/scripts.pory"
 	finditem ITEM_PSYCHIC_SEED
 # 291 "data/maps/RivalBase/scripts.pory"
-	finditem ITEM_PSYCHIC_SEED
-# 292 "data/maps/RivalBase/scripts.pory"
 	setflag FLAG_ITEM_SEEDS_ELECTRICPSYCHICGRASSY
-# 293 "data/maps/RivalBase/scripts.pory"
+# 292 "data/maps/RivalBase/scripts.pory"
 	release
 	return
 
@@ -606,21 +604,21 @@ MegaStones_Bag_Two_Items_Text_0:
 	.string "Wow, some spooky mega stones!$"
 
 MegaStones_Bag_Three_items_Text_0:
-# 196 "data/maps/RivalBase/scripts.pory"
+# 195 "data/maps/RivalBase/scripts.pory"
 	.string "This bag is on fire!$"
 
 Megastones_Bag_Four_Items_Text_0:
-# 206 "data/maps/RivalBase/scripts.pory"
+# 205 "data/maps/RivalBase/scripts.pory"
 	.string "A collection of rare stones!$"
 
 Megastones_Bag_Five_Items_Text_0:
-# 224 "data/maps/RivalBase/scripts.pory"
+# 223 "data/maps/RivalBase/scripts.pory"
 	.string "Megastone jackpot!$"
 
 Find_Seeds_Text_0:
-# 288 "data/maps/RivalBase/scripts.pory"
+# 287 "data/maps/RivalBase/scripts.pory"
 	.string "Neat, some seeds!$"
 
 NewProfessor_NotChosen::
-# 296 "data/maps/RivalBase/scripts.pory"
+# 295 "data/maps/RivalBase/scripts.pory"
 	.string "You did not choose the Pokemon$"

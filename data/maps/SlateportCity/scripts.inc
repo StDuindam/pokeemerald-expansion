@@ -2822,13 +2822,15 @@ EvolutionTraderItems:
 	.2byte ITEM_HARD_STONE
 # 1416 "data/maps/SlateportCity/scripts.pory"
 	.2byte ITEM_DUSK_STONE
+# 1417 "data/maps/SlateportCity/scripts.pory"
+	.2byte ITEM_METAL_COAT
 	.2byte ITEM_NONE
 
 EvolutionTraderIntro::
-# 1419 "data/maps/SlateportCity/scripts.pory"
+# 1420 "data/maps/SlateportCity/scripts.pory"
 	.string "Evolution... stones... remarkable stones,\n"
 	.string "want any?$"
 
 EvolutionTraderOutro::
-# 1423 "data/maps/SlateportCity/scripts.pory"
+# 1424 "data/maps/SlateportCity/scripts.pory"
 	.string "Be seeing you.$"

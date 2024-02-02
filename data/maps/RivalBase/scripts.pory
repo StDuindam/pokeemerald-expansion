@@ -179,7 +179,6 @@ script MegaStones_Bag_One_Items{
 script MegaStones_Bag_Two_Items{
     lock
     msgbox(format("Wow, some spooky mega stones!"))
-    finditem(ITEM_GENGARITE)
     finditem(ITEM_BANETTITE)
     finditem(ITEM_SABLENITE)
     finditem(ITEM_ABSOLITE)

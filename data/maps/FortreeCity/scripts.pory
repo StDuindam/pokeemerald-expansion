@@ -159,11 +159,22 @@ FortreeCity_Text_GymSign:
 
 
 script GENGAR_SETUP_FASE_3{
+    setflag(RETURN_DUSCLOPS)
     if(var(DUSCLOPS_STATE) == 2)
     {
         clearflag(FLAG_DUSCLOPS_FORTREE)
     }else{
         setflag(FLAG_DUSCLOPS_FORTREE)
+    }
+
+    if(var(DUSCLOPS_STATE) == 4)
+    {
+        clearflag(RETURN_DUSCLOPS)
+    }
+
+    if(var(DUSCLOPS_STATE) == 5)
+    {
+        clearflag(RETURN_DUSCLOPS)
     }
 }
 
@@ -210,10 +221,18 @@ script GENGAR_FORTREE_POST_BATTLE{
     lock
     msgbox(GENGAR_FORTREE_OUTRO)
     fadescreen(FADE_TO_BLACK)
-    warpteleport(MAP_DUSCLOPS_HIDEOUT,0) //FIGURE OUT HOW TO WARP
     setvar(DUSCLOPS_STATE, 3)
+    warpteleport(MAP_DUSCLOPS_HIDEOUT,0) //FIGURE OUT HOW TO WARP
+    setflag(FLAG_DUSCLOPS_FORTREE)
     fadescreen(FADE_FROM_BLACK)
-    msgbox("Wow... where am I?")
+    release
+}
+
+script GENGAR_RETURN_AFTER_WIPE{
+    lock
+    msgbox("KEKEKE... Let's try that again")
+    waitmessage
+    warpteleport(MAP_DUSCLOPS_HIDEOUT,0) //FIGURE OUT HOW TO WARP
     release
 }
 

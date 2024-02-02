@@ -1,0 +1,205 @@
+mapscripts DusclopsHideout_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: SetupDusclopsHideout
+}
+
+script SetupDusclopsHideout{
+    if(var(DUSCLOPS_STATE) > 3){
+        
+    }else{
+    special(SavePlayerParty)
+    special(DusclopsHideOutClearParty)
+    }
+}
+
+script HaveAPartyFirst_DusclopsHideout{
+    lock
+    msgbox(format("I wouldn't go any further without any Pokemon."))
+    applymovement(OBJ_EVENT_ID_PLAYER, PushPlayerToRight_DusclopsHideout)
+    waitmovement(0)
+    release
+}
+
+script PickUpPokemonBag{
+    lock
+    msgbox(format("Wow.. a couple Pokeballs, Gengar must have lost these!"))
+    special(CallDusclopsFunction)
+    msgbox(format("Check out your party."))
+    setvar(DUSCLOPS_STATE,4)
+    release
+}
+
+script FinishDusclopsHideout{
+    special(LoadPlayerParty)
+    msgbox(format("You quickly grab your own Pokeballs again."))
+}
+
+script TalkToMats_DusclopsHideout{
+    lock
+    faceplayer
+    msgbox(MatsText_DusclopsHideout)
+    waitmessage
+    release
+}
+
+script TalkToJens_DusclopsHideout{
+    lock
+    faceplayer
+    msgbox(JensText_DusclopsHideout)
+    waitmessage
+    release
+}
+
+script TalkToNurseJoy_DusclopsHideout{
+    lock
+    faceplayer
+    msgbox(NurseJoy_DusclopsHideout)
+    waitmessage
+    special(HealPlayerParty)
+    release
+
+}
+
+script TalkBoy_DusclopsHideout{
+    lock
+    faceplayer
+    msgbox(BoyText_DusclopsHideout)
+    waitmessage
+    release
+}
+
+text BoyText_DusclopsHideout{
+    format("I have no idea where I am... or where my Pokemon are! I just had them on me! Do you have yours?")
+}
+
+text MatsText_DusclopsHideout{
+    format("{PLAYER}! No wild Pokemon either, this is very strange. You got to sort this out and beat Gengar!")
+}
+
+text JensText_DusclopsHideout{
+    format("Man... without pokemon I'm not worth anything, have you got any? Maybe there's something around here somewhere.")
+}
+
+text NurseJoy_DusclopsHideout{
+    format("I'm no good to help you in your battles, but I can heal your pokemon. Here, I'll sort you out.")
+}
+
+movement PushPlayerToRight_DusclopsHideout {
+    walk_right * 2
+}
+
+script GENGAR_BATTLE_TWO_DUSCLOPSHIDEOUT{
+    trainerbattle_single(TRAINER_GENGAR_SECONDPOSSESED, GENGAR_BATTLE_TWO_INTRO, GENGAR_BATTLE_TWO_OUTRO, GENGAR_BATTLE_TWO_POSTBATTLE)
+}
+
+text GENGAR_BATTLE_TWO_INTRO{
+    format("YOU.. SHOULD.. NOT.. HAVE.. POKEMON!")
+}
+
+text GENGAR_BATTLE_TWO_OUTRO{
+    format("What is happening...?")
+}
+
+script GENGAR_BATTLE_TWO_POSTBATTLE{
+    lock
+    faceplayer
+    msgbox(format("What ever is going on... you have to stop it {PLAYER}!"))
+    release
+}
+
+script GENGAR_BATTLE_THREE_SETUP_A{
+    lock
+    applymovement(6,GENGAR_BATTLE_THREE_STEN_MOVEMENT_A)
+    waitmovement(0)
+    msgbox("I will... beat you...")
+    call(GENGAR_BATTLE_THREE_DUSCLOPSHIDEOUT)
+    release
+}
+script GENGAR_BATTLE_THREE_SETUP_B{
+    lock
+    applymovement(6,GENGAR_BATTLE_THREE_STEN_MOVEMENT_B)
+    waitmovement(0)
+    msgbox("I will... beat you...")
+    call(GENGAR_BATTLE_THREE_DUSCLOPSHIDEOUT)
+    release
+}
+script GENGAR_BATTLE_THREE_SETUP_C{
+    lock
+    applymovement(6,GENGAR_BATTLE_THREE_STEN_MOVEMENT_C)
+    waitmovement(0)
+    msgbox("I will... beat you...")
+    call(GENGAR_BATTLE_THREE_DUSCLOPSHIDEOUT)
+    release
+}
+
+movement GENGAR_BATTLE_THREE_STEN_MOVEMENT_A {
+    walk_down
+    walk_left
+    walk_down
+}
+movement GENGAR_BATTLE_THREE_STEN_MOVEMENT_B {
+    walk_down * 2
+}
+movement GENGAR_BATTLE_THREE_STEN_MOVEMENT_C {
+    walk_down
+    walk_right
+    walk_down
+}
+
+script GENGAR_BATTLE_THREE_DUSCLOPSHIDEOUT{
+    trainerbattle_single(TRAINER_GENGAR_THIRDPOSSESED, GENGAR_BATTLE_THREE_INTRO, GENGAR_BATTLE_THREE_OUTRO, GENGAR_BATTLE_THREE_FINISHED)
+}
+
+text GENGAR_BATTLE_THREE_INTRO{
+    format("...")
+}
+
+script GENGAR_BATTLE_THREE_FINISHED{
+    lock
+    setvar(DUSCLOPS_STATE, 5)
+    msgbox(format("Wow... Give Gengar a beating for me will you?"))
+    waitmessage
+    release
+}
+
+text GENGAR_BATTLE_THREE_OUTRO{
+    format("I'm so sorry {PLAYER}! I don't know what happened to me.")
+}
+
+
+script GENGAR_FINAL_BATTLE{
+    lock
+    faceplayer
+    msgbox(format("Wow you beat Sten? How very rude of you. I know, I know, you want to battle me next..."))
+    waitmessage
+    call(GENGAR_BATTLE_FINAL_DUSCLOPSHIDEOUT)
+    release
+}
+
+script GENGAR_BATTLE_FINAL_DUSCLOPSHIDEOUT{
+    trainerbattle_single(TRAINER_GENGAR_FINAL_BATTLE, GENGAR_BATTLE_FINAL_INTRO, GENGAR_BATTLE_FINAL_OUTRO, GENGAR_BATTLE_FINAL_FINISHED)
+}
+
+text GENGAR_BATTLE_FINAL_INTRO{
+    format("{PLAYER} YOU WILL NOT TAKE ME DOWN EASILY")
+}
+
+script GENGAR_BATTLE_FINAL_FINISHED{
+    lock
+    msgbox(format("I guess I will have to make right now... KEKEKE..."))
+    waitmessage
+    giveitem(ITEM_GENGARITE,1)
+    special(LoadPlayerParty)
+    setvar(DUSCLOPS_STATE, 6)
+    msgbox(format("Okay I will also return everyone..."))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    warpteleport(MAP_FORTREE_CITY, 9) //FIGURE OUT HOW TO WARP
+    setvar(DUSCLOPS_STATE, 3)
+    setflag(FLAG_DUSCLOPS_COMPLETED)
+    fadescreen(FADE_FROM_BLACK)
+    release
+}
+
+text GENGAR_BATTLE_FINAL_OUTRO{
+    format("KEH.... That's it then...")
+}

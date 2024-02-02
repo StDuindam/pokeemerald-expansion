@@ -1521,9 +1521,9 @@
 #define FLAG_JENS_BATTLE_FOUR                           (SYSTEM_FLAGS + 0x94) // Unused Flag
 #define FLAG_JENS_BATTLE_FIVE                           (SYSTEM_FLAGS + 0x95) // Unused Flag
 #define FLAG_DUSCLOPS_FORTREE                           (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_UNUSED_0x8F7                           (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
+#define FLAG_DUSCLOPS_COMPLETED                           (SYSTEM_FLAGS + 0x97) // Unused Flag
+#define FLAG_DUSCLOPS_GRABBED_ITEMS                           (SYSTEM_FLAGS + 0x98) // Unused Flag
+#define RETURN_DUSCLOPS                           (SYSTEM_FLAGS + 0x99) // Unused Flag
 #define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
 #define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
 #define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag

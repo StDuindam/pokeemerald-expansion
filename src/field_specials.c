@@ -4257,13 +4257,44 @@ void PreparePartyForSkyBattle(void)
 //Make sure you first call the special 'SavePlayerParty'
 void CallDusclopsFunction(void)
 {
-    ZeroPlayerPartyMons();
-    CreateMon(&gPlayerParty[0], SPECIES_GARDEVOIR, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[1], SPECIES_ZAPDOS, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[2], SPECIES_PORYGON2, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[3], SPECIES_KYOGRE, 100, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
-    CreateMon(&gPlayerParty[4], SPECIES_SUICUNE, 35, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_ROSERADE, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[1], SPECIES_JOLTEON, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[2], SPECIES_ARAQUANID, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[3], SPECIES_MACHAMP, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[4], SPECIES_CLEFAIRY, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gPlayerParty[5], SPECIES_ALAKAZAM, 35, MAX_PER_STAT_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    
+    SetMonMoveSlot(&gPlayerParty[0], MOVE_SEED_BOMB,0);
+    SetMonMoveSlot(&gPlayerParty[0], MOVE_LEAF_STORM,1);
+    SetMonMoveSlot(&gPlayerParty[0], MOVE_SYNTHESIS,2);
+    SetMonMoveSlot(&gPlayerParty[0], MOVE_SWAGGER,3);
+    SetMonMoveSlot(&gPlayerParty[1], MOVE_FLASH,0);
+    SetMonMoveSlot(&gPlayerParty[1], MOVE_DISCHARGE,1);
+    SetMonMoveSlot(&gPlayerParty[1], MOVE_THUNDER_WAVE,2);
+    SetMonMoveSlot(&gPlayerParty[1], MOVE_ELECTRIC_TERRAIN,3);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_LIQUIDATION,0);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_CRUNCH,1);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_X_SCISSOR,2);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_ICY_WIND,3);
 
-    SetMonMoveSlot(&gPlayerParty[3], MOVE_SURF,1);
-    SetMonMoveSlot(&gPlayerParty[3], MOVE_ANCIENT_POWER,2);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_KNOCK_OFF,0);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_CROSS_CHOP,1);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_THUNDER_PUNCH,2);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_ENCORE,3);
+
+    SetMonMoveSlot(&gPlayerParty[4], MOVE_FOLLOW_ME,0);
+    SetMonMoveSlot(&gPlayerParty[4], MOVE_MOONBLAST,1);
+    SetMonMoveSlot(&gPlayerParty[4], MOVE_FAKE_TEARS,2);
+    SetMonMoveSlot(&gPlayerParty[4], MOVE_REFLECT,3);
+
+    SetMonMoveSlot(&gPlayerParty[5], MOVE_PSYCHIC,0);
+    SetMonMoveSlot(&gPlayerParty[5], MOVE_NASTY_PLOT,1);
+    SetMonMoveSlot(&gPlayerParty[5], MOVE_SUBSTITUTE,2);
+    SetMonMoveSlot(&gPlayerParty[5], MOVE_ENERGY_BALL,3);
+
+}
+
+void DusclopsHideOutClearParty(void)
+{
+    ZeroPlayerPartyMons();
 }
