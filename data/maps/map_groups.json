@@ -594,7 +594,8 @@
     "FireZone",
     "WaterZone",
     "TorchicCave",
-    "TreeckoHideout"
+    "TreeckoHideout",
+    "RivalDojo"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

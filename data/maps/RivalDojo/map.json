@@ -1,0 +1,152 @@
+{
+  "id": "MAP_RIVAL_DOJO",
+  "name": "RivalDojo",
+  "layout": "LAYOUT_RIVAL_DOJO",
+  "music": "MUS_GYM",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Pick_Mats_RivalDojo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Pick_Jens_RivalDojo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 2,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Pick_Sten_RivalDojo",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_EVER_GRANDE_CITY",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "1",
+      "script": "BattleJens_RivalDojo"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "1",
+      "script": "AlertJens_RIVALDOJO_B"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "1",
+      "script": "AlertJens_RIVALDOJO_A"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "2",
+      "script": "AlertJens_RIVALDOJO_A"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "3",
+      "script": "AlertJens_RIVALDOJO_A"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "2",
+      "script": "AlertJens_RIVALDOJO_B"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "3",
+      "script": "AlertJens_RIVALDOJO_B"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "2",
+      "script": "BattleMats_RivalDojo"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_RIVAL_BATTLE_DOJO",
+      "var_value": "3",
+      "script": "BattleSten_RivalDojo"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -78,18 +78,20 @@ ShadyTraderItems:
 # 44 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.2byte ITEM_AMULET_COIN
 # 45 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
-	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_DRAGON_SCALE
 # 46 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
-	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_KINGS_ROCK
 # 47 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+	.2byte ITEM_MENTAL_HERB
+# 48 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.2byte ITEM_WHITE_HERB
 	.2byte ITEM_NONE
 
 ShadyTraderIntro::
-# 50 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+# 51 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.string "Listen, don't tell anyone about my\n"
 	.string "little business, ok?$"
 
 ShadyTraderOutro::
-# 54 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
+# 55 "data/maps/FallarborTown_ShadyTrader/scripts.pory"
 	.string "See you around, remember to keep hush.$"

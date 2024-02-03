@@ -907,35 +907,37 @@ Jens_MOSSDEEP_PostBattle::
 # 467 "data/maps/MossdeepCity/scripts.pory"
 	msgbox Jens_MOSSDEEP_PostBattle_Text_0
 # 468 "data/maps/MossdeepCity/scripts.pory"
-	applymovement 18, JENS_WALK_AWAY_MOSSDEEP
+	waitmessage
 # 469 "data/maps/MossdeepCity/scripts.pory"
-	waitmovement 0
+	applymovement 18, JENS_WALK_AWAY_MOSSDEEP
 # 470 "data/maps/MossdeepCity/scripts.pory"
-	setvar RIVAL_STATE_JENS, 3
+	waitmovement 0
 # 471 "data/maps/MossdeepCity/scripts.pory"
-	setflag FLAG_JENS_BATTLE_THREE
+	setvar RIVAL_STATE_JENS, 3
 # 472 "data/maps/MossdeepCity/scripts.pory"
-	removeobject 18
+	setflag FLAG_JENS_BATTLE_THREE
 # 473 "data/maps/MossdeepCity/scripts.pory"
+	removeobject 18
+# 474 "data/maps/MossdeepCity/scripts.pory"
 	release
 	return
 
 
-# 476 "data/maps/MossdeepCity/scripts.pory"
+# 477 "data/maps/MossdeepCity/scripts.pory"
 JENS_WALK_AWAY_MOSSDEEP:
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
-# 477 "data/maps/MossdeepCity/scripts.pory"
+# 478 "data/maps/MossdeepCity/scripts.pory"
 	walk_down
 	step_end
 
@@ -961,7 +963,7 @@ JENS_MOSSDEEP_OUTRO::
 	.string "Yeah, that's it!$"
 
 JENS_MOSSDEEP_POSTBATTLE::
-# 480 "data/maps/MossdeepCity/scripts.pory"
+# 481 "data/maps/MossdeepCity/scripts.pory"
 	.string "A deal is a deal, here are some flashy\n"
 	.string "stones to improve the starters Mats\l"
 	.string "showed you.$"

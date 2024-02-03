@@ -268,8 +268,8 @@
 #define DUSCLOPS_STATE                                0x40F8 // Unused Var
 #define RIVAL_STATE_MATS                                0x40F9 // Unused Var
 #define RIVAL_STATE_JENS                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
+#define VAR_IS_CHAMPION                                0x40FB // Unused Var
+#define VAR_RIVAL_BATTLE_DOJO                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var

@@ -106,8 +106,8 @@
       "x": 2,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_MOSSDEEP_CITY",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_RIVAL_DOJO",
+      "dest_warp_id": "0"
     },
     {
       "x": 16,

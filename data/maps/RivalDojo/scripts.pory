@@ -1,0 +1,259 @@
+mapscripts RivalDojo_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: SetupDojo_RIVALDOJO
+}
+
+script SetupDojo_RIVALDOJO{
+    setvar(VAR_RIVAL_BATTLE_DOJO,0)
+}
+
+script Pick_Jens_RivalDojo{
+    lock
+    faceplayer
+    if(var(VAR_RIVAL_BATTLE_DOJO) != 0)
+    {
+        msgbox(format("Someone is already waiting for you"))
+        waitmessage
+        end
+    }else{
+    msgbox(Jens_Intro_battle_RIVALDOJO)
+    waitmessage
+    msgbox("Do you want to challenge Jens?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Lets go then!")
+        waitmessage
+        applymovement(2, Move_Jens_Gym_RIVALDOJO)
+        waitmovement(0)
+        setvar(VAR_RIVAL_BATTLE_DOJO,1)//1 is Jens
+    }
+    else{
+        msgbox("Ok, noob.")
+        waitmessage
+    }
+    }
+    release
+}
+
+script Pick_Mats_RivalDojo{
+    lock
+    faceplayer
+    if(var(VAR_RIVAL_BATTLE_DOJO) != 0)
+    {
+        msgbox(format("Someone is already waiting for you"))
+        waitmessage
+        end
+    }else{
+    msgbox(Mats_Intro_battle_RIVALDOJO)
+    waitmessage
+    msgbox("Do you want to challenge Mats?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Alright!")
+        waitmessage
+        applymovement(1, Move_Mats_Gym_RivalDojo)
+        waitmovement(0)
+        setvar(VAR_RIVAL_BATTLE_DOJO,2)//2 is Mats
+    }
+    else{
+        msgbox("Another time maybe?")
+        waitmessage
+    }
+    }
+    release
+}
+
+script Pick_Sten_RivalDojo{
+    lock
+    faceplayer
+    if(var(VAR_RIVAL_BATTLE_DOJO) != 0)
+    {
+        msgbox(format("Someone is already waiting for you"))
+        waitmessage
+        end
+    }else{
+    msgbox(Sten_Intro_battle_RIVALDOJO)
+    waitmessage
+    msgbox("Do you want to challenge Sten?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Alright!")
+        waitmessage
+        applymovement(3, Move_Sten_Gym_RIVALDOJO)
+        waitmovement(0)
+        setvar(VAR_RIVAL_BATTLE_DOJO,3)//3 is Sten
+    }
+    else{
+        msgbox("Okay, see you around.")
+        waitmessage
+    }
+    }
+    release
+}
+
+script BattleJens_RivalDojo {
+    lock
+    faceplayer 
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_Look_Left)
+    msgbox("Here I go!")
+    waitmessage
+    call(ActualBattleJens_RIVALDOJO)
+    release
+}
+
+script BattleMats_RivalDojo{
+    lock
+    faceplayer 
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_Look_Left)
+    msgbox("Bring it on!")
+    waitmessage
+    call(ActualBattleMats_RIVALDOJO)
+    release
+}
+
+script BattleSten_RivalDojo{
+    lock
+    faceplayer 
+    applymovement(OBJ_EVENT_ID_PLAYER, movement_Look_Left)
+    msgbox("Good luck!")
+    waitmessage
+    call(ActualBattleSten_RIVALDOJO)
+    release
+}
+
+script ActualBattleJens_RIVALDOJO{
+    trainerbattle_single(TRAINER_JENS_FOURTH_BATTLE, RIVAL_BATTLE_JENS_START_MATCH, RIVAL_BATTLE_JENS_POST_MATCH, JensBattleFinished_RIVALDOJO)
+}
+
+script ActualBattleMats_RIVALDOJO{
+    trainerbattle_single(TRAINER_MATS_FIFTH_BATTLE, RIVAL_BATTLE_Mats_START_MATCH, RIVAL_BATTLE_Mats_POST_MATCH, MatsBattleFinished_RIVALDOJO)
+}
+
+script ActualBattleSten_RIVALDOJO{
+    trainerbattle_single(TRAINER_STEN_SECOND_BATTLE, RIVAL_BATTLE_STEN_START_MATCH, RIVAL_BATTLE_STEN_POST_MATCH, StenBattleFinished_RIVALDOJO)
+}
+
+text RIVAL_BATTLE_Mats_POST_MATCH{
+    format("Your team is great too!")
+}
+
+text RIVAL_BATTLE_Mats_START_MATCH{
+    format("I've assembled some of my favourite mons!")
+}
+
+text RIVAL_BATTLE_STEN_POST_MATCH{
+    format("I'm beat!")
+}
+
+text RIVAL_BATTLE_STEN_START_MATCH{
+    format("You are about to get messed up!")
+}
+
+text RIVAL_BATTLE_JENS_POST_MATCH{
+    format("Nice battle!")
+}
+
+text RIVAL_BATTLE_JENS_START_MATCH{
+    format("Are you ready to face my A-Team?")
+}
+
+script JensBattleFinished_RIVALDOJO{
+    lock
+    msgbox(format("Let's do that again sometime"))
+    applymovement(2,Move_Return_Jens_RivalDojo)
+    waitmovement(0)
+    cleartrainerflag(TRAINER_JENS_FOURTH_BATTLE)
+    setvar(VAR_RIVAL_BATTLE_DOJO,0)
+    release
+}
+
+script MatsBattleFinished_RIVALDOJO{
+    lock
+    msgbox(format("I'm around if you want to go again"))
+    applymovement(1,Move_Return_Mats_RivalDojo)
+    waitmovement(0)
+    cleartrainerflag(TRAINER_MATS_FIFTH_BATTLE)
+    setvar(VAR_RIVAL_BATTLE_DOJO,0)
+    release
+}
+script StenBattleFinished_RIVALDOJO{
+    lock
+    msgbox(format("You got lucky, rematch!"))
+    applymovement(3,Move_Return_Sten_RivalDojo)
+    waitmovement(0)
+    cleartrainerflag(TRAINER_STEN_SECOND_BATTLE)
+    setvar(VAR_RIVAL_BATTLE_DOJO,0)
+    release
+}
+
+script AlertJens_RIVALDOJO_A{
+    lock
+    msgbox("A rival is waiting, go to your platform!")
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVE_DOWN_ONE_RIVALDOJO)
+    waitmovement(0)
+    release
+}
+
+script AlertJens_RIVALDOJO_B{
+    lock
+    msgbox("A rival is waiting, go to your platform!")
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVE_UP_ONE_RIVALDOJO)
+    waitmovement(0)
+    release
+}
+
+text Jens_Intro_battle_RIVALDOJO{
+    format("Yo, Champ, looks like you got a real strong team. How about a battle?")
+}
+
+text Mats_Intro_battle_RIVALDOJO{
+    format("Hey man, care for a battle? This time I'll bring a strong team of mons.")
+}
+
+text Sten_Intro_battle_RIVALDOJO{
+    format("You and me, let's duke it out.")
+}
+
+movement movement_Look_Left{
+    walk_in_place_left
+}
+
+movement Move_Jens_Gym_RIVALDOJO {
+    walk_left * 4
+    walk_up * 4
+    walk_in_place_right
+}
+
+movement MOVE_DOWN_ONE_RIVALDOJO{
+    walk_down
+}
+
+movement MOVE_UP_ONE_RIVALDOJO{
+    walk_up
+}
+
+movement Move_Sten_Gym_RIVALDOJO {
+    walk_right * 3
+    walk_up * 4
+    walk_in_place_right
+}
+
+movement Move_Mats_Gym_RivalDojo {
+    walk_up 
+    walk_right * 4
+    walk_up * 3
+    walk_in_place_right
+}
+
+movement Move_Return_Mats_RivalDojo {
+    walk_down * 3
+    walk_left * 4
+    walk_down
+    walk_in_place_right
+}
+movement Move_Return_Jens_RivalDojo {
+    walk_down * 4
+    walk_right * 4
+    walk_in_place_down
+}
+
+movement Move_Return_Sten_RivalDojo {
+    walk_down * 4
+    walk_right * 3
+}

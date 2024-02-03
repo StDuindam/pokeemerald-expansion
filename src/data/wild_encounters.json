@@ -130,7 +130,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 3,
@@ -11641,7 +11641,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_PARASECT"
+                "species": "SPECIES_CHESPIN"
               },
               {
                 "min_level": 25,
@@ -11725,7 +11725,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CYNDAQUIL"
+                "species": "SPECIES_CHARMANDER"
               },
               {
                 "min_level": 5,

@@ -518,6 +518,24 @@ Find_Seeds::
 	return
 
 
+FindMagEliRhy_EvolutionItems::
+# 296 "data/maps/RivalBase/scripts.pory"
+	lock
+# 297 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_MAGMARIZER
+# 298 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_ELECTIRIZER
+# 299 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_PROTECTOR
+# 300 "data/maps/RivalBase/scripts.pory"
+	finditem ITEM_REAPER_CLOTH
+# 301 "data/maps/RivalBase/scripts.pory"
+	setflag FLAG_ITEM_MAGMORTAR_DUSKNOIR_ELECTIVIRE_RHYPERIOR_SET
+# 302 "data/maps/RivalBase/scripts.pory"
+	release
+	return
+
+
 Starter_EventScript_Sten_Text_0:
 # 18 "data/maps/RivalBase/scripts.pory"
 	.string "Yo, I'm Sten. Looks like you are going on\n"
@@ -620,5 +638,5 @@ Find_Seeds_Text_0:
 	.string "Neat, some seeds!$"
 
 NewProfessor_NotChosen::
-# 295 "data/maps/RivalBase/scripts.pory"
+# 305 "data/maps/RivalBase/scripts.pory"
 	.string "You did not choose the Pokemon$"

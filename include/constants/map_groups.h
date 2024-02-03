@@ -565,6 +565,7 @@
 #define MAP_WATER_ZONE                                      (92 | (26 << 8))
 #define MAP_TORCHIC_CAVE                                    (93 | (26 << 8))
 #define MAP_TREECKO_HIDEOUT                                 (94 | (26 << 8))
+#define MAP_RIVAL_DOJO                                      (95 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

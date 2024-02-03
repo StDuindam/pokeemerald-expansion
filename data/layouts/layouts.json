@@ -4520,6 +4520,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/FallarborTown_ShadyTrader/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown_ShadyTrader/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIVAL_DOJO",
+      "name": "RivalDojo_Layout",
+      "width": 20,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/RivalDojo/border.bin",
+      "blockdata_filepath": "data/layouts/RivalDojo/map.bin"
     }
   ]
 }

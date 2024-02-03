@@ -12671,6 +12671,58 @@ static const struct TrainerMon sParty_StenBattleOne[] = {
     }
 };
 
+static const struct TrainerMon sParty_StenBattleTwo[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_GIGALITH,
+    .ability = ABILITY_SAND_STREAM,
+    .heldItem = ITEM_SMOOTH_ROCK,
+    .moves = {MOVE_EARTHQUAKE, MOVE_HEAVY_SLAM, MOVE_PROTECT, MOVE_IRON_DEFENSE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_FLYGON,
+    .heldItem = ITEM_FOCUS_SASH,
+    .ability = ABILITY_LEVITATE,
+    .moves = {MOVE_SCORCHING_SANDS, MOVE_PROTECT, MOVE_TAILWIND, MOVE_DRAGON_PULSE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_NIDOKING,
+    .ability = ABILITY_SHEER_FORCE,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_SLUDGE_WAVE, MOVE_FLAMETHROWER, MOVE_EARTH_POWER, MOVE_THUNDERBOLT}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_SLOWBRO,
+    .heldItem = ITEM_LEFTOVERS,
+    .ability = ABILITY_REGENERATOR,
+    .moves = {MOVE_SCALD, MOVE_SLACK_OFF, MOVE_HEAL_PULSE, MOVE_YAWN},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 61,
+    .heldItem = ITEM_WHITE_HERB,
+    .species = SPECIES_EXCADRILL,
+    .ability = ABILITY_SAND_RUSH,
+    .moves = {MOVE_HIGH_HORSEPOWER, MOVE_ROCK_SLIDE, MOVE_IRON_HEAD, MOVE_PROTECT},
+    },
+
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 62,
+    .heldItem = ITEM_SAFETY_GOGGLES,
+    .ability = ABILITY_REGENERATOR,
+    .species = SPECIES_HO_OH,
+    .moves = {MOVE_ROOST, MOVE_BRAVE_BIRD, MOVE_SACRED_FIRE, MOVE_TAILWIND},
+    }
+};
+
 static const struct TrainerMon sParty_MatsBattleOne[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -13021,6 +13073,57 @@ static const struct TrainerMon sParty_JensBattleThree[] = {
     .species = SPECIES_GYARADOS,
     .ability = ABILITY_INTIMIDATE,
     .moves = {MOVE_WATERFALL, MOVE_CRUNCH, MOVE_HYPER_BEAM, MOVE_DRAGON_DANCE},
+    }
+};
+
+static const struct TrainerMon sParty_JensBattleFour[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_GRIMMSNARL,
+    .ability = ABILITY_PRANKSTER,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .moves = {MOVE_REFLECT, MOVE_PARTING_SHOT, MOVE_LIGHT_SCREEN, MOVE_SPIRIT_BREAK},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_LANDORUS_THERIAN,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_INTIMIDATE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_SWORDS_DANCE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_DARMANITAN,
+    .moves = {MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE},
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 61,
+    .heldItem = ITEM_FLAME_ORB,
+    .ability = ABILITY_GUTS,
+    .species = SPECIES_URSALUNA,
+    .moves = {MOVE_BULK_UP, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM, MOVE_EARTHQUAKE},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .heldItem = ITEM_ROCKY_HELMET,
+    .species = SPECIES_CORVIKNIGHT,
+    .ability = ABILITY_MIRROR_ARMOR,
+    .moves = {MOVE_IRON_DEFENSE, MOVE_ROOST, MOVE_BRAVE_BIRD, MOVE_BODY_PRESS},
+    }
+    ,
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 62,
+    .heldItem = ITEM_GARCHOMPITE,
+    .species = SPECIES_GARCHOMP,
+    .ability = ABILITY_ROUGH_SKIN,
+    .moves = {MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_SUBSTITUTE},
     }
 };
 

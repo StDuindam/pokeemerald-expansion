@@ -1089,3 +1089,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TreeckoHideout/scripts.inc"
 
 	.include "data/maps/FallarborTown_ShadyTrader/scripts.inc"
+
+	.include "data/maps/RivalDojo/scripts.inc"
