@@ -305,9 +305,13 @@ Route118_Text_RouteSign119:
 
 script EventScript_SetupJens_Post_LavaridgeGym{
 
-    if(flag(FLAG_DEFEATED_LAVARIDGE_GYM) && !flag(FLAG_JENS_BATTLE_ONE)){
+    if(flag(FLAG_DEFEATED_LAVARIDGE_GYM)){
         //show
-        clearflag(FLAG_JENS_BATTLE_ONE)
+		if(var(RIVAL_STATE_JENS) == 0){
+        	clearflag(FLAG_JENS_BATTLE_ONE)
+		}else{
+			setflag(FLAG_JENS_BATTLE_ONE)
+		}
     }else{
         //hide
         setflag(FLAG_JENS_BATTLE_ONE)

@@ -3725,38 +3725,50 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
 static const struct TrainerMon sParty_Juan1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 41,
-    .species = SPECIES_LUVDISC,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_ATTRACT, MOVE_SWEET_KISS, MOVE_FLAIL}
+    .lvl = 44,
+    .species = SPECIES_EMPOLEON,
+    .heldItem = ITEM_WEAKNESS_POLICY,
+    .ability = ABILITY_DEFIANT,
+    .moves = {MOVE_SCALD, MOVE_ROAR, MOVE_ICE_BEAM, MOVE_GRASS_KNOT}
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 41,
-    .species = SPECIES_WHISCASH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_AMNESIA, MOVE_EARTHQUAKE}
+    .lvl = 45,
+    .species = SPECIES_VAPOREON,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_ICY_WIND, MOVE_RAIN_DANCE, MOVE_CHILLING_WATER, MOVE_WISH}
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 43,
-    .species = SPECIES_SEALEO,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_ENCORE, MOVE_BODY_SLAM, MOVE_AURORA_BEAM, MOVE_WATER_PULSE}
+    .lvl = 45,
+    .species = SPECIES_DONDOZO,
+    .heldItem = ITEM_LUM_BERRY,
+    .ability = ABILITY_OBLIVIOUS,
+    .moves = {MOVE_PROTECT, MOVE_ORDER_UP, MOVE_WAVE_CRASH, MOVE_SUBSTITUTE}
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 43,
-    .species = SPECIES_CRAWDAUNT,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_WATER_PULSE, MOVE_CRABHAMMER, MOVE_TAUNT, MOVE_LEER}
+    .lvl = 45,
+    .species = SPECIES_TATSUGIRI,
+    .heldItem = ITEM_TOXIC_ORB,
+    .ability = ABILITY_COMMANDER,
+    .moves = {MOVE_DRACO_METEOR, MOVE_ICY_WIND, MOVE_SLEEP_TALK, MOVE_MUDDY_WATER}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+    .lvl = 45,
+    .species = SPECIES_MILOTIC,
+    .heldItem = ITEM_LIGHT_CLAY,
+    .ability = ABILITY_COMPETITIVE,
+    .moves = {MOVE_BREAKING_SWIPE, MOVE_DRAGON_TAIL, MOVE_REST, MOVE_SLEEP_TALK}
     },
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 46,
-    .species = SPECIES_KINGDRA,
-    .heldItem = ITEM_CHESTO_BERRY,
-    .moves = {MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_ICE_BEAM, MOVE_REST}
+    .species = SPECIES_LUGIA,
+    .heldItem = ITEM_LEFTOVERS,
+    .ability = ABILITY_MULTISCALE,
+    .moves = {MOVE_RECOVER, MOVE_CALM_MIND, MOVE_SCALD, MOVE_PSYCHIC}
     }
 };
 

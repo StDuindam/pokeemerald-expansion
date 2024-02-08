@@ -1091,3 +1091,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/FallarborTown_ShadyTrader/scripts.inc"
 
 	.include "data/maps/RivalDojo/scripts.inc"
+
+	.include "data/maps/Route201/scripts.inc"

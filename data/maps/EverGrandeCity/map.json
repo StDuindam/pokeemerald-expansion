@@ -158,15 +158,6 @@
       "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
-    },
-    {
-      "type": "trigger",
-      "x": 28,
-      "y": 14,
-      "elevation": 0,
-      "var": "VAR_IS_CHAMPION",
-      "var_value": "0",
-      "script": "CompleteLeagueFirst"
     }
   ],
   "bg_events": [

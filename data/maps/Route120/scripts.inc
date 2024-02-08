@@ -871,7 +871,7 @@ JensRivalBattleTwo::
 # 440 "data/maps/Route120/scripts.pory"
 	faceplayer
 # 441 "data/maps/Route120/scripts.pory"
-	msgbox JensRivalBattleTwo_Text_0
+	msgbox JENS_ROUTE120_PREBATTLETEXT
 # 442 "data/maps/Route120/scripts.pory"
 	waitmessage
 # 443 "data/maps/Route120/scripts.pory"
@@ -888,62 +888,55 @@ Jens_ROUTE120_RIVAL_BATTLE::
 
 
 Jens_ROUTE120_PostBattle::
-# 460 "data/maps/Route120/scripts.pory"
-	lock
-# 461 "data/maps/Route120/scripts.pory"
-	msgbox JENS_ROUTE120_POSTBATTLE
-# 462 "data/maps/Route120/scripts.pory"
-	waitmessage
-# 463 "data/maps/Route120/scripts.pory"
-	giveitem ITEM_BLAZIKENITE
 # 464 "data/maps/Route120/scripts.pory"
-	giveitem ITEM_SWAMPERTITE
+	lock
 # 465 "data/maps/Route120/scripts.pory"
-	giveitem ITEM_SCEPTILITE
+	msgbox JENS_ROUTE120_POSTBATTLE
 # 466 "data/maps/Route120/scripts.pory"
-	msgbox Jens_ROUTE120_PostBattle_Text_0
+	waitmessage
 # 467 "data/maps/Route120/scripts.pory"
-	applymovement 45, JENS_WALK_AWAY_ROUTE120
+	giveitem ITEM_BLAZIKENITE
 # 468 "data/maps/Route120/scripts.pory"
-	waitmovement 0
+	giveitem ITEM_SWAMPERTITE
 # 469 "data/maps/Route120/scripts.pory"
-	setvar RIVAL_STATE_JENS, 2
+	giveitem ITEM_SCEPTILITE
 # 470 "data/maps/Route120/scripts.pory"
-	setflag FLAG_JENS_BATTLE_TWO
+	msgbox Jens_ROUTE120_PostBattle_Text_0
 # 471 "data/maps/Route120/scripts.pory"
-	removeobject 45
+	applymovement 45, JENS_WALK_AWAY_ROUTE120
 # 472 "data/maps/Route120/scripts.pory"
+	waitmovement 0
+# 473 "data/maps/Route120/scripts.pory"
+	setvar RIVAL_STATE_JENS, 2
+# 474 "data/maps/Route120/scripts.pory"
+	setflag FLAG_JENS_BATTLE_TWO
+# 475 "data/maps/Route120/scripts.pory"
+	removeobject 45
+# 476 "data/maps/Route120/scripts.pory"
 	release
 	return
 
 
-# 475 "data/maps/Route120/scripts.pory"
+# 479 "data/maps/Route120/scripts.pory"
 JENS_WALK_AWAY_ROUTE120:
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
-# 476 "data/maps/Route120/scripts.pory"
+# 480 "data/maps/Route120/scripts.pory"
 	walk_up
 	step_end
 
-JensRivalBattleTwo_Text_0:
-# 441 "data/maps/Route120/scripts.pory"
-	.string "Have you been finding the rare starter\n"
-	.string "pokes? I got some magic so you can make\l"
-	.string "them even stronger. But you will have to\l"
-	.string "beat me for it.$"
-
 Jens_ROUTE120_PostBattle_Text_0:
-# 466 "data/maps/Route120/scripts.pory"
+# 470 "data/maps/Route120/scripts.pory"
 	.string "Keep training!$"
 
 JENS_ROUTE120_INTRO::
@@ -955,7 +948,14 @@ JENS_ROUTE120_OUTRO::
 	.string "Alright, alright! Maybe not so nooby\n"
 	.string "anymore.$"
 
+JENS_ROUTE120_PREBATTLETEXT::
+# 459 "data/maps/Route120/scripts.pory"
+	.string "Have you been finding the rare starter\n"
+	.string "pokes? I got some magic so you can make\l"
+	.string "them even stronger. But you will have to\l"
+	.string "beat me for it.$"
+
 JENS_ROUTE120_POSTBATTLE::
-# 479 "data/maps/Route120/scripts.pory"
+# 483 "data/maps/Route120/scripts.pory"
 	.string "Okay, here you go. My favourite is\n"
 	.string "Blazikenite.$"

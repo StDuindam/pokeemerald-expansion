@@ -607,177 +607,179 @@ Route118_Text_RouteSign119:
 
 EventScript_SetupJens_Post_LavaridgeGym::
 # 308 "data/maps/Route118/scripts.pory"
-	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, EventScript_SetupJens_Post_LavaridgeGym_3
-EventScript_SetupJens_Post_LavaridgeGym_2:
-# 313 "data/maps/Route118/scripts.pory"
+	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, EventScript_SetupJens_Post_LavaridgeGym_1
+# 317 "data/maps/Route118/scripts.pory"
 	setflag FLAG_JENS_BATTLE_ONE
 	return
 
 EventScript_SetupJens_Post_LavaridgeGym_1:
 # 310 "data/maps/Route118/scripts.pory"
+	compare RIVAL_STATE_JENS, 0
+	goto_if_eq EventScript_SetupJens_Post_LavaridgeGym_4
+# 313 "data/maps/Route118/scripts.pory"
+	setflag FLAG_JENS_BATTLE_ONE
+	return
+
+EventScript_SetupJens_Post_LavaridgeGym_4:
+# 311 "data/maps/Route118/scripts.pory"
 	clearflag FLAG_JENS_BATTLE_ONE
 	return
 
-EventScript_SetupJens_Post_LavaridgeGym_3:
-# 308 "data/maps/Route118/scripts.pory"
-	goto_if_unset FLAG_JENS_BATTLE_ONE, EventScript_SetupJens_Post_LavaridgeGym_1
-	goto EventScript_SetupJens_Post_LavaridgeGym_2
-
 
 EventScript_Jens_Encounter_One::
-# 319 "data/maps/Route118/scripts.pory"
-	lock
-# 320 "data/maps/Route118/scripts.pory"
-	faceplayer
-# 321 "data/maps/Route118/scripts.pory"
-	msgbox JensDialogue
-# 322 "data/maps/Route118/scripts.pory"
-	waitmessage
 # 323 "data/maps/Route118/scripts.pory"
-	msgbox EventScript_Jens_Encounter_One_Text_0, MSGBOX_YESNO
+	lock
 # 324 "data/maps/Route118/scripts.pory"
+	faceplayer
+# 325 "data/maps/Route118/scripts.pory"
+	msgbox JensDialogue
+# 326 "data/maps/Route118/scripts.pory"
+	waitmessage
+# 327 "data/maps/Route118/scripts.pory"
+	msgbox EventScript_Jens_Encounter_One_Text_0, MSGBOX_YESNO
+# 328 "data/maps/Route118/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EventScript_Jens_Encounter_One_2
-# 327 "data/maps/Route118/scripts.pory"
+# 331 "data/maps/Route118/scripts.pory"
 	msgbox EventScript_Jens_Encounter_One_Text_1
 EventScript_Jens_Encounter_One_1:
-# 329 "data/maps/Route118/scripts.pory"
+# 333 "data/maps/Route118/scripts.pory"
 	waitmessage
-# 330 "data/maps/Route118/scripts.pory"
+# 334 "data/maps/Route118/scripts.pory"
 	release
 	return
 
 EventScript_Jens_Encounter_One_2:
-# 325 "data/maps/Route118/scripts.pory"
+# 329 "data/maps/Route118/scripts.pory"
 	call EventScript_Jens_Battle
 	goto EventScript_Jens_Encounter_One_1
 
 
 EventScript_Jens_Battle::
-# 335 "data/maps/Route118/scripts.pory"
+# 339 "data/maps/Route118/scripts.pory"
 	trainerbattle_single TRAINER_JENS_FIRST_BATTLE, JensBattleIntro, JensBattleOutro, EventScript_Jens_PostBattle
 	return
 
 
 EventScript_Jens_PostBattle::
-# 339 "data/maps/Route118/scripts.pory"
-	lockall
-# 340 "data/maps/Route118/scripts.pory"
-	giveitem ITEM_MEGA_RING
-# 341 "data/maps/Route118/scripts.pory"
-	msgbox EventScript_Jens_PostBattle_Text_0
-# 342 "data/maps/Route118/scripts.pory"
-	waitmessage
 # 343 "data/maps/Route118/scripts.pory"
-	call GIVE_AERODACTYL
+	lockall
 # 344 "data/maps/Route118/scripts.pory"
-	giveitem ITEM_AERODACTYLITE, 1
+	giveitem ITEM_MEGA_RING
 # 345 "data/maps/Route118/scripts.pory"
-	applymovement 22, JensWalkAway
+	msgbox EventScript_Jens_PostBattle_Text_0
 # 346 "data/maps/Route118/scripts.pory"
-	waitmovement 0
+	waitmessage
 # 347 "data/maps/Route118/scripts.pory"
-	removeobject 22
+	call GIVE_AERODACTYL
 # 348 "data/maps/Route118/scripts.pory"
-	setflag FLAG_JENS_BATTLE_ONE
+	giveitem ITEM_AERODACTYLITE, 1
 # 349 "data/maps/Route118/scripts.pory"
-	setvar RIVAL_STATE_JENS, 1
+	applymovement 22, JensWalkAway
 # 350 "data/maps/Route118/scripts.pory"
+	waitmovement 0
+# 351 "data/maps/Route118/scripts.pory"
+	removeobject 22
+# 352 "data/maps/Route118/scripts.pory"
+	setflag FLAG_JENS_BATTLE_ONE
+# 353 "data/maps/Route118/scripts.pory"
+	setvar RIVAL_STATE_JENS, 1
+# 354 "data/maps/Route118/scripts.pory"
 	release
 	return
 
 
 GIVE_AERODACTYL::
-# 354 "data/maps/Route118/scripts.pory"
+# 358 "data/maps/Route118/scripts.pory"
 	givemon SPECIES_AERODACTYL, 5, ITEM_NONE
-# 355 "data/maps/Route118/scripts.pory"
+# 359 "data/maps/Route118/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq GIVE_AERODACTYL_1
-# 360 "data/maps/Route118/scripts.pory"
+# 364 "data/maps/Route118/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq GIVE_AERODACTYL_2
-# 366 "data/maps/Route118/scripts.pory"
+# 370 "data/maps/Route118/scripts.pory"
 	hidemonpic
-# 367 "data/maps/Route118/scripts.pory"
+# 371 "data/maps/Route118/scripts.pory"
 	msgbox GIVE_AERODACTYL_Text_1
 	return
 
 GIVE_AERODACTYL_1:
-# 356 "data/maps/Route118/scripts.pory"
+# 360 "data/maps/Route118/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 357 "data/maps/Route118/scripts.pory"
+# 361 "data/maps/Route118/scripts.pory"
 	msgbox GIVE_AERODACTYL_Text_0
-# 358 "data/maps/Route118/scripts.pory"
+# 362 "data/maps/Route118/scripts.pory"
 	call NicknamePartyMon
 	return
 
 GIVE_AERODACTYL_2:
-# 361 "data/maps/Route118/scripts.pory"
+# 365 "data/maps/Route118/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 362 "data/maps/Route118/scripts.pory"
+# 366 "data/maps/Route118/scripts.pory"
 	msgbox GIVE_AERODACTYL_Text_0
-# 363 "data/maps/Route118/scripts.pory"
+# 367 "data/maps/Route118/scripts.pory"
 	call NicknameBoxMon
 	return
 
 
-# 371 "data/maps/Route118/scripts.pory"
+# 375 "data/maps/Route118/scripts.pory"
 JensWalkAway:
-# 372 "data/maps/Route118/scripts.pory"
+# 376 "data/maps/Route118/scripts.pory"
 	walk_right
-# 373 "data/maps/Route118/scripts.pory"
+# 377 "data/maps/Route118/scripts.pory"
 	walk_down
-# 373 "data/maps/Route118/scripts.pory"
+# 377 "data/maps/Route118/scripts.pory"
 	walk_down
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
-# 374 "data/maps/Route118/scripts.pory"
+# 378 "data/maps/Route118/scripts.pory"
 	walk_left
 	step_end
 
 EventScript_Jens_Encounter_One_Text_0:
-# 323 "data/maps/Route118/scripts.pory"
+# 327 "data/maps/Route118/scripts.pory"
 	.string "Ready to take on Jens?$"
 
 EventScript_Jens_Encounter_One_Text_1:
-# 327 "data/maps/Route118/scripts.pory"
+# 331 "data/maps/Route118/scripts.pory"
 	.string "Okay noob.$"
 
 EventScript_Jens_PostBattle_Text_0:
-# 341 "data/maps/Route118/scripts.pory"
+# 345 "data/maps/Route118/scripts.pory"
 	.string "Take this 'mon too, it's fun to use. See\n"
 	.string "you around noob.$"
 
 GIVE_AERODACTYL_Text_0:
-# 357 "data/maps/Route118/scripts.pory"
+# 361 "data/maps/Route118/scripts.pory"
 	.string "Obtained AERODACTYL!$"
 
 GIVE_AERODACTYL_Text_1:
-# 367 "data/maps/Route118/scripts.pory"
+# 371 "data/maps/Route118/scripts.pory"
 	.string "No More Room.$"
 
 JensBattleIntro::
-# 377 "data/maps/Route118/scripts.pory"
+# 381 "data/maps/Route118/scripts.pory"
 	.string "LETS SEE HOW YOU PERFORM UNDER\n"
 	.string "PRESSURE!$"
 
 JensBattleOutro::
-# 381 "data/maps/Route118/scripts.pory"
+# 385 "data/maps/Route118/scripts.pory"
 	.string "Heh, I guess next time I will bring my\n"
 	.string "better team. Enjoy your mega ring!$"
 
 JensDialogue::
-# 385 "data/maps/Route118/scripts.pory"
+# 389 "data/maps/Route118/scripts.pory"
 	.string "Having a good time? Four badges\n"
 	.string "already... Impressive! You must have\l"
 	.string "noticed that some trainers you have\l"

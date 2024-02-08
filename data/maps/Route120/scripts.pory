@@ -438,7 +438,7 @@ Route120_Text_RouteSign121:
 script JensRivalBattleTwo{
     lock
     faceplayer
-    msgbox(format("Have you been finding the rare starter pokes? I got some magic so you can make them even stronger. But you will have to beat me for it."))
+    msgbox(JENS_ROUTE120_PREBATTLETEXT)
     waitmessage
     call(Jens_ROUTE120_RIVAL_BATTLE)
     release
@@ -454,6 +454,10 @@ text JENS_ROUTE120_INTRO{
 
 text JENS_ROUTE120_OUTRO{
     format("Alright, alright! Maybe not so nooby anymore.")
+}
+
+text JENS_ROUTE120_PREBATTLETEXT{
+	format("Have you been finding the rare starter pokes? I got some magic so you can make them even stronger. But you will have to beat me for it.")
 }
 
 script Jens_ROUTE120_PostBattle{
