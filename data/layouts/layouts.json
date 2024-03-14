@@ -4550,6 +4550,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route202/border.bin",
       "blockdata_filepath": "data/layouts/Route202/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_ISLAND_CAVE",
+      "name": "MewtwoIslandCave_Layout",
+      "width": 36,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MewtwoIslandCave/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoIslandCave/map.bin"
     }
   ]
 }

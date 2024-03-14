@@ -1365,7 +1365,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_LAPRAS_DOLL,
-        .tiles = DecorGfx_LAPRAS_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_VENUSAUR_DOLL] =
@@ -1377,7 +1377,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_VENUSAUR_DOLL,
-        .tiles = DecorGfx_VENUSAUR_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_CHARIZARD_DOLL] =
@@ -1389,7 +1389,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_CHARIZARD_DOLL,
-        .tiles = DecorGfx_CHARIZARD_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_BLASTOISE_DOLL] =
@@ -1401,7 +1401,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_BLASTOISE_DOLL,
-        .tiles = DecorGfx_BLASTOISE_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_WAILMER_DOLL] =
@@ -1413,7 +1413,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_WAILMER_DOLL,
-        .tiles = DecorGfx_WAILMER_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_REGIROCK_DOLL] =
@@ -1425,7 +1425,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGIROCK_DOLL,
-        .tiles = DecorGfx_REGIROCK_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_REGICE_DOLL] =
@@ -1437,7 +1437,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGICE_DOLL,
-        .tiles = DecorGfx_REGICE_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     },
 
     [DECOR_REGISTEEL_DOLL] =
@@ -1449,6 +1449,6 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGISTEEL_DOLL,
-        .tiles = DecorGfx_REGISTEEL_DOLL,
+        .tiles = DecorGfx_RHYDON_DOLL,
     }
 };

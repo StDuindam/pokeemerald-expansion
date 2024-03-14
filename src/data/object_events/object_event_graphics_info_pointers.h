@@ -245,6 +245,14 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gengar;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mewtwo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zapdos;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moltres;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Articuno;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rillaboom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RocketF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RocketM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -350,7 +358,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL] =     &gObjectEventGraphicsInfo_RivalBrendanNormal,
     [OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE] =  &gObjectEventGraphicsInfo_RivalBrendanMachBike,
     [OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE] =  &gObjectEventGraphicsInfo_RivalBrendanAcroBike,
-    [OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING] =    &gObjectEventGraphicsInfo_RivalBrendanSurfing,
+[OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING] =    &gObjectEventGraphicsInfo_RivalBrendanSurfing,
     [OBJ_EVENT_GFX_RIVAL_BRENDAN_FIELD_MOVE] = &gObjectEventGraphicsInfo_RivalBrendanFieldMove,
     [OBJ_EVENT_GFX_RIVAL_MAY_NORMAL] =         &gObjectEventGraphicsInfo_RivalMayNormal,
     [OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE] =      &gObjectEventGraphicsInfo_RivalMayMachBike,
@@ -426,14 +434,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WATER_CUSHION] =            &gObjectEventGraphicsInfo_WaterCushion,
     [OBJ_EVENT_GFX_BIG_SNORLAX_DOLL] =         &gObjectEventGraphicsInfo_BigSnorlaxDoll,
     [OBJ_EVENT_GFX_BIG_RHYDON_DOLL] =          &gObjectEventGraphicsInfo_BigRhydonDoll,
-    [OBJ_EVENT_GFX_BIG_LAPRAS_DOLL] =          &gObjectEventGraphicsInfo_BigLaprasDoll,
-    [OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL] =        &gObjectEventGraphicsInfo_BigVenusaurDoll,
-    [OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL] =       &gObjectEventGraphicsInfo_BigCharizardDoll,
-    [OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL] =       &gObjectEventGraphicsInfo_BigBlastoiseDoll,
-    [OBJ_EVENT_GFX_BIG_WAILMER_DOLL] =         &gObjectEventGraphicsInfo_BigWailmerDoll,
-    [OBJ_EVENT_GFX_BIG_REGIROCK_DOLL] =        &gObjectEventGraphicsInfo_BigRegirockDoll,
-    [OBJ_EVENT_GFX_BIG_REGICE_DOLL] =          &gObjectEventGraphicsInfo_BigRegiceDoll,
-    [OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL] =       &gObjectEventGraphicsInfo_BigRegisteelDoll,
     [OBJ_EVENT_GFX_LATIAS] =                   &gObjectEventGraphicsInfo_Latias,
     [OBJ_EVENT_GFX_LATIOS] =                   &gObjectEventGraphicsInfo_Latios,
     [OBJ_EVENT_GFX_GAMEBOY_KID] =              &gObjectEventGraphicsInfo_GameboyKid,
@@ -487,6 +487,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_GENGAR] =                   &gObjectEventGraphicsInfo_Gengar,
+    [OBJ_EVENT_GFX_MEWTWO] =                   &gObjectEventGraphicsInfo_Mewtwo,
+    [OBJ_EVENT_GFX_ZAPDOS] =                   &gObjectEventGraphicsInfo_Zapdos,
+    [OBJ_EVENT_GFX_MOLTRES] =                  &gObjectEventGraphicsInfo_Moltres,
+    [OBJ_EVENT_GFX_ARTICUNO] =                 &gObjectEventGraphicsInfo_Articuno,
+    [OBJ_EVENT_GFX_RILLABOOM] =                &gObjectEventGraphicsInfo_Rillaboom,
+    [OBJ_EVENT_GFX_ROCKETF] =                  &gObjectEventGraphicsInfo_RocketF,
+    [OBJ_EVENT_GFX_ROCKETM] =                  &gObjectEventGraphicsInfo_RocketM,
+    [OBJ_EVENT_GFX_GIOVANNI] =                 &gObjectEventGraphicsInfo_Giovanni,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

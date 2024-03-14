@@ -454,7 +454,14 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 #define OBJ_EVENT_PAL_TAG_GENGAR                  0x1124
-
+#define OBJ_EVENT_PAL_TAG_MEWTWO                  0x1125
+#define OBJ_EVENT_PAL_TAG_ZAPDOS                  0x1128
+#define OBJ_EVENT_PAL_TAG_ARTICUNO                0x1129
+#define OBJ_EVENT_PAL_TAG_MOLTRES                 0x1126
+#define OBJ_EVENT_PAL_TAG_RILLABOOM               0x112A
+#define OBJ_EVENT_PAL_TAG_ROCKETF                 0x112B
+#define OBJ_EVENT_PAL_TAG_ROCKETM                 0x112C
+#define OBJ_EVENT_PAL_TAG_GIOVANNI                0x112D
 #include "data/object_events/object_event_graphics_info_pointers.h"
 #include "data/field_effects/field_effect_object_template_pointers.h"
 #include "data/object_events/object_event_pic_tables.h"
@@ -500,6 +507,11 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_Gengar,                OBJ_EVENT_PAL_TAG_GENGAR},
+    {gObjectEventPal_Mewtwo,                OBJ_EVENT_PAL_TAG_MEWTWO},
+    {gObjectEventPal_Zapdos,                OBJ_EVENT_PAL_TAG_ZAPDOS},
+    {gObjectEventPal_Articuno,              OBJ_EVENT_PAL_TAG_ARTICUNO},
+    {gObjectEventPal_Moltres,               OBJ_EVENT_PAL_TAG_MOLTRES},
+    {gObjectEventPal_Rillaboom,             OBJ_EVENT_PAL_TAG_RILLABOOM},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

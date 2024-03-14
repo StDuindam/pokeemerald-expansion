@@ -143,7 +143,7 @@
 #define OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN      139
 #define OBJ_EVENT_GFX_SS_TIDAL                   140
 #define OBJ_EVENT_GFX_SUBMARINE_SHADOW           141
-#define OBJ_EVENT_GFX_PICHU_DOLL                 142
+#define OBJ_EVENT_GFX_PICHU_DOLL                 142 //OVERRODE ALL DOLLS
 #define OBJ_EVENT_GFX_PIKACHU_DOLL               143
 #define OBJ_EVENT_GFX_MARILL_DOLL                144
 #define OBJ_EVENT_GFX_TOGEPI_DOLL                145
@@ -180,14 +180,14 @@
 #define OBJ_EVENT_GFX_WATER_CUSHION              176
 #define OBJ_EVENT_GFX_BIG_SNORLAX_DOLL           177
 #define OBJ_EVENT_GFX_BIG_RHYDON_DOLL            178
-#define OBJ_EVENT_GFX_BIG_LAPRAS_DOLL            179
-#define OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL          180
-#define OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL         181
-#define OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL         182
-#define OBJ_EVENT_GFX_BIG_WAILMER_DOLL           183
-#define OBJ_EVENT_GFX_BIG_REGIROCK_DOLL          184
-#define OBJ_EVENT_GFX_BIG_REGICE_DOLL            185
-#define OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL         186
+#define OBJ_EVENT_GFX_GIOVANNI                   179
+#define OBJ_EVENT_GFX_ROCKETF                    180
+#define OBJ_EVENT_GFX_ROCKETM                    181
+#define OBJ_EVENT_GFX_RILLABOOM                  182
+#define OBJ_EVENT_GFX_ZAPDOS                     183
+#define OBJ_EVENT_GFX_ARTICUNO                   184
+#define OBJ_EVENT_GFX_MOLTRES                    185
+#define OBJ_EVENT_GFX_MEWTWO                     186 // END OF PREVIOUS DOLLS
 #define OBJ_EVENT_GFX_LATIAS                     187
 #define OBJ_EVENT_GFX_LATIOS                     188
 #define OBJ_EVENT_GFX_GAMEBOY_KID                189
@@ -256,7 +256,7 @@
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
 // More info about them in include/constants/vars.h
-#define OBJ_EVENT_GFX_VARS   (NUM_OBJ_EVENT_GFX + 1)
+#define OBJ_EVENT_GFX_VARS   (NUM_OBJ_EVENT_GFX)
 #define OBJ_EVENT_GFX_VAR_0  (OBJ_EVENT_GFX_VARS + 0x0) // 240
 #define OBJ_EVENT_GFX_VAR_1  (OBJ_EVENT_GFX_VARS + 0x1)
 #define OBJ_EVENT_GFX_VAR_2  (OBJ_EVENT_GFX_VARS + 0x2)
