@@ -4267,7 +4267,7 @@ void CallDusclopsFunction(void)
     SetMonMoveSlot(&gPlayerParty[0], MOVE_SEED_BOMB,0);
     SetMonMoveSlot(&gPlayerParty[0], MOVE_LEAF_STORM,1);
     SetMonMoveSlot(&gPlayerParty[0], MOVE_SYNTHESIS,2);
-    SetMonMoveSlot(&gPlayerParty[0], MOVE_SWAGGER,3);
+    SetMonMoveSlot(&gPlayerParty[0], MOVE_CUT,3);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_FLASH,0);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_DISCHARGE,1);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_THUNDER_WAVE,2);
@@ -4275,12 +4275,12 @@ void CallDusclopsFunction(void)
     SetMonMoveSlot(&gPlayerParty[2], MOVE_SURF,0);
     SetMonMoveSlot(&gPlayerParty[2], MOVE_CRUNCH,1);
     SetMonMoveSlot(&gPlayerParty[2], MOVE_X_SCISSOR,2);
-    SetMonMoveSlot(&gPlayerParty[2], MOVE_ICY_WIND,3);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_ROCK_SMASH,3);
 
     SetMonMoveSlot(&gPlayerParty[3], MOVE_KNOCK_OFF,0);
     SetMonMoveSlot(&gPlayerParty[3], MOVE_CROSS_CHOP,1);
     SetMonMoveSlot(&gPlayerParty[3], MOVE_THUNDER_PUNCH,2);
-    SetMonMoveSlot(&gPlayerParty[3], MOVE_ENCORE,3);
+    SetMonMoveSlot(&gPlayerParty[3], MOVE_STRENGTH,3);
 
     SetMonMoveSlot(&gPlayerParty[4], MOVE_FOLLOW_ME,0);
     SetMonMoveSlot(&gPlayerParty[4], MOVE_MOONBLAST,1);
@@ -4297,4 +4297,9 @@ void CallDusclopsFunction(void)
 void DusclopsHideOutClearParty(void)
 {
     ZeroPlayerPartyMons();
+}
+
+void SetRegionToSEVII(void)
+{
+    gMapHeader.region = REGION_SEVII;
 }

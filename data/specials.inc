@@ -544,3 +544,4 @@ gSpecials::
 	def_special VsSeekerFreezeObjectsAfterChargeComplete
 	def_special CallDusclopsFunction
 	def_special DusclopsHideOutClearParty
+	def_special SetRegionToSEVII

@@ -200,6 +200,22 @@ EventScript_SetVar_Dusclops::
 	return
 
 
+WarpmapToSevii::
+# 112 "data/maps/DebugArea/scripts.pory"
+	lock
+# 113 "data/maps/DebugArea/scripts.pory"
+	msgbox WarpmapToSevii_Text_0
+# 114 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 115 "data/maps/DebugArea/scripts.pory"
+	special SetRegionToSEVII
+# 116 "data/maps/DebugArea/scripts.pory"
+	warpteleport MAP_ROUTE201, 0
+# 117 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
 CallGengarParty_Text_0:
 # 11 "data/maps/DebugArea/scripts.pory"
 	.string "Party reset$"
@@ -247,3 +263,7 @@ EventScript_SetVar_MatsRival_Text_0:
 EventScript_SetVar_Dusclops_Text_0:
 # 106 "data/maps/DebugArea/scripts.pory"
 	.string "Updated DUSCLOPS_STATE by one$"
+
+WarpmapToSevii_Text_0:
+# 113 "data/maps/DebugArea/scripts.pory"
+	.string "Here we go$"

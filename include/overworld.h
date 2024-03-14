@@ -154,5 +154,9 @@ bool32 Overworld_RecvKeysFromLinkIsRunning(void);
 bool32 Overworld_SendKeysToLinkIsRunning(void);
 bool32 IsSendingKeysOverCable(void);
 void ClearLinkPlayerObjectEvents(void);
-
+enum region {
+    REGION_HOENN,
+    REGION_KANTO,
+    REGION_SEVII
+};
 #endif // GUARD_OVERWORLD_H

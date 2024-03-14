@@ -107,3 +107,12 @@ script EventScript_SetVar_Dusclops{
     waitmessage
     release
 }
+
+script WarpmapToSevii{
+    lock
+    msgbox("Here we go")
+    waitmessage
+    special(SetRegionToSEVII)
+    warpteleport(MAP_ROUTE201, 0)
+    release
+}
