@@ -598,7 +598,10 @@
     "WaterZone",
     "TorchicCave",
     "TreeckoHideout",
-    "RivalDojo"
+    "RivalDojo",
+    "RocketHideout_F1",
+    "RocketHideout_F2",
+    "RocketHideout_B1"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

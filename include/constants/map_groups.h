@@ -569,6 +569,9 @@
 #define MAP_TORCHIC_CAVE                                    (93 | (26 << 8))
 #define MAP_TREECKO_HIDEOUT                                 (94 | (26 << 8))
 #define MAP_RIVAL_DOJO                                      (95 | (26 << 8))
+#define MAP_ROCKET_HIDEOUT_F1                               (96 | (26 << 8))
+#define MAP_ROCKET_HIDEOUT_F2                               (97 | (26 << 8))
+#define MAP_ROCKET_HIDEOUT_B1                               (98 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

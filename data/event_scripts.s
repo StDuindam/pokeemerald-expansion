@@ -1097,3 +1097,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route202/scripts.inc"
 
 	.include "data/maps/MewtwoIslandCave/scripts.inc"
+
+	.include "data/maps/RocketHideout_F1/scripts.inc"
+
+	.include "data/maps/RocketHideout_F2/scripts.inc"
+
+	.include "data/maps/RocketHideout_B1/scripts.inc"
