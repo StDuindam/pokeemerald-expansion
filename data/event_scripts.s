@@ -1103,3 +1103,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RocketHideout_F2/scripts.inc"
 
 	.include "data/maps/RocketHideout_B1/scripts.inc"
+
+	.include "data/maps/RocketHideoutMewtwoCage/scripts.inc"
+
+	.include "data/maps/TotemCave/scripts.inc"

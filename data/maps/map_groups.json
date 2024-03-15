@@ -437,7 +437,8 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "MewtwoIslandCave"
+    "MewtwoIslandCave",
+    "TotemCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -601,7 +602,8 @@
     "RivalDojo",
     "RocketHideout_F1",
     "RocketHideout_F2",
-    "RocketHideout_B1"
+    "RocketHideout_B1",
+    "RocketHideoutMewtwoCage"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

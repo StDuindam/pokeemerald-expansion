@@ -408,6 +408,7 @@
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_MEWTWO_ISLAND_CAVE                       (108 | (24 << 8))
+#define MAP_TOTEM_CAVE                               (109 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -572,6 +573,7 @@
 #define MAP_ROCKET_HIDEOUT_F1                               (96 | (26 << 8))
 #define MAP_ROCKET_HIDEOUT_F2                               (97 | (26 << 8))
 #define MAP_ROCKET_HIDEOUT_B1                               (98 | (26 << 8))
+#define MAP_ROCKET_HIDEOUT_MEWTWO_CAGE                      (99 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

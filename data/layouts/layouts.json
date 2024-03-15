@@ -4574,10 +4574,10 @@
     {
       "id": "LAYOUT_ROCKET_HIDEOUT_F2",
       "name": "RocketHideout_F2_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontier",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/RocketHideout_F2/border.bin",
       "blockdata_filepath": "data/layouts/RocketHideout_F2/map.bin"
     },
@@ -4590,6 +4590,26 @@
       "secondary_tileset": "gTileset_BattleFactory",
       "border_filepath": "data/layouts/RocketHideout_B1/border.bin",
       "blockdata_filepath": "data/layouts/RocketHideout_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_MEWTWO_CAGE",
+      "name": "RocketHideoutMewtwoCage_Layout",
+      "width": 9,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFactory",
+      "border_filepath": "data/layouts/RocketHideoutMewtwoCage/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideoutMewtwoCage/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOTEM_CAVE",
+      "name": "TotemCave_Layout",
+      "width": 7,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TotemCave/border.bin",
+      "blockdata_filepath": "data/layouts/TotemCave/map.bin"
     }
   ]
 }

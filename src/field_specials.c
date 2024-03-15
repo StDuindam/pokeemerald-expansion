@@ -4273,7 +4273,7 @@ void CallDusclopsFunction(void)
     SetMonMoveSlot(&gPlayerParty[1], MOVE_THUNDER_WAVE,2);
     SetMonMoveSlot(&gPlayerParty[1], MOVE_ELECTRIC_TERRAIN,3);
     SetMonMoveSlot(&gPlayerParty[2], MOVE_SURF,0);
-    SetMonMoveSlot(&gPlayerParty[2], MOVE_CRUNCH,1);
+    SetMonMoveSlot(&gPlayerParty[2], MOVE_WATERFALL,1);
     SetMonMoveSlot(&gPlayerParty[2], MOVE_X_SCISSOR,2);
     SetMonMoveSlot(&gPlayerParty[2], MOVE_ROCK_SMASH,3);
 
