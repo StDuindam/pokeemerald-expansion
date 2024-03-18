@@ -1230,8 +1230,8 @@
 #define FLAG_MOSSDEEP_ROCKET_DEFEATED                               0x49B // Unused Flag
 #define FLAG_SOOTOPOLIS_ROCKET_DEFEATED                             0x49C // Unused Flag
 #define FLAG_BIRCH_ISLAND_EVENT                                     0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
-#define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
+#define FLAG_SLATEPORTCITYHARBOR_ISLAND_EVENT                       0x49E // Unused Flag
+#define FLAG_SLATEPORTCITY_MARVELISLAND_ATTENDANT                   0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
 #define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag

@@ -12,6 +12,7 @@ SlateportCity_Harbor_OnTransition:
 	setescapewarp MAP_SLATEPORT_CITY, 28, 13
 	setvar VAR_TEMP_1, 0
 	call_if_eq VAR_SLATEPORT_HARBOR_STATE, 1, SlateportCity_Harbor_EventScript_ReadyAquaEscapeScene
+    call EventScript_ToMarvelIsland_Setup
 	call_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_ShowSSTidal
 	end
 
@@ -545,3 +546,66 @@ SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"
 `
+
+script EventScript_ToMarvelIsland_Setup{
+    if(var(VAR_ROCKET_ARC_STATE) == 1){
+        clearflag(FLAG_SLATEPORTCITYHARBOR_ISLAND_EVENT)
+    }else{
+        setflag(FLAG_SLATEPORTCITYHARBOR_ISLAND_EVENT)
+    }
+
+    if(var(VAR_ROCKET_ARC_STATE) == 0)
+    {
+        setflag(FLAG_SLATEPORTCITY_MARVELISLAND_ATTENDANT)
+    }else{
+        clearflag(FLAG_SLATEPORTCITY_MARVELISLAND_ATTENDANT)
+    }
+} 
+
+
+script EventScript_MarvelIsland_SlateportHarbor_Attendant{
+    lock
+    msgbox(format("Hello champ, I can take you to Marvel Island."))
+    waitmessage
+    msgbox(format("Would you like to go to Marvel Island?"),MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("Wonderful, please board"))
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER,Movement_EnterBoat_ToMarvelIsland)
+        waitmovement(0)
+        warpdoor(MAP_ROUTE201,0)
+    }else{
+        msgbox("Another time maybe.")
+        waitmessage
+    }
+    release
+}
+
+script EventScript_MarvelIsland_Birch_SlateportHarbor{
+    lock
+    faceplayer
+    msgbox(Birch_SlateportHarbor_MarvelIsland_Intro)
+    waitmessage
+    release
+}
+
+script EventScript_MarvelIsland_Mats_SlateportHarbor{
+    lock
+    faceplayer
+    msgbox(Mats_SlateportHarbor_MarvelIsland_Intro)
+    waitmessage
+    release
+}
+
+movement Movement_EnterBoat_ToMarvelIsland{
+    walk_left * 3
+    walk_up * 1
+}
+
+text Mats_SlateportHarbor_MarvelIsland_Intro{
+    format("Are you kidding me? New Pokemon and a new area to explore? Of course I will be there, I need to catch the rarest mon's out there.")
+}
+
+text Birch_SlateportHarbor_MarvelIsland_Intro{
+    format("Great you made it, speak to the sailor on our left when you are ready to depart. He will remain here by the way, so you can always return to the Island.")
+}

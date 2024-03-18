@@ -1174,7 +1174,7 @@ script Birch_Conversation_Island{
 }
 
 text BirchChatsAboutHouse{
-	format("Ah, just in time. We have received exciting news, you see, a new island has been discovered! At current time we expect that it is due to the events following Kyogre and Groudon's battle. What do you say, are you up for an adventure? Why don't you join us, you are the strongest trainer after all. Once you are prepared meet me in Slateport city's harbour. See you there!")
+	format("Ah, just in time. We have received exciting news, you see, a new island has been discovered! We called it Marvel Island. At current time we expect that it is due to the events following Kyogre and Groudon's battle. What do you say, are you up for an adventure? Why don't you join us, you are the strongest trainer after all. Once you are prepared meet me in Slateport city's harbour. See you there!")
 }
 
 movement BirchLeaveHousePostIslandConversation {

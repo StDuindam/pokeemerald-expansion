@@ -1,0 +1,21 @@
+mapscripts Route201_MapScripts {
+
+}
+
+script EventScript_Route201_BoatAttendant{
+    lock
+    faceplayer
+    msgbox(format("Hello champ, the boat goes whenever you want."))
+    waitmessage
+    msgbox("Would you like to go back to Slateport City?",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("Wonderful, please board"))
+        waitmessage
+        warpdoor(MAP_SLATEPORT_CITY_HARBOR,4)
+    }else{
+        msgbox(format("Another time maybe."))
+        waitmessage
+    }
+    release
+}
+
