@@ -1293,7 +1293,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_CUSHION,
         .price = 2000,
         .description = DecorDesc_BALL_CUSHION,
-        .tiles = DecorGfx_BALL_CUSHION,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_GRASS_CUSHION] =
@@ -1305,7 +1305,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_CUSHION,
         .price = 2000,
         .description = DecorDesc_GRASS_CUSHION,
-        .tiles = DecorGfx_GRASS_CUSHION,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_FIRE_CUSHION] =
@@ -1317,7 +1317,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_CUSHION,
         .price = 2000,
         .description = DecorDesc_FIRE_CUSHION,
-        .tiles = DecorGfx_FIRE_CUSHION,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_WATER_CUSHION] =
@@ -1329,7 +1329,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_CUSHION,
         .price = 2000,
         .description = DecorDesc_WATER_CUSHION,
-        .tiles = DecorGfx_WATER_CUSHION,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_SNORLAX_DOLL] =
@@ -1341,7 +1341,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_SNORLAX_DOLL,
-        .tiles = DecorGfx_SNORLAX_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_RHYDON_DOLL] =
@@ -1353,7 +1353,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_RHYDON_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_LAPRAS_DOLL] =
@@ -1365,7 +1365,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_LAPRAS_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_VENUSAUR_DOLL] =
@@ -1377,7 +1377,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_VENUSAUR_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_CHARIZARD_DOLL] =
@@ -1389,7 +1389,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_CHARIZARD_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_BLASTOISE_DOLL] =
@@ -1401,7 +1401,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_BLASTOISE_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_WAILMER_DOLL] =
@@ -1413,7 +1413,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_WAILMER_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_REGIROCK_DOLL] =
@@ -1425,7 +1425,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGIROCK_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_REGICE_DOLL] =
@@ -1437,7 +1437,7 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGICE_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     },
 
     [DECOR_REGISTEEL_DOLL] =
@@ -1449,6 +1449,6 @@ const struct Decoration gDecorations[] =
         .category = DECORCAT_DOLL,
         .price = 10000,
         .description = DecorDesc_REGISTEEL_DOLL,
-        .tiles = DecorGfx_RHYDON_DOLL,
+        .tiles = DecorGfx_ZIGZAG_CUSHION,
     }
 };

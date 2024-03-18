@@ -66,6 +66,8 @@
 #define MAP_FORTREE_GRASSY_AREA (57 | (0 << 8))
 #define MAP_ROUTE201            (58 | (0 << 8))
 #define MAP_ROUTE202            (59 | (0 << 8))
+#define MAP_ROUTE203            (60 | (0 << 8))
+#define MAP_ROUTE204            (61 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -574,6 +576,11 @@
 #define MAP_ROCKET_HIDEOUT_F2                               (97 | (26 << 8))
 #define MAP_ROCKET_HIDEOUT_B1                               (98 | (26 << 8))
 #define MAP_ROCKET_HIDEOUT_MEWTWO_CAGE                      (99 | (26 << 8))
+#define MAP_ROUTE201_INDOOR_PROF_HOUSE                      (100 | (26 << 8))
+#define MAP_MEWTWO_AREA_1                                   (101 | (26 << 8))
+#define MAP_MEWTWO_BUILDING_F2                              (102 | (26 << 8))
+#define MAP_MEWTWO_BUILDING_F3                              (103 | (26 << 8))
+#define MAP_MATS_HOUSE                                      (104 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

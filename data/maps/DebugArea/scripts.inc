@@ -7,192 +7,190 @@ EventScript_SetFlag_Any::
 	setflag FLAG_SYS_NATIONAL_DEX
 # 6 "data/maps/DebugArea/scripts.pory"
 	special EnableNationalPokedex
+# 7 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_IS_CHAMPION
 	return
 
 
 CallGengarParty::
-# 10 "data/maps/DebugArea/scripts.pory"
-	lock
 # 11 "data/maps/DebugArea/scripts.pory"
-	msgbox CallGengarParty_Text_0
+	lock
 # 12 "data/maps/DebugArea/scripts.pory"
-	special SavePlayerParty
+	msgbox CallGengarParty_Text_0
 # 13 "data/maps/DebugArea/scripts.pory"
-	special CallDusclopsFunction
+	special SavePlayerParty
 # 14 "data/maps/DebugArea/scripts.pory"
-	giveitem ITEM_MASTER_BALL, 2
+	special CallDusclopsFunction
 # 15 "data/maps/DebugArea/scripts.pory"
-	giveitem ITEM_RARE_CANDY, 99
+	giveitem ITEM_MASTER_BALL, 2
 # 16 "data/maps/DebugArea/scripts.pory"
-	waitmessage
+	giveitem ITEM_RARE_CANDY, 99
 # 17 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 18 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 RestoreParty::
-# 21 "data/maps/DebugArea/scripts.pory"
-	lock
 # 22 "data/maps/DebugArea/scripts.pory"
-	msgbox RestoreParty_Text_0
+	lock
 # 23 "data/maps/DebugArea/scripts.pory"
-	special LoadPlayerParty
+	msgbox RestoreParty_Text_0
 # 24 "data/maps/DebugArea/scripts.pory"
-	waitmessage
+	special LoadPlayerParty
 # 25 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 26 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+SetRocketEventActive::
+# 30 "data/maps/DebugArea/scripts.pory"
+	lock
+# 31 "data/maps/DebugArea/scripts.pory"
+	msgbox SetRocketEventActive_Text_0
+# 32 "data/maps/DebugArea/scripts.pory"
+	setvar VAR_ROCKET_ARC_STATE, 0
+# 33 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_ROCKET_EVENT_ACTIVE
+# 34 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+# 35 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_HIDE_PETALBURG_GYM_NORMAN
+# 36 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_HIDE_PETALBURG_GYM_GREETER
+# 37 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 38 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+BeatRocketRustboro::
+# 42 "data/maps/DebugArea/scripts.pory"
+	lock
+# 43 "data/maps/DebugArea/scripts.pory"
+	msgbox BeatRocketRustboro_Text_0
+# 44 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_RUSTBORO_ROCKET_DEFEATED
+# 45 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_DEWFORD_ROCKET_DEFEATED
+# 46 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_MAUVILLE_ROCKET_DEFEATED
+# 47 "data/maps/DebugArea/scripts.pory"
+	clearflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+# 48 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_LAVARIDGE_ROCKET_DEFEATED
+# 49 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_PETALBURG_ROCKET_DEFEATED
+# 50 "data/maps/DebugArea/scripts.pory"
+	clearflag FLAG_HIDE_PETALBURG_GYM_NORMAN
+# 51 "data/maps/DebugArea/scripts.pory"
+	clearflag FLAG_HIDE_PETALBURG_GYM_GREETER
+# 52 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_FORTREE_ROCKET_DEFEATED
+# 53 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_MOSSDEEP_ROCKET_DEFEATED
+# 54 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_SOOTOPOLIS_ROCKET_DEFEATED
+# 55 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 56 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym1::
-# 29 "data/maps/DebugArea/scripts.pory"
+# 60 "data/maps/DebugArea/scripts.pory"
 	lock
-# 30 "data/maps/DebugArea/scripts.pory"
+# 61 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
-# 31 "data/maps/DebugArea/scripts.pory"
+# 62 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_BADGE01_GET
-# 32 "data/maps/DebugArea/scripts.pory"
+# 63 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetFlag_Gym1_Text_0
-# 33 "data/maps/DebugArea/scripts.pory"
+# 64 "data/maps/DebugArea/scripts.pory"
 	waitmessage
-# 34 "data/maps/DebugArea/scripts.pory"
+# 65 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym2::
-# 37 "data/maps/DebugArea/scripts.pory"
+# 68 "data/maps/DebugArea/scripts.pory"
 	lock
-# 38 "data/maps/DebugArea/scripts.pory"
+# 69 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_DEFEATED_DEWFORD_GYM
-# 39 "data/maps/DebugArea/scripts.pory"
+# 70 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_BADGE02_GET
-# 40 "data/maps/DebugArea/scripts.pory"
+# 71 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetFlag_Gym2_Text_0
-# 41 "data/maps/DebugArea/scripts.pory"
+# 72 "data/maps/DebugArea/scripts.pory"
 	waitmessage
-# 42 "data/maps/DebugArea/scripts.pory"
+# 73 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym3::
-# 45 "data/maps/DebugArea/scripts.pory"
+# 76 "data/maps/DebugArea/scripts.pory"
 	lock
-# 46 "data/maps/DebugArea/scripts.pory"
+# 77 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
-# 47 "data/maps/DebugArea/scripts.pory"
+# 78 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_BADGE03_GET
-# 48 "data/maps/DebugArea/scripts.pory"
+# 79 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetFlag_Gym3_Text_0
-# 49 "data/maps/DebugArea/scripts.pory"
+# 80 "data/maps/DebugArea/scripts.pory"
 	waitmessage
-# 50 "data/maps/DebugArea/scripts.pory"
+# 81 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym4::
-# 54 "data/maps/DebugArea/scripts.pory"
+# 85 "data/maps/DebugArea/scripts.pory"
 	lock
-# 55 "data/maps/DebugArea/scripts.pory"
+# 86 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_DEFEATED_LAVARIDGE_GYM
-# 56 "data/maps/DebugArea/scripts.pory"
+# 87 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_BADGE04_GET
-# 57 "data/maps/DebugArea/scripts.pory"
+# 88 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetFlag_Gym4_Text_0
-# 58 "data/maps/DebugArea/scripts.pory"
+# 89 "data/maps/DebugArea/scripts.pory"
 	waitmessage
-# 59 "data/maps/DebugArea/scripts.pory"
+# 90 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym5::
-# 63 "data/maps/DebugArea/scripts.pory"
+# 94 "data/maps/DebugArea/scripts.pory"
 	lock
-# 64 "data/maps/DebugArea/scripts.pory"
+# 95 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_DEFEATED_PETALBURG_GYM
-# 65 "data/maps/DebugArea/scripts.pory"
+# 96 "data/maps/DebugArea/scripts.pory"
 	setflag FLAG_BADGE05_GET
-# 66 "data/maps/DebugArea/scripts.pory"
+# 97 "data/maps/DebugArea/scripts.pory"
 	msgbox EventScript_SetFlag_Gym5_Text_0
-# 67 "data/maps/DebugArea/scripts.pory"
+# 98 "data/maps/DebugArea/scripts.pory"
 	waitmessage
-# 68 "data/maps/DebugArea/scripts.pory"
+# 99 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 EventScript_SetFlag_Gym6::
-# 72 "data/maps/DebugArea/scripts.pory"
+# 103 "data/maps/DebugArea/scripts.pory"
 	lock
-# 73 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_DEFEATED_FORTREE_GYM
-# 74 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_BADGE06_GET
-# 75 "data/maps/DebugArea/scripts.pory"
-	msgbox EventScript_SetFlag_Gym6_Text_0
-# 76 "data/maps/DebugArea/scripts.pory"
-	waitmessage
-# 77 "data/maps/DebugArea/scripts.pory"
-	release
-	return
-
-
-EventScript_SetFlag_Gym7::
-# 80 "data/maps/DebugArea/scripts.pory"
-	lock
-# 81 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_DEFEATED_MOSSDEEP_GYM
-# 82 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_BADGE07_GET
-# 83 "data/maps/DebugArea/scripts.pory"
-	msgbox EventScript_SetFlag_Gym7_Text_0
-# 84 "data/maps/DebugArea/scripts.pory"
-	waitmessage
-# 85 "data/maps/DebugArea/scripts.pory"
-	release
-	return
-
-
-EventScript_SetFlag_Gym8::
-# 88 "data/maps/DebugArea/scripts.pory"
-	lock
-# 89 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
-# 90 "data/maps/DebugArea/scripts.pory"
-	setflag FLAG_BADGE08_GET
-# 91 "data/maps/DebugArea/scripts.pory"
-	msgbox EventScript_SetFlag_Gym8_Text_0
-# 92 "data/maps/DebugArea/scripts.pory"
-	waitmessage
-# 93 "data/maps/DebugArea/scripts.pory"
-	release
-	return
-
-
-EventScript_SetVar_MatsRival::
-# 96 "data/maps/DebugArea/scripts.pory"
-	lock
-# 97 "data/maps/DebugArea/scripts.pory"
-	setvar RIVAL_STATE_MATS, 3
-# 98 "data/maps/DebugArea/scripts.pory"
-	msgbox EventScript_SetVar_MatsRival_Text_0
-# 99 "data/maps/DebugArea/scripts.pory"
-	waitmessage
-# 100 "data/maps/DebugArea/scripts.pory"
-	release
-	return
-
-
-EventScript_SetVar_Dusclops::
 # 104 "data/maps/DebugArea/scripts.pory"
-	lock
+	setflag FLAG_DEFEATED_FORTREE_GYM
 # 105 "data/maps/DebugArea/scripts.pory"
-	setvar DUSCLOPS_STATE, 2
+	setflag FLAG_BADGE06_GET
 # 106 "data/maps/DebugArea/scripts.pory"
-	msgbox EventScript_SetVar_Dusclops_Text_0
+	msgbox EventScript_SetFlag_Gym6_Text_0
 # 107 "data/maps/DebugArea/scripts.pory"
 	waitmessage
 # 108 "data/maps/DebugArea/scripts.pory"
@@ -200,70 +198,138 @@ EventScript_SetVar_Dusclops::
 	return
 
 
-WarpmapToSevii::
-# 112 "data/maps/DebugArea/scripts.pory"
+EventScript_SetFlag_Gym7::
+# 111 "data/maps/DebugArea/scripts.pory"
 	lock
+# 112 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_DEFEATED_MOSSDEEP_GYM
 # 113 "data/maps/DebugArea/scripts.pory"
-	msgbox WarpmapToSevii_Text_0
+	setflag FLAG_BADGE07_GET
 # 114 "data/maps/DebugArea/scripts.pory"
-	waitmessage
+	msgbox EventScript_SetFlag_Gym7_Text_0
 # 115 "data/maps/DebugArea/scripts.pory"
-	special SetRegionToSEVII
+	waitmessage
 # 116 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+EventScript_SetFlag_Gym8::
+# 119 "data/maps/DebugArea/scripts.pory"
+	lock
+# 120 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_DEFEATED_SOOTOPOLIS_GYM
+# 121 "data/maps/DebugArea/scripts.pory"
+	setflag FLAG_BADGE08_GET
+# 122 "data/maps/DebugArea/scripts.pory"
+	msgbox EventScript_SetFlag_Gym8_Text_0
+# 123 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 124 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+EventScript_SetVar_MatsRival::
+# 127 "data/maps/DebugArea/scripts.pory"
+	lock
+# 128 "data/maps/DebugArea/scripts.pory"
+	setvar RIVAL_STATE_MATS, 3
+# 129 "data/maps/DebugArea/scripts.pory"
+	msgbox EventScript_SetVar_MatsRival_Text_0
+# 130 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 131 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+EventScript_SetVar_Dusclops::
+# 135 "data/maps/DebugArea/scripts.pory"
+	lock
+# 136 "data/maps/DebugArea/scripts.pory"
+	setvar DUSCLOPS_STATE, 2
+# 137 "data/maps/DebugArea/scripts.pory"
+	msgbox EventScript_SetVar_Dusclops_Text_0
+# 138 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 139 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
+WarpmapToSevii::
+# 143 "data/maps/DebugArea/scripts.pory"
+	lock
+# 144 "data/maps/DebugArea/scripts.pory"
+	msgbox WarpmapToSevii_Text_0
+# 145 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 146 "data/maps/DebugArea/scripts.pory"
+	special SetRegionToSEVII
+# 147 "data/maps/DebugArea/scripts.pory"
 	warpteleport MAP_ROUTE201, 0
-# 117 "data/maps/DebugArea/scripts.pory"
+# 148 "data/maps/DebugArea/scripts.pory"
 	release
 	return
 
 
 CallGengarParty_Text_0:
-# 11 "data/maps/DebugArea/scripts.pory"
+# 12 "data/maps/DebugArea/scripts.pory"
 	.string "Party reset$"
 
 RestoreParty_Text_0:
-# 22 "data/maps/DebugArea/scripts.pory"
+# 23 "data/maps/DebugArea/scripts.pory"
 	.string "Party Restored$"
 
+SetRocketEventActive_Text_0:
+# 31 "data/maps/DebugArea/scripts.pory"
+	.string "Rockets have now taken over the world$"
+
+BeatRocketRustboro_Text_0:
+# 43 "data/maps/DebugArea/scripts.pory"
+	.string "And rocket gyms have been freed$"
+
 EventScript_SetFlag_Gym1_Text_0:
-# 32 "data/maps/DebugArea/scripts.pory"
+# 63 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 1 completed$"
 
 EventScript_SetFlag_Gym2_Text_0:
-# 40 "data/maps/DebugArea/scripts.pory"
+# 71 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 2 completed$"
 
 EventScript_SetFlag_Gym3_Text_0:
-# 48 "data/maps/DebugArea/scripts.pory"
+# 79 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 3 completed$"
 
 EventScript_SetFlag_Gym4_Text_0:
-# 57 "data/maps/DebugArea/scripts.pory"
+# 88 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 4 completed$"
 
 EventScript_SetFlag_Gym5_Text_0:
-# 66 "data/maps/DebugArea/scripts.pory"
+# 97 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 5 completed$"
 
 EventScript_SetFlag_Gym6_Text_0:
-# 75 "data/maps/DebugArea/scripts.pory"
+# 106 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 6 completed$"
 
 EventScript_SetFlag_Gym7_Text_0:
-# 83 "data/maps/DebugArea/scripts.pory"
+# 114 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 7 completed$"
 
 EventScript_SetFlag_Gym8_Text_0:
-# 91 "data/maps/DebugArea/scripts.pory"
+# 122 "data/maps/DebugArea/scripts.pory"
 	.string "Gym 8 completed$"
 
 EventScript_SetVar_MatsRival_Text_0:
-# 98 "data/maps/DebugArea/scripts.pory"
+# 129 "data/maps/DebugArea/scripts.pory"
 	.string "Updated Mats_Rival_State by one$"
 
 EventScript_SetVar_Dusclops_Text_0:
-# 106 "data/maps/DebugArea/scripts.pory"
+# 137 "data/maps/DebugArea/scripts.pory"
 	.string "Updated DUSCLOPS_STATE by one$"
 
 WarpmapToSevii_Text_0:
-# 113 "data/maps/DebugArea/scripts.pory"
+# 144 "data/maps/DebugArea/scripts.pory"
 	.string "Here we go$"

@@ -43,6 +43,7 @@ LittlerootTown_MapScripts::
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Setup_RivalBattle_StenFirst
+	call Birch_Post_league_IslandEventSetup
 	call SetUpDusclopsLittleRoot
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
@@ -1145,4 +1146,43 @@ script LittleRoot_EventScript_Dusclops{
 	fadescreen(FADE_FROM_BLACK)
 	msgbox("That was strange... was that a Pokemon?")
 	release
+}
+
+script Birch_Post_league_IslandEventSetup{
+	if(flag(FLAG_IS_CHAMPION)){
+		if(var(VAR_ROCKET_ARC_STATE) == 0){
+			clearflag(FLAG_BIRCH_ISLAND_EVENT)
+		}
+	}else{
+		setflag(FLAG_BIRCH_ISLAND_EVENT)
+	}
+}
+
+script Birch_Conversation_Island{
+	lock
+	faceplayer
+	msgbox(BirchChatsAboutHouse)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, BumpPlayerUp)
+	waitmovement(0)
+	applymovement(8,BirchLeaveHousePostIslandConversation)
+	waitmovement(0)
+	setvar(VAR_ROCKET_ARC_STATE,1)
+	setflag(FLAG_BIRCH_ISLAND_EVENT)
+	removeobject(8)
+	release
+}
+
+text BirchChatsAboutHouse{
+	format("Ah, just in time. We have received exciting news, you see, a new island has been discovered! At current time we expect that it is due to the events following Kyogre and Groudon's battle. What do you say, are you up for an adventure? Why don't you join us, you are the strongest trainer after all. Once you are prepared meet me in Slateport city's harbour. See you there!")
+}
+
+movement BirchLeaveHousePostIslandConversation {
+	walk_right * 3
+	walk_down * 1
+}
+
+movement BumpPlayerUp{
+	walk_up * 1
+	face_down * 1
 }

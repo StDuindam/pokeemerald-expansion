@@ -1107,3 +1107,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RocketHideoutMewtwoCage/scripts.inc"
 
 	.include "data/maps/TotemCave/scripts.inc"
+
+	.include "data/maps/Route201_IndoorProfHouse/scripts.inc"
+
+	.include "data/maps/Route203/scripts.inc"
+
+	.include "data/maps/Route204/scripts.inc"
+
+	.include "data/maps/Mewtwo_Area_1/scripts.inc"
+
+	.include "data/maps/MewtwoBuilding_F2/scripts.inc"
+
+	.include "data/maps/MewtwoBuilding_F3/scripts.inc"
+
+	.include "data/maps/MatsHouse/scripts.inc"

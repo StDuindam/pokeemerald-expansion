@@ -445,6 +445,13 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_ROCKETF                 0x112B
 #define OBJ_EVENT_PAL_TAG_ROCKETM                 0x112C
 #define OBJ_EVENT_PAL_TAG_GIOVANNI                0x112D
+#define OBJ_EVENT_PAL_TAG_BLASTOISE               0x112E
+#define OBJ_EVENT_PAL_TAG_CHARIZARD               0x112F
+#define OBJ_EVENT_PAL_TAG_VENUSAUR                0x1130
+#define OBJ_EVENT_PAL_TAG_ARCANINE                0x1131
+#define OBJ_EVENT_PAL_TAG_GYARADOS                0x1132
+#define OBJ_EVENT_PAL_TAG_ALAKAZAM                0x1133
+
 #include "data/field_effects/field_effect_object_template_pointers.h"
 #include "data/object_events/object_event_pic_tables.h"
 #include "data/object_events/object_event_anims.h"
@@ -498,6 +505,12 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RocketM,             OBJ_EVENT_PAL_TAG_ROCKETM},
     {gObjectEventPal_RocketF,             OBJ_EVENT_PAL_TAG_ROCKETF},
     {gObjectEventPal_Giovanni,             OBJ_EVENT_PAL_TAG_GIOVANNI},
+    {gObjectEventPal_Blastoise,             OBJ_EVENT_PAL_TAG_BLASTOISE},
+    {gObjectEventPal_Charizard,             OBJ_EVENT_PAL_TAG_CHARIZARD},
+    {gObjectEventPal_Gyarados,             OBJ_EVENT_PAL_TAG_GYARADOS},   
+    {gObjectEventPal_Venusaur,             OBJ_EVENT_PAL_TAG_VENUSAUR},
+    {gObjectEventPal_Alakazam,             OBJ_EVENT_PAL_TAG_ALAKAZAM},
+    {gObjectEventPal_Arcanine,             OBJ_EVENT_PAL_TAG_ARCANINE}, 
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

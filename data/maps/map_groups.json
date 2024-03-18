@@ -95,7 +95,9 @@
     "Underwater_Route125",
     "Fortree_GrassyArea",
     "Route201",
-    "Route202"
+    "Route202",
+    "Route203",
+    "Route204"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -603,7 +605,12 @@
     "RocketHideout_F1",
     "RocketHideout_F2",
     "RocketHideout_B1",
-    "RocketHideoutMewtwoCage"
+    "RocketHideoutMewtwoCage",
+    "Route201_IndoorProfHouse",
+    "Mewtwo_Area_1",
+    "MewtwoBuilding_F2",
+    "MewtwoBuilding_F3",
+    "MatsHouse"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

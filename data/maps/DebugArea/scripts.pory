@@ -4,6 +4,7 @@ mapscripts DebugArea_MapScripts {
 script EventScript_SetFlag_Any{
     setflag(FLAG_SYS_NATIONAL_DEX)
 	special(EnableNationalPokedex)
+    setflag(FLAG_IS_CHAMPION)
 }
 
 script CallGengarParty{
@@ -21,6 +22,36 @@ script RestoreParty{
     lock
     msgbox("Party Restored")
     special(LoadPlayerParty)
+    waitmessage
+    release
+}
+
+script SetRocketEventActive{
+    lock
+    msgbox("Rockets have now taken over the world")
+    setvar(VAR_ROCKET_ARC_STATE,0)
+    setflag(FLAG_ROCKET_EVENT_ACTIVE)
+    setflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
+    setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN)
+    setflag(FLAG_HIDE_PETALBURG_GYM_GREETER)
+    waitmessage
+    release
+}
+
+script BeatRocketRustboro{
+    lock
+    msgbox("And rocket gyms have been freed")
+    setflag(FLAG_RUSTBORO_ROCKET_DEFEATED)
+    setflag(FLAG_DEWFORD_ROCKET_DEFEATED)
+    setflag(FLAG_MAUVILLE_ROCKET_DEFEATED)
+    clearflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
+    setflag(FLAG_LAVARIDGE_ROCKET_DEFEATED)
+    setflag(FLAG_PETALBURG_ROCKET_DEFEATED)
+    clearflag(FLAG_HIDE_PETALBURG_GYM_NORMAN)
+    clearflag(FLAG_HIDE_PETALBURG_GYM_GREETER)
+    setflag(FLAG_FORTREE_ROCKET_DEFEATED)
+    setflag(FLAG_MOSSDEEP_ROCKET_DEFEATED)
+    setflag(FLAG_SOOTOPOLIS_ROCKET_DEFEATED)
     waitmessage
     release
 }

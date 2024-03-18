@@ -5,7 +5,7 @@
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ONE_ISLAND",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_RAIN",
   "map_type": "MAP_TYPE_CITY",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -68,15 +68,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
-      "x": 9,
-      "y": 14,
+      "x": 24,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SetRocketEventActive",
       "flag": "0"
     },
     {
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 12,
+      "x": 24,
       "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -102,7 +102,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BeatRocketRustboro",
       "flag": "0"
     },
     {
@@ -110,7 +110,7 @@
       "x": 5,
       "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -123,7 +123,85 @@
       "x": 7,
       "y": 13,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VENUSAUR",
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BLASTOISE",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CHARIZARD",
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARCANINE",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ALAKAZAM",
+      "x": 12,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GYARADOS",
+      "x": 14,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -172,14 +250,70 @@
       "x": 17,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_PETALBURG_CITY",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_ROUTE204",
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_ROUTE202",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_RUSTBORO_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_DEWFORD_TOWN_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_LAVARIDGE_TOWN_GYM_1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_PETALBURG_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_MOSSDEEP_CITY_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 34,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY_GYM_1F",
       "dest_warp_id": "0"
     }
   ],

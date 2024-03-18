@@ -4444,7 +4444,7 @@
     {
       "id": "LAYOUT_DEBUG_AREA",
       "name": "DebugArea_Layout",
-      "width": 20,
+      "width": 40,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4610,6 +4610,76 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TotemCave/border.bin",
       "blockdata_filepath": "data/layouts/TotemCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE201_INDOOR_PROF_HOUSE",
+      "name": "Route201_IndoorProfHouse_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route201_IndoorProfHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route201_IndoorProfHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE203",
+      "name": "Route203_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "border_filepath": "data/layouts/Route203/border.bin",
+      "blockdata_filepath": "data/layouts/Route203/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE204",
+      "name": "Route204_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/Route204/border.bin",
+      "blockdata_filepath": "data/layouts/Route204/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_AREA_1",
+      "name": "Mewtwo_Area_1_Layout",
+      "width": 21,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePalace",
+      "border_filepath": "data/layouts/Mewtwo_Area_1/border.bin",
+      "blockdata_filepath": "data/layouts/Mewtwo_Area_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_BUILDING_F2",
+      "name": "MewtwoBuilding_F2_Layout",
+      "width": 19,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePalace",
+      "border_filepath": "data/layouts/MewtwoBuilding_F2/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoBuilding_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_BUILDING_F3",
+      "name": "MewtwoBuilding_F3_Layout",
+      "width": 12,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonFanClub",
+      "border_filepath": "data/layouts/MewtwoBuilding_F3/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoBuilding_F3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MATS_HOUSE",
+      "name": "MatsHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MatsHouse/border.bin",
+      "blockdata_filepath": "data/layouts/MatsHouse/map.bin"
     }
   ]
 }

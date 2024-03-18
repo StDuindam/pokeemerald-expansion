@@ -585,27 +585,3 @@ const u16 DecorGfx_SPIN_CUSHION[] = {
 const u16 DecorGfx_DIAMOND_CUSHION[] = {
     OBJ_EVENT_GFX_DIAMOND_CUSHION
 };
-
-const u16 DecorGfx_BALL_CUSHION[] = {
-    OBJ_EVENT_GFX_BALL_CUSHION
-};
-
-const u16 DecorGfx_GRASS_CUSHION[] = {
-    OBJ_EVENT_GFX_GRASS_CUSHION
-};
-
-const u16 DecorGfx_FIRE_CUSHION[] = {
-    OBJ_EVENT_GFX_FIRE_CUSHION
-};
-
-const u16 DecorGfx_WATER_CUSHION[] = {
-    OBJ_EVENT_GFX_WATER_CUSHION
-};
-
-const u16 DecorGfx_SNORLAX_DOLL[] = {
-    OBJ_EVENT_GFX_BIG_SNORLAX_DOLL
-};
-
-const u16 DecorGfx_RHYDON_DOLL[] = {
-    OBJ_EVENT_GFX_BIG_RHYDON_DOLL
-};
