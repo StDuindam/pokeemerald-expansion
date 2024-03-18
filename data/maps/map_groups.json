@@ -610,7 +610,9 @@
     "Mewtwo_Area_1",
     "MewtwoBuilding_F2",
     "MewtwoBuilding_F3",
-    "MatsHouse"
+    "MatsHouse",
+    "Indoor_Route201_Cleanery",
+    "Indoor_Route201_GenericHouse"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

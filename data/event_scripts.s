@@ -1121,3 +1121,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MewtwoBuilding_F3/scripts.inc"
 
 	.include "data/maps/MatsHouse/scripts.inc"
+
+	.include "data/maps/Indoor_Route201_Cleanery/scripts.inc"
+
+	.include "data/maps/Indoor_Route201_GenericHouse/scripts.inc"

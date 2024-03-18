@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_Route201_ProfessorAndSteven",
       "flag": "0"
     },
     {
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "EventScript_Route201_Steven",
+      "flag": "FLAG_STEVEN_ROUTE201_CONVERSATION"
     }
   ],
   "warp_events": [
@@ -58,7 +58,42 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "2",
+      "script": "Route201_ProfessorHouse_TriggerTwo"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "2",
+      "script": "Route201_ProfessorHouse_TriggerThree"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "2",
+      "script": "Route201_ProfessorHouse_TriggerFour"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "2",
+      "script": "Route201_ProfessorHouse_TriggerOne"
+    }
   ],
   "bg_events": [
 

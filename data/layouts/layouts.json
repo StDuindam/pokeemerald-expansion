@@ -4680,6 +4680,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MatsHouse/border.bin",
       "blockdata_filepath": "data/layouts/MatsHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_ROUTE201_CLEANERY",
+      "name": "Indoor_Route201_Cleanery_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/Indoor_Route201_Cleanery/border.bin",
+      "blockdata_filepath": "data/layouts/Indoor_Route201_Cleanery/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDOOR_ROUTE201_GENERIC_HOUSE",
+      "name": "Indoor_Route201_GenericHouse_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Indoor_Route201_GenericHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Indoor_Route201_GenericHouse/map.bin"
     }
   ]
 }

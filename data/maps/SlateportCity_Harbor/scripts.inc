@@ -1191,8 +1191,6 @@ Movement_EnterBoat_ToMarvelIsland:
 	walk_left
 # 602 "data/maps/SlateportCity_Harbor/scripts.pory"
 	walk_up
-# 602 "data/maps/SlateportCity_Harbor/scripts.pory"
-	walk_up
 	step_end
 
 EventScript_MarvelIsland_SlateportHarbor_Attendant_Text_0:

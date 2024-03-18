@@ -581,6 +581,8 @@
 #define MAP_MEWTWO_BUILDING_F2                              (102 | (26 << 8))
 #define MAP_MEWTWO_BUILDING_F3                              (103 | (26 << 8))
 #define MAP_MATS_HOUSE                                      (104 | (26 << 8))
+#define MAP_INDOOR_ROUTE201_CLEANERY                        (105 | (26 << 8))
+#define MAP_INDOOR_ROUTE201_GENERIC_HOUSE                   (106 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

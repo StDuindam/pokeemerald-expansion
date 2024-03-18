@@ -1232,9 +1232,9 @@
 #define FLAG_BIRCH_ISLAND_EVENT                                     0x49D // Unused Flag
 #define FLAG_SLATEPORTCITYHARBOR_ISLAND_EVENT                       0x49E // Unused Flag
 #define FLAG_SLATEPORTCITY_MARVELISLAND_ATTENDANT                   0x49F // Unused Flag
-#define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
+#define FLAG_ROUTE201_HIKER_BLOCKAGE                                0x4A0 // Unused Flag
+#define FLAG_ROUTE201_POKEBALL                                      0x4A1 // Unused Flag
+#define FLAG_STEVEN_ROUTE201_CONVERSATION                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
