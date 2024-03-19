@@ -214,7 +214,11 @@ script EventScript_Route201_Hiker_Three{
 script EventScript_Route201_Mats_One{
     lock
     faceplayer
-    msgbox(format("How much longer will we have to wait before we can leave this beach? Yeah the water pokemon are nice and all but I am eager to explore!"))
+    msgbox(format("How much longer will we have to wait before we can leave this beach? I have been hearing rumours about a legendary fire pokemon. Take a look at this drawing."))
+    showmonpic(SPECIES_MOLTRES,10,3)
+    waitmessage
+    hidemonpic
+    msgbox(format("Wicked right? Maybe we will be lucky enough to see it ourselves."))
     waitmessage
     release
 }
