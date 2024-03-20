@@ -147,3 +147,36 @@ script WarpmapToSevii{
     warpteleport(MAP_ROUTE201, 0)
     release
 }
+
+script BattleGiovanniTest{
+    trainerbattle_single(TRAINER_ROCKET_GIOVANNI_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle)
+	waitmessage
+	end
+}
+
+script BattleRocketFTest{
+    trainerbattle_single(TRAINER_ROCKET_GRUNTF_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle)
+	waitmessage
+	end
+}
+
+script BattleRocketMTest{
+    trainerbattle_single(TRAINER_ROCKET_GRUNTM_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle)
+	waitmessage
+	end
+}
+
+text BattleTestIntro{
+    format("I will beat you TEST")
+}
+
+text BattleTestOutro{
+    format("I didn't beat you TEST")
+}
+
+script PostTestBattle{
+    lock
+    msgbox(format("You beat me!"))
+    waitmessage
+    release
+}

@@ -10426,4 +10426,37 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = TRAINER_PARTY(sParty_GengarBattleFinal),
     }, 
+    [TRAINER_ROCKET_GRUNTF_ONE] =
+    {
+        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .trainerName = _("GRUNT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = TRAINER_PARTY(sParty_Joey),
+    }, 
+    [TRAINER_ROCKET_GRUNTM_ONE] =
+    {
+        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerName = _("GRUNT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = TRAINER_PARTY(sParty_Joey),
+    }, 
+    [TRAINER_ROCKET_GIOVANNI_ONE] =
+    {
+        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_GIOVANNI,
+        .trainerName = _("GIOVANNI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = TRAINER_PARTY(sParty_Joey),
+    }, 
 };

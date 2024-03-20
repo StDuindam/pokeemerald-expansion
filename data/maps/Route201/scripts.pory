@@ -66,6 +66,7 @@ script EventScript_Route201_ProfessorAndSteven{
     if(var(VAR_ROCKET_ARC_STATE) == 2){
         msgbox(format("Quite a nice little place we have created so far, haven't we? Anyway, the truth is beyond this beach are some incredibly strong pokemon. We do need your help to better understand this place and create a map of the Island. I have asked some of the Hoenn gym leaders to assist in this mission, like Steven here."))
         waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceSteven_201)
         applymovement(2,StevenMoveToPlayer_Route201)
         waitmovement(0)
         msgbox(format("Right, I have agreed to assist scouting the island. So far the cries we have heard sound like ancient Pokemon. We have been hearing more and more sounds, something seems wrong. Make sure you keep your eyes open, okay? I will see you around and let the Professor know if you find something."))
@@ -73,12 +74,14 @@ script EventScript_Route201_ProfessorAndSteven{
         applymovement(2, StevenLeaveHouse_Route201)
         waitmovement(0)
         removeobject(2)
+        applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceBirch_201)
         msgbox(format("Yes, yes, always keep an eye out for strange things, will you? With that in mind I think we are ready to venture into the forest. Find a strong Pokemon and return back to share your findings."))        
         waitmessage
         setvar(VAR_ROCKET_ARC_STATE,3)
         setflag(FLAG_ROUTE201_HIKER_BLOCKAGE)
     }else{
-        msgbox("What exciting times, go see if you can catch a strong new Pokemon, make sure you come back after.")
+        faceplayer
+        msgbox(format("What exciting times, go see if you can catch a strong new Pokemon, make sure you come back after."))
         waitmessage
     }
     release
@@ -98,6 +101,15 @@ movement MoveToProfessor_201_Three {
     walk_left * 2
     walk_up
 }
+
+movement PlayerFaceSteven_201{
+    face_right
+}
+
+movement PlayerFaceBirch_201{
+    face_up
+}
+
 
 movement MoveToProfessor_201_Four {
     walk_up * 2
@@ -217,9 +229,9 @@ script EventScript_Route201_Mats_One{
     msgbox(format("How much longer will we have to wait before we can leave this beach? I have been hearing rumours about a legendary fire pokemon. Take a look at this drawing."))
     showmonpic(SPECIES_MOLTRES,10,3)
     waitmessage
-    hidemonpic
     msgbox(format("Wicked right? Maybe we will be lucky enough to see it ourselves."))
     waitmessage
+    hidemonpic
     release
 }
 

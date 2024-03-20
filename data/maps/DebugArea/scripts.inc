@@ -274,6 +274,42 @@ WarpmapToSevii::
 	return
 
 
+BattleGiovanniTest::
+# 152 "data/maps/DebugArea/scripts.pory"
+	trainerbattle_single TRAINER_ROCKET_GIOVANNI_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle
+# 153 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+	end
+
+
+BattleRocketFTest::
+# 158 "data/maps/DebugArea/scripts.pory"
+	trainerbattle_single TRAINER_ROCKET_GRUNTF_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle
+# 159 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+	end
+
+
+BattleRocketMTest::
+# 164 "data/maps/DebugArea/scripts.pory"
+	trainerbattle_single TRAINER_ROCKET_GRUNTM_ONE, BattleTestIntro, BattleTestOutro, PostTestBattle
+# 165 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+	end
+
+
+PostTestBattle::
+# 178 "data/maps/DebugArea/scripts.pory"
+	lock
+# 179 "data/maps/DebugArea/scripts.pory"
+	msgbox PostTestBattle_Text_0
+# 180 "data/maps/DebugArea/scripts.pory"
+	waitmessage
+# 181 "data/maps/DebugArea/scripts.pory"
+	release
+	return
+
+
 CallGengarParty_Text_0:
 # 12 "data/maps/DebugArea/scripts.pory"
 	.string "Party reset$"
@@ -333,3 +369,15 @@ EventScript_SetVar_Dusclops_Text_0:
 WarpmapToSevii_Text_0:
 # 144 "data/maps/DebugArea/scripts.pory"
 	.string "Here we go$"
+
+PostTestBattle_Text_0:
+# 179 "data/maps/DebugArea/scripts.pory"
+	.string "You beat me!$"
+
+BattleTestIntro::
+# 169 "data/maps/DebugArea/scripts.pory"
+	.string "I will beat you TEST$"
+
+BattleTestOutro::
+# 173 "data/maps/DebugArea/scripts.pory"
+	.string "I didn't beat you TEST$"

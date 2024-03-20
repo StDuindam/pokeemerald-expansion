@@ -11996,6 +11996,95 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ROUTE201",
+          "base_label": "gRoute2010",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 55,
+                "max_level": 65,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 57,
+                "max_level": 59,
+                "species": "SPECIES_SHARPEDO"
+              },
+              {
+                "min_level": 58,
+                "max_level": 62,
+                "species": "SPECIES_CARRACOSTA"
+              },
+              {
+                "min_level": 60,
+                "max_level": 65,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 60,
+                "max_level": 64,
+                "species": "SPECIES_CARRACOSTA"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 55,
+                "max_level": 60,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 56,
+                "max_level": 59,
+                "species": "SPECIES_BARRASKEWDA"
+              },
+              {
+                "min_level": 58,
+                "max_level": 61,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 62,
+                "max_level": 65,
+                "species": "SPECIES_BARRASKEWDA"
+              },
+              {
+                "min_level": 60,
+                "max_level": 65,
+                "species": "SPECIES_OMASTAR"
+              },
+              {
+                "min_level": 60,
+                "max_level": 65,
+                "species": "SPECIES_PYUKUMUKU"
+              },
+              {
+                "min_level": 60,
+                "max_level": 63,
+                "species": "SPECIES_OMASTAR"
+              },
+              {
+                "min_level": 62,
+                "max_level": 64,
+                "species": "SPECIES_OMASTAR"
+              },
+              {
+                "min_level": 58,
+                "max_level": 62,
+                "species": "SPECIES_TOXAPEX"
+              },
+              {
+                "min_level": 65,
+                "max_level": 65,
+                "species": "SPECIES_TOXAPEX"
+              }
+            ]
+          }
         }
       ]
     },

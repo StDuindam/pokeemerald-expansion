@@ -1,0 +1,36 @@
+mapscripts Route202_MapScripts {
+}
+
+
+
+script EventScript_Route202_Maniac{
+    lock
+    faceplayer
+    msgbox(format("Give me a moment, I'm studying this tree. Who knows how different they might be from the ones we know back home, you know?"))
+    waitmessage
+    release
+}
+
+script EventScript_Route202_Hiker_One{
+    lock
+    faceplayer
+    msgbox(format("Yikes, the professor was not kidding that only the strongest trainers should dare come here!"))
+    waitmessage
+    release
+}
+
+script EventScript_Route202_Norman{
+    lock
+    faceplayer
+    msgbox(format("Hey kid, have you spotted any rare Pokemon yet? The wild Pokemon sure are strong around here, but nothing Slaking can't take care of. Stay safe OK?"))
+    waitmessage
+    release
+}
+
+script EventScript_Route202_RocketScientist{
+    lock
+    faceplayer
+    msgbox(format("Leave here, kid. Nothing to see here."))
+    waitmessage
+    release
+}
