@@ -10428,7 +10428,7 @@ const struct Trainer gTrainers[] = {
     }, 
     [TRAINER_ROCKET_GRUNTF_ONE] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .trainerName = _("GRUNT"),
@@ -10439,7 +10439,7 @@ const struct Trainer gTrainers[] = {
     }, 
     [TRAINER_ROCKET_GRUNTM_ONE] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .trainerName = _("GRUNT"),
@@ -10450,7 +10450,7 @@ const struct Trainer gTrainers[] = {
     }, 
     [TRAINER_ROCKET_GIOVANNI_ONE] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_GIOVANNI,
         .trainerName = _("GIOVANNI"),
