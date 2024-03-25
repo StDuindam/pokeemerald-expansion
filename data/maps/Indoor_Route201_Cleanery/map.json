@@ -2,7 +2,7 @@
   "id": "MAP_INDOOR_ROUTE201_CLEANERY",
   "name": "Indoor_Route201_Cleanery",
   "layout": "LAYOUT_INDOOR_ROUTE201_CLEANERY",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_FALLARBOR",
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

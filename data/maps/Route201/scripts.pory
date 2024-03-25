@@ -56,7 +56,7 @@ script Route201_ProfessorHouse_TriggerFour{
 
 script EventScript_Route201_YouAreHere{
     lock
-    msgbox("Ah you are here!")
+    msgbox("Prof BIRCH: Ah you are here!")
     waitmessage
     release
 }
@@ -69,19 +69,19 @@ script EventScript_Route201_ProfessorAndSteven{
         applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceSteven_201)
         applymovement(2,StevenMoveToPlayer_Route201)
         waitmovement(0)
-        msgbox(format("Right, I have agreed to assist scouting the island. So far the cries we have heard sound like ancient Pokemon. We have been hearing more and more sounds, something seems wrong. Make sure you keep your eyes open, okay? I will see you around and let the Professor know if you find something."))
+        msgbox(format("STEVEN: Right, I have agreed to assist scouting the island. So far the cries we have heard sound like ancient Pokemon. We have been hearing more and more sounds, something seems wrong. Make sure you keep your eyes open, okay? I will see you around and let the Professor know if you find something."))
         waitmessage
         applymovement(2, StevenLeaveHouse_Route201)
         waitmovement(0)
         removeobject(2)
         applymovement(OBJ_EVENT_ID_PLAYER, PlayerFaceBirch_201)
-        msgbox(format("Yes, yes, always keep an eye out for strange things, will you? With that in mind I think we are ready to venture into the forest. Find a strong Pokemon and return back to share your findings."))        
+        msgbox(format("Prof BIRCH: Yes, yes, always keep an eye out for strange things, will you? With that in mind I think we are ready to venture into the forest. Find a strong Pokemon and return back to share your findings."))        
         waitmessage
         setvar(VAR_ROCKET_ARC_STATE,3)
         setflag(FLAG_ROUTE201_HIKER_BLOCKAGE)
     }else{
         faceplayer
-        msgbox(format("What exciting times, go see if you can catch a strong new Pokemon, make sure you come back after."))
+        msgbox(format("Prof BIRCH: What exciting times, go see if you can catch a strong new Pokemon, make sure you come back after."))
         waitmessage
     }
     release
@@ -139,7 +139,7 @@ movement PlayerLookAtProfessor_Route201{
 script EventScript_Route201_Steven{
     lock
     faceplayer
-    msgbox(format("You should go speak with the Professor, he will explain our next steps."))
+    msgbox(format("STEVEN: You should go speak with the Professor, he will explain our next steps."))
     waitmessage
     release
 }

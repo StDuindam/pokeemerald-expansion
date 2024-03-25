@@ -2,7 +2,7 @@
   "id": "MAP_DEBUG_AREA",
   "name": "DebugArea",
   "layout": "LAYOUT_DEBUG_AREA",
-  "music": "MUS_DUMMY",
+  "music": "MUS_FALLARBOR",
   "region_map_section": "MAPSEC_ONE_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_RAIN",
@@ -347,6 +347,13 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY_HARBOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE201",
       "dest_warp_id": "0"
     }
   ],

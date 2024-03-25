@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE201_INDOOR_PROF_HOUSE",
   "name": "Route201_IndoorProfHouse",
   "layout": "LAYOUT_ROUTE201_INDOOR_PROF_HOUSE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_FALLARBOR",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

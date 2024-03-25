@@ -472,7 +472,7 @@ EventScript_Route201_BoatAttendant_Text_3:
 
 EventScript_Route201_YouAreHere_Text_0:
 # 59 "data/maps/Route201/scripts.pory"
-	.string "Ah you are here!$"
+	.string "Prof BIRCH: Ah you are here!$"
 
 EventScript_Route201_ProfessorAndSteven_Text_0:
 # 67 "data/maps/Route201/scripts.pory"
@@ -488,33 +488,35 @@ EventScript_Route201_ProfessorAndSteven_Text_0:
 
 EventScript_Route201_ProfessorAndSteven_Text_1:
 # 72 "data/maps/Route201/scripts.pory"
-	.string "Right, I have agreed to assist scouting\n"
-	.string "the island. So far the cries we have\l"
-	.string "heard sound like ancient Pokemon. We\l"
-	.string "have been hearing more and more sounds,\l"
-	.string "something seems wrong. Make sure you\l"
-	.string "keep your eyes open, okay? I will see\l"
-	.string "you around and let the Professor know\l"
-	.string "if you find something.$"
+	.string "STEVEN: Right, I have agreed to assist\n"
+	.string "scouting the island. So far the cries we\l"
+	.string "have heard sound like ancient Pokemon.\l"
+	.string "We have been hearing more and more\l"
+	.string "sounds, something seems wrong. Make\l"
+	.string "sure you keep your eyes open, okay? I\l"
+	.string "will see you around and let the\l"
+	.string "Professor know if you find something.$"
 
 EventScript_Route201_ProfessorAndSteven_Text_2:
 # 78 "data/maps/Route201/scripts.pory"
-	.string "Yes, yes, always keep an eye out for\n"
-	.string "strange things, will you? With that in\l"
-	.string "mind I think we are ready to venture\l"
-	.string "into the forest. Find a strong Pokemon\l"
-	.string "and return back to share your findings.$"
+	.string "Prof BIRCH: Yes, yes, always keep an\n"
+	.string "eye out for strange things, will you?\l"
+	.string "With that in mind I think we are ready\l"
+	.string "to venture into the forest. Find a\l"
+	.string "strong Pokemon and return back to\l"
+	.string "share your findings.$"
 
 EventScript_Route201_ProfessorAndSteven_Text_3:
 # 84 "data/maps/Route201/scripts.pory"
-	.string "What exciting times, go see if you can\n"
-	.string "catch a strong new Pokemon, make sure\l"
-	.string "you come back after.$"
+	.string "Prof BIRCH: What exciting times, go see\n"
+	.string "if you can catch a strong new Pokemon,\l"
+	.string "make sure you come back after.$"
 
 EventScript_Route201_Steven_Text_0:
 # 142 "data/maps/Route201/scripts.pory"
-	.string "You should go speak with the Professor,\n"
-	.string "he will explain our next steps.$"
+	.string "STEVEN: You should go speak with the\n"
+	.string "Professor, he will explain our next\l"
+	.string "steps.$"
 
 EventScript_Route201_Azuril_Text_0:
 # 150 "data/maps/Route201/scripts.pory"

@@ -271,7 +271,7 @@
 #define VAR_IS_CHAMPION                                0x40FB // Unused Var
 #define VAR_RIVAL_BATTLE_DOJO                                0x40FC // Unused Var
 #define VAR_ROCKET_ARC_STATE                                0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
+#define VAR_TOTEMCAVE_RANDOM_POKE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
 #define VAR_NEW0                                        0x4100 // Unused Var
