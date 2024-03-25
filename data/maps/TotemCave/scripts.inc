@@ -68,37 +68,46 @@ TotemCave_Won_or_Caught::
 	msgbox TotemCave_Won_or_Caught_Text_0
 # 33 "data/maps/TotemCave/scripts.pory"
 	setflag FLAG_TOTEMCAVE_ROUTE201_DAILY
+# 34 "data/maps/TotemCave/scripts.pory"
+	setflag FLAG_ROUTE202_RAREPOKECAUGHT
+# 35 "data/maps/TotemCave/scripts.pory"
+	setvar VAR_ROCKET_ARC_STATE, 4
 	return
 
 
 TotemCave_RanAway::
-# 38 "data/maps/TotemCave/scripts.pory"
-	playmoncry VAR_TOTEMCAVE_RANDOM_POKE, CRY_MODE_ENCOUNTER
-# 39 "data/maps/TotemCave/scripts.pory"
-	msgbox TotemCave_RanAway_Text_0, MSGBOX_AUTOCLOSE
 # 40 "data/maps/TotemCave/scripts.pory"
-	delay 20
+	playmoncry VAR_TOTEMCAVE_RANDOM_POKE, CRY_MODE_ENCOUNTER
 # 41 "data/maps/TotemCave/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	msgbox TotemCave_RanAway_Text_0, MSGBOX_AUTOCLOSE
 # 42 "data/maps/TotemCave/scripts.pory"
-	removeobject 1
+	delay 20
 # 43 "data/maps/TotemCave/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreen FADE_TO_BLACK
 # 44 "data/maps/TotemCave/scripts.pory"
-	setflag FLAG_TOTEMCAVE_ROUTE201_DAILY
+	removeobject 1
 # 45 "data/maps/TotemCave/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 46 "data/maps/TotemCave/scripts.pory"
+	setflag FLAG_TOTEMCAVE_ROUTE201_DAILY
+# 47 "data/maps/TotemCave/scripts.pory"
+	setflag FLAG_ROUTE202_RAREPOKECAUGHT
+# 48 "data/maps/TotemCave/scripts.pory"
+	setvar VAR_ROCKET_ARC_STATE, 4
+# 49 "data/maps/TotemCave/scripts.pory"
 	msgbox TotemCave_RanAway_Text_1
 	return
 
 
 TotemCave_Won_or_Caught_Text_0:
 # 32 "data/maps/TotemCave/scripts.pory"
-	.string "That's definitely a rare Pokemon, let's go back to the professor.$"
+	.string "That's definitely a rare Pokemon, let's\n"
+	.string "go back to the professor.$"
 
 TotemCave_RanAway_Text_0:
-# 39 "data/maps/TotemCave/scripts.pory"
+# 41 "data/maps/TotemCave/scripts.pory"
 	.string "Roar!!$"
 
 TotemCave_RanAway_Text_1:
-# 45 "data/maps/TotemCave/scripts.pory"
+# 49 "data/maps/TotemCave/scripts.pory"
 	.string "The great beast ran away$"

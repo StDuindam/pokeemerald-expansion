@@ -34,3 +34,45 @@ script EventScript_Route202_RocketScientist{
     waitmessage
     release
 }
+
+script EventScript_Route202_Jens_One{
+    lock
+    faceplayer
+    msgbox(format("JENS: The Pokes around here sure are something huh, each encounter is a crazy battle... Have you got many yet? Maybe we can see who can best use them!"))
+    msgbox("Do you want to battle Jens?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox(format("Lets go then!"))
+        waitmessage
+        call(EventScript_Route202_Jens_Battle)
+        }
+    else{
+        msgbox(format("Let me know if you change your mind..."))
+        waitmessage
+    }
+    release
+}
+
+script EventScript_Route202_Jens_Battle{
+    trainerbattle_single(TRAINER_JENS_ROUTE202, Route_202_Jens_PreBattle, Route202_Jens_PostBattle, EventScript_Route202_Jens_PostBattle)
+}
+text Route_202_Jens_PreBattle{
+    format("Let's see what you have cooked up like Yvar!")
+}
+
+text Route202_Jens_PostBattle{
+    format("That got me fired up, these Pokes are awesome!")
+}
+script EventScript_Route202_Jens_PostBattle{
+    lock
+    applymovement(2, Jens_Route202_MoveAway)
+    waitmovement(0)
+    setvar(VAR_RIVAL_BATTLE_DOJO,1)//1 is Jens
+    setflag(FLAG_ROUTE202_JENS_BATTLED)
+    removeobject(19)   
+    release 
+}
+
+movement Jens_Route202_MoveAway {
+    walk_right * 2
+    walk_down * 7
+}

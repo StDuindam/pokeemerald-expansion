@@ -79,9 +79,20 @@ script EventScript_Route201_ProfessorAndSteven{
         waitmessage
         setvar(VAR_ROCKET_ARC_STATE,3)
         setflag(FLAG_ROUTE201_HIKER_BLOCKAGE)
-    }else{
+    }elif(var(VAR_ROCKET_ARC_STATE) == 3){
         faceplayer
         msgbox(format("Prof BIRCH: What exciting times, go see if you can catch a strong new Pokemon, make sure you come back after."))
+        waitmessage
+    }elif(var(VAR_ROCKET_ARC_STATE)==4){
+        faceplayer
+        msgbox(format("Prof BIRCH: Word is going around fast that you have seen a rare Pokemon."))
+        waitmessage
+        msgbox(format("That Arcanine definitely seems stronger and more primal to me! This is incredible, I hate to ask it because we don't know everything yet. Do you want to explore the forest more? I'm sure we will be seeing more fascinating Pokemon and events unfold!"))
+        waitmessage
+        setvar(VAR_ROCKET_ARC_STATE, 5)
+    }elif(var(VAR_ROCKET_ARC_STATE)==5){
+        faceplayer
+        msgbox(format("Prof BIRCH: See what else you can find in the forest!"))
         waitmessage
     }
     release

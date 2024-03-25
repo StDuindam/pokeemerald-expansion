@@ -58,6 +58,83 @@ EventScript_Route202_RocketScientist::
 	return
 
 
+EventScript_Route202_Jens_One::
+# 39 "data/maps/Route202/scripts.pory"
+	lock
+# 40 "data/maps/Route202/scripts.pory"
+	faceplayer
+# 41 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_Route202_Jens_One_Text_0
+# 42 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_Route202_Jens_One_Text_1, MSGBOX_YESNO
+# 43 "data/maps/Route202/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq EventScript_Route202_Jens_One_2
+# 49 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_Route202_Jens_One_Text_3
+# 50 "data/maps/Route202/scripts.pory"
+	waitmessage
+EventScript_Route202_Jens_One_1:
+# 52 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+EventScript_Route202_Jens_One_2:
+# 44 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_Route202_Jens_One_Text_2
+# 45 "data/maps/Route202/scripts.pory"
+	waitmessage
+# 46 "data/maps/Route202/scripts.pory"
+	call EventScript_Route202_Jens_Battle
+	goto EventScript_Route202_Jens_One_1
+
+
+EventScript_Route202_Jens_Battle::
+# 56 "data/maps/Route202/scripts.pory"
+	trainerbattle_single TRAINER_JENS_ROUTE202, Route_202_Jens_PreBattle, Route202_Jens_PostBattle, EventScript_Route202_Jens_PostBattle
+	return
+
+
+EventScript_Route202_Jens_PostBattle::
+# 66 "data/maps/Route202/scripts.pory"
+	lock
+# 67 "data/maps/Route202/scripts.pory"
+	applymovement 2, Jens_Route202_MoveAway
+# 68 "data/maps/Route202/scripts.pory"
+	waitmovement 0
+# 69 "data/maps/Route202/scripts.pory"
+	setvar VAR_RIVAL_BATTLE_DOJO, 1
+# 70 "data/maps/Route202/scripts.pory"
+	setflag FLAG_ROUTE202_JENS_BATTLED
+# 71 "data/maps/Route202/scripts.pory"
+	removeobject 19
+# 72 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+# 75 "data/maps/Route202/scripts.pory"
+Jens_Route202_MoveAway:
+# 76 "data/maps/Route202/scripts.pory"
+	walk_right
+# 76 "data/maps/Route202/scripts.pory"
+	walk_right
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+# 77 "data/maps/Route202/scripts.pory"
+	walk_down
+	step_end
+
 EventScript_Route202_Maniac_Text_0:
 # 9 "data/maps/Route202/scripts.pory"
 	.string "Give me a moment, I'm studying this\n"
@@ -81,3 +158,32 @@ EventScript_Route202_Norman_Text_0:
 EventScript_Route202_RocketScientist_Text_0:
 # 33 "data/maps/Route202/scripts.pory"
 	.string "Leave here, kid. Nothing to see here.$"
+
+EventScript_Route202_Jens_One_Text_0:
+# 41 "data/maps/Route202/scripts.pory"
+	.string "JENS: The Pokes around here sure are\n"
+	.string "something huh, each encounter is a\l"
+	.string "crazy battle... Have you got many yet?\l"
+	.string "Maybe we can see who can best use them!$"
+
+EventScript_Route202_Jens_One_Text_1:
+# 42 "data/maps/Route202/scripts.pory"
+	.string "Do you want to battle Jens?$"
+
+EventScript_Route202_Jens_One_Text_2:
+# 44 "data/maps/Route202/scripts.pory"
+	.string "Lets go then!$"
+
+EventScript_Route202_Jens_One_Text_3:
+# 49 "data/maps/Route202/scripts.pory"
+	.string "Let me know if you change your mind...$"
+
+Route_202_Jens_PreBattle::
+# 58 "data/maps/Route202/scripts.pory"
+	.string "Let's see what you have cooked up like\n"
+	.string "Yvar!$"
+
+Route202_Jens_PostBattle::
+# 62 "data/maps/Route202/scripts.pory"
+	.string "That got me fired up, these Pokes are\n"
+	.string "awesome!$"
