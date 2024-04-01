@@ -440,7 +440,8 @@
     "AlteringCave",
     "MeteorFalls_StevensCave",
     "MewtwoIslandCave",
-    "TotemCave"
+    "TotemCave",
+    "MewtwoIslandCave_2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -612,7 +613,8 @@
     "MewtwoBuilding_F3",
     "MatsHouse",
     "Indoor_Route201_Cleanery",
-    "Indoor_Route201_GenericHouse"
+    "Indoor_Route201_GenericHouse",
+    "Route202_TreeHouse"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

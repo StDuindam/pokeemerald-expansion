@@ -1,0 +1,40 @@
+mapscripts RocketHideout_F1_MapScripts {
+
+}
+
+script EventScript_RocketOne{
+    trainerbattle_single(TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1, PreBattle_TextOne_RocketHideoutF1, PostBattle_TextOne_RocketHideoutF1)
+
+}
+
+text PreBattle_TextOne_RocketHideoutF1{
+    format("Hold right there intruder!")
+}
+
+text PostBattle_TextOne_RocketHideoutF1{
+    format("Do not dare disturb us on our mission! The boss will take care of you.")
+}
+
+script EventScript_RocketTwo{
+
+}
+
+script EventScript_RocketThree{
+    
+}
+
+script EventScript_RocketFour{
+    
+}
+
+script EventScript_RocketFive{
+    
+}
+
+script EventScript_RocketSix{
+    lock
+    faceplayer
+    msgbox(format("Beat it, no one is coming down here."))
+    waitmessage
+    release
+}

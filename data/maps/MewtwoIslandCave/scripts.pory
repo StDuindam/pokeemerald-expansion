@@ -1,0 +1,13 @@
+mapscripts MewtwoIslandCave_MapScripts {
+        MAP_SCRIPT_ON_TRANSITION: MewtwoIslandCave_OnTransition
+}
+
+script MewtwoIslandCave_OnTransition{
+    if(var(VAR_ROCKET_ARC_STATE) < 7 ){
+        //don't show rockets yet
+    }
+
+    if(flag(FLAG_ROCKET_EVENT_COMPLETED)){
+        //remove everything
+    }
+}

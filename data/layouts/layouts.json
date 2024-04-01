@@ -4627,7 +4627,7 @@
       "width": 40,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/Route203/border.bin",
       "blockdata_filepath": "data/layouts/Route203/map.bin"
     },
@@ -4700,6 +4700,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Indoor_Route201_GenericHouse/border.bin",
       "blockdata_filepath": "data/layouts/Indoor_Route201_GenericHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_ISLAND_CAVE_2",
+      "name": "MewtwoIslandCave_2_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MewtwoIslandCave_2/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoIslandCave_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE202_TREE_HOUSE",
+      "name": "Route202_TreeHouse_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route202_TreeHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route202_TreeHouse/map.bin"
     }
   ]
 }

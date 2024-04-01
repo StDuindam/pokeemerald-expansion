@@ -1,0 +1,10 @@
+mapscripts MewtwoIslandCave_2_MapScripts {
+}
+
+script Eventscript_MewtwoIslandCave_2_Scientist{
+    lock
+    faceplayer
+    msgbox(format("No... you found me? I sure hope THEY cannot find me here..."))
+    waitmessage
+    release
+}

@@ -888,6 +888,13 @@
 #define TRAINER_ROCKET_GRUNTF_ONE         885
 #define TRAINER_ROCKET_GRUNTM_ONE         886
 #define TRAINER_JENS_ROUTE202                      887
+#define TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1         888
+#define TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1                      889
+#define TRAINER_ROCKETM_THREE_ROCKETHIDEOUTF1                      890
+#define TRAINER_ROCKETM_FOUR_ROCKETHIDEOUTF1                      891
+#define TRAINER_ROCKETF_FIVE_ROCKETHIDEOUTF1                      892
+#define TRAINER_SCIENTIST_ONE_ROCKETHIDEOUTF1                      893
+#define TRAINER_SCIENTIST_TWO_ROCKETHIDEOUTF1                      894
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

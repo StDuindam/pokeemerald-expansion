@@ -411,6 +411,7 @@
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
 #define MAP_MEWTWO_ISLAND_CAVE                       (108 | (24 << 8))
 #define MAP_TOTEM_CAVE                               (109 | (24 << 8))
+#define MAP_MEWTWO_ISLAND_CAVE_2                     (110 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -583,6 +584,7 @@
 #define MAP_MATS_HOUSE                                      (104 | (26 << 8))
 #define MAP_INDOOR_ROUTE201_CLEANERY                        (105 | (26 << 8))
 #define MAP_INDOOR_ROUTE201_GENERIC_HOUSE                   (106 | (26 << 8))
+#define MAP_ROUTE202_TREE_HOUSE                             (107 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

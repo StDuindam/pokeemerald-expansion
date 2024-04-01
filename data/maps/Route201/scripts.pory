@@ -94,6 +94,11 @@ script EventScript_Route201_ProfessorAndSteven{
         faceplayer
         msgbox(format("Prof BIRCH: See what else you can find in the forest!"))
         waitmessage
+    }elif(var(VAR_ROCKET_ARC_STATE) == 6)
+    {
+        faceplayer
+        msgbox(format("Prof BIRCH: Furiously strong Pokemon and a cloned Rillaboom? You must figure out what is going on here."))
+        waitmessage
     }
     release
 }

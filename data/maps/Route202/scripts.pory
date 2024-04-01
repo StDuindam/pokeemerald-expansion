@@ -76,3 +76,30 @@ movement Jens_Route202_MoveAway {
     walk_right * 2
     walk_down * 7
 }
+
+script EventScript_DontLeaveBeachRocket_Notif{
+    lock
+    applymovement(17, EventScript_202_RocketLook_Left)
+    waitmovement(0)
+    msgbox(format("ROCKET GRUNT: Hey! You aren't supposed to be here! Get back!"))
+    waitmessage()
+    applymovement(17, EventScript_202_RocketLook_Up)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, PushPlayerDown_EverGrande)
+    waitmovement(0)
+    release
+}
+
+script EventScript_202_RocketTooBusy{
+    lock
+    msgbox(format("This Rocket is too distracted to notice you."))
+    waitmessage
+    release
+}
+
+movement EventScript_202_RocketLook_Left {
+    face_left
+}
+movement EventScript_202_RocketLook_Up {
+    face_up
+}

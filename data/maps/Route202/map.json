@@ -166,7 +166,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_Route202_RocketScientist",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_BLOCKADE_SCIENTIST"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -221,19 +221,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RILLABOOM",
-      "x": 64,
-      "y": 10,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
       "x": 15,
       "y": 63,
@@ -256,7 +243,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "EventScript_202_RocketTooBusy",
       "flag": "0"
     },
     {
@@ -308,10 +295,43 @@
       "elevation": 0,
       "dest_map": "MAP_MEWTWO_ISLAND_CAVE",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 64,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE202_TREE_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "6",
+      "script": "EventScript_DontLeaveBeachRocket_Notif"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "7",
+      "script": "EventScript_DontLeaveBeachRocket_Notif"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "8",
+      "script": "EventScript_DontLeaveBeachRocket_Notif"
+    }
   ],
   "bg_events": [
 

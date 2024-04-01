@@ -124,8 +124,11 @@ EventScript_Route201_ProfessorAndSteven::
 # 93 "data/maps/Route201/scripts.pory"
 	compare VAR_ROCKET_ARC_STATE, 5
 	goto_if_eq EventScript_Route201_ProfessorAndSteven_5
+# 97 "data/maps/Route201/scripts.pory"
+	compare VAR_ROCKET_ARC_STATE, 6
+	goto_if_eq EventScript_Route201_ProfessorAndSteven_6
 EventScript_Route201_ProfessorAndSteven_1:
-# 98 "data/maps/Route201/scripts.pory"
+# 103 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -195,21 +198,20 @@ EventScript_Route201_ProfessorAndSteven_5:
 	waitmessage
 	goto EventScript_Route201_ProfessorAndSteven_1
 
-
+EventScript_Route201_ProfessorAndSteven_6:
+# 99 "data/maps/Route201/scripts.pory"
+	faceplayer
+# 100 "data/maps/Route201/scripts.pory"
+	msgbox EventScript_Route201_ProfessorAndSteven_Text_7
 # 101 "data/maps/Route201/scripts.pory"
-MoveToProfessor_201_One:
-# 102 "data/maps/Route201/scripts.pory"
-	walk_up
-# 102 "data/maps/Route201/scripts.pory"
-	walk_up
-# 102 "data/maps/Route201/scripts.pory"
-	walk_up
-	step_end
+	waitmessage
+	goto EventScript_Route201_ProfessorAndSteven_1
 
-# 105 "data/maps/Route201/scripts.pory"
-MoveToProfessor_201_Two:
+
 # 106 "data/maps/Route201/scripts.pory"
-	walk_left
+MoveToProfessor_201_One:
+# 107 "data/maps/Route201/scripts.pory"
+	walk_up
 # 107 "data/maps/Route201/scripts.pory"
 	walk_up
 # 107 "data/maps/Route201/scripts.pory"
@@ -217,273 +219,283 @@ MoveToProfessor_201_Two:
 	step_end
 
 # 110 "data/maps/Route201/scripts.pory"
-MoveToProfessor_201_Three:
+MoveToProfessor_201_Two:
 # 111 "data/maps/Route201/scripts.pory"
+	walk_left
+# 112 "data/maps/Route201/scripts.pory"
 	walk_up
 # 112 "data/maps/Route201/scripts.pory"
-	walk_left
-# 112 "data/maps/Route201/scripts.pory"
-	walk_left
-# 113 "data/maps/Route201/scripts.pory"
 	walk_up
 	step_end
 
+# 115 "data/maps/Route201/scripts.pory"
+MoveToProfessor_201_Three:
 # 116 "data/maps/Route201/scripts.pory"
-PlayerFaceSteven_201:
+	walk_up
 # 117 "data/maps/Route201/scripts.pory"
-	face_right
+	walk_left
+# 117 "data/maps/Route201/scripts.pory"
+	walk_left
+# 118 "data/maps/Route201/scripts.pory"
+	walk_up
 	step_end
 
-# 120 "data/maps/Route201/scripts.pory"
-PlayerFaceBirch_201:
 # 121 "data/maps/Route201/scripts.pory"
-	face_up
+PlayerFaceSteven_201:
+# 122 "data/maps/Route201/scripts.pory"
+	face_right
 	step_end
 
 # 125 "data/maps/Route201/scripts.pory"
+PlayerFaceBirch_201:
+# 126 "data/maps/Route201/scripts.pory"
+	face_up
+	step_end
+
+# 130 "data/maps/Route201/scripts.pory"
 MoveToProfessor_201_Four:
-# 126 "data/maps/Route201/scripts.pory"
+# 131 "data/maps/Route201/scripts.pory"
 	walk_up
-# 126 "data/maps/Route201/scripts.pory"
+# 131 "data/maps/Route201/scripts.pory"
 	walk_up
-# 127 "data/maps/Route201/scripts.pory"
+# 132 "data/maps/Route201/scripts.pory"
 	walk_left
-# 127 "data/maps/Route201/scripts.pory"
+# 132 "data/maps/Route201/scripts.pory"
 	walk_left
-# 127 "data/maps/Route201/scripts.pory"
+# 132 "data/maps/Route201/scripts.pory"
 	walk_left
-# 128 "data/maps/Route201/scripts.pory"
+# 133 "data/maps/Route201/scripts.pory"
 	walk_up
 	step_end
 
-# 131 "data/maps/Route201/scripts.pory"
+# 136 "data/maps/Route201/scripts.pory"
 StevenMoveToPlayer_Route201:
-# 132 "data/maps/Route201/scripts.pory"
+# 137 "data/maps/Route201/scripts.pory"
 	walk_down
-# 133 "data/maps/Route201/scripts.pory"
+# 138 "data/maps/Route201/scripts.pory"
 	walk_left
-# 133 "data/maps/Route201/scripts.pory"
+# 138 "data/maps/Route201/scripts.pory"
 	walk_left
-# 133 "data/maps/Route201/scripts.pory"
+# 138 "data/maps/Route201/scripts.pory"
 	walk_left
-# 133 "data/maps/Route201/scripts.pory"
+# 138 "data/maps/Route201/scripts.pory"
 	walk_left
-# 133 "data/maps/Route201/scripts.pory"
+# 138 "data/maps/Route201/scripts.pory"
 	walk_left
-# 134 "data/maps/Route201/scripts.pory"
+# 139 "data/maps/Route201/scripts.pory"
 	walk_up
-# 134 "data/maps/Route201/scripts.pory"
+# 139 "data/maps/Route201/scripts.pory"
 	walk_up
-# 135 "data/maps/Route201/scripts.pory"
+# 140 "data/maps/Route201/scripts.pory"
 	face_left
 	step_end
 
-# 138 "data/maps/Route201/scripts.pory"
+# 143 "data/maps/Route201/scripts.pory"
 StevenLeaveHouse_Route201:
-# 139 "data/maps/Route201/scripts.pory"
+# 144 "data/maps/Route201/scripts.pory"
 	walk_down
-# 139 "data/maps/Route201/scripts.pory"
+# 144 "data/maps/Route201/scripts.pory"
 	walk_down
-# 139 "data/maps/Route201/scripts.pory"
+# 144 "data/maps/Route201/scripts.pory"
 	walk_down
 	step_end
 
-# 142 "data/maps/Route201/scripts.pory"
+# 147 "data/maps/Route201/scripts.pory"
 PlayerLookAtSteven_Route201:
-# 143 "data/maps/Route201/scripts.pory"
+# 148 "data/maps/Route201/scripts.pory"
 	face_right
 	step_end
 
-# 146 "data/maps/Route201/scripts.pory"
+# 151 "data/maps/Route201/scripts.pory"
 PlayerLookAtProfessor_Route201:
-# 147 "data/maps/Route201/scripts.pory"
+# 152 "data/maps/Route201/scripts.pory"
 	face_up
 	step_end
 
 EventScript_Route201_Steven::
-# 151 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	lock
-# 152 "data/maps/Route201/scripts.pory"
+# 157 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 153 "data/maps/Route201/scripts.pory"
+# 158 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Steven_Text_0
-# 154 "data/maps/Route201/scripts.pory"
+# 159 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 155 "data/maps/Route201/scripts.pory"
+# 160 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Azuril::
-# 159 "data/maps/Route201/scripts.pory"
+# 164 "data/maps/Route201/scripts.pory"
 	lock
-# 160 "data/maps/Route201/scripts.pory"
+# 165 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 161 "data/maps/Route201/scripts.pory"
+# 166 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Azuril_Text_0
-# 162 "data/maps/Route201/scripts.pory"
+# 167 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 163 "data/maps/Route201/scripts.pory"
+# 168 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Azumaril::
-# 167 "data/maps/Route201/scripts.pory"
+# 172 "data/maps/Route201/scripts.pory"
 	lock
-# 168 "data/maps/Route201/scripts.pory"
+# 173 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 169 "data/maps/Route201/scripts.pory"
+# 174 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Azumaril_Text_0
-# 170 "data/maps/Route201/scripts.pory"
+# 175 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 171 "data/maps/Route201/scripts.pory"
+# 176 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Scientist_One::
-# 175 "data/maps/Route201/scripts.pory"
+# 180 "data/maps/Route201/scripts.pory"
 	lock
-# 176 "data/maps/Route201/scripts.pory"
+# 181 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 177 "data/maps/Route201/scripts.pory"
+# 182 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Scientist_One_Text_0
-# 178 "data/maps/Route201/scripts.pory"
+# 183 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 179 "data/maps/Route201/scripts.pory"
+# 184 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Hiker_One::
-# 183 "data/maps/Route201/scripts.pory"
+# 188 "data/maps/Route201/scripts.pory"
 	lock
-# 184 "data/maps/Route201/scripts.pory"
+# 189 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 185 "data/maps/Route201/scripts.pory"
+# 190 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Hiker_One_Text_0
-# 186 "data/maps/Route201/scripts.pory"
+# 191 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 187 "data/maps/Route201/scripts.pory"
+# 192 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Hiker_Two::
-# 191 "data/maps/Route201/scripts.pory"
+# 196 "data/maps/Route201/scripts.pory"
 	lock
-# 192 "data/maps/Route201/scripts.pory"
+# 197 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 193 "data/maps/Route201/scripts.pory"
+# 198 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Hiker_Two_Text_0
-# 194 "data/maps/Route201/scripts.pory"
+# 199 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 195 "data/maps/Route201/scripts.pory"
+# 200 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Pokeball_One::
-# 199 "data/maps/Route201/scripts.pory"
+# 204 "data/maps/Route201/scripts.pory"
 	lock
-# 200 "data/maps/Route201/scripts.pory"
+# 205 "data/maps/Route201/scripts.pory"
 	giveitem ITEM_LEVEL_BALL
-# 201 "data/maps/Route201/scripts.pory"
+# 206 "data/maps/Route201/scripts.pory"
 	setflag FLAG_ROUTE201_POKEBALL
-# 202 "data/maps/Route201/scripts.pory"
+# 207 "data/maps/Route201/scripts.pory"
 	removeobject 3
-# 203 "data/maps/Route201/scripts.pory"
+# 208 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 SignScript_Route201_DiscoverySignpost::
-# 207 "data/maps/Route201/scripts.pory"
+# 212 "data/maps/Route201/scripts.pory"
 	lock
-# 208 "data/maps/Route201/scripts.pory"
+# 213 "data/maps/Route201/scripts.pory"
 	msgbox SignScript_Route201_DiscoverySignpost_Text_0
-# 209 "data/maps/Route201/scripts.pory"
+# 214 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 210 "data/maps/Route201/scripts.pory"
+# 215 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Scientist_Two::
-# 214 "data/maps/Route201/scripts.pory"
+# 219 "data/maps/Route201/scripts.pory"
 	lock
-# 215 "data/maps/Route201/scripts.pory"
+# 220 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 216 "data/maps/Route201/scripts.pory"
+# 221 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Scientist_Two_Text_0
-# 217 "data/maps/Route201/scripts.pory"
+# 222 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 218 "data/maps/Route201/scripts.pory"
+# 223 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Scientist_Three::
-# 222 "data/maps/Route201/scripts.pory"
+# 227 "data/maps/Route201/scripts.pory"
 	lock
-# 223 "data/maps/Route201/scripts.pory"
+# 228 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 224 "data/maps/Route201/scripts.pory"
+# 229 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Scientist_Three_Text_0
-# 225 "data/maps/Route201/scripts.pory"
+# 230 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 226 "data/maps/Route201/scripts.pory"
+# 231 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Hiker_Three::
-# 230 "data/maps/Route201/scripts.pory"
+# 235 "data/maps/Route201/scripts.pory"
 	lock
-# 231 "data/maps/Route201/scripts.pory"
+# 236 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 232 "data/maps/Route201/scripts.pory"
+# 237 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Hiker_Three_Text_0
-# 233 "data/maps/Route201/scripts.pory"
+# 238 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 234 "data/maps/Route201/scripts.pory"
+# 239 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Mats_One::
-# 238 "data/maps/Route201/scripts.pory"
-	lock
-# 239 "data/maps/Route201/scripts.pory"
-	faceplayer
-# 240 "data/maps/Route201/scripts.pory"
-	msgbox EventScript_Route201_Mats_One_Text_0
-# 241 "data/maps/Route201/scripts.pory"
-	showmonpic SPECIES_MOLTRES, 10, 3
-# 242 "data/maps/Route201/scripts.pory"
-	waitmessage
 # 243 "data/maps/Route201/scripts.pory"
-	msgbox EventScript_Route201_Mats_One_Text_1
+	lock
 # 244 "data/maps/Route201/scripts.pory"
-	waitmessage
+	faceplayer
 # 245 "data/maps/Route201/scripts.pory"
-	hidemonpic
+	msgbox EventScript_Route201_Mats_One_Text_0
 # 246 "data/maps/Route201/scripts.pory"
+	showmonpic SPECIES_MOLTRES, 10, 3
+# 247 "data/maps/Route201/scripts.pory"
+	waitmessage
+# 248 "data/maps/Route201/scripts.pory"
+	msgbox EventScript_Route201_Mats_One_Text_1
+# 249 "data/maps/Route201/scripts.pory"
+	waitmessage
+# 250 "data/maps/Route201/scripts.pory"
+	hidemonpic
+# 251 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 EventScript_Route201_Jens_One::
-# 250 "data/maps/Route201/scripts.pory"
+# 255 "data/maps/Route201/scripts.pory"
 	lock
-# 251 "data/maps/Route201/scripts.pory"
+# 256 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 252 "data/maps/Route201/scripts.pory"
+# 257 "data/maps/Route201/scripts.pory"
 	msgbox EventScript_Route201_Jens_One_Text_0
-# 253 "data/maps/Route201/scripts.pory"
+# 258 "data/maps/Route201/scripts.pory"
 	waitmessage
-# 254 "data/maps/Route201/scripts.pory"
+# 259 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -568,62 +580,68 @@ EventScript_Route201_ProfessorAndSteven_Text_6:
 	.string "Prof BIRCH: See what else you can find\n"
 	.string "in the forest!$"
 
+EventScript_Route201_ProfessorAndSteven_Text_7:
+# 100 "data/maps/Route201/scripts.pory"
+	.string "Prof BIRCH: Furiously strong Pokemon\n"
+	.string "and a cloned Rillaboom? You must figure\l"
+	.string "out what is going on here.$"
+
 EventScript_Route201_Steven_Text_0:
-# 153 "data/maps/Route201/scripts.pory"
+# 158 "data/maps/Route201/scripts.pory"
 	.string "STEVEN: You should go speak with the\n"
 	.string "Professor, he will explain our next\l"
 	.string "steps.$"
 
 EventScript_Route201_Azuril_Text_0:
-# 161 "data/maps/Route201/scripts.pory"
+# 166 "data/maps/Route201/scripts.pory"
 	.string "Azu! Azu!$"
 
 EventScript_Route201_Azumaril_Text_0:
-# 169 "data/maps/Route201/scripts.pory"
+# 174 "data/maps/Route201/scripts.pory"
 	.string "Azumaril... Maril!$"
 
 EventScript_Route201_Scientist_One_Text_0:
-# 177 "data/maps/Route201/scripts.pory"
+# 182 "data/maps/Route201/scripts.pory"
 	.string "Amazing, there are hardly any\n"
 	.string "documents that speak of this island.$"
 
 EventScript_Route201_Hiker_One_Text_0:
-# 185 "data/maps/Route201/scripts.pory"
+# 190 "data/maps/Route201/scripts.pory"
 	.string "I can't wait to learn more about this\n"
 	.string "place, maybe even hike up the mountain!$"
 
 EventScript_Route201_Hiker_Two_Text_0:
-# 193 "data/maps/Route201/scripts.pory"
+# 198 "data/maps/Route201/scripts.pory"
 	.string "Sorry kid, I cannot let you pass yet. We\n"
 	.string "are making sure it is safe out here. Try\l"
 	.string "and find the professor.$"
 
 SignScript_Route201_DiscoverySignpost_Text_0:
-# 208 "data/maps/Route201/scripts.pory"
+# 213 "data/maps/Route201/scripts.pory"
 	.string "Archeological Cleanery. Where finds get\n"
 	.string "cleaned and identified.$"
 
 EventScript_Route201_Scientist_Two_Text_0:
-# 216 "data/maps/Route201/scripts.pory"
+# 221 "data/maps/Route201/scripts.pory"
 	.string "No no no... the tests come back\n"
 	.string "negative, what is going on?$"
 
 EventScript_Route201_Scientist_Three_Text_0:
-# 224 "data/maps/Route201/scripts.pory"
+# 229 "data/maps/Route201/scripts.pory"
 	.string "We are currently working on a full map\n"
 	.string "of this island, or... well... no one has\l"
 	.string "dared enter the area yet. Any day now\l"
 	.string "though!$"
 
 EventScript_Route201_Hiker_Three_Text_0:
-# 232 "data/maps/Route201/scripts.pory"
+# 237 "data/maps/Route201/scripts.pory"
 	.string "I have heard some loud noises coming\n"
 	.string "from the forest-y area. This beach\l"
 	.string "seems okay, but I won't go further\l"
 	.string "myself.$"
 
 EventScript_Route201_Mats_One_Text_0:
-# 240 "data/maps/Route201/scripts.pory"
+# 245 "data/maps/Route201/scripts.pory"
 	.string "How much longer will we have to wait\n"
 	.string "before we can leave this beach? I have\l"
 	.string "been hearing rumours about a legendary\l"
@@ -631,11 +649,11 @@ EventScript_Route201_Mats_One_Text_0:
 	.string "drawing.$"
 
 EventScript_Route201_Mats_One_Text_1:
-# 243 "data/maps/Route201/scripts.pory"
+# 248 "data/maps/Route201/scripts.pory"
 	.string "Wicked right? Maybe we will be lucky\n"
 	.string "enough to see it ourselves.$"
 
 EventScript_Route201_Jens_One_Text_0:
-# 252 "data/maps/Route201/scripts.pory"
+# 257 "data/maps/Route201/scripts.pory"
 	.string "Whatever is hiding in that forest I'm\n"
 	.string "sure we can beat it, right?$"
