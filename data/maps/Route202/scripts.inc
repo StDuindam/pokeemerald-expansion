@@ -135,6 +135,54 @@ Jens_Route202_MoveAway:
 	walk_down
 	step_end
 
+EventScript_DontLeaveBeachRocket_Notif::
+# 81 "data/maps/Route202/scripts.pory"
+	lock
+# 82 "data/maps/Route202/scripts.pory"
+	applymovement 17, EventScript_202_RocketLook_Left
+# 83 "data/maps/Route202/scripts.pory"
+	waitmovement 0
+# 84 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_DontLeaveBeachRocket_Notif_Text_0
+# 85 "data/maps/Route202/scripts.pory"
+	waitmessage
+# 86 "data/maps/Route202/scripts.pory"
+	applymovement 17, EventScript_202_RocketLook_Up
+# 87 "data/maps/Route202/scripts.pory"
+	waitmovement 0
+# 88 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PushPlayerDown_EverGrande
+# 89 "data/maps/Route202/scripts.pory"
+	waitmovement 0
+# 90 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+EventScript_202_RocketTooBusy::
+# 94 "data/maps/Route202/scripts.pory"
+	lock
+# 95 "data/maps/Route202/scripts.pory"
+	msgbox EventScript_202_RocketTooBusy_Text_0
+# 96 "data/maps/Route202/scripts.pory"
+	waitmessage
+# 97 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+# 100 "data/maps/Route202/scripts.pory"
+EventScript_202_RocketLook_Left:
+# 101 "data/maps/Route202/scripts.pory"
+	face_left
+	step_end
+
+# 103 "data/maps/Route202/scripts.pory"
+EventScript_202_RocketLook_Up:
+# 104 "data/maps/Route202/scripts.pory"
+	face_up
+	step_end
+
 EventScript_Route202_Maniac_Text_0:
 # 9 "data/maps/Route202/scripts.pory"
 	.string "Give me a moment, I'm studying this\n"
@@ -177,6 +225,16 @@ EventScript_Route202_Jens_One_Text_2:
 EventScript_Route202_Jens_One_Text_3:
 # 49 "data/maps/Route202/scripts.pory"
 	.string "Let me know if you change your mind...$"
+
+EventScript_DontLeaveBeachRocket_Notif_Text_0:
+# 84 "data/maps/Route202/scripts.pory"
+	.string "ROCKET GRUNT: Hey! You aren't supposed\n"
+	.string "to be here! Get back!$"
+
+EventScript_202_RocketTooBusy_Text_0:
+# 95 "data/maps/Route202/scripts.pory"
+	.string "This Rocket is too distracted to notice\n"
+	.string "you.$"
 
 Route_202_Jens_PreBattle::
 # 58 "data/maps/Route202/scripts.pory"

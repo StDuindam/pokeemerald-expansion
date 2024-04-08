@@ -355,6 +355,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE201",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKET_HIDEOUT_F1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

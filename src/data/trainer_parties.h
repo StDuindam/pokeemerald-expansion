@@ -13292,10 +13292,10 @@ static const struct TrainerMon sParty_JensRoute203_One[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_PASSIMIAN,
-    .ability = ABILITY_DEFIANT,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_CLOSE_COMBAT, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_KNOCK_OFF}
+    .species = SPECIES_CLEFABLE,
+    .ability = ABILITY_CUTE_CHARM,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_SWEET_KISS, MOVE_MOONLIGHT, MOVE_MINIMIZE, MOVE_MOONBLAST}
     },
 {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -13311,51 +13311,75 @@ static const struct TrainerMon sParty_RocketF_One_RockethideoutF1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_LANDORUS_THERIAN,
+    .species = SPECIES_PYUKUMUKU,
     .heldItem = ITEM_SITRUS_BERRY,
-    .ability = ABILITY_INTIMIDATE,
+    .ability = ABILITY_ELECTRIC_SURGE,
     .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
-    },
+    }
+};
+
+static const struct TrainerMon sParty_RocketF_Two_RockethideoutF1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_RAMPARDOS,
-    .heldItem = ITEM_CHOICE_SCARF,
-    .ability = ABILITY_SHEER_FORCE,
-    .moves = {MOVE_HEAD_SMASH, MOVE_GIGA_IMPACT, MOVE_STOMPING_TANTRUM, MOVE_AVALANCHE},
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 65,
-    .species = SPECIES_INCINEROAR,
+    .species = SPECIES_PYUKUMUKU,
     .heldItem = ITEM_SITRUS_BERRY,
-    .ability = ABILITY_INTIMIDATE,
-    .moves = {MOVE_FAKE_OUT, MOVE_U_TURN, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ}
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
     }
-,
+};
+
+static const struct TrainerMon sParty_RocketM_Three_RockethideoutF1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_QUAQUAVAL,
-    .heldItem = ITEM_CLEAR_AMULET,
-    .ability = ABILITY_MOXIE,
-    .moves = {MOVE_AQUA_STEP, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_BULK_UP}
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
     }
-,
+};
+
+static const struct TrainerMon sParty_RocketM_Four_RockethideoutF1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_PASSIMIAN,
-    .ability = ABILITY_DEFIANT,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_CLOSE_COMBAT, MOVE_ACROBATICS, MOVE_U_TURN, MOVE_KNOCK_OFF}
-    },
-{
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+
+static const struct TrainerMon sParty_RocketF_Five_RockethideoutF1[] = {
+    {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_DURALUDON,
-    .ability = ABILITY_STALWART,
-    .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_DRAGON_PULSE, MOVE_FLASH_CANNON, MOVE_BODY_PRESS, MOVE_IRON_DEFENSE}
-    },
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+
+static const struct TrainerMon sParty_RocketScientist_One_RockethideoutF1[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 65,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+
+static const struct TrainerMon sParty_RocketScientist_Two_RockethideoutF1[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 65,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
 };

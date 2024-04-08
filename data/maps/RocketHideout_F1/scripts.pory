@@ -2,9 +2,9 @@ mapscripts RocketHideout_F1_MapScripts {
 
 }
 
-script EventScript_RocketOne{
-    trainerbattle_single(TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1, PreBattle_TextOne_RocketHideoutF1, PostBattle_TextOne_RocketHideoutF1)
-
+script EventScript_RocketOne_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1, PreBattle_TextOne_RocketHideoutF1, PostBattle_TextOne_RocketHideoutF1, EventScript_RocketOne_PostBattle_RocketHideOutF1)
+    call(EventScript_RocketOne_PostBattle_RocketHideOutF1)
 }
 
 text PreBattle_TextOne_RocketHideoutF1{
@@ -14,24 +14,139 @@ text PreBattle_TextOne_RocketHideoutF1{
 text PostBattle_TextOne_RocketHideoutF1{
     format("Do not dare disturb us on our mission! The boss will take care of you.")
 }
-
-script EventScript_RocketTwo{
-
+script EventScript_RocketOne_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextOne_RocketHideoutF1)
+    waitmessage
+    release
 }
 
-script EventScript_RocketThree{
-    
+script EventScript_RocketTwo_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1, PreBattle_TextTwo_RocketHideoutF1, PostBattle_TextTwo_RocketHideoutF1,EventScript_RocketTwo_PostBattle_RocketHideOutF1)
+    call(EventScript_RocketTwo_PostBattle_RocketHideOutF1)
+}
+text PreBattle_TextTwo_RocketHideoutF1{
+    format("The boss has given us plenty strong pokes to beat someone like you!")
 }
 
-script EventScript_RocketFour{
-    
+text PostBattle_TextTwo_RocketHideoutF1{
+    format("I need some stronger ones.")
 }
 
-script EventScript_RocketFive{
-    
+script EventScript_RocketTwo_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextTwo_RocketHideoutF1)
+    waitmessage
+    release
 }
 
-script EventScript_RocketSix{
+script EventScript_RocketThree_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETM_THREE_ROCKETHIDEOUTF1, PreBattle_TextThree_RocketHideoutF1, PostBattle_TextThree_RocketHideoutF1, EventScript_RocketThree_PostBattle_RocketHideOutF1)
+    call(EventScript_RocketThree_PostBattle_RocketHideOutF1)
+}
+
+text PreBattle_TextThree_RocketHideoutF1{
+    format("You aren't allowed upstairs. Get out!")
+}
+
+text PostBattle_TextThree_RocketHideoutF1{
+    format("Fine, I guess I can't stop you. You are about to be in a world of trouble.")
+}
+
+script EventScript_RocketThree_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextThree_RocketHideoutF1)
+    waitmessage
+    release
+}
+
+script EventScript_RocketFour_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETM_FOUR_ROCKETHIDEOUTF1, PreBattle_TextFour_RocketHideoutF1, PostBattle_TextFour_RocketHideoutF1, EventScript_RocketFour_PostBattle_RocketHideOutF1)
+    call(EventScript_RocketFour_PostBattle_RocketHideOutF1)
+}
+text PreBattle_TextFour_RocketHideoutF1{
+    format("I'M HIGH ON THE POWER OF TEAM ROCKET!")
+}
+
+text PostBattle_TextFour_RocketHideoutF1{
+    format("How did I lose?")
+}
+
+script EventScript_RocketFour_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextFour_RocketHideoutF1)
+    waitmessage
+    release
+}
+
+script EventScript_RocketFive_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETF_FIVE_ROCKETHIDEOUTF1, PreBattle_TextFive_RocketHideoutF1, PostBattle_TextFive_RocketHideoutF1, EventScript_RocketFive_PostBattle_RocketHideOutF1)
+    call(EventScript_RocketFive_PostBattle_RocketHideOutF1)
+}
+
+text PreBattle_TextFive_RocketHideoutF1{
+    format("You should not be here, punk!")
+}
+
+text PostBattle_TextFive_RocketHideoutF1{
+    format("I've got nothing to tell you.")
+}
+
+script EventScript_RocketFive_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextFive_RocketHideoutF1)
+    waitmessage
+    release
+}
+
+script EventScript_Scientist_One_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETSCIENTIST_ONE_ROCKETHIDEOUTF1, PreBattle_TextSix_RocketHideoutF1, PostBattle_TextSix_RocketHideoutF1,EventScript_Scientist_One_PostBattle_RocketHideOutF1)
+    call(EventScript_Scientist_One_PostBattle_RocketHideOutF1)
+}
+
+text PreBattle_TextSix_RocketHideoutF1{
+    format("Ah you see, our technology has allowed us to create Pokemon however we like!")
+}
+
+text PostBattle_TextSix_RocketHideoutF1{
+    format("I have taken notes of your team.")
+}
+
+script EventScript_Scientist_One_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextSix_RocketHideoutF1)
+    waitmessage
+    release
+}
+
+script EventScript_Scientist_Two_RocketHideout{
+    trainerbattle_single(TRAINER_ROCKETSCIENTIST_TWO_ROCKETHIDEOUTF1, PreBattle_TextSeven_RocketHideoutF1, PostBattle_TextSeven_RocketHideoutF1, EventScript_Scientist_Two_PostBattle_RocketHideOutF1)
+    call(EventScript_Scientist_Two_PostBattle_RocketHideOutF1)
+}
+
+text PreBattle_TextSeven_RocketHideoutF1{
+    format("If we add 1 then subtract- hold on, who are you?")
+}
+
+text PostBattle_TextSeven_RocketHideoutF1{
+    format("I'm left with 0 Pokemon...")
+}
+
+script EventScript_Scientist_Two_PostBattle_RocketHideOutF1{
+    lock
+    faceplayer
+    msgbox(PostBattle_TextSeven_RocketHideoutF1)
+    waitmessage
+    release
+}
+
+script EventScript_RocketSix_RocketHideout{
     lock
     faceplayer
     msgbox(format("Beat it, no one is coming down here."))
