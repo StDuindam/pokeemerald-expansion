@@ -1,0 +1,123 @@
+mapscripts RocketHideout_F2_MapScripts {
+
+}
+
+script EventScript_RocketHideoutF2_GiovanniIntro{
+    lock
+    msgbox(ScientistConversation)
+    waitmessage
+    msgbox(GiovanniIntroduction)
+    waitmessage
+    applymovement(1, MoveGiovanni_RocketHideout)
+    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideout)
+    waitmovement(0)
+    msgbox(GiovanniTellScientistToScram)
+    waitmessage
+    applymovement(4, MoveScientist_RocketHideout)
+    waitmovement(0)
+    removeobject(4)
+    msgbox(GiovanniEvilPlans)
+    waitmessage
+    msgbox(GiovanniOutro)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, BumpUpPlayer_RocketHideout)
+    waitmovement(0)
+    applymovement(1,GiovanniOutro_RocketHideout)
+    waitmovement(0)
+    removeobject(1)
+    removeobject(3)
+    release
+    playbgm(MUS_AQUA_MAGMA_HIDEOUT, TRUE)
+    setvar(VAR_ROCKET_ARC_STATE, MUS_ENCOUNTER_AQUA)
+    setflag(FLAG_ROCKET_GIOVANNIINTRO_COMPLETED)
+}
+
+script MovePlayerToStart_1_RocketHideoutF2{
+    playbgm( MUS_ENCOUNTER_AQUA,TRUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_One)
+    waitmovement(0)
+    call(EventScript_RocketHideoutF2_GiovanniIntro)
+}
+
+script MovePlayerToStart_2_RocketHideoutF2{
+    playbgm( MUS_ENCOUNTER_AQUA,TRUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_Two)
+    waitmovement(0)
+    call(EventScript_RocketHideoutF2_GiovanniIntro)
+}
+
+script MovePlayerToStart_3_RocketHideoutF2{
+    playbgm( MUS_ENCOUNTER_AQUA,MUS_AQUA_MAGMA_HIDEOUT)
+    applymovement(OBJ_EVENT_ID_PLAYER, TRUE)
+    waitmovement(0)
+    call(EventScript_RocketHideoutF2_GiovanniIntro)
+}
+
+script EventScript_RocketHideoutF2_RocketStayBehind{
+    lock
+    faceplayer
+    msgbox(format("Our Boss is the best... we control so much of Hoenn thanks to him. Nothing you can do to stop us!"))
+    waitmessage
+    release
+}
+
+movement MovePlayer_RocketHideoutF2_One {
+    walk_down * 1
+    walk_right * 8
+    face_down
+}
+
+movement MovePlayer_RocketHideoutF2_Two {
+    walk_down * 1
+    walk_right * 7
+    face_down
+}
+movement MovePlayer_RocketHideoutF2_Three {
+    walk_right * 1
+    walk_down * 2
+    walk_right * 8
+    face_down
+}
+
+movement MoveGiovanni_RocketHideout {
+    emote_exclamation_mark
+    walk_slow_up * 2
+    walk_slow_left * 2
+}
+
+movement BumpUpPlayer_RocketHideout {
+    walk_up
+    face_down
+}
+
+movement LookRightPlayer_RocketHideout {
+    face_right
+}
+
+movement MoveScientist_RocketHideout {
+    walk_fast_left * 7
+}
+
+movement GiovanniOutro_RocketHideout{
+    walk_left * 9
+}
+
+text ScientistConversation{ 
+    format("SCIENTIST: ... Yes yes so it seems we have great success, the Pokemon is ready and the Grunts have taken over most of our objectives.")
+}
+
+text GiovanniIntroduction{ 
+    format("???: Wonderful. All according to plan, the Pokemon you have created, the power we now have it makes us unstoppable. And with the latest addition of M....")
+}
+
+text GiovanniTellScientistToScram{
+    format("???: Looks like we have company. Scientist you can go thank you. My name is Giovanni, leader of Team Rocket.")
+}
+
+text GiovanniEvilPlans{
+    format("GIOVANNI: Impressive that you have came into my office, I will deal with the incapable members downstairs. Your actions are futile, we have taken over Hoenn while you were busy messing around here. Each and every gym is in our control, the people look to us for safety and with that we can take away all their Pokemon!")
+}
+
+text GiovanniOutro{ 
+    format("I'm not battling you right now. I have other matters to attend, as long as we control Hoenn nothing matters anyway, hahaha! You can try to stop us but you won't beat all my Rocket leaders anyway!")
+}

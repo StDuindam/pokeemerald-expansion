@@ -38,6 +38,18 @@ script SetRocketEventActive{
     release
 }
 
+script SetRocketEventSeven{
+    lock
+    msgbox("Rockets have now taken over the world")
+    setvar(VAR_ROCKET_ARC_STATE,6)
+    setflag(FLAG_ROCKET_EVENT_ACTIVE)
+    setflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
+    setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN)
+    setflag(FLAG_HIDE_PETALBURG_GYM_GREETER)
+    waitmessage
+    release
+}
+
 script BeatRocketRustboro{
     lock
     msgbox("And rocket gyms have been freed")
