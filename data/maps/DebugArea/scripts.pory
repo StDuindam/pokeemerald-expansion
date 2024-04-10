@@ -18,6 +18,47 @@ script CallGengarParty{
     release
 }
 
+script IncreaseGymsBeatVar{
+    lock
+    if(var(VAR_ROCKET_GYMS_BEAT) < 8){
+        setvar(VAR_ROCKET_GYMS_BEAT, 1)
+        msgbox("INCREASED VAR")
+        waitmessage
+        if(var(VAR_ROCKET_GYMS_BEAT) == 8){
+            msgbox("8 now!")
+            waitmessage
+        }
+    }else{
+        msgbox("Completed")
+        waitmessage
+    }
+    waitmessage
+    release
+}
+
+script CheckIfBeatAllGyms{
+    special(CheckIfRocketGymLeadersDefeated)
+    lock
+    msgbox("CHECKING")
+    waitmessage
+    if(flag(FLAG_ROCKET_ALLGYMS_BEAT)){
+        msgbox("Beat")
+        waitmessage
+    }else{
+        msgbox("Not beat")
+        waitmessage
+    }
+    release
+}
+
+script SetupRocketGymsBeatVar{
+    lock
+    setvar(VAR_ROCKET_GYMS_BEAT, 0)
+    msgbox(format("VAR_ROCKET_GYMS_BEAT is set to 0"))
+    waitmessage
+    release
+}
+
 script RestoreParty{
     lock
     msgbox("Party Restored")
@@ -38,9 +79,9 @@ script SetRocketEventActive{
     release
 }
 
-script SetRocketEventSeven{
+script SetRocketEventSix{
     lock
-    msgbox("Rockets have now taken over the world")
+    msgbox("Rockets have now taken over the world - 6")
     setvar(VAR_ROCKET_ARC_STATE,6)
     setflag(FLAG_ROCKET_EVENT_ACTIVE)
     setflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
@@ -50,7 +91,19 @@ script SetRocketEventSeven{
     release
 }
 
-script BeatRocketRustboro{
+script SetRocketEventSeven{
+    lock
+    msgbox("Rockets have now taken over the world - 6")
+    setvar(VAR_ROCKET_ARC_STATE,7)
+    setflag(FLAG_ROCKET_EVENT_ACTIVE)
+    setflag(FLAG_HIDE_MAUVILLE_GYM_WATTSON)
+    setflag(FLAG_HIDE_PETALBURG_GYM_NORMAN)
+    setflag(FLAG_HIDE_PETALBURG_GYM_GREETER)
+    waitmessage
+    release
+}
+
+script BeatRocketAllGyms{
     lock
     msgbox("And rocket gyms have been freed")
     setflag(FLAG_RUSTBORO_ROCKET_DEFEATED)
@@ -64,6 +117,14 @@ script BeatRocketRustboro{
     setflag(FLAG_FORTREE_ROCKET_DEFEATED)
     setflag(FLAG_MOSSDEEP_ROCKET_DEFEATED)
     setflag(FLAG_SOOTOPOLIS_ROCKET_DEFEATED)
+    waitmessage
+    release
+}
+
+script BeatRocketRustboro{
+    lock
+    msgbox("Only rustboro rocket gyms have been freed")
+    setflag(FLAG_RUSTBORO_ROCKET_DEFEATED)
     waitmessage
     release
 }

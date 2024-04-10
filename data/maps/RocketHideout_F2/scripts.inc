@@ -54,219 +54,221 @@ EventScript_RocketHideoutF2_GiovanniIntro::
 # 30 "data/maps/RocketHideout_F2/scripts.pory"
 	playbgm MUS_AQUA_MAGMA_HIDEOUT, TRUE
 # 31 "data/maps/RocketHideout_F2/scripts.pory"
-	setvar VAR_ROCKET_ARC_STATE, MUS_ENCOUNTER_AQUA
+	setvar VAR_ROCKET_ARC_STATE, 7
 # 32 "data/maps/RocketHideout_F2/scripts.pory"
 	setflag FLAG_ROCKET_GIOVANNIINTRO_COMPLETED
+# 33 "data/maps/RocketHideout_F2/scripts.pory"
+	setflag FLAG_ROCKET_EVENT_ACTIVE
 	return
 
 
 MovePlayerToStart_1_RocketHideoutF2::
-# 36 "data/maps/RocketHideout_F2/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 37 "data/maps/RocketHideout_F2/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_One
+	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 38 "data/maps/RocketHideout_F2/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_One
 # 39 "data/maps/RocketHideout_F2/scripts.pory"
+	waitmovement 0
+# 40 "data/maps/RocketHideout_F2/scripts.pory"
 	call EventScript_RocketHideoutF2_GiovanniIntro
 	return
 
 
 MovePlayerToStart_2_RocketHideoutF2::
-# 43 "data/maps/RocketHideout_F2/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 44 "data/maps/RocketHideout_F2/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_Two
+	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 45 "data/maps/RocketHideout_F2/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MovePlayer_RocketHideoutF2_Two
 # 46 "data/maps/RocketHideout_F2/scripts.pory"
+	waitmovement 0
+# 47 "data/maps/RocketHideout_F2/scripts.pory"
 	call EventScript_RocketHideoutF2_GiovanniIntro
 	return
 
 
 MovePlayerToStart_3_RocketHideoutF2::
-# 50 "data/maps/RocketHideout_F2/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, MUS_AQUA_MAGMA_HIDEOUT
 # 51 "data/maps/RocketHideout_F2/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TRUE
+	playbgm MUS_ENCOUNTER_AQUA, MUS_AQUA_MAGMA_HIDEOUT
 # 52 "data/maps/RocketHideout_F2/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, TRUE
 # 53 "data/maps/RocketHideout_F2/scripts.pory"
+	waitmovement 0
+# 54 "data/maps/RocketHideout_F2/scripts.pory"
 	call EventScript_RocketHideoutF2_GiovanniIntro
 	return
 
 
 EventScript_RocketHideoutF2_RocketStayBehind::
-# 57 "data/maps/RocketHideout_F2/scripts.pory"
-	lock
 # 58 "data/maps/RocketHideout_F2/scripts.pory"
-	faceplayer
+	lock
 # 59 "data/maps/RocketHideout_F2/scripts.pory"
-	msgbox EventScript_RocketHideoutF2_RocketStayBehind_Text_0
+	faceplayer
 # 60 "data/maps/RocketHideout_F2/scripts.pory"
-	waitmessage
+	msgbox EventScript_RocketHideoutF2_RocketStayBehind_Text_0
 # 61 "data/maps/RocketHideout_F2/scripts.pory"
+	waitmessage
+# 62 "data/maps/RocketHideout_F2/scripts.pory"
 	release
 	return
 
 
-# 64 "data/maps/RocketHideout_F2/scripts.pory"
-MovePlayer_RocketHideoutF2_One:
 # 65 "data/maps/RocketHideout_F2/scripts.pory"
+MovePlayer_RocketHideoutF2_One:
+# 66 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_down
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 66 "data/maps/RocketHideout_F2/scripts.pory"
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_right
 # 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 67 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 68 "data/maps/RocketHideout_F2/scripts.pory"
 	face_down
 	step_end
 
-# 70 "data/maps/RocketHideout_F2/scripts.pory"
-MovePlayer_RocketHideoutF2_Two:
 # 71 "data/maps/RocketHideout_F2/scripts.pory"
+MovePlayer_RocketHideoutF2_Two:
+# 72 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_down
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 72 "data/maps/RocketHideout_F2/scripts.pory"
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_right
 # 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 73 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 74 "data/maps/RocketHideout_F2/scripts.pory"
 	face_down
 	step_end
 
-# 75 "data/maps/RocketHideout_F2/scripts.pory"
-MovePlayer_RocketHideoutF2_Three:
 # 76 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
+MovePlayer_RocketHideoutF2_Three:
 # 77 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 78 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_down
-# 77 "data/maps/RocketHideout_F2/scripts.pory"
+# 78 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_down
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_right
-# 78 "data/maps/RocketHideout_F2/scripts.pory"
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_right
 # 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 79 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_right
+# 80 "data/maps/RocketHideout_F2/scripts.pory"
 	face_down
 	step_end
 
-# 82 "data/maps/RocketHideout_F2/scripts.pory"
-MoveGiovanni_RocketHideout:
 # 83 "data/maps/RocketHideout_F2/scripts.pory"
+MoveGiovanni_RocketHideout:
+# 84 "data/maps/RocketHideout_F2/scripts.pory"
 	emote_exclamation_mark
-# 84 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_slow_up
-# 84 "data/maps/RocketHideout_F2/scripts.pory"
+# 85 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_slow_up
 # 85 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_slow_up
+# 86 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_slow_left
-# 85 "data/maps/RocketHideout_F2/scripts.pory"
+# 86 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_slow_left
 	step_end
 
-# 88 "data/maps/RocketHideout_F2/scripts.pory"
-BumpUpPlayer_RocketHideout:
 # 89 "data/maps/RocketHideout_F2/scripts.pory"
-	walk_up
+BumpUpPlayer_RocketHideout:
 # 90 "data/maps/RocketHideout_F2/scripts.pory"
+	walk_up
+# 91 "data/maps/RocketHideout_F2/scripts.pory"
 	face_down
 	step_end
 
-# 93 "data/maps/RocketHideout_F2/scripts.pory"
-LookRightPlayer_RocketHideout:
 # 94 "data/maps/RocketHideout_F2/scripts.pory"
+LookRightPlayer_RocketHideout:
+# 95 "data/maps/RocketHideout_F2/scripts.pory"
 	face_right
 	step_end
 
-# 97 "data/maps/RocketHideout_F2/scripts.pory"
+# 98 "data/maps/RocketHideout_F2/scripts.pory"
 MoveScientist_RocketHideout:
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
-# 98 "data/maps/RocketHideout_F2/scripts.pory"
+# 99 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 101 "data/maps/RocketHideout_F2/scripts.pory"
+# 102 "data/maps/RocketHideout_F2/scripts.pory"
 GiovanniOutro_RocketHideout:
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
-# 102 "data/maps/RocketHideout_F2/scripts.pory"
+# 103 "data/maps/RocketHideout_F2/scripts.pory"
 	walk_left
 	step_end
 
 EventScript_RocketHideoutF2_RocketStayBehind_Text_0:
-# 59 "data/maps/RocketHideout_F2/scripts.pory"
+# 60 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "Our Boss is the best... we control so\n"
 	.string "much of Hoenn thanks to him. Nothing\l"
 	.string "you can do to stop us!$"
 
 ScientistConversation::
-# 105 "data/maps/RocketHideout_F2/scripts.pory"
+# 106 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "SCIENTIST: ... Yes yes so it seems we\n"
 	.string "have great success, the Pokemon is\l"
 	.string "ready and the Grunts have taken over\l"
 	.string "most of our objectives.$"
 
 GiovanniIntroduction::
-# 109 "data/maps/RocketHideout_F2/scripts.pory"
+# 110 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "???: Wonderful. All according to plan,\n"
 	.string "the Pokemon you have created, the\l"
 	.string "power we now have it makes us\l"
@@ -274,13 +276,13 @@ GiovanniIntroduction::
 	.string "addition of M....$"
 
 GiovanniTellScientistToScram::
-# 113 "data/maps/RocketHideout_F2/scripts.pory"
+# 114 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "???: Looks like we have company.\n"
 	.string "Scientist you can go thank you. My name\l"
 	.string "is Giovanni, leader of Team Rocket.$"
 
 GiovanniEvilPlans::
-# 117 "data/maps/RocketHideout_F2/scripts.pory"
+# 118 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "GIOVANNI: Impressive that you have\n"
 	.string "came into my office, I will deal with the\l"
 	.string "incapable members downstairs. Your\l"
@@ -292,7 +294,7 @@ GiovanniEvilPlans::
 	.string "all their Pokemon!$"
 
 GiovanniOutro::
-# 121 "data/maps/RocketHideout_F2/scripts.pory"
+# 122 "data/maps/RocketHideout_F2/scripts.pory"
 	.string "I'm not battling you right now. I have\n"
 	.string "other matters to attend, as long as we\l"
 	.string "control Hoenn nothing matters anyway,\l"

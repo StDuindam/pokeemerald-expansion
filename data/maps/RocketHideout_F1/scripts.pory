@@ -1,10 +1,30 @@
 mapscripts RocketHideout_F1_MapScripts {
+    
+    MAP_SCRIPT_ON_LOAD: EventScript_OnTransition_RocketHideoutF1
+    MAP_SCRIPT_ON_TRANSITION EventScript_OnTransition_RocketHideoutF1
+}
+
+script EventScript_OnTransition_RocketHideoutF1{ 
+    if(var(VAR_ROCKET_ARC_STATE) != 7)
+    {        
+        setflag(FLAG_MATSROCKETHIDEOUT_VISIBLE)
+    }else{
+        clearflag(FLAG_MATSROCKETHIDEOUT_VISIBLE)
+    }
 
 }
 
 script EventScript_RocketOne_RocketHideout{
     trainerbattle_single(TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1, PreBattle_TextOne_RocketHideoutF1, PostBattle_TextOne_RocketHideoutF1, EventScript_RocketOne_PostBattle_RocketHideOutF1)
     call(EventScript_RocketOne_PostBattle_RocketHideOutF1)
+}
+
+script EventScript_MatsRocketHideout{
+    lock
+    faceplayer
+    msgbox(format("MATS: This place... not good! Did you hear what Giovanni said? You need to go over to the professor and tell him everything right now, I'll keep an eye out here."))
+    waitmessage
+    release
 }
 
 text PreBattle_TextOne_RocketHideoutF1{

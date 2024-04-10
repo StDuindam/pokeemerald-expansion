@@ -99,6 +99,16 @@ script EventScript_Route201_ProfessorAndSteven{
         faceplayer
         msgbox(format("Prof BIRCH: Furiously strong Pokemon and a cloned Rillaboom? You must figure out what is going on here."))
         waitmessage
+    }elif(var(VAR_ROCKET_ARC_STATE) == 7)
+    {
+        faceplayer
+        msgbox(format("Prof BIRCH: I cannot believe that Team Rocket was hiding on this island, how silly of me to bring all the strongest trainers here so they could easily take over all the gyms? You need to help us, beat all the rocket leaders so we can disrupt Giovanni's plans!"))
+        waitmessage
+    }elif(var(VAR_ROCKET_ARC_STATE) == 8)
+    {
+        faceplayer
+        msgbox(format("Good job on beating all those Rocket leaders, I guess there's one left. You know where to find him to put an end to all this!"))
+        waitmessage
     }
     release
 }

@@ -4303,3 +4303,15 @@ void SetRegionToSEVII(void)
 {
     gMapHeader.region = REGION_SEVII;
 }
+
+void CheckIfRocketGymLeadersDefeated(void)
+{
+    if(FlagGet(FLAG_DEWFORD_ROCKET_DEFEATED) && FlagGet(FLAG_FORTREE_ROCKET_DEFEATED)&&
+        FlagGet(FLAG_RUSTBORO_ROCKET_DEFEATED) && FlagGet(FLAG_MAUVILLE_ROCKET_DEFEATED) && FlagGet(FLAG_MOSSDEEP_ROCKET_DEFEATED) &&
+        FlagGet(FLAG_LAVARIDGE_ROCKET_DEFEATED) && FlagGet(FLAG_PETALBURG_ROCKET_DEFEATED) && FlagGet(FLAG_SOOTOPOLIS_ROCKET_DEFEATED)
+        ){
+            FlagSet(FLAG_ROCKET_ALLGYMS_BEAT);
+        }else{
+            return;
+        }
+}

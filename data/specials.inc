@@ -545,3 +545,4 @@ gSpecials::
 	def_special CallDusclopsFunction
 	def_special DusclopsHideOutClearParty
 	def_special SetRegionToSEVII
+	def_special CheckIfRocketGymLeadersDefeated

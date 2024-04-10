@@ -28,8 +28,9 @@ script EventScript_RocketHideoutF2_GiovanniIntro{
     removeobject(3)
     release
     playbgm(MUS_AQUA_MAGMA_HIDEOUT, TRUE)
-    setvar(VAR_ROCKET_ARC_STATE, MUS_ENCOUNTER_AQUA)
+    setvar(VAR_ROCKET_ARC_STATE, 7)
     setflag(FLAG_ROCKET_GIOVANNIINTRO_COMPLETED)
+    setflag(FLAG_ROCKET_EVENT_ACTIVE)
 }
 
 script MovePlayerToStart_1_RocketHideoutF2{
