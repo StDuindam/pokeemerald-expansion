@@ -13413,3 +13413,163 @@ static const struct TrainerMon sParty_RocketTwo_DewfordGym[] = {
     .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
     }
 };
+static const struct TrainerMon sParty_RocketLeader_RustboroGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketOne_RustboroGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketTwo_RustboroGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_MauvilleGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketOne_MauvilleGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketTwo_MauvilleGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_PetalburgGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_LavaridgeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketOne_LavaridgeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketTwo_LavaridgeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_FortreeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketOne_FortreeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketTwo_FortreeGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_MossdeepGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketOne_MossdeepGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketLeader_SootopolisGym[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};

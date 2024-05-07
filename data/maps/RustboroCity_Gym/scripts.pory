@@ -282,3 +282,86 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "Please return with at least one more\n"
 	.string "POKéMON.$"
 `
+
+script EventScriptRocketLeader_RustboroGym{
+    lock
+    faceplayer
+    msgbox(RocketLeader_RustboroGym_Intro)
+    waitmessage
+    trainerbattle_single(TRAINER_ROCKETF_RUSTBOROGYM_LEADER, RocketLeader_RustboroGym_BattleIntro, RocketLeader_RustboroGym_BattleOutro,EventScriptRocketLeader_RustboroGym_Conversation)
+    call(EventScriptRocketLeader_RustboroGym_Conversation)
+    release
+}
+
+script EventScriptRocketLeader_RustboroGym_Conversation{
+    lock
+    faceplayer
+    msgbox(RocketLeader_RustboroGym_Outro)
+    waitmessage
+    setflag(FLAG_RUSTBORO_ROCKET_DEFEATED)
+	special(CheckIfRocketGymLeadersDefeated)
+    release
+}
+
+text RocketLeader_RustboroGym_BattleIntro{
+    format("Soon I'll be the Rocket boss!")
+}
+text RocketLeader_RustboroGym_BattleOutro{
+    format("No! It's... it's over...")
+}
+
+text RocketLeader_RustboroGym_Intro{
+    format("ROCKET LEADER: This is Rustboro Gym! Your first gym badge was obtained here, you will not be able to best this gym in it's new state!")
+}
+
+text RocketLeader_RustboroGym_Outro{
+    format("ROCKET LEADER: You will regret challenging Team Rocket! All the others will put you in your place shrimp!")
+}
+
+script EventScriptRocketOne_RustboroGym{
+    trainerbattle_single(TRAINER_ROCKETM_RUSTBOROGYM_ONE, RocketOne_RustboroGym_BattleIntro, RocketOne_RustboroGym_BattleOutro,EventScript_RocketOne_PostBattle_RustboroGym)
+    call(EventScript_RocketOne_PostBattle_RustboroGym)
+}
+
+script EventScript_RocketOne_PostBattle_RustboroGym{
+    lock
+    faceplayer
+    msgbox(RocketOne_RustboroGym_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketOne_RustboroGym_BattleIntro{
+    format("Before challeging our gym leader you will have to go through me!")
+}
+text RocketOne_RustboroGym_BattleOutro{
+    format("Argh...")
+}
+
+script EventScriptRocketTwo_RustboroGym{
+    trainerbattle_single(TRAINER_ROCKETF_RUSTBOROGYM_TWO, RocketTwo_RustboroGym_BattleIntro, RocketTwo_RustboroGym_BattleOutro,EventScript_RocketTwo_PostBattle_RustboroGym)
+    call(EventScript_RocketOne_PostBattle_RustboroGym)
+}
+
+script EventScript_RocketTwo_PostBattle_RustboroGym{
+    lock
+    faceplayer
+    msgbox(RocketOne_RustboroGym_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketTwo_RustboroGym_BattleIntro{
+    format("Nice, I'm down for a battle.")
+}
+text RocketTwo_RustboroGym_BattleOutro{
+    format("Not like this.")
+}
+
+script EventScript_RocketIntro_RustboroGym{
+	lock
+	faceplayer
+	msgbox(format("Hello... we have been waiting for you. While you were busy on that island we went and took over all the Hoenn gyms. To stop us you would have to beat all 8 gyms again, with a Rocket flavour! Hahaha!"))
+	waitmessage
+	release
+}

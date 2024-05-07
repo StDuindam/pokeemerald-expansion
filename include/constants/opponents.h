@@ -889,15 +889,31 @@
 #define TRAINER_ROCKET_GRUNTM_ONE         886
 #define TRAINER_JENS_ROUTE202                      887
 #define TRAINER_ROCKETF_ONE_ROCKETHIDEOUTF1         888
-#define TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1                      889
-#define TRAINER_ROCKETM_THREE_ROCKETHIDEOUTF1                      890
-#define TRAINER_ROCKETM_FOUR_ROCKETHIDEOUTF1                      891
-#define TRAINER_ROCKETF_FIVE_ROCKETHIDEOUTF1                      892
-#define TRAINER_ROCKETSCIENTIST_ONE_ROCKETHIDEOUTF1                      893
-#define TRAINER_ROCKETSCIENTIST_TWO_ROCKETHIDEOUTF1                      894
-#define TRAINER_ROCKETF_DEWFORDGYM_LEADER                                895
-#define TRAINER_ROCKETM_DEWFORDGYM_ONE                              896
-#define TRAINER_ROCKETF_DEWFORDGYM_TWO                       897
+#define TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1                   889
+#define TRAINER_ROCKETM_THREE_ROCKETHIDEOUTF1                 890
+#define TRAINER_ROCKETM_FOUR_ROCKETHIDEOUTF1                  891
+#define TRAINER_ROCKETF_FIVE_ROCKETHIDEOUTF1                  892
+#define TRAINER_ROCKETSCIENTIST_ONE_ROCKETHIDEOUTF1           893
+#define TRAINER_ROCKETSCIENTIST_TWO_ROCKETHIDEOUTF1           894
+#define TRAINER_ROCKETF_DEWFORDGYM_LEADER                     895
+#define TRAINER_ROCKETM_DEWFORDGYM_ONE                        896
+#define TRAINER_ROCKETF_DEWFORDGYM_TWO                        897
+#define TRAINER_ROCKETF_RUSTBOROGYM_LEADER                    898
+#define TRAINER_ROCKETM_RUSTBOROGYM_ONE                       899
+#define TRAINER_ROCKETF_RUSTBOROGYM_TWO                       900
+#define TRAINER_ROCKETF_MAUVILLEGYM_LEADER                    901
+#define TRAINER_ROCKETM_MAUVILLEGYM_ONE                       902
+#define TRAINER_ROCKETF_MAUVILLEGYM_TWO                       903
+#define TRAINER_ROCKETF_PETALBURGGYM_LEADER                    904
+#define TRAINER_ROCKETF_LAVARIDGEGYM_LEADER                    905
+#define TRAINER_ROCKETM_LAVARIDGEGYM_ONE                       906
+#define TRAINER_ROCKETF_LAVARIDGEGYM_TWO                       907
+#define TRAINER_ROCKETF_FORTREEGYM_LEADER                    905
+#define TRAINER_ROCKETM_FORTREEGYM_ONE                       906
+#define TRAINER_ROCKETF_FORTREEGYM_TWO                       907
+#define TRAINER_ROCKETF_MOSSDEEP_LEADER                    908
+#define TRAINER_ROCKETM_MOSSDEEP_ONE                       909
+#define TRAINER_ROCKETM_SOOTOPOLIS_LEADER                       909
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

@@ -564,3 +564,144 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "Please return with at least one more\n"
 # 283 "data/maps/RustboroCity_Gym/scripts.pory"
 	.string "POKéMON.$"
+
+EventScriptRocketLeader_RustboroGym::
+# 287 "data/maps/RustboroCity_Gym/scripts.pory"
+	lock
+# 288 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 289 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RocketLeader_RustboroGym_Intro
+# 290 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
+# 291 "data/maps/RustboroCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_ROCKETF_RUSTBOROGYM_LEADER, RocketLeader_RustboroGym_BattleIntro, RocketLeader_RustboroGym_BattleOutro, EventScriptRocketLeader_RustboroGym_Conversation
+# 292 "data/maps/RustboroCity_Gym/scripts.pory"
+	call EventScriptRocketLeader_RustboroGym_Conversation
+# 293 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	return
+
+
+EventScriptRocketLeader_RustboroGym_Conversation::
+# 297 "data/maps/RustboroCity_Gym/scripts.pory"
+	lock
+# 298 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 299 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RocketLeader_RustboroGym_Outro
+# 300 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
+# 301 "data/maps/RustboroCity_Gym/scripts.pory"
+	setflag FLAG_RUSTBORO_ROCKET_DEFEATED
+# 302 "data/maps/RustboroCity_Gym/scripts.pory"
+	special CheckIfRocketGymLeadersDefeated
+# 303 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	return
+
+
+EventScriptRocketOne_RustboroGym::
+# 322 "data/maps/RustboroCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_ROCKETM_RUSTBOROGYM_ONE, RocketOne_RustboroGym_BattleIntro, RocketOne_RustboroGym_BattleOutro, EventScript_RocketOne_PostBattle_RustboroGym
+# 323 "data/maps/RustboroCity_Gym/scripts.pory"
+	call EventScript_RocketOne_PostBattle_RustboroGym
+	return
+
+
+EventScript_RocketOne_PostBattle_RustboroGym::
+# 327 "data/maps/RustboroCity_Gym/scripts.pory"
+	lock
+# 328 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 329 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RocketOne_RustboroGym_BattleOutro
+# 330 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
+# 331 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	return
+
+
+EventScriptRocketTwo_RustboroGym::
+# 342 "data/maps/RustboroCity_Gym/scripts.pory"
+	trainerbattle_single TRAINER_ROCKETF_RUSTBOROGYM_TWO, RocketTwo_RustboroGym_BattleIntro, RocketTwo_RustboroGym_BattleOutro, EventScript_RocketTwo_PostBattle_RustboroGym
+# 343 "data/maps/RustboroCity_Gym/scripts.pory"
+	call EventScript_RocketOne_PostBattle_RustboroGym
+	return
+
+
+EventScript_RocketTwo_PostBattle_RustboroGym::
+# 347 "data/maps/RustboroCity_Gym/scripts.pory"
+	lock
+# 348 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 349 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox RocketOne_RustboroGym_BattleOutro
+# 350 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
+# 351 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	return
+
+
+EventScript_RocketIntro_RustboroGym::
+# 362 "data/maps/RustboroCity_Gym/scripts.pory"
+	lock
+# 363 "data/maps/RustboroCity_Gym/scripts.pory"
+	faceplayer
+# 364 "data/maps/RustboroCity_Gym/scripts.pory"
+	msgbox EventScript_RocketIntro_RustboroGym_Text_0
+# 365 "data/maps/RustboroCity_Gym/scripts.pory"
+	waitmessage
+# 366 "data/maps/RustboroCity_Gym/scripts.pory"
+	release
+	return
+
+
+EventScript_RocketIntro_RustboroGym_Text_0:
+# 364 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Hello... we have been waiting for you.\n"
+	.string "While you were busy on that island we\l"
+	.string "went and took over all the Hoenn gyms.\l"
+	.string "To stop us you would have to beat all 8\l"
+	.string "gyms again, with a Rocket flavour!\l"
+	.string "Hahaha!$"
+
+RocketLeader_RustboroGym_BattleIntro::
+# 306 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Soon I'll be the Rocket boss!$"
+
+RocketLeader_RustboroGym_BattleOutro::
+# 309 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "No! It's... it's over...$"
+
+RocketLeader_RustboroGym_Intro::
+# 313 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "ROCKET LEADER: This is Rustboro Gym!\n"
+	.string "Your first gym badge was obtained here,\l"
+	.string "you will not be able to best this gym in\l"
+	.string "it's new state!$"
+
+RocketLeader_RustboroGym_Outro::
+# 317 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "ROCKET LEADER: You will regret\n"
+	.string "challenging Team Rocket! All the others\l"
+	.string "will put you in your place shrimp!$"
+
+RocketOne_RustboroGym_BattleIntro::
+# 334 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Before challeging our gym leader you\n"
+	.string "will have to go through me!$"
+
+RocketOne_RustboroGym_BattleOutro::
+# 337 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Argh...$"
+
+RocketTwo_RustboroGym_BattleIntro::
+# 354 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Nice, I'm down for a battle.$"
+
+RocketTwo_RustboroGym_BattleOutro::
+# 357 "data/maps/RustboroCity_Gym/scripts.pory"
+	.string "Not like this.$"

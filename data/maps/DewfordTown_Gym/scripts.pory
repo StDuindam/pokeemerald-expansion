@@ -464,7 +464,7 @@ script EventScriptRocketLeader_DewfordGym{
     faceplayer
     msgbox(RocketLeader_DewfordGym_Intro)
     waitmessage
-    trainerbattle_single(TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1, RocketLeader_DewfordGym_BattleIntro, RocketLeader_DewfordGym_BattleOutro,EventScriptRocketLeader_DewfordGym_Conversation)
+    trainerbattle_single(TRAINER_ROCKETF_DEWFORDGYM_LEADER, RocketLeader_DewfordGym_BattleIntro, RocketLeader_DewfordGym_BattleOutro,EventScriptRocketLeader_DewfordGym_Conversation)
     call(EventScriptRocketLeader_DewfordGym_Conversation)
     release
 }
@@ -475,6 +475,7 @@ script EventScriptRocketLeader_DewfordGym_Conversation{
     msgbox(RocketLeader_DewfordGym_Outro)
     waitmessage
     setflag(FLAG_DEWFORD_ROCKET_DEFEATED)
+	special(CheckIfRocketGymLeadersDefeated)
     release
 }
 
@@ -494,7 +495,7 @@ text RocketLeader_DewfordGym_Outro{
 }
 
 script EventScriptRocketOne_DewfordGym{
-    trainerbattle_single(TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1, RocketOne_DewfordGym_BattleIntro, RocketOne_DewfordGym_BattleOutro,EventScript_RocketOne_PostBattle_DewfordGym)
+    trainerbattle_single(TRAINER_ROCKETM_DEWFORDGYM_ONE, RocketOne_DewfordGym_BattleIntro, RocketOne_DewfordGym_BattleOutro,EventScript_RocketOne_PostBattle_DewfordGym)
     call(EventScript_RocketOne_PostBattle_DewfordGym)
 }
 
@@ -514,7 +515,7 @@ text RocketOne_DewfordGym_BattleOutro{
 }
 
 script EventScriptRocketTwo_DewfordGym{
-    trainerbattle_single(TRAINER_ROCKETF_TWO_ROCKETHIDEOUTF1, RocketTwo_DewfordGym_BattleIntro, RocketTwo_DewfordGym_BattleOutro,EventScript_RocketTwo_PostBattle_DewfordGym)
+    trainerbattle_single(TRAINER_ROCKETF_DEWFORDGYM_TWO, RocketTwo_DewfordGym_BattleIntro, RocketTwo_DewfordGym_BattleOutro,EventScript_RocketTwo_PostBattle_DewfordGym)
     call(EventScript_RocketOne_PostBattle_DewfordGym)
 }
 
