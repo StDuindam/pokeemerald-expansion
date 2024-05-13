@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETF",
@@ -35,75 +35,75 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "EventScriptRocketOne_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 6,
-      "y": 16,
+      "x": 7,
+      "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
-      "movement_range_x": 3,
-      "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "EventScriptRocketThree_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
-      "x": 11,
-      "y": 13,
+      "x": 13,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "EventScriptRocketFour_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
-      "x": 1,
+      "x": 2,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "EventScriptRocketTwo_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 8,
-      "y": 10,
+      "x": 14,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "EventScriptRocketFive_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 12,
-      "y": 7,
+      "x": 16,
+      "y": 14,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "EventScriptRocketSix_RocketHideoutB1",
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -142,7 +142,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -168,7 +168,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     }
   ],
   "warp_events": [
@@ -188,7 +188,42 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "8",
+      "script": "EventScript_RocketHideout_B1_TriggerC"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "9",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "8",
+      "script": "EventScript_RocketHideout_B1_TriggerB"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "8",
+      "script": "EventScript_RocketHideout_B1_TriggerA"
+    }
   ],
   "bg_events": [
 

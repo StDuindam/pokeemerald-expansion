@@ -13573,3 +13573,64 @@ static const struct TrainerMon sParty_RocketLeader_SootopolisGym[] = {
     .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
     }
 };
+
+static const struct TrainerMon sParty_RocketHideoutB1_One[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketHideoutB1_Two[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketHideoutB1_Three[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketHideoutB1_Four[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketHideoutB1_Five[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};
+static const struct TrainerMon sParty_RocketHideoutB1_Six[] = {
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 5,
+    .species = SPECIES_PYUKUMUKU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = ABILITY_ELECTRIC_SURGE,
+    .moves = {MOVE_EARTHQUAKE, MOVE_U_TURN, MOVE_STEALTH_ROCK, MOVE_ROCK_SLIDE},
+    }
+};

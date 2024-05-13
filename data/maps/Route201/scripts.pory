@@ -107,7 +107,7 @@ script EventScript_Route201_ProfessorAndSteven{
     }elif(var(VAR_ROCKET_ARC_STATE) == 8)
     {
         faceplayer
-        msgbox(format("Good job on beating all those Rocket leaders, I guess there's one left. You know where to find him to put an end to all this!"))
+        msgbox(format("Prof BIRCH: Good job on beating all those Rocket leaders, I guess there's one left. You know where to find him to put an end to all this!"))
         waitmessage
     }
     release

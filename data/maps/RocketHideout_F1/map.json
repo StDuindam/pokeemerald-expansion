@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "EventScript_RocketFive_RocketHideout",
-      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
+      "flag": "FLAG_NOTINROCKETSTATE_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
@@ -77,7 +77,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "EventScript_RocketOne_RocketHideout",
-      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
+      "flag": "FLAG_ROCKET_ALLGYMS_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETF",
@@ -90,7 +90,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "EventScript_RocketTwo_RocketHideout",
-      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
+      "flag": "FLAG_ROCKET_ALLGYMS_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_Scientist_One_RocketHideout",
-      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
+      "flag": "FLAG_ROCKET_ALLGYMS_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
@@ -130,6 +130,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_MatsRocketHideout",
       "flag": "FLAG_MATSROCKETHIDEOUT_VISIBLE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_MatsRocketHideout",
+      "flag": "FLAG_NOTINROCKETSTATE_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WATTSON",
+      "x": 15,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Eventscript_TalkToWattson_RocketHideoutF1",
+      "flag": "FLAG_NOTINROCKETSTATE_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Eventscript_TalkToMats_RocketHideoutF1",
+      "flag": "FLAG_NOTINROCKETSTATE_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROCKETF",
+      "x": 27,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Eventscript_TalkToMatsRocket_RocketHideoutF1",
+      "flag": "FLAG_NOTINROCKETSTATE_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 33,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Eventscript_TalkToJens_RocketHideoutF1",
+      "flag": "FLAG_NOTINROCKETSTATE_8"
     }
   ],
   "warp_events": [
@@ -170,7 +235,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROCKET_ARC_STATE",
+      "var_value": "8",
+      "script": "EventScript_PushPlayerBack_RocketHideoutF1_1"
+    }
   ],
   "bg_events": [
 

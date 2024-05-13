@@ -622,10 +622,10 @@ EventScript_Route201_ProfessorAndSteven_Text_8:
 
 EventScript_Route201_ProfessorAndSteven_Text_9:
 # 110 "data/maps/Route201/scripts.pory"
-	.string "Good job on beating all those Rocket\n"
-	.string "leaders, I guess there's one left. You\l"
-	.string "know where to find him to put an end to\l"
-	.string "all this!$"
+	.string "Prof BIRCH: Good job on beating all\n"
+	.string "those Rocket leaders, I guess there's\l"
+	.string "one left. You know where to find him to\l"
+	.string "put an end to all this!$"
 
 EventScript_Route201_Steven_Text_0:
 # 168 "data/maps/Route201/scripts.pory"

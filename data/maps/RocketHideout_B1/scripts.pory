@@ -1,3 +1,189 @@
 mapscripts RocketHideout_B1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EventScript_OnLoad_RocketHideout_B1
+}
 
+
+script EventScript_OnLoad_RocketHideout_B1{
+    if(flag(FLAG_ROCKETB1_BASEMENT_GAUNTLET_BEAT)){
+        settrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_ONE)
+        settrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_TWO)
+        settrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_THREE)
+    }else{
+        //cleartrainerflag()
+        cleartrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_FOUR)
+        cleartrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_FIVE)
+        cleartrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_SIX)
+    }
+}
+
+script EventScript_RocketHideout_B1_TriggerA{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, MovementRocketHideout_B1_A)
+    waitmovement(0)
+    call(EventScript_RocketHideout_B1_MovePlayer)
+    release
+}
+
+movement MovementRocketHideout_B1_A {
+    walk_right
+    walk_down
+    face_right
+}
+
+script EventScript_RocketHideout_B1_TriggerB{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, MovementRocketHideout_B1_B)
+    waitmovement(0)
+    call(EventScript_RocketHideout_B1_MovePlayer)
+    release
+}
+
+movement MovementRocketHideout_B1_B {
+    walk_right
+}
+
+script EventScript_RocketHideout_B1_TriggerC{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, MovementRocketHideout_B1_C)
+    waitmovement(0)
+    call(EventScript_RocketHideout_B1_MovePlayer)
+    release
+}
+
+movement MovementRocketHideout_B1_C {
+    walk_right
+    walk_up
+    face_right
+}
+
+script EventScript_RocketHideout_B1_MovePlayer{
+    lock
+    msgbox("YOU SENSE DANGER")
+    waitmessage
+    release
+}
+
+script EventScript_RocketHideout_B1_GiovanniSequence{
+
+}
+
+script EventScriptRocketOne_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_ONE, RocketOne_RocketHideoutB1_BattleIntro, RocketOne_RocketHideoutB1_BattleOutro,EventScript_RocketOne_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketOne_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketOne_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketOne_RocketHideoutB1_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketOne_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketOne_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
+}
+
+script EventScriptRocketTwo_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_TWO, RocketTwo_RocketHideoutB1_BattleIntro, RocketTwo_RocketHideoutB1_BattleOutro,EventScript_RocketTwo_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketTwo_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketTwo_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketTwo_RocketHideoutB1_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketTwo_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketTwo_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
+}
+
+script EventScriptRocketThree_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_THREE, RocketThree_RocketHideoutB1_BattleIntro, RocketThree_RocketHideoutB1_BattleOutro,EventScript_RocketThree_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketThree_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketThree_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketThree_RocketHideoutB1_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketThree_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketThree_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
+}
+
+script EventScriptRocketFour_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_FOUR, RocketFour_RocketHideoutB1_BattleIntro, RocketFour_RocketHideoutB1_BattleOutro,EventScript_RocketFour_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketFour_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketFour_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketFour_RocketHideoutB1_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketFour_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketFour_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
+}
+
+script EventScriptRocketFive_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_FIVE, RocketFive_RocketHideoutB1_BattleIntro, RocketFive_RocketHideoutB1_BattleOutro,EventScript_RocketFive_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketFive_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketFive_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketFive_RocketHideoutB1_BattleOutro)
+    waitmessage
+    release
+}
+
+text RocketFive_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketFive_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
+}
+
+script EventScriptRocketSix_RocketHideoutB1{
+    trainerbattle_single(TRAINER_ROCKETM_ROCKETHIDEOUTB1_SIX, RocketSix_RocketHideoutB1_BattleIntro, RocketSix_RocketHideoutB1_BattleOutro,EventScript_RocketSix_PostBattle_RocketHideoutB1)
+    call(EventScript_RocketSix_PostBattle_RocketHideoutB1)
+}
+
+script EventScript_RocketSix_PostBattle_RocketHideoutB1{
+    lock
+    faceplayer
+    msgbox(RocketSix_RocketHideoutB1_BattleOutro)
+    waitmessage
+    setflag(FLAG_ROCKETB1_BASEMENT_GAUNTLET_BEAT)
+    release
+}
+
+text RocketSix_RocketHideoutB1_BattleIntro{
+    format("Huh, you are what they are talking about?")
+}
+text RocketSix_RocketHideoutB1_BattleOutro{
+    format("Looks decieve...")
 }

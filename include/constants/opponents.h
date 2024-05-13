@@ -911,9 +911,15 @@
 #define TRAINER_ROCKETF_FORTREEGYM_LEADER                    905
 #define TRAINER_ROCKETM_FORTREEGYM_ONE                       906
 #define TRAINER_ROCKETF_FORTREEGYM_TWO                       907
-#define TRAINER_ROCKETF_MOSSDEEP_LEADER                    908
-#define TRAINER_ROCKETM_MOSSDEEP_ONE                       909
-#define TRAINER_ROCKETM_SOOTOPOLIS_LEADER                       909
+#define TRAINER_ROCKETF_MOSSDEEPGYM_LEADER                    908
+#define TRAINER_ROCKETM_MOSSDEEPGYM_ONE                       909
+#define TRAINER_ROCKETF_SOOTOPOLISGYM_LEADER                  910
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_ONE                   911
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_TWO                   912
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_THREE                 913
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_FOUR                  914
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_FIVE                  915
+#define TRAINER_ROCKETM_ROCKETHIDEOUTB1_SIX                   916
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

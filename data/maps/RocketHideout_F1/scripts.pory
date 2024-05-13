@@ -11,7 +11,11 @@ script EventScript_OnTransition_RocketHideoutF1{
     }else{
         clearflag(FLAG_MATSROCKETHIDEOUT_VISIBLE)
     }
-
+    if(var(VAR_ROCKET_ARC_STATE) == 8){
+        clearflag(FLAG_NOTINROCKETSTATE_8)
+    }else{
+        setflag(FLAG_NOTINROCKETSTATE_8)
+    }
 }
 
 script EventScript_RocketOne_RocketHideout{
@@ -172,4 +176,45 @@ script EventScript_RocketSix_RocketHideout{
     msgbox(format("Beat it, no one is coming down here."))
     waitmessage
     release
+}
+
+script EventScript_PushPlayerBack_RocketHideoutF1_1{
+    lock
+    msgbox(format("WATTSON: Stay out of this one Kid, I'll zap the grunts and keep them back!"))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, BumpRight_RocketHideoutF1)
+    waitmovement(0)
+    release
+}
+
+script Eventscript_TalkToWattson_RocketHideoutF1{
+    lock
+    msgbox(format("WATTSON: I got to focus kid, you move on!"))
+    waitmessage
+    release
+}
+
+script Eventscript_TalkToMats_RocketHideoutF1{
+    lock
+    msgbox(format("MATS: This Grunt was no match for me, easy, you move on while I make sure they don't do anything weird."))
+    waitmessage
+    release
+}
+script Eventscript_TalkToMatsRocket_RocketHideoutF1{
+    lock
+    msgbox(format("GRUNT: This Mats guy was really tough..."))
+    waitmessage
+    release
+}
+
+script Eventscript_TalkToJens_RocketHideoutF1{
+    lock
+    faceplayer
+    msgbox(format("JENS: Yo! I think I easily beat 50 of those Rocket noobs. Help is underway, I think the big boss is downstairs, do you want to take the lead? We will be right behind you."))
+    waitmessage
+    release
+}
+
+movement BumpRight_RocketHideoutF1 {
+    walk_right * 1
 }

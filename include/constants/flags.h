@@ -1243,8 +1243,8 @@
 #define FLAG_MATSROCKETHIDEOUT_VISIBLE                              0x4A8 // Unused Flag
 #define FLAG_MEWTWO_ISLAND_ACTIVE                                   0x4A9 // Unused Flag
 #define FLAG_ROCKET_ALLGYMS_BEAT                                    0x4AA // Unused Flag
-#define FLAG_UNUSED_0x4AB                                           0x4AB // Unused Flag
-#define FLAG_UNUSED_0x4AC                                           0x4AC // Unused Flag
+#define FLAG_ROCKETB1_BASEMENT_GAUNTLET_BEAT                        0x4AB // Unused Flag
+#define FLAG_NOTINROCKETSTATE_8                                     0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag

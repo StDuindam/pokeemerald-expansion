@@ -4311,6 +4311,7 @@ void CheckIfRocketGymLeadersDefeated(void)
         FlagGet(FLAG_LAVARIDGE_ROCKET_DEFEATED) && FlagGet(FLAG_PETALBURG_ROCKET_DEFEATED) && FlagGet(FLAG_SOOTOPOLIS_ROCKET_DEFEATED)
         ){
             FlagSet(FLAG_ROCKET_ALLGYMS_BEAT);
+            VarSet(VAR_ROCKET_ARC_STATE, 8);
         }else{
             return;
         }
