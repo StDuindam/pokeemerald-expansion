@@ -88,7 +88,7 @@ MovePlayerToStart_2_RocketHideoutF2::
 
 MovePlayerToStart_3_RocketHideoutF2::
 # 51 "data/maps/RocketHideout_F2/scripts.pory"
-	playbgm MUS_ENCOUNTER_AQUA, MUS_AQUA_MAGMA_HIDEOUT
+	playbgm MUS_ENCOUNTER_AQUA, TRUE
 # 52 "data/maps/RocketHideout_F2/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TRUE
 # 53 "data/maps/RocketHideout_F2/scripts.pory"

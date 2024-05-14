@@ -58,13 +58,142 @@ movement MovementRocketHideout_B1_C {
 
 script EventScript_RocketHideout_B1_MovePlayer{
     lock
-    msgbox("YOU SENSE DANGER")
-    waitmessage
+    hideobjectat(13,MAP_ROCKET_HIDEOUT_B1)
+    playbgm( MUS_ENCOUNTER_AQUA,TRUE)
+    applymovement(OBJ_EVENT_ID_PLAYER, MovementRocketHideout_B1_PlayerToGiovanni)
+    waitmovement(0)
+    call(EventScript_RocketHideout_B1_GiovanniSequence_One)
     release
 }
 
-script EventScript_RocketHideout_B1_GiovanniSequence{
+movement MovementRocketHideout_B1_PlayerToGiovanni {
+    emote_exclamation_mark
+    walk_right * 6
+    walk_up * 1
+    walk_right * 1
+}
 
+script EventScript_RocketHideout_B1_GiovanniSequence_One{
+    lock 
+    faceplayer
+    msgbox(Giovanni_RocketHideout_B1_Intro)
+    waitmessage
+    applymovement(10,Movement_RocketHideoutB1_Scientist_One)
+    waitmovement(0)
+    msgbox(format("YOU HAVE INTERFERED WITH OUR RESEARCH ENOUGH!"))
+    waitmessage
+    //first battle
+    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
+    waitmovement(0)
+    trainerbattle_single(TRAINER_GIOVANNI_ROCKETHIDEOUTB1_ONE, Giovanni_BattleOne_RocketHideout_B1_Intro, Giovanni_BattleOne_RocketHideout_B1_Outro,EventScript_RocketHideout_B1_GiovanniSequence_Two)
+    release
+}
+
+script EventScript_RocketHideout_B1_GiovanniSequence_Two{
+    //move Scientist back
+    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
+    waitmovement(0)
+    applymovement(10, Movement_RocketHideoutB1_Scientist_One_Return)
+    waitmovement(0)
+    applymovement(12, Movement_RocketHideoutB1_Scientist_Two)
+    waitmovement(0)
+    //move up new scientist
+
+    trainerbattle_single(TRAINER_GIOVANNI_ROCKETHIDEOUTB1_TWO, Giovanni_BattleTwo_RocketHideout_B1_Intro, Giovanni_BattleTwo_RocketHideout_B1_Outro,EventScript_RocketHideout_B1_GiovanniSequence_Three)
+}
+
+movement LookRightPlayer_RocketHideoutB1 {
+    face_right
+}
+
+script EventScript_RocketHideout_B1_GiovanniSequence_Three{
+    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
+    waitmovement(0)
+    setflag(FLAG_DYNAMAX_ALLOWED)
+    //move scientist back
+    applymovement(12, Movement_RocketHideoutB1_Scientist_Two_Return)
+    waitmovement(0)
+    msgbox(format("GIOVANNI: With ease... you best my two most clever scientists. You best my gym leaders. And now you attempt to best me."))
+    //move up giovanni - bring out Mewtwo
+    waitmessage
+    msgbox(format("GIOVANNI: MEWTWO. COME FORTH!"))
+    waitmessage
+    showobjectat(13,MAP_ROCKET_HIDEOUT_B1)
+    msgbox(format("MEWTWO: YES. MASTER."))
+    waitmessage
+    msgbox(format("Finally we shall see. My full power, using the tools we have created, against your power"))
+    waitmessage
+    trainerbattle_single(TRAINER_GIOVANNI_ROCKETHIDEOUTB1_THREE, Giovanni_BattleThree_RocketHideout_B1_Intro, Giovanni_BattleThree_RocketHideout_B1_Outro,EventScript_RocketHideout_B1_GiovanniSequence_PostBattle)
+}
+
+script EventScript_RocketHideout_B1_GiovanniSequence_PostBattle{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
+    waitmovement(0)
+    clearflag(FLAG_DYNAMAX_ALLOWED)
+    msgbox(format("GIOVANNI: So it se-"))
+    //sreenshake
+    waitmessage
+    msgbox(format("MEWTWO: YOU HUMANS HAVE USED POKEMON FOR THE WRONG PURPOSE. THIS CONFLICT, IT IS YOURS NOT OURS, THIS FINAL BATTLE HAS SHOWN ME... ALL HUMANS ARE HORRIBLE. I CANNOT ALLOW THIS TO CONTINUE!"))
+    //flash or something
+    waitmessage
+    setflag(FLAG_ROCKET_EVENT_COMPLETED)
+    clearflag(FLAG_ROCKET_EVENT_ACTIVE)
+    setflag(FLAG_MEWTWO_ISLAND_ACTIVE)
+    setvar(VAR_ROCKET_ARC_STATE,9)
+    release
+}
+
+text Giovanni_RocketHideout_B1_Intro{
+    format("GIOVANNI: You have annoyed me {PLAYER}. We were so close to dominating this Hoenn region... but you had to interfere, hadn't you? I'm done playing nice and fair with you. You better prepare to face some of our strongest cloned Pokemons and our latest tech. My scientists, take him on!")
+}
+
+text Giovanni_RocketHideout_B1_Second{
+    format("")
+}
+
+text Giovanni_RocketHideout_B1_Third{
+    format("")
+}
+
+text Giovanni_BattleOne_RocketHideout_B1_Intro{
+    format("I'M GOING TO END YOU!")
+}
+text Giovanni_BattleOne_RocketHideout_B1_Outro{
+    format("No... no! NO!")
+}
+text Giovanni_BattleTwo_RocketHideout_B1_Intro{
+    format("Bwahahaha, no rest for you!")
+}
+text Giovanni_BattleTwo_RocketHideout_B1_Outro{
+    format("In-incredible...")
+}
+
+text Giovanni_BattleThree_RocketHideout_B1_Intro{
+    format("This ends here!")
+}
+text Giovanni_BattleThree_RocketHideout_B1_Outro{
+    format("...")
+}
+
+movement Movement_RocketHideoutB1_Scientist_One{
+    walk_up * 3
+    walk_left
+}
+movement Movement_RocketHideoutB1_Scientist_One_Return {
+    walk_fast_right
+    walk_fast_down * 3
+    face_up
+}
+
+movement Movement_RocketHideoutB1_Scientist_Two{
+    walk_left * 2
+    walk_down
+    walk_left * 1
+}
+movement Movement_RocketHideoutB1_Scientist_Two_Return {
+    walk_fast_up * 3
+    face_down
 }
 
 script EventScriptRocketOne_RocketHideoutB1{

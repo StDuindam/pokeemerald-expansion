@@ -244,7 +244,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_202_RocketTooBusy",
-      "flag": "0"
+      "flag": "FLAG_ROCKET_EVENT_COMPLETED"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",

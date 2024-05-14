@@ -48,7 +48,7 @@ script MovePlayerToStart_2_RocketHideoutF2{
 }
 
 script MovePlayerToStart_3_RocketHideoutF2{
-    playbgm( MUS_ENCOUNTER_AQUA,MUS_AQUA_MAGMA_HIDEOUT)
+    playbgm( MUS_ENCOUNTER_AQUA,TRUE)
     applymovement(OBJ_EVENT_ID_PLAYER, TRUE)
     waitmovement(0)
     call(EventScript_RocketHideoutF2_GiovanniIntro)

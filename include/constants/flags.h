@@ -732,7 +732,7 @@
 #define FLAG_ITEM_SEEDS_ELECTRICPSYCHICGRASSY  0x2B0 // In game
 #define FLAG_ITEM_LIFEORB  0x2B1 // Unused Flag
 #define FLAG_ITEM_LOADEDDICE  0x2B2 // Unused Flag
-#define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
+#define FLAG_DYNAMAX_ALLOWED  0x2B3 // Unused Flag
 #define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
 #define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
 #define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
