@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "EventScript_RocketFive_RocketHideout",
-      "flag": "FLAG_NOTINROCKETSTATE_8"
+      "flag": "FLAG_ROCKET_ALLGYMS_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",

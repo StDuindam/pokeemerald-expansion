@@ -14,6 +14,11 @@ script EventScript_OnLoad_RocketHideout_B1{
         cleartrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_FIVE)
         cleartrainerflag(TRAINER_ROCKETM_ROCKETHIDEOUTB1_SIX)
     }
+    if(var(VAR_MEWTWO_ARC_STATE)==1){
+        clearflag(FLAG_NOTINMEWTWO_STATE_1)
+    }else{
+    setflag(FLAG_NOTINMEWTWO_STATE_1)
+    }
 }
 
 script EventScript_RocketHideout_B1_TriggerA{
@@ -60,10 +65,12 @@ script EventScript_RocketHideout_B1_MovePlayer{
     lock
     hideobjectat(13,MAP_ROCKET_HIDEOUT_B1)
     playbgm( MUS_ENCOUNTER_AQUA,TRUE)
+    setflag(FLAG_MEWTWO_BEAT)
+    hideobjectat(14, MAP_ROCKET_HIDEOUT_B1)
     applymovement(OBJ_EVENT_ID_PLAYER, MovementRocketHideout_B1_PlayerToGiovanni)
     waitmovement(0)
-    call(EventScript_RocketHideout_B1_GiovanniSequence_One)
     release
+    call(EventScript_RocketHideout_B1_GiovanniSequence_One)
 }
 
 movement MovementRocketHideout_B1_PlayerToGiovanni {
@@ -74,8 +81,7 @@ movement MovementRocketHideout_B1_PlayerToGiovanni {
 }
 
 script EventScript_RocketHideout_B1_GiovanniSequence_One{
-    lock 
-    faceplayer
+    lock
     msgbox(Giovanni_RocketHideout_B1_Intro)
     waitmessage
     applymovement(10,Movement_RocketHideoutB1_Scientist_One)
@@ -83,15 +89,13 @@ script EventScript_RocketHideout_B1_GiovanniSequence_One{
     msgbox(format("YOU HAVE INTERFERED WITH OUR RESEARCH ENOUGH!"))
     waitmessage
     //first battle
-    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
     waitmovement(0)
     trainerbattle_single(TRAINER_GIOVANNI_ROCKETHIDEOUTB1_ONE, Giovanni_BattleOne_RocketHideout_B1_Intro, Giovanni_BattleOne_RocketHideout_B1_Outro,EventScript_RocketHideout_B1_GiovanniSequence_Two)
-    release
+    releaseall
 }
 
 script EventScript_RocketHideout_B1_GiovanniSequence_Two{
     //move Scientist back
-    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
     waitmovement(0)
     applymovement(10, Movement_RocketHideoutB1_Scientist_One_Return)
     waitmovement(0)
@@ -107,7 +111,6 @@ movement LookRightPlayer_RocketHideoutB1 {
 }
 
 script EventScript_RocketHideout_B1_GiovanniSequence_Three{
-    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
     waitmovement(0)
     setflag(FLAG_DYNAMAX_ALLOWED)
     //move scientist back
@@ -121,26 +124,62 @@ script EventScript_RocketHideout_B1_GiovanniSequence_Three{
     showobjectat(13,MAP_ROCKET_HIDEOUT_B1)
     msgbox(format("MEWTWO: YES. MASTER."))
     waitmessage
+    applymovement(13, Movement_RocketHideout_MewtwoMoveDown)
+    waitmovement(0)
+    applymovement(1, Movement_RocketHideout_MoveGiovanniForward)
+    waitmovement(0)
     msgbox(format("Finally we shall see. My full power, using the tools we have created, against your power"))
     waitmessage
+    applymovement(1, Movement_RocketHideout_MoveGiovanniForward)
+    waitmovement(0)
     trainerbattle_single(TRAINER_GIOVANNI_ROCKETHIDEOUTB1_THREE, Giovanni_BattleThree_RocketHideout_B1_Intro, Giovanni_BattleThree_RocketHideout_B1_Outro,EventScript_RocketHideout_B1_GiovanniSequence_PostBattle)
+}
+
+movement Movement_RocketHideout_MewtwoMoveDown {
+    walk_down * 2
+    face_down
+}
+
+movement Movement_RocketHideout_MoveGiovanniForward {
+    walk_left * 1
 }
 
 script EventScript_RocketHideout_B1_GiovanniSequence_PostBattle{
     lock
-    applymovement(OBJ_EVENT_ID_PLAYER, LookRightPlayer_RocketHideoutB1)
     waitmovement(0)
     clearflag(FLAG_DYNAMAX_ALLOWED)
     msgbox(format("GIOVANNI: So it se-"))
     //sreenshake
     waitmessage
+
+    special(ShakeCamera)
     msgbox(format("MEWTWO: YOU HUMANS HAVE USED POKEMON FOR THE WRONG PURPOSE. THIS CONFLICT, IT IS YOURS NOT OURS, THIS FINAL BATTLE HAS SHOWN ME... ALL HUMANS ARE HORRIBLE. I CANNOT ALLOW THIS TO CONTINUE!"))
     //flash or something
     waitmessage
+
+    fadescreen(FADE_TO_BLACK)
     setflag(FLAG_ROCKET_EVENT_COMPLETED)
+    removeobject(1)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12)
+    removeobject(13)
     clearflag(FLAG_ROCKET_EVENT_ACTIVE)
     setflag(FLAG_MEWTWO_ISLAND_ACTIVE)
     setvar(VAR_ROCKET_ARC_STATE,9)
+    clearflag(FLAG_MEWTWO_BEAT)
+    setvar(VAR_MEWTWO_ARC_STATE, 1)
+    clearflag(FLAG_NOTINMEWTWO_STATE_1)
+    showobjectat(14, MAP_ROCKET_HIDEOUT_B1)
+    showobjectat(15,MAP_ROCKET_HIDEOUT_B1)
+    showobjectat(16,MAP_ROCKET_HIDEOUT_B1)
+    msgbox(format("GIOVANNI: MEWTWO YO- ARGGHHH"))
+    waitmessage
+    msgbox(format("A brief moment of chaos passes and then..... Silence...."))
+    waitmessage
+    fadescreen(FADE_FROM_BLACK)
     release
 }
 
@@ -210,10 +249,10 @@ script EventScript_RocketOne_PostBattle_RocketHideoutB1{
 }
 
 text RocketOne_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("You got no chance here!")
 }
 text RocketOne_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("I'm going to ask for help...")
 }
 
 script EventScriptRocketTwo_RocketHideoutB1{
@@ -230,10 +269,10 @@ script EventScript_RocketTwo_PostBattle_RocketHideoutB1{
 }
 
 text RocketTwo_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("In this lab you are the experiment!")
 }
 text RocketTwo_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("How can I be beat by a lab rat.")
 }
 
 script EventScriptRocketThree_RocketHideoutB1{
@@ -250,10 +289,10 @@ script EventScript_RocketThree_PostBattle_RocketHideoutB1{
 }
 
 text RocketThree_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("Get out my face!")
 }
 text RocketThree_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("Darn it.")
 }
 
 script EventScriptRocketFour_RocketHideoutB1{
@@ -270,10 +309,10 @@ script EventScript_RocketFour_PostBattle_RocketHideoutB1{
 }
 
 text RocketFour_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("Do you think you have what it takes?")
 }
 text RocketFour_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("You got me...")
 }
 
 script EventScriptRocketFive_RocketHideoutB1{
@@ -290,10 +329,10 @@ script EventScript_RocketFive_PostBattle_RocketHideoutB1{
 }
 
 text RocketFive_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("Feel like giving up?")
 }
 text RocketFive_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("I guess not.")
 }
 
 script EventScriptRocketSix_RocketHideoutB1{
@@ -311,8 +350,62 @@ script EventScript_RocketSix_PostBattle_RocketHideoutB1{
 }
 
 text RocketSix_RocketHideoutB1_BattleIntro{
-    format("Huh, you are what they are talking about?")
+    format("I'll beat you!")
 }
 text RocketSix_RocketHideoutB1_BattleOutro{
-    format("Looks decieve...")
+    format("Argh!")
+}
+
+script EventScript_MewtwoDoorBlocker{
+    lock
+    faceplayer
+    msgbox(format("You did well. Prof Birch would like to speak with you, I would suggest looking around to see if you can find him. We will tidy up this place."))
+    waitmessage
+    release
+}
+
+script EventScript_MewtwoArcKickOff_RocketHideoutB1{
+    lock
+    applymovement(15,Movement_RocketHideout_B1_JensIntro)
+    applymovement(16, Movement_RocketHideout_B1_MatsIntro)
+    waitmovement(0)
+    msgbox(format("JENS: Holy! That battle was epic, you are strong as steel {PLAYER}!"))
+    waitmessage
+    msgbox(format("MATS: No way you beat Mewtwo!"))
+    waitmessage
+    msgbox(format("MATS: It seems that all the rockets fled... but what happened here was something else. The Prof wants to see you {PLAYER}, he should be outside on the beach. Meet up with him when you are ready. Something is going on unfortunately we cannot stop and rest yet!"))
+    waitmessage
+    applymovement(15,Movement_RocketHideout_B1_JensOutro)
+    applymovement(16, Movement_RocketHideout_B1_MatsOutro)
+    waitmovement(0)
+    setvar(VAR_MEWTWO_ARC_STATE, 2)
+    setflag(FLAG_NOTINMEWTWO_STATE_1)
+    removeobject(15)
+    removeobject(16)
+    releaseall
+}
+
+movement Movement_RocketHideout_B1_MatsIntro {
+    walk_right * 6
+    walk_up
+    walk_right * 1
+}
+
+movement Movement_RocketHideout_B1_MatsOutro {
+    walk_left * 1
+    walk_down
+    walk_left * 6
+}
+
+movement Movement_RocketHideout_B1_JensIntro {
+    walk_right * 4
+    walk_up 
+    emote_exclamation_mark
+    walk_fast_right * 3
+}
+
+movement Movement_RocketHideout_B1_JensOutro {
+    walk_left * 3
+    walk_down
+    walk_left * 4
 }

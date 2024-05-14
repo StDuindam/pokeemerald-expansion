@@ -1245,8 +1245,8 @@
 #define FLAG_ROCKET_ALLGYMS_BEAT                                    0x4AA // Unused Flag
 #define FLAG_ROCKETB1_BASEMENT_GAUNTLET_BEAT                        0x4AB // Unused Flag
 #define FLAG_NOTINROCKETSTATE_8                                     0x4AC // Unused Flag
-#define FLAG_UNUSED_0x4AD                                           0x4AD // Unused Flag
-#define FLAG_UNUSED_0x4AE                                           0x4AE // Unused Flag
+#define FLAG_MEWTWO_BEAT                                            0x4AD // Unused Flag
+#define FLAG_NOTINMEWTWO_STATE_1                                    0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF                                           0x4AF // Unused Flag
 #define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
 #define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
