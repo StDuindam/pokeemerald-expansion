@@ -1,7 +1,15 @@
 mapscripts Route202_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION:EventScript_Route202_OnTransition
 }
 
-
+script EventScript_Route202_OnTransition {
+    if(var(VAR_MEWTWO_ARC_STATE) == 2)
+    {
+        clearflag(FLAG_MEWTWO_ISLAND_INTRO_BIRCH)
+    }else{
+        setflag(FLAG_MEWTWO_ISLAND_INTRO_BIRCH)
+    }
+}
 
 script EventScript_Route202_Maniac{
     lock
@@ -102,4 +110,18 @@ movement EventScript_202_RocketLook_Left {
 }
 movement EventScript_202_RocketLook_Up {
     face_up
+}
+
+script EventScript_202_BirchMewtwoIslandIntro{
+    lock
+    faceplayer
+    msgbox(format("PROF BIRCH: Ah {PLAYER}, here you are. There's more trouble... all of our friends and some others got taken by Mewtwo. I'm pretty sure they headed north of this Island. Make sure you go prepared... It will be a while before you can restock on supplies. Oh and, good luck!"))
+    waitmessage
+    setvar(VAR_MEWTWO_ARC_STATE,3)
+    setflag(FLAG_MEWTWO_ISLAND_INTRO_BIRCH)
+    releaseall
+}
+
+script EventScript_202_BirchSkipSafety{
+    setvar(VAR_MEWTWO_ARC_STATE,3)
 }

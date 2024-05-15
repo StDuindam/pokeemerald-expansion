@@ -2,15 +2,15 @@
   "id": "MAP_ROUTE204",
   "name": "Route204",
   "layout": "LAYOUT_ROUTE204",
-  "music": "MUS_DUMMY",
+  "music": "MUS_CAVE_OF_ORIGIN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "weather": "WEATHER_RAIN",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
   "allow_escaping": false,
-  "allow_running": false,
-  "show_map_name": true,
+  "allow_running": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "x": 10,
+      "x": 18,
       "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,8 +43,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "EventScript_Route204_InteractNurseJoy",
+      "flag": "FLAG_MEWTWO_ISLAND_INTRO_NURSEJOY"
     }
   ],
   "warp_events": [
@@ -57,7 +57,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_MEWTWO_ARC_STATE",
+      "var_value": "3",
+      "script": "EventScript_Route204_ArrivalNurseJoy"
+    }
   ],
   "bg_events": [
 

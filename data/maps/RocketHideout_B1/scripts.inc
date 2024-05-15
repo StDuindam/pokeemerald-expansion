@@ -552,89 +552,93 @@ EventScript_MewtwoArcKickOff_RocketHideoutB1::
 # 382 "data/maps/RocketHideout_B1/scripts.pory"
 	setflag FLAG_NOTINMEWTWO_STATE_1
 # 383 "data/maps/RocketHideout_B1/scripts.pory"
+	removeobject 15
+# 384 "data/maps/RocketHideout_B1/scripts.pory"
+	removeobject 16
+# 385 "data/maps/RocketHideout_B1/scripts.pory"
 	releaseall
 	return
 
 
-# 386 "data/maps/RocketHideout_B1/scripts.pory"
-Movement_RocketHideout_B1_MatsIntro:
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
-# 387 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_right
 # 388 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_up
+Movement_RocketHideout_B1_MatsIntro:
 # 389 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_right
-	step_end
-
-# 392 "data/maps/RocketHideout_B1/scripts.pory"
-Movement_RocketHideout_B1_MatsOutro:
-# 393 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 394 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_down
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 395 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-	step_end
-
-# 398 "data/maps/RocketHideout_B1/scripts.pory"
-Movement_RocketHideout_B1_JensIntro:
-# 399 "data/maps/RocketHideout_B1/scripts.pory"
+# 389 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_right
-# 399 "data/maps/RocketHideout_B1/scripts.pory"
+# 389 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_right
-# 399 "data/maps/RocketHideout_B1/scripts.pory"
+# 389 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_right
-# 399 "data/maps/RocketHideout_B1/scripts.pory"
+# 389 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_right
-# 400 "data/maps/RocketHideout_B1/scripts.pory"
+# 389 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+# 390 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_up
+# 391 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+	step_end
+
+# 394 "data/maps/RocketHideout_B1/scripts.pory"
+Movement_RocketHideout_B1_MatsOutro:
+# 395 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 396 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_down
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 397 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+	step_end
+
+# 400 "data/maps/RocketHideout_B1/scripts.pory"
+Movement_RocketHideout_B1_JensIntro:
 # 401 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+# 401 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+# 401 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+# 401 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_right
+# 402 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_up
+# 403 "data/maps/RocketHideout_B1/scripts.pory"
 	emote_exclamation_mark
-# 402 "data/maps/RocketHideout_B1/scripts.pory"
+# 404 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_fast_right
-# 402 "data/maps/RocketHideout_B1/scripts.pory"
+# 404 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_fast_right
-# 402 "data/maps/RocketHideout_B1/scripts.pory"
+# 404 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 405 "data/maps/RocketHideout_B1/scripts.pory"
-Movement_RocketHideout_B1_JensOutro:
-# 406 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 406 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
-# 406 "data/maps/RocketHideout_B1/scripts.pory"
-	walk_left
 # 407 "data/maps/RocketHideout_B1/scripts.pory"
+Movement_RocketHideout_B1_JensOutro:
+# 408 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 408 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 408 "data/maps/RocketHideout_B1/scripts.pory"
+	walk_left
+# 409 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_down
-# 408 "data/maps/RocketHideout_B1/scripts.pory"
+# 410 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_left
-# 408 "data/maps/RocketHideout_B1/scripts.pory"
+# 410 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_left
-# 408 "data/maps/RocketHideout_B1/scripts.pory"
+# 410 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_left
-# 408 "data/maps/RocketHideout_B1/scripts.pory"
+# 410 "data/maps/RocketHideout_B1/scripts.pory"
 	walk_left
 	step_end
 
@@ -758,54 +762,48 @@ Giovanni_BattleThree_RocketHideout_B1_Outro::
 
 RocketOne_RocketHideoutB1_BattleIntro::
 # 251 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "You got no chance here!$"
 
 RocketOne_RocketHideoutB1_BattleOutro::
 # 254 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "I'm going to ask for help...$"
 
 RocketTwo_RocketHideoutB1_BattleIntro::
 # 271 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "In this lab you are the experiment!$"
 
 RocketTwo_RocketHideoutB1_BattleOutro::
 # 274 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "How can I be beat by a lab rat.$"
 
 RocketThree_RocketHideoutB1_BattleIntro::
 # 291 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "Get out my face!$"
 
 RocketThree_RocketHideoutB1_BattleOutro::
 # 294 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "Darn it.$"
 
 RocketFour_RocketHideoutB1_BattleIntro::
 # 311 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "Do you think you have what it takes?$"
 
 RocketFour_RocketHideoutB1_BattleOutro::
 # 314 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "You got me...$"
 
 RocketFive_RocketHideoutB1_BattleIntro::
 # 331 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "Feel like giving up?$"
 
 RocketFive_RocketHideoutB1_BattleOutro::
 # 334 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "I guess not.$"
 
 RocketSix_RocketHideoutB1_BattleIntro::
 # 352 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Huh, you are what they are talking\n"
-	.string "about?$"
+	.string "I'll beat you!$"
 
 RocketSix_RocketHideoutB1_BattleOutro::
 # 355 "data/maps/RocketHideout_B1/scripts.pory"
-	.string "Looks decieve...$"
+	.string "Argh!$"

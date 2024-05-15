@@ -18,6 +18,12 @@ script CallGengarParty{
     release
 }
 
+script WarpToDebugArea{
+    lock
+    warp(MAP_DEBUG_AREA,1)
+    release
+}
+
 script IncreaseGymsBeatVar{
     lock
     if(var(VAR_ROCKET_GYMS_BEAT) < 8){

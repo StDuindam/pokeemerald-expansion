@@ -1,0 +1,137 @@
+mapscripts MewtwoBuilding_F3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EventScript_Mewtwo_Area_1_OnTransition
+}
+
+script EventScript_Mewtwo_Area_1_OnTransition{
+
+}
+
+script EventScript_MewtwoPushPlayerDown{
+    lock
+    msgbox(format("If I'm ready I should speak to Nurse joy."))
+    waitmessage()
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_MewtwoMoveDown_MewtwoIsland)
+    waitmovement(0)
+    release
+}
+
+script EventScript_MewtwoPushPlayerLeft{
+    lock
+    msgbox(format("If I'm ready I should speak to Nurse joy."))
+    waitmessage()
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_MewtwoMoveLeft_MewtwoIsland)
+    waitmovement(0)
+    release
+}
+
+script EventScript_MewtwoPushPlayerRight{
+    lock
+    msgbox(format("If I'm ready I should speak to Nurse joy."))
+    waitmessage()
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_MewtwoMoveRight_MewtwoIsland)
+    waitmovement(0)
+    release
+}
+
+script EventScript_NurseJoy_Mewtwo_Mansion_Intro {
+    lock
+    msgbox(format("NURSE JOY: My master has gathered all the strongest trainers from the area. Gym leaders, Rivals and even grunts. For too long you have exploited Pokemon. So my master has created a tournament. This tournament shall show you that no matter how hard you train, humans will never be stronger than free willed Pokemon."))
+    waitmessage
+    msgbox("Are you ready to start the next chapter?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        //continue
+        msgbox(format("NURSE JOY: I will guide you to your quarters. From there you can prepare for your battles."))
+        waitmessage
+        setflag(FLAG_MEWTWO_ISLAND_INTRO_CHALLENGE)
+        setvar(VAR_MEWTWO_ARC_STATE,5)
+        setvar(VAR_MEWTWO_TOURNEY_STATE,0)
+        applymovement(2, Movement_MoveNurseJoyToQuarter_MewtwoIsland)
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_MovePlayerToQuarter_MewtwoIsland)
+        waitmovement(0)
+        warpdoor(MAP_MEWTWO_BUILDING_F3,0)
+    }else{
+        msgbox(format("Feel free to look around some more."))
+        waitmessage
+    }
+    release
+}
+
+movement Movement_MewtwoMoveRight_MewtwoIsland {
+    walk_right
+}
+
+movement Movement_MewtwoMoveLeft_MewtwoIsland {
+    walk_left
+}
+
+movement Movement_MewtwoMoveDown_MewtwoIsland {
+    walk_down
+}
+
+movement Movement_MoveNurseJoyToQuarter_MewtwoIsland {
+    walk_left*7
+    walk_up * 9
+    walk_left 
+    face_right
+}
+movement Movement_MovePlayerToQuarter_MewtwoIsland {
+    walk_up
+    walk_left*7
+    walk_up * 9
+}
+
+script EventScript_JensMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("JENS: Man... we are in some trouble now aren't we."))
+    waitmessage
+    release
+}
+
+script EventScript_MatsMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("MATS: We are a team, {PLAYER}, Jens, Prof Birch and me will stick together. Right?"))
+    waitmessage
+    release
+}
+
+script EventScript_BirchMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("Prof BIRCH: {PLAYER}, we need to calm Mewtwo down... you should be the one to show him our bonds with Pokemon are good!"))
+    waitmessage
+    release
+}
+
+script EventScript_ArchieMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("ARCHIE: Grrr... Mewtwo huh, Kyogre would never agree to this."))
+    waitmessage
+    release
+}
+
+script EventScript_GruntMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("GRUNT: I Don't want to be here."))
+    waitmessage
+    release
+}
+
+script EventScript_GiovanniMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("GIOVANNI: Mewtwo was mine..."))
+    waitmessage
+    release
+}
+
+script EventScript_MaxieMewtwoIsland_One {
+    lock
+    faceplayer
+    msgbox(format("MAXIE: I guess this is my sentence for messing around with Groudon."))
+    waitmessage
+    release
+}

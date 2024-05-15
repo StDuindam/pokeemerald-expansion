@@ -275,7 +275,7 @@
 #define VAR_ROCKET_GYMS_BEAT                                0x40FF // Unused Var
 
 #define VAR_MEWTWO_ARC_STATE                            0x4100 // Unused Var
-#define VAR_NEW1                                        0x4101 // Unused Var
+#define VAR_MEWTWO_TOURNEY_STATE                        0x4101 // Unused Var
 #define VAR_NEW2                                        0x4102 // Unused Var
 #define VAR_NEW3                                        0x4103 // Unused Var
 #define VAR_NEW4                                        0x4104 // Unused Var

@@ -4667,7 +4667,7 @@
       "width": 12,
       "height": 6,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonFanClub",
+      "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/MewtwoBuilding_F3/border.bin",
       "blockdata_filepath": "data/layouts/MewtwoBuilding_F3/map.bin"
     },

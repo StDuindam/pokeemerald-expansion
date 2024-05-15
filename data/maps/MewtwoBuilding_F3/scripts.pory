@@ -1,0 +1,202 @@
+mapscripts Mewtwo_Area_1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EventScript_Mewtwo_Building_F3_OnTransition
+}
+
+script EventScript_Mewtwo_Building_F3_OnTransition{
+    special(HealPlayerParty)
+}
+
+script EventScript_MewtwoBF3_Birch{
+lock
+    faceplayer
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
+        msgbox(format("0"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
+        msgbox(format("1"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
+        msgbox(format("2"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
+        msgbox(format("3"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
+        msgbox(format("4"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
+        msgbox(format("5"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
+        msgbox(format("6"))
+        waitmessage
+        release
+    }
+    release
+}
+
+script EventScript_MewtwoBF3_Jens{
+    lock
+    faceplayer
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
+        msgbox(format("0"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
+        msgbox(format("1"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
+        msgbox(format("2"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
+        msgbox(format("3"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
+        msgbox(format("4"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
+        msgbox(format("5"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
+        msgbox(format("6"))
+        waitmessage
+        release
+    }
+    release
+}
+
+script EventScript_MewtwoBF3_Mats{
+lock
+    faceplayer
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
+        msgbox(format("0"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
+        msgbox(format("1"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
+        msgbox(format("2"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
+        msgbox(format("3"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
+        msgbox(format("4"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
+        msgbox(format("5"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
+        msgbox(format("6"))
+        waitmessage
+        release
+    }
+    release
+}
+
+script EventScript_MewtwoBF3_NurseJoy{
+    lock
+    faceplayer
+lock
+    faceplayer
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
+        msgbox(format("0"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
+        msgbox(format("1"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
+        msgbox(format("2"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
+        msgbox(format("3"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
+        msgbox(format("4"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
+        msgbox(format("5"))
+        waitmessage
+        release
+    }
+    if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
+        msgbox(format("6"))
+        waitmessage
+        release
+    }
+    release
+
+    msgbox(format("Are you ready for your next battle?"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        msgbox("Great, meet me in the arena.")
+        waitmessage
+        call(EventScript_MoveToBattleAreaSequence)
+    }else{
+        msgbox(format("I will be here once you are ready"))
+        waitmessage
+    }
+    release
+}
+
+script EventScript_MoveToBattleAreaSequence{
+    lock
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_MewtwoIsland_WalkToArenaPlayerP1)
+        waitmovement(0)
+        warpdoor(MAP_MEWTWO_BUILDING_F2,0)
+    releaseall
+}
+
+movement Movement_MewtwoIsland_WalkToArenaPlayerP1 {
+    walk_down * 2
+}
+
+movement Movement_MewtwoIsland_WalkToArenaPlayerP2 {
+    walk_down * 1
+    walk_right * 6
+    face_up
+}

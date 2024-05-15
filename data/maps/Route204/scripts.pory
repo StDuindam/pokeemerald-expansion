@@ -1,0 +1,58 @@
+mapscripts Route204_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: EventScript_Route204_OnTransition
+}
+
+script EventScript_Route204_OnTransition{
+
+}
+
+script EventScript_Route204_ArrivalNurseJoy{
+    lock
+    turnobject(2,3)
+    msgbox(format("NURSE JOY: {PLAYER}, we have been expecting you."))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Route204_MovePlayerToNurseJoy)
+    waitmovement(0)
+    msgbox(format("NURSE JOY: Please follow me, I will bring you to my master."))
+    waitmessage
+    applymovement(2, Route204_MoveNurseJoyToHouse)
+    applymovement(OBJ_EVENT_ID_PLAYER, Route204_MovePlayerToHouse)
+    waitmovement(0)
+    msgbox(format("NURSE JOY: I will see you inside."))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVE_UP_ONE_RIVALDOJO)
+    waitmovement(0)
+    setflag(FLAG_MEWTWO_ISLAND_INTRO_NURSEJOY)
+    setvar(VAR_MEWTWO_ARC_STATE,4)
+    warpdoor(MAP_MEWTWO_AREA_1, 0)
+    releaseall
+}
+
+movement Route204_MovePlayerToNurseJoy {
+    walk_right * 3
+}
+
+movement Route204_MovePlayerToHouse {
+    walk_right * 11
+    walk_up * 4
+    walk_left * 8
+    walk_up * 1
+    face_left
+}
+
+movement Route204_MoveNurseJoyToHouse {
+    walk_right * 10
+    walk_up * 4
+    walk_left * 8
+    walk_up * 1
+    walk_left * 1
+    face_right
+}
+
+script EventScript_Route204_InteractNurseJoy{
+    lock
+    faceplayer
+    msgbox("NURSE JOY: Please enter the building. My Master insists.")
+    waitmessage
+    releaseall
+}
