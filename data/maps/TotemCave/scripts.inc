@@ -77,7 +77,7 @@ TotemCave_Won_or_Caught::
 
 TotemCave_RanAway::
 # 40 "data/maps/TotemCave/scripts.pory"
-	playmoncry VAR_TOTEMCAVE_RANDOM_POKE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_ARCANINE_HISUIAN, CRY_MODE_ENCOUNTER
 # 41 "data/maps/TotemCave/scripts.pory"
 	msgbox TotemCave_RanAway_Text_0, MSGBOX_AUTOCLOSE
 # 42 "data/maps/TotemCave/scripts.pory"

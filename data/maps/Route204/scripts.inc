@@ -44,140 +44,142 @@ EventScript_Route204_ArrivalNurseJoy::
 # 26 "data/maps/Route204/scripts.pory"
 	setvar VAR_MEWTWO_ARC_STATE, 4
 # 27 "data/maps/Route204/scripts.pory"
-	warpdoor MAP_MEWTWO_AREA_1, 0
+	setflag FLAG_POST_MEWTWOEVENT
 # 28 "data/maps/Route204/scripts.pory"
+	warpdoor MAP_MEWTWO_AREA_1, 0
+# 29 "data/maps/Route204/scripts.pory"
 	releaseall
 	return
 
 
-# 31 "data/maps/Route204/scripts.pory"
+# 32 "data/maps/Route204/scripts.pory"
 Route204_MovePlayerToNurseJoy:
-# 32 "data/maps/Route204/scripts.pory"
+# 33 "data/maps/Route204/scripts.pory"
 	walk_right
-# 32 "data/maps/Route204/scripts.pory"
+# 33 "data/maps/Route204/scripts.pory"
 	walk_right
-# 32 "data/maps/Route204/scripts.pory"
+# 33 "data/maps/Route204/scripts.pory"
 	walk_right
 	step_end
 
-# 35 "data/maps/Route204/scripts.pory"
+# 36 "data/maps/Route204/scripts.pory"
 Route204_MovePlayerToHouse:
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
-	walk_right
-# 36 "data/maps/Route204/scripts.pory"
+# 37 "data/maps/Route204/scripts.pory"
 	walk_right
 # 37 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 37 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 37 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 37 "data/maps/Route204/scripts.pory"
+	walk_right
+# 38 "data/maps/Route204/scripts.pory"
 	walk_up
 # 38 "data/maps/Route204/scripts.pory"
-	walk_left
+	walk_up
 # 38 "data/maps/Route204/scripts.pory"
-	walk_left
+	walk_up
 # 38 "data/maps/Route204/scripts.pory"
-	walk_left
-# 38 "data/maps/Route204/scripts.pory"
-	walk_left
-# 38 "data/maps/Route204/scripts.pory"
-	walk_left
-# 38 "data/maps/Route204/scripts.pory"
-	walk_left
-# 38 "data/maps/Route204/scripts.pory"
-	walk_left
-# 38 "data/maps/Route204/scripts.pory"
+	walk_up
+# 39 "data/maps/Route204/scripts.pory"
 	walk_left
 # 39 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
+# 39 "data/maps/Route204/scripts.pory"
+	walk_left
 # 40 "data/maps/Route204/scripts.pory"
+	walk_up
+# 41 "data/maps/Route204/scripts.pory"
 	face_left
 	step_end
 
-# 43 "data/maps/Route204/scripts.pory"
+# 44 "data/maps/Route204/scripts.pory"
 Route204_MoveNurseJoyToHouse:
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
-	walk_right
-# 44 "data/maps/Route204/scripts.pory"
+# 45 "data/maps/Route204/scripts.pory"
 	walk_right
 # 45 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 45 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 45 "data/maps/Route204/scripts.pory"
-	walk_up
+	walk_right
 # 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 45 "data/maps/Route204/scripts.pory"
+	walk_right
+# 46 "data/maps/Route204/scripts.pory"
 	walk_up
 # 46 "data/maps/Route204/scripts.pory"
-	walk_left
+	walk_up
 # 46 "data/maps/Route204/scripts.pory"
-	walk_left
+	walk_up
 # 46 "data/maps/Route204/scripts.pory"
-	walk_left
-# 46 "data/maps/Route204/scripts.pory"
-	walk_left
-# 46 "data/maps/Route204/scripts.pory"
-	walk_left
-# 46 "data/maps/Route204/scripts.pory"
-	walk_left
-# 46 "data/maps/Route204/scripts.pory"
-	walk_left
-# 46 "data/maps/Route204/scripts.pory"
+	walk_up
+# 47 "data/maps/Route204/scripts.pory"
 	walk_left
 # 47 "data/maps/Route204/scripts.pory"
-	walk_up
-# 48 "data/maps/Route204/scripts.pory"
 	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 47 "data/maps/Route204/scripts.pory"
+	walk_left
+# 48 "data/maps/Route204/scripts.pory"
+	walk_up
 # 49 "data/maps/Route204/scripts.pory"
+	walk_left
+# 50 "data/maps/Route204/scripts.pory"
 	face_right
 	step_end
 
 EventScript_Route204_InteractNurseJoy::
-# 53 "data/maps/Route204/scripts.pory"
-	lock
 # 54 "data/maps/Route204/scripts.pory"
-	faceplayer
+	lock
 # 55 "data/maps/Route204/scripts.pory"
-	msgbox EventScript_Route204_InteractNurseJoy_Text_0
+	faceplayer
 # 56 "data/maps/Route204/scripts.pory"
-	waitmessage
+	msgbox EventScript_Route204_InteractNurseJoy_Text_0
 # 57 "data/maps/Route204/scripts.pory"
+	waitmessage
+# 58 "data/maps/Route204/scripts.pory"
 	releaseall
 	return
 
@@ -197,5 +199,5 @@ EventScript_Route204_ArrivalNurseJoy_Text_2:
 	.string "NURSE JOY: I will see you inside.$"
 
 EventScript_Route204_InteractNurseJoy_Text_0:
-# 55 "data/maps/Route204/scripts.pory"
+# 56 "data/maps/Route204/scripts.pory"
 	.string "NURSE JOY: Please enter the building. My Master insists.$"

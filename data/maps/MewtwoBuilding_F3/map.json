@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_MewtwoBF3_NurseJoy",
-      "flag": "0"
+      "flag": "FLAG_MEWTWO_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_MewtwoBF3_Birch",
-      "flag": "0"
+      "flag": "FLAG_MEWTWO_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_3",
@@ -51,7 +51,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_MewtwoBF3_Mats",
-      "flag": "0"
+      "flag": "FLAG_MEWTWO_BEAT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_MewtwoBF3_Jens",
-      "flag": "0"
+      "flag": "FLAG_MEWTWO_BEAT"
     }
   ],
   "warp_events": [

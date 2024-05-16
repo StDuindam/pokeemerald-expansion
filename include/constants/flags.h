@@ -1257,11 +1257,11 @@
 #define FLAG_MEWTWO_CHALLENGE_BEAT_FIVE                                           0x4B6 // Unused Flag
 #define FLAG_MEWTWO_CHALLENGE_BEAT_SIX                                           0x4B7 // Unused Flag
 #define FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN                           0x4B8 // BOSS MEWTWO
-#define FLAG_UNUSED_0x4B9                                           0x4B9 // Unused Flag
-#define FLAG_UNUSED_0x4BA                                           0x4BA // Unused Flag
-#define FLAG_UNUSED_0x4BB                                           0x4BB // Unused Flag
-#define FLAG_UNUSED_0x4BC                                           0x4BC // Unused Flag
-#define FLAG_UNUSED_0x4BD                                           0x4BD // Unused Flag
+#define FLAG_POST_MEWTWOEVENT                                      0x4B9 // Unused Flag
+#define FLAG_CAUGHT_MEWTWO                                         0x4BA // Unused Flag
+#define FLAG_CAUGHT_ZAPDOS                                         0x4BB // Unused Flag
+#define FLAG_CAUGHT_ARTICUNO                                           0x4BC // Unused Flag
+#define FLAG_CAUGHT_MOLTRES                                         0x4BD // Unused Flag
 #define FLAG_UNUSED_0x4BE                                           0x4BE // Unused Flag
 #define FLAG_UNUSED_0x4BF                                           0x4BF // Unused Flag
 #define FLAG_UNUSED_0x4C0                                           0x4C0 // Unused Flag

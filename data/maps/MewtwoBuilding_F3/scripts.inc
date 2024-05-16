@@ -357,12 +357,12 @@ EventScript_MewtwoBF3_NurseJoy_19:
 # 175 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EventScript_MewtwoBF3_NurseJoy_23
-# 180 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	msgbox EventScript_MewtwoBF3_NurseJoy_Text_2
 # 181 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	msgbox EventScript_MewtwoBF3_NurseJoy_Text_2
+# 182 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	waitmessage
 EventScript_MewtwoBF3_NurseJoy_22:
-# 183 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 184 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	release
 	return
 
@@ -433,51 +433,53 @@ EventScript_MewtwoBF3_NurseJoy_23:
 # 176 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	msgbox EventScript_MewtwoBF3_NurseJoy_Text_1
 # 177 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	waitmessage
+	special HealPlayerParty
 # 178 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	waitmessage
+# 179 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	call EventScript_MoveToBattleAreaSequence
 	goto EventScript_MewtwoBF3_NurseJoy_22
 
 
 EventScript_MoveToBattleAreaSequence::
-# 187 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	lock
 # 188 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_MewtwoIsland_WalkToArenaPlayerP1
+	lock
 # 189 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_MewtwoIsland_WalkToArenaPlayerP1
 # 190 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	warpdoor MAP_MEWTWO_BUILDING_F2, 0
+	waitmovement 0
 # 191 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	warpdoor MAP_MEWTWO_BUILDING_F2, 0
+# 192 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	releaseall
 	return
 
 
-# 194 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 195 "data/maps/MewtwoBuilding_F3/scripts.pory"
 Movement_MewtwoIsland_WalkToArenaPlayerP1:
-# 195 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 196 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	walk_down
-# 195 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 196 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	walk_down
 	step_end
 
-# 198 "data/maps/MewtwoBuilding_F3/scripts.pory"
-Movement_MewtwoIsland_WalkToArenaPlayerP2:
 # 199 "data/maps/MewtwoBuilding_F3/scripts.pory"
+Movement_MewtwoIsland_WalkToArenaPlayerP2:
+# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	walk_down
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	walk_right
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	walk_right
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	walk_right
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	walk_right
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
-	walk_right
-# 200 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	walk_right
 # 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	walk_right
+# 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	walk_right
+# 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	walk_right
+# 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	walk_right
+# 201 "data/maps/MewtwoBuilding_F3/scripts.pory"
+	walk_right
+# 202 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	face_up
 	step_end
 
@@ -518,5 +520,5 @@ EventScript_MewtwoBF3_NurseJoy_Text_1:
 	.string "Great, meet me in the arena.$"
 
 EventScript_MewtwoBF3_NurseJoy_Text_2:
-# 180 "data/maps/MewtwoBuilding_F3/scripts.pory"
+# 181 "data/maps/MewtwoBuilding_F3/scripts.pory"
 	.string "I will be here once you are ready$"

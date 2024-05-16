@@ -97,7 +97,8 @@
     "Route201",
     "Route202",
     "Route203",
-    "Route204"
+    "Route204",
+    "Route205"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -441,7 +442,8 @@
     "MeteorFalls_StevensCave",
     "MewtwoIslandCave",
     "TotemCave",
-    "MewtwoIslandCave_2"
+    "MewtwoIslandCave_2",
+    "MewtwoIslandCave_Articuno"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -614,7 +616,8 @@
     "MatsHouse",
     "Indoor_Route201_Cleanery",
     "Indoor_Route201_GenericHouse",
-    "Route202_TreeHouse"
+    "Route202_TreeHouse",
+    "TheVoidZone"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

@@ -151,8 +151,6 @@ script EventScript_RocketHideout_B1_GiovanniSequence_PostBattle{
     msgbox(format("GIOVANNI: So it se-"))
     //sreenshake
     waitmessage
-
-    special(ShakeCamera)
     msgbox(format("MEWTWO: YOU HUMANS HAVE USED POKEMON FOR THE WRONG PURPOSE. THIS CONFLICT, IT IS YOURS NOT OURS, THIS FINAL BATTLE HAS SHOWN ME... ALL HUMANS ARE HORRIBLE. I CANNOT ALLOW THIS TO CONTINUE!"))
     //flash or something
     waitmessage

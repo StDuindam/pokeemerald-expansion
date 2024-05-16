@@ -68,6 +68,7 @@
 #define MAP_ROUTE202            (59 | (0 << 8))
 #define MAP_ROUTE203            (60 | (0 << 8))
 #define MAP_ROUTE204            (61 | (0 << 8))
+#define MAP_ROUTE205            (62 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -412,6 +413,7 @@
 #define MAP_MEWTWO_ISLAND_CAVE                       (108 | (24 << 8))
 #define MAP_TOTEM_CAVE                               (109 | (24 << 8))
 #define MAP_MEWTWO_ISLAND_CAVE_2                     (110 | (24 << 8))
+#define MAP_MEWTWO_ISLAND_CAVE_ARTICUNO              (111 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
@@ -585,6 +587,7 @@
 #define MAP_INDOOR_ROUTE201_CLEANERY                        (105 | (26 << 8))
 #define MAP_INDOOR_ROUTE201_GENERIC_HOUSE                   (106 | (26 << 8))
 #define MAP_ROUTE202_TREE_HOUSE                             (107 | (26 << 8))
+#define MAP_THE_VOID_ZONE                                   (108 | (26 << 8))
 
 // gMapGroup_IndoorRoute104Prototype
 #define MAP_ROUTE104_PROTOTYPE                          (0 | (27 << 8))

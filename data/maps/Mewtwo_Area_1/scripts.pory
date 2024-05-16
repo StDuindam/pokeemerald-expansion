@@ -135,3 +135,22 @@ script EventScript_MaxieMewtwoIsland_One {
     waitmessage
     release
 }
+
+script EventScript_NurseJoyRestartMewtwoArc{
+    lock
+    faceplayer
+    msgbox(format("Would you like to replay Mewtwo's tourney? WARNING - YOU WILL HAVE TO PLAY THE ENTIRE TOURNAMENT"), MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        clearflag(FLAG_MEWTWO_BEAT)
+        setvar(VAR_MEWTWO_ARC_STATE,5)
+        setvar(VAR_MEWTWO_TOURNEY_STATE,0)
+        clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN)
+        setflag(FLAG_POST_MEWTWOEVENT)
+        msgbox(format("Perfect, everything is prepared. Just move into the room next to me."))
+        waitmessage
+    }else{
+        msgbox("No worries.")
+        waitmessage
+    }
+    release
+}

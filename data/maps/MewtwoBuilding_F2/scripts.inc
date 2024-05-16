@@ -83,12 +83,12 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler::
 # 35 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EventScript_Mewtwo_F2_NurseJoyChallengeHandler_2
-# 133 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	msgbox EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_14
-# 134 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 138 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	msgbox EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_15
+# 139 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 EventScript_Mewtwo_F2_NurseJoyChallengeHandler_1:
-# 136 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 141 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	releaseall
 	return
 
@@ -157,7 +157,7 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_9:
 # 54 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 # 55 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_TWO
 # 56 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	showobjectat 7, MAP_MEWTWO_BUILDING_F2
 # 57 "data/maps/MewtwoBuilding_F2/scripts.pory"
@@ -184,7 +184,7 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_12:
 # 69 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 # 70 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_THREE
 # 71 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	showobjectat 3, MAP_MEWTWO_BUILDING_F2
 # 72 "data/maps/MewtwoBuilding_F2/scripts.pory"
@@ -211,7 +211,7 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_15:
 # 84 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 # 85 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_FOUR
 # 86 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	showobjectat 8, MAP_MEWTWO_BUILDING_F2
 # 87 "data/maps/MewtwoBuilding_F2/scripts.pory"
@@ -238,7 +238,7 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_18:
 # 99 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 # 100 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_FIVE
 # 101 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	showobjectat 2, MAP_MEWTWO_BUILDING_F2
 # 102 "data/maps/MewtwoBuilding_F2/scripts.pory"
@@ -265,7 +265,7 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_21:
 # 114 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
 # 115 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_SIX
 # 116 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	showobjectat 5, MAP_MEWTWO_BUILDING_F2
 # 117 "data/maps/MewtwoBuilding_F2/scripts.pory"
@@ -288,184 +288,234 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_21:
 
 EventScript_Mewtwo_F2_NurseJoyChallengeHandler_23:
 # 128 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	msgbox EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_13
+	lock
 # 129 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	waitmessage
+	msgbox EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_13
 # 130 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	waitmessage
+# 131 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	applymovement 6, Movement_MewtwoF2_MewtwoWalkToPlayer
+# 132 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	msgbox EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_14
+# 133 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	waitmessage
+# 134 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	trainerbattle_single TRAINER_MEWTWOISLAND_SEVEN, MewtwoIsland_Opponent_Seven_Intro, MewtwoIsland_Opponent_Seven_Outro, EventScript_OpponentSeven_PostBattle_MewtwoIsland
+# 135 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	goto EventScript_Mewtwo_F2_NurseJoyChallengeHandler_1
 
 
 EventScript_Mewtwo_F2_ReadyPlayerMovement::
-# 140 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 145 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	applymovement 2, Movement_MewtwoF2_JoyMoveOutOfTheWay
-# 141 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 146 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_MewtwoF2_PlayerWalkToArena
-# 142 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 147 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmovement 0
 	return
 
 
-# 145 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 150 "data/maps/MewtwoBuilding_F2/scripts.pory"
+Movement_MewtwoF2_MewtwoWalkToPlayer:
+# 151 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	walk_slow_down
+# 152 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	walk_slow_right
+# 153 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	walk_slow_down
+# 153 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	walk_slow_down
+# 154 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	face_left
+	step_end
+
+# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
 Movement_MewtwoF2_JoyMoveOutOfTheWay:
-# 146 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 158 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_right
-# 147 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 159 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_up
-# 148 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 160 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	face_right
 	step_end
 
-# 151 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 163 "data/maps/MewtwoBuilding_F2/scripts.pory"
 Movement_MewtwoF2_PlayerWalkToArena:
-# 152 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 164 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_right
-# 152 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 164 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_right
-# 152 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 164 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_right
-# 152 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 164 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_right
 	step_end
 
-# 155 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 167 "data/maps/MewtwoBuilding_F2/scripts.pory"
 Movement_MewtwoF2_FoeWalkToPlayer:
-# 156 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 168 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_down
-# 156 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 168 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_down
-# 156 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 168 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_down
-# 156 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 168 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_down
-# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 169 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_left
-# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 169 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_left
-# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 169 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_left
-# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 169 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_left
-# 157 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 169 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	walk_left
 	step_end
 
 EventScript_OpponentOne_PostBattle_MewtwoIsland::
-# 161 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 173 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 162 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 174 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 163 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 175 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentOne_PostBattle_MewtwoIsland_Text_0
-# 164 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 176 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 165 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 177 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_ONE
-# 166 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 178 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 1
-# 167 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 179 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 168 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 180 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
 
 EventScript_OpponentTwo_PostBattle_MewtwoIsland::
-# 179 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 191 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 180 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 192 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 181 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 193 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentTwo_PostBattle_MewtwoIsland_Text_0
-# 182 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 194 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 183 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 195 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_TWO
-# 184 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 196 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 2
-# 185 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 197 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 186 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 198 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
 
 EventScript_OpponentThree_PostBattle_MewtwoIsland::
-# 197 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 209 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 198 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 210 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 199 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 211 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentThree_PostBattle_MewtwoIsland_Text_0
-# 200 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 212 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 201 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 213 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_THREE
-# 202 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 214 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 3
-# 203 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 215 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 204 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 216 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
 
 EventScript_OpponentFour_PostBattle_MewtwoIsland::
-# 215 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 227 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 216 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 228 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 217 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 229 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentFour_PostBattle_MewtwoIsland_Text_0
-# 218 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 230 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 219 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 231 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_FOUR
-# 220 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 232 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 4
-# 221 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 233 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 222 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 234 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
 
 EventScript_OpponentFive_PostBattle_MewtwoIsland::
-# 233 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 245 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 234 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 246 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 235 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 247 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentFive_PostBattle_MewtwoIsland_Text_0
-# 236 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 248 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 237 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 249 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_FIVE
-# 238 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 250 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 5
-# 239 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 251 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 240 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 252 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
 
 EventScript_OpponentSix_PostBattle_MewtwoIsland::
-# 251 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 263 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	lock
-# 252 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 264 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	faceplayer
-# 253 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 265 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	msgbox EventScript_OpponentSix_PostBattle_MewtwoIsland_Text_0
-# 254 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 266 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	waitmessage
-# 255 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 267 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setflag FLAG_MEWTWO_CHALLENGE_BEAT_SIX
-# 256 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 268 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 6
-# 257 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 269 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	warpteleport MAP_MEWTWO_BUILDING_F3, 0
-# 258 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 270 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	release
+	return
+
+
+EventScript_OpponentSeven_PostBattle_MewtwoIsland::
+# 281 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	lock
+# 282 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	faceplayer
+# 283 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	msgbox EventScript_OpponentSeven_PostBattle_MewtwoIsland_Text_0
+# 284 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	waitmessage
+# 285 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	setflag FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN
+# 286 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	setvar VAR_MEWTWO_TOURNEY_STATE, 7
+# 287 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	setvar VAR_ROCKET_ARC_STATE, 9
+# 288 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	setflag FLAG_MEWTWO_BEAT
+# 289 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	clearflag FLAG_POST_MEWTWOEVENT
+# 290 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	warpteleport MAP_LITTLEROOT_TOWN, 0
+# 291 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	release
 	return
 
@@ -536,89 +586,111 @@ EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_12:
 	.string "RED: ...$"
 
 EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_13:
-# 128 "data/maps/MewtwoBuilding_F2/scripts.pory"
-	.string "6$"
+# 129 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	.string "MEWTWO: At last, we shall battle.$"
 
 EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_14:
-# 133 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 132 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	.string "MEWTWO: {PLAYER}... You have confused\n"
+	.string "me. I NEED to feel what it is like to\l"
+	.string "battle against you and your Pokemon.\l"
+	.string "PREPARE YOURSELF!$"
+
+EventScript_Mewtwo_F2_NurseJoyChallengeHandler_Text_15:
+# 138 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "How sad.$"
 
 EventScript_OpponentOne_PostBattle_MewtwoIsland_Text_0:
-# 163 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 175 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: Impressive first showing. Using\n"
 	.string "your Pokemon like that... it looked like\l"
 	.string "they enjoyed fighting with you. But\l"
 	.string "that cannot be.$"
 
 EventScript_OpponentTwo_PostBattle_MewtwoIsland_Text_0:
-# 181 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 193 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: The two of you... after such a\n"
 	.string "battle... still friends...$"
 
 EventScript_OpponentThree_PostBattle_MewtwoIsland_Text_0:
-# 199 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 211 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: You cannot keep hiding your\n"
 	.string "true colours...$"
 
 EventScript_OpponentFour_PostBattle_MewtwoIsland_Text_0:
-# 217 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 229 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: Even still... you overcome the\n"
 	.string "challenge... what looks like with\l"
 	.string "respect...$"
 
 EventScript_OpponentFive_PostBattle_MewtwoIsland_Text_0:
-# 235 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 247 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: How long will you keep going...$"
 
 EventScript_OpponentSix_PostBattle_MewtwoIsland_Text_0:
-# 253 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 265 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "MEWTWO: It seems like... NO IT CANNOT\n"
 	.string "BE! I WILL END THIS MYSELF!$"
 
+EventScript_OpponentSeven_PostBattle_MewtwoIsland_Text_0:
+# 283 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	.string "MEWTWO: You have shown me... {PLAYER},\n"
+	.string "that Pokemon and humans can live side\l"
+	.string "by side. Thank you. I shall undo what I\l"
+	.string "have caused.$"
+
 MewtwoIsland_Opponent_One_Intro::
-# 171 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 183 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "1$"
 
 MewtwoIsland_Opponent_One_Outro::
-# 174 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 186 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "1$"
 
 MewtwoIsland_Opponent_Two_Intro::
-# 189 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 201 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "2$"
 
 MewtwoIsland_Opponent_Two_Outro::
-# 192 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 204 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "2$"
 
 MewtwoIsland_Opponent_Three_Intro::
-# 207 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 219 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "3$"
 
 MewtwoIsland_Opponent_Three_Outro::
-# 210 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 222 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "3$"
 
 MewtwoIsland_Opponent_Four_Intro::
-# 225 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 237 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "4$"
 
 MewtwoIsland_Opponent_Four_Outro::
-# 228 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 240 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "4$"
 
 MewtwoIsland_Opponent_Five_Intro::
-# 243 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 255 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "5$"
 
 MewtwoIsland_Opponent_Five_Outro::
-# 246 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 258 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "5$"
 
 MewtwoIsland_Opponent_Six_Intro::
-# 261 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 273 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "...$"
 
 MewtwoIsland_Opponent_Six_Outro::
-# 264 "data/maps/MewtwoBuilding_F2/scripts.pory"
+# 276 "data/maps/MewtwoBuilding_F2/scripts.pory"
 	.string "...$"
+
+MewtwoIsland_Opponent_Seven_Intro::
+# 294 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	.string "I WANT TO FEEL IT!$"
+
+MewtwoIsland_Opponent_Seven_Outro::
+# 297 "data/maps/MewtwoBuilding_F2/scripts.pory"
+	.string "It's over.$"

@@ -293,6 +293,41 @@ EventScript_MaxieMewtwoIsland_One::
 	return
 
 
+EventScript_NurseJoyRestartMewtwoArc::
+# 140 "data/maps/Mewtwo_Area_1/scripts.pory"
+	lock
+# 141 "data/maps/Mewtwo_Area_1/scripts.pory"
+	faceplayer
+# 142 "data/maps/Mewtwo_Area_1/scripts.pory"
+	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_0, MSGBOX_YESNO
+# 143 "data/maps/Mewtwo_Area_1/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq EventScript_NurseJoyRestartMewtwoArc_2
+# 151 "data/maps/Mewtwo_Area_1/scripts.pory"
+	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_2
+# 152 "data/maps/Mewtwo_Area_1/scripts.pory"
+	waitmessage
+EventScript_NurseJoyRestartMewtwoArc_1:
+# 154 "data/maps/Mewtwo_Area_1/scripts.pory"
+	release
+	return
+
+EventScript_NurseJoyRestartMewtwoArc_2:
+# 144 "data/maps/Mewtwo_Area_1/scripts.pory"
+	clearflag FLAG_MEWTWO_BEAT
+# 145 "data/maps/Mewtwo_Area_1/scripts.pory"
+	setvar VAR_MEWTWO_ARC_STATE, 5
+# 146 "data/maps/Mewtwo_Area_1/scripts.pory"
+	setvar VAR_MEWTWO_TOURNEY_STATE, 0
+# 147 "data/maps/Mewtwo_Area_1/scripts.pory"
+	setflag FLAG_POST_MEWTWOEVENT
+# 148 "data/maps/Mewtwo_Area_1/scripts.pory"
+	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_1
+# 149 "data/maps/Mewtwo_Area_1/scripts.pory"
+	waitmessage
+	goto EventScript_NurseJoyRestartMewtwoArc_1
+
+
 EventScript_MewtwoPushPlayerDown_Text_0:
 # 11 "data/maps/Mewtwo_Area_1/scripts.pory"
 	.string "If I'm ready I should speak to Nurse\n"
@@ -359,3 +394,18 @@ EventScript_MaxieMewtwoIsland_One_Text_0:
 # 134 "data/maps/Mewtwo_Area_1/scripts.pory"
 	.string "MAXIE: I guess this is my sentence for\n"
 	.string "messing around with Groudon.$"
+
+EventScript_NurseJoyRestartMewtwoArc_Text_0:
+# 142 "data/maps/Mewtwo_Area_1/scripts.pory"
+	.string "Would you like to replay Mewtwo's\n"
+	.string "tourney? WARNING - YOU WILL HAVE TO\l"
+	.string "PLAY THE ENTIRE TOURNAMENT$"
+
+EventScript_NurseJoyRestartMewtwoArc_Text_1:
+# 148 "data/maps/Mewtwo_Area_1/scripts.pory"
+	.string "Perfect, everything is prepared. Just\n"
+	.string "move into the room next to me.$"
+
+EventScript_NurseJoyRestartMewtwoArc_Text_2:
+# 151 "data/maps/Mewtwo_Area_1/scripts.pory"
+	.string "No worries.$"

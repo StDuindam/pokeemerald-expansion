@@ -1,0 +1,186 @@
+mapscripts RocketHideoutMewtwoCage_MapScripts {
+
+}
+
+script EventScript_Encounter_Mewtwo{
+    lock
+    faceplayer
+    msgbox(format("MEWTWO: I'm glad you've come here {PLAYER}. One last battle."))
+    playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MEWTWO,  80, ITEM_MEWTWONITE_Y)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(MetwoEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(MetwoEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(MetwoEncounter_RanAway)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(MetwoEncounter_RanAway)
+	}
+	waitmessage
+    releaseall
+}
+
+script MetwoEncounter_WonOrCaught {
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("You feel like Mewtwo is glad to be joining your party."))
+    setflag(FLAG_CAUGHT_MEWTWO)
+	return
+}
+ 
+script MetwoEncounter_RanAway {
+	playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
+	msgbox(format("Another time."), MSGBOX_AUTOCLOSE)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Mewtwo teleported away."))
+	return
+}
+
+script EventScript_Encounter_Articuno{
+    lock
+    faceplayer
+    msgbox(format("KYAHH!"))
+    playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ARTICUNO,  65, ITEM_ICE_GEM)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(ArticunoEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(ArticunoEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(ArticunoEncounter_RanAway)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(ArticunoEncounter_RanAway)
+	}
+	waitmessage
+    releaseall
+}
+
+script ArticunoEncounter_WonOrCaught {
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Articuno was caught!"))
+    setflag(FLAG_CAUGHT_ARTICUNO)
+	return
+}
+ 
+script ArticunoEncounter_RanAway {
+	playmoncry(SPECIES_ARTICUNO, CRY_MODE_ENCOUNTER)
+	msgbox(format("Kyuh..."), MSGBOX_AUTOCLOSE)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Articuno ran away."))
+	return
+}
+
+script EventScript_Encounter_Zapdos{
+    lock
+    faceplayer
+    msgbox(format("ZZZZYA!"))
+    playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_ZAPDOS,  65, ITEM_ELECTRIC_GEM)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(ZapdosEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(ZapdosEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(ZapdosEncounter_RanAway)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(ZapdosEncounter_RanAway)
+	}
+	waitmessage
+    releaseall
+}
+
+script ZapdosEncounter_WonOrCaught {
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Zapdos was caught!"))
+    setflag(FLAG_CAUGHT_ZAPDOS)
+	return
+}
+ 
+script ZapdosEncounter_RanAway {
+	playmoncry(SPECIES_ZAPDOS, CRY_MODE_ENCOUNTER)
+	msgbox(format("DOS!"), MSGBOX_AUTOCLOSE)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Zapdos ran away."))
+}
+
+
+script EventScript_Encounter_Moltres{
+    lock
+    faceplayer
+    msgbox(format("MWROOOAAA!"))
+    playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
+	delay(40)
+	waitmoncry
+	setwildbattle(SPECIES_MOLTRES,  65, ITEM_FIRE_GEM)
+	dowildbattle
+	specialvar(VAR_RESULT, GetBattleOutcome)
+	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		call(MoltresEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_WON){
+		call(MoltresEncounter_WonOrCaught)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_RAN){
+		call(MoltresEncounter_RanAway)
+	}
+	elif(var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED){
+		call(MoltresEncounter_RanAway)
+	}
+	waitmessage
+    releaseall
+}
+
+script MoltresEncounter_WonOrCaught {
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Moltres was caught!"))
+    setflag(FLAG_CAUGHT_MOLTRES)
+	return
+}
+ 
+script MoltresEncounter_RanAway {
+	playmoncry(SPECIES_MOLTRES, CRY_MODE_ENCOUNTER)
+	msgbox(format("MWUAAA!"), MSGBOX_AUTOCLOSE)
+	delay(20)
+	fadescreen(FADE_TO_BLACK)
+	removeobject(1)
+	fadescreen(FADE_FROM_BLACK)
+	msgbox(format("Moltres ran away."))
+}

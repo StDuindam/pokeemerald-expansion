@@ -1129,3 +1129,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MewtwoIslandCave_2/scripts.inc"
 
 	.include "data/maps/Route202_TreeHouse/scripts.inc"
+
+	.include "data/maps/TheVoidZone/scripts.inc"
+
+	.include "data/maps/Route205/scripts.inc"
+
+	.include "data/maps/MewtwoIslandCave_Articuno/scripts.inc"

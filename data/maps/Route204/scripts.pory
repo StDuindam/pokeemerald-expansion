@@ -24,6 +24,7 @@ script EventScript_Route204_ArrivalNurseJoy{
     waitmovement(0)
     setflag(FLAG_MEWTWO_ISLAND_INTRO_NURSEJOY)
     setvar(VAR_MEWTWO_ARC_STATE,4)
+    setflag(FLAG_POST_MEWTWOEVENT)
     warpdoor(MAP_MEWTWO_AREA_1, 0)
     releaseall
 }

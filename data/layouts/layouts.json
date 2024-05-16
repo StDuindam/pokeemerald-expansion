@@ -4720,6 +4720,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route202_TreeHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route202_TreeHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_VOID_ZONE",
+      "name": "TheVoidZone_Layout",
+      "width": 13,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/TheVoidZone/border.bin",
+      "blockdata_filepath": "data/layouts/TheVoidZone/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE205",
+      "name": "Route205_Layout",
+      "width": 20,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Route205/border.bin",
+      "blockdata_filepath": "data/layouts/Route205/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEWTWO_ISLAND_CAVE_ARTICUNO",
+      "name": "MewtwoIslandCave_Articuno_Layout",
+      "width": 20,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MewtwoIslandCave_Articuno/border.bin",
+      "blockdata_filepath": "data/layouts/MewtwoIslandCave_Articuno/map.bin"
     }
   ]
 }

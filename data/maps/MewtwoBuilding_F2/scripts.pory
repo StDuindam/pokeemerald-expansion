@@ -46,13 +46,14 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("GIOVANNI: This is my chance at redemption!"))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_ONE)
             trainerbattle_single(TRAINER_MEWTWOISLAND_ONE, MewtwoIsland_Opponent_One_Intro, MewtwoIsland_Opponent_One_Outro,EventScript_OpponentOne_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
             msgbox(format("MEWTWO: This time you will battle an old acquintance of yourself. Let's see this 'spirit' when you like your opponent."))
             waitmessage
-            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_ONE)
+            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_TWO)
             showobjectat(7,MAP_MEWTWO_BUILDING_F2)
             releaseall
             lock
@@ -61,13 +62,14 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("STEVEN: We got to show Mewtwo the true meaning of our bond with Pokemon {PLAYER}!"))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_TWO)
             trainerbattle_single(TRAINER_MEWTWOISLAND_TWO, MewtwoIsland_Opponent_Two_Intro, MewtwoIsland_Opponent_Two_Outro,EventScript_OpponentTwo_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
             msgbox(format("MEWTWO: Show me more."))
             waitmessage
-            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_ONE)
+            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_THREE)
             showobjectat(3,MAP_MEWTWO_BUILDING_F2)
             releaseall
             lock
@@ -76,13 +78,14 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("MAXIE: Mewtwo has given me so much power!"))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_THREE)
             trainerbattle_single(TRAINER_MEWTWOISLAND_THREE, MewtwoIsland_Opponent_Three_Intro, MewtwoIsland_Opponent_Three_Outro,EventScript_OpponentThree_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
             msgbox(format("MEWTWO: What if the decks are stacked against you?"))
             waitmessage
-            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_ONE)
+            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_FOUR)
             showobjectat(8,MAP_MEWTWO_BUILDING_F2)
             releaseall
             lock
@@ -91,13 +94,14 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("ANONA: As a legendary collector, Mewtwo has provided me with some great power."))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_FOUR)
             trainerbattle_single(TRAINER_MEWTWOISLAND_FOUR, MewtwoIsland_Opponent_Four_Intro, MewtwoIsland_Opponent_Four_Outro,EventScript_OpponentFour_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
             msgbox(format("MEWTWO: YOUR BOND SHALL BE BROKEN!"))
             waitmessage
-            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_ONE)
+            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_FIVE)
             showobjectat(2,MAP_MEWTWO_BUILDING_F2)
             releaseall
             lock
@@ -106,13 +110,14 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("ARCHIE: {PLAYER}, you have taken my everything! I will not hold back!"))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_FIVE)
             trainerbattle_single(TRAINER_MEWTWOISLAND_FIVE, MewtwoIsland_Opponent_Five_Intro, MewtwoIsland_Opponent_Five_Outro,EventScript_OpponentFive_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
             msgbox(format("MEWTWO: You have gotten so far... but it ends here, and with it I shall prove that Humans are terrible to Pokemon!"))
             waitmessage
-            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_ONE)
+            clearflag(FLAG_MEWTWO_CHALLENGE_BEAT_SIX)
             showobjectat(5,MAP_MEWTWO_BUILDING_F2)
             releaseall
             lock
@@ -121,12 +126,19 @@ script EventScript_Mewtwo_F2_NurseJoyChallengeHandler{
             msgbox(format("RED: ..."))
             waitmessage
             //start battle!
+            cleartrainerflag(TRAINER_MEWTWOISLAND_SIX)
             trainerbattle_single(TRAINER_MEWTWOISLAND_SIX, MewtwoIsland_Opponent_Six_Intro, MewtwoIsland_Opponent_Six_Outro,EventScript_OpponentSix_PostBattle_MewtwoIsland)
             release
         }
         if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
-            msgbox(format("6"))//MEWTWO
+            lock
+            msgbox(format("MEWTWO: At last, we shall battle."))
             waitmessage
+            applymovement(6, Movement_MewtwoF2_MewtwoWalkToPlayer)
+            msgbox(format("MEWTWO: {PLAYER}... You have confused me. I NEED to feel what it is like to battle against you and your Pokemon. PREPARE YOURSELF!"))//MEWTWO
+            waitmessage
+            cleartrainerflag(TRAINER_MEWTWOISLAND_SEVEN)
+            trainerbattle_single(TRAINER_MEWTWOISLAND_SEVEN, MewtwoIsland_Opponent_Seven_Intro, MewtwoIsland_Opponent_Seven_Outro,EventScript_OpponentSeven_PostBattle_MewtwoIsland)
             release
         }
     }else{
@@ -140,6 +152,13 @@ script EventScript_Mewtwo_F2_ReadyPlayerMovement{
     applymovement(2,Movement_MewtwoF2_JoyMoveOutOfTheWay)
     applymovement(OBJ_EVENT_ID_PLAYER,Movement_MewtwoF2_PlayerWalkToArena)
     waitmovement(0)
+}
+
+movement Movement_MewtwoF2_MewtwoWalkToPlayer {
+    walk_slow_down
+    walk_slow_right
+    walk_slow_down * 2
+    face_left
 }
 
 movement Movement_MewtwoF2_JoyMoveOutOfTheWay {
@@ -263,4 +282,24 @@ text MewtwoIsland_Opponent_Six_Intro{
 }
 text MewtwoIsland_Opponent_Six_Outro{
     format("...")
+}
+
+script EventScript_OpponentSeven_PostBattle_MewtwoIsland{
+    lock
+    faceplayer
+    msgbox(format("MEWTWO: You have shown me... {PLAYER}, that Pokemon and humans can live side by side. Thank you. I shall undo what I have caused."))
+    waitmessage
+    setflag(FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN)
+    setvar(VAR_MEWTWO_TOURNEY_STATE, 7)
+    setflag(FLAG_MEWTWO_BEAT)
+    clearflag(FLAG_POST_MEWTWOEVENT)
+    warpteleport(MAP_LITTLEROOT_TOWN, 0)
+    release
+}
+
+text MewtwoIsland_Opponent_Seven_Intro{
+    format("I WANT TO FEEL IT!")
+}
+text MewtwoIsland_Opponent_Seven_Outro{
+    format("It's over.")
 }

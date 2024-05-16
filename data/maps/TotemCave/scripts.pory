@@ -37,7 +37,7 @@ script TotemCave_Won_or_Caught {
 }
  
 script TotemCave_RanAway {
-	playmoncry(VAR_TOTEMCAVE_RANDOM_POKE, CRY_MODE_ENCOUNTER)
+	playmoncry(SPECIES_ARCANINE_HISUIAN, CRY_MODE_ENCOUNTER)
 	msgbox("Roar!!", MSGBOX_AUTOCLOSE)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)

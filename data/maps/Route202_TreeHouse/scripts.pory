@@ -14,10 +14,13 @@ script EventScript_Route202_TreeHouse_RillaBoom{
     }elif(var(VAR_ROCKET_ARC_STATE) > 5){
      msgbox(format("RILLABOOM: Go to the facility and continue your research of the island there."))
      waitmessage
+    }else{
+    msgbox(format("RILLABOOM: Hi there {PLAYER}. I hope you are doing well."))
+    waitmessage       
     }
     release
 }
 
 text Text_Route202TreeHouse_Rillaboom{
-    format("RILLABOOM: It has been a long time since someone visited me, my name is Rillaboom. I'm sure you are wondering why I can speak, I am not a real Pokemon. I am a clone with enhanced abilities. This damned Island has brought me only pain and frustration. Have you seen the large facility on your way here? There are very bad things happening there. Will you be able to stop them? Do return once in a while and tell me of your stories...")
+    format("RILLABOOM: It has been a long time since someone visited me, my name is Rillaboom. I'm sure you are wondering why I can speak, I am not a real Pokemon. I am a clone with enhanced abilities. This damned Island has brought me only pain and frustration. Have you seen the large facility on your way here? There are very bad things happening there. Will you be able to stop them?")
 }
