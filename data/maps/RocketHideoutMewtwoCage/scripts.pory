@@ -33,6 +33,8 @@ script MetwoEncounter_WonOrCaught {
 	removeobject(1)
 	fadescreen(FADE_FROM_BLACK)
 	msgbox(format("You feel like Mewtwo is glad to be joining your party."))
+	giveitem(ITEM_MEWTWONITE_X,1)
+	giveitem(ITEM_MEWTWONITE_Y,1)
     setflag(FLAG_CAUGHT_MEWTWO)
 	return
 }

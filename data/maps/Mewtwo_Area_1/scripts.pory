@@ -115,7 +115,7 @@ script EventScript_ArchieMewtwoIsland_One {
 script EventScript_GruntMewtwoIsland_One {
     lock
     faceplayer
-    msgbox(format("GRUNT: I Don't want to be here."))
+    msgbox(format("GRUNT: I... I Don't want to be here."))
     waitmessage
     release
 }

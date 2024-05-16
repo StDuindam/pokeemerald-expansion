@@ -125,3 +125,36 @@ script EventScript_202_BirchMewtwoIslandIntro{
 script EventScript_202_BirchSkipSafety{
     setvar(VAR_MEWTWO_ARC_STATE,3)
 }
+
+script EventScriptPickup_Pokeball_one{
+    lock
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    finditem(ITEM_MAX_REVIVE)
+    setflag(FLAG_ITEM_MAX_REVIVE_TWO)
+    release
+}
+
+script EventScriptPickup_Pokeball_two{
+    lock
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    finditem(ITEM_FULL_RESTORE)
+    setflag(FLAG_ITEM_FULL_RESTORE_TWO)
+    release
+}
+
+script EventScriptPickup_Pokeball_three{
+    lock
+    finditem(ITEM_MASTER_BALL)
+    setflag(FLAG_ITEM_MASTERBALL_TWO)
+    release
+}

@@ -188,10 +188,10 @@ script EventScript_OpponentOne_PostBattle_MewtwoIsland{
 }
 
 text MewtwoIsland_Opponent_One_Intro{
-    format("1")
+    format("You won't win this time!")
 }
 text MewtwoIsland_Opponent_One_Outro{
-    format("1")
+    format("I'm bested again.")
 }
 
 script EventScript_OpponentTwo_PostBattle_MewtwoIsland{
@@ -206,10 +206,10 @@ script EventScript_OpponentTwo_PostBattle_MewtwoIsland{
 }
 
 text MewtwoIsland_Opponent_Two_Intro{
-    format("2")
+    format("Let's give our all!")
 }
 text MewtwoIsland_Opponent_Two_Outro{
-    format("2")
+    format("Amazing!")
 }
 
 script EventScript_OpponentThree_PostBattle_MewtwoIsland{
@@ -224,10 +224,10 @@ script EventScript_OpponentThree_PostBattle_MewtwoIsland{
 }
 
 text MewtwoIsland_Opponent_Three_Intro{
-    format("3")
+    format("You will not beat Team Magma again!")
 }
 text MewtwoIsland_Opponent_Three_Outro{
-    format("3")
+    format("Argh...")
 }
 
 script EventScript_OpponentFour_PostBattle_MewtwoIsland{
@@ -242,10 +242,10 @@ script EventScript_OpponentFour_PostBattle_MewtwoIsland{
 }
 
 text MewtwoIsland_Opponent_Four_Intro{
-    format("4")
+    format("Let's make this fight Legendary!")
 }
 text MewtwoIsland_Opponent_Four_Outro{
-    format("4")
+    format("Legendary indeed...")
 }
 
 script EventScript_OpponentFive_PostBattle_MewtwoIsland{
@@ -260,10 +260,10 @@ script EventScript_OpponentFive_PostBattle_MewtwoIsland{
 }
 
 text MewtwoIsland_Opponent_Five_Intro{
-    format("5")
+    format("I'm coming at you with the full power of the sea!")
 }
 text MewtwoIsland_Opponent_Five_Outro{
-    format("5")
+    format("It still wasn't enough.")
 }
 
 script EventScript_OpponentSix_PostBattle_MewtwoIsland{
@@ -287,7 +287,7 @@ text MewtwoIsland_Opponent_Six_Outro{
 script EventScript_OpponentSeven_PostBattle_MewtwoIsland{
     lock
     faceplayer
-    msgbox(format("MEWTWO: You have shown me... {PLAYER}, that Pokemon and humans can live side by side. Thank you. I shall undo what I have caused."))
+    msgbox(format("MEWTWO: You have shown me... {PLAYER}, that Pokemon and humans can live side by side. Thank you. This bond you and your Pokemon have has given me hope. Hope for the future of Hoenn, hope for the future of the relationship between Pokemon and Humans. I shall undo what I have caused."))
     waitmessage
     setflag(FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN)
     setvar(VAR_MEWTWO_TOURNEY_STATE, 7)

@@ -170,6 +170,7 @@ script EventScript_RocketHideout_B1_GiovanniSequence_PostBattle{
     clearflag(FLAG_MEWTWO_BEAT)
     setvar(VAR_MEWTWO_ARC_STATE, 1)
     clearflag(FLAG_NOTINMEWTWO_STATE_1)
+    setflag(FLAG_DEFEATED_GIOVANNI)
     showobjectat(14, MAP_ROCKET_HIDEOUT_B1)
     showobjectat(15,MAP_ROCKET_HIDEOUT_B1)
     showobjectat(16,MAP_ROCKET_HIDEOUT_B1)

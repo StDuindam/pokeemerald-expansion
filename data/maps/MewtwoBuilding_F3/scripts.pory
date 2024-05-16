@@ -10,37 +10,37 @@ script EventScript_MewtwoBF3_Birch{
 lock
     faceplayer
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
-        msgbox(format("0"))
+        msgbox(format("Prof BIRCH: Discovering an Island, beating team rocket and now this? You sure get in to a lot of adventures {PLAYER}."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
-        msgbox(format("1"))
+        msgbox(format("Prof BIRCH: Great showing out there Champ!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
-        msgbox(format("2"))
+        msgbox(format("Prof BIRCH: Are you still doing good? You can take a break you know."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
-        msgbox(format("3"))
+        msgbox(format("Prof BIRCH: Keep this momentum up!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
-        msgbox(format("4"))
+        msgbox(format("Prof BIRCH: This battling is impressive, I hope we can calm Mewtwo down enough so he can understand just how much we love Pokemon!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
-        msgbox(format("5"))
+        msgbox(format("Prof BIRCH: The battles get more and more challenging, but that won't stop you!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
-        msgbox(format("6"))
+        msgbox(format("Prof BIRCH: This is it {PLAYER}."))
         waitmessage
         release
     }
@@ -51,37 +51,37 @@ script EventScript_MewtwoBF3_Jens{
     lock
     faceplayer
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
-        msgbox(format("0"))
+        msgbox(format("JENS: You will rock this tourney, right {PLAYER}?"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
-        msgbox(format("1"))
+        msgbox(format("JENS: You are the best {PLAYER}!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
-        msgbox(format("2"))
+        msgbox(format("JENS: You got any pokes to cool a hot headed opponent down? Bring them next battle."))//hint
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
-        msgbox(format("3"))
+        msgbox(format("JENS: {PLAYER}! I got word that you are facing someone like me. Someone seeking out the strongest Pokes! Better get a balance team together."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
-        msgbox(format("4"))
+        msgbox(format("JENS: Eventhough I'm scared shitless, this place is kinda legendary itself!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
-        msgbox(format("5"))
+        msgbox(format("JENS: Your next fight, I'm sure, will be epic."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
-        msgbox(format("6"))
+        msgbox(format("JENS: Just one more! Can you do it? Beat Mewtwo I mean? Of course you can!"))
         waitmessage
         release
     }
@@ -92,37 +92,37 @@ script EventScript_MewtwoBF3_Mats{
 lock
     faceplayer
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
-        msgbox(format("0"))
+        msgbox(format("MATS: This is wild, you need to go prepared {PLAYER}."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
-        msgbox(format("1"))
+        msgbox(format("MATS: Wow, showing Giovanni again why he is such a loser! Next battle will be intense, I've heard it might be including steel types."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
-        msgbox(format("2"))
+        msgbox(format("MATS: Wicked, battling Steven like that... amazing!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
-        msgbox(format("3"))
+        msgbox(format("MATS: Keep it up {PLAYER}!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
-        msgbox(format("4"))
+        msgbox(format("MATS: Your next battle is going to be in the rain... or so I've heard!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
-        msgbox(format("5"))
+        msgbox(format("MATS: Pfff nothing can stop you {PLAYER}!"))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
-        msgbox(format("6"))
+        msgbox(format("MATS: A final battle... show them why you are the champion!"))
         waitmessage
         release
     }
@@ -132,40 +132,38 @@ lock
 script EventScript_MewtwoBF3_NurseJoy{
     lock
     faceplayer
-lock
-    faceplayer
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 0){
-        msgbox(format("0"))
+        msgbox(format("Your first battle is up."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 1){
-        msgbox(format("1"))
+        msgbox(format("Great showing last battle."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 2){
-        msgbox(format("2"))
+        msgbox(format("My master is delighted with your participation."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 3){
-        msgbox(format("3"))
+        msgbox(format("The last battle must have been hard."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 4){
-        msgbox(format("4"))
+        msgbox(format("Best of luck participant."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 5){
-        msgbox(format("5"))
+        msgbox(format("Amazing performance once again."))
         waitmessage
         release
     }
     if(var(VAR_MEWTWO_TOURNEY_STATE) == 6){
-        msgbox(format("6"))
+        msgbox(format("Good luck!"))
         waitmessage
         release
     }

@@ -733,11 +733,11 @@
 #define FLAG_ITEM_LIFEORB  0x2B1 // Unused Flag
 #define FLAG_ITEM_LOADEDDICE  0x2B2 // Unused Flag
 #define FLAG_DYNAMAX_ALLOWED  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
+#define FLAG_ITEM_MASTERBALL_TWO  0x2B4 // Unused Flag
+#define FLAG_ITEM_PRIMALKYOGRE  0x2B5 // Unused Flag
+#define FLAG_ITEM_PRIMALGROUDON  0x2B6 // Unused Flag
+#define FLAG_ITEM_FULL_RESTORE_TWO  0x2B7 // Unused Flag
+#define FLAG_ITEM_MAX_REVIVE_TWO  0x2B8 // Unused Flag
 #define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
 #define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
 #define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag

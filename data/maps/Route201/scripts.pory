@@ -268,3 +268,16 @@ script EventScript_Route201_Jens_One{
     waitmessage
     release
 }
+
+script EventScript_Route201_MomHeal{
+    lock
+    faceplayer
+    msgbox(format("Hi dear, let me quickly heal your Pokemon."))
+    waitmessage
+    fadescreen(FADE_TO_BLACK)
+    special(HealPlayerParty)
+	fadescreen(FADE_FROM_BLACK)
+    msgbox(format("There, all healthy. Stay safe out there!"))
+    waitmessage
+    release
+}
