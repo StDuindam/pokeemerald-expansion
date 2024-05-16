@@ -160,7 +160,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
       "x": 4,
-      "y": 2,
+      "y": 106,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -168,19 +168,6 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScriptRocketLeader_PetalburgGym",
-      "flag": "FLAG_PETALBURG_ROCKET_DEFEATED"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 4,
-      "y": 107,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
       "flag": "FLAG_PETALBURG_ROCKET_DEFEATED"
     }
   ],
