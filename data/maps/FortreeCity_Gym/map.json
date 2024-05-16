@@ -130,32 +130,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScriptRocketLeader_FortreeGym",
       "flag": "FLAG_FORTREE_ROCKET_DEFEATED"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 7,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "EventScriptRocketTwo_FortreeGym",
-      "flag": "FLAG_FORTREE_ROCKET_DEFEATED"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ROCKETM",
-      "x": 3,
-      "y": 22,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "EventScriptRocketOne_FortreeGym",
-      "flag": "FLAG_FORTREE_ROCKET_DEFEATED"
     }
   ],
   "warp_events": [
