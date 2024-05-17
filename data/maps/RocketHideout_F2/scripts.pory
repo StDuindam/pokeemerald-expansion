@@ -31,6 +31,7 @@ script EventScript_RocketHideoutF2_GiovanniIntro{
     setvar(VAR_ROCKET_ARC_STATE, 7)
     setflag(FLAG_ROCKET_GIOVANNIINTRO_COMPLETED)
     setflag(FLAG_ROCKET_EVENT_ACTIVE)
+    setflag(FLAG_DYNAMAX_ALLOWED)
 }
 
 script MovePlayerToStart_1_RocketHideoutF2{

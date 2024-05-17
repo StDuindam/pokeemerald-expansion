@@ -112,7 +112,6 @@ movement LookRightPlayer_RocketHideoutB1 {
 
 script EventScript_RocketHideout_B1_GiovanniSequence_Three{
     waitmovement(0)
-    setflag(FLAG_DYNAMAX_ALLOWED)
     //move scientist back
     applymovement(12, Movement_RocketHideoutB1_Scientist_Two_Return)
     waitmovement(0)
@@ -147,7 +146,6 @@ movement Movement_RocketHideout_MoveGiovanniForward {
 script EventScript_RocketHideout_B1_GiovanniSequence_PostBattle{
     lock
     waitmovement(0)
-    clearflag(FLAG_DYNAMAX_ALLOWED)
     msgbox(format("GIOVANNI: So it se-"))
     //sreenshake
     waitmessage
