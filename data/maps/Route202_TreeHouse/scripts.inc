@@ -13,8 +13,12 @@ EventScript_Route202_TreeHouse_RillaBoom::
 # 14 "data/maps/Route202_TreeHouse/scripts.pory"
 	compare VAR_ROCKET_ARC_STATE, 5
 	goto_if_gt EventScript_Route202_TreeHouse_RillaBoom_3
-EventScript_Route202_TreeHouse_RillaBoom_1:
 # 18 "data/maps/Route202_TreeHouse/scripts.pory"
+	msgbox EventScript_Route202_TreeHouse_RillaBoom_Text_2
+# 19 "data/maps/Route202_TreeHouse/scripts.pory"
+	waitmessage
+EventScript_Route202_TreeHouse_RillaBoom_1:
+# 21 "data/maps/Route202_TreeHouse/scripts.pory"
 	release
 	return
 
@@ -52,8 +56,13 @@ EventScript_Route202_TreeHouse_RillaBoom_Text_1:
 	.string "continue your research of the island\l"
 	.string "there.$"
 
+EventScript_Route202_TreeHouse_RillaBoom_Text_2:
+# 18 "data/maps/Route202_TreeHouse/scripts.pory"
+	.string "RILLABOOM: Hi there {PLAYER}. I hope\n"
+	.string "you are doing well.$"
+
 Text_Route202TreeHouse_Rillaboom::
-# 21 "data/maps/Route202_TreeHouse/scripts.pory"
+# 24 "data/maps/Route202_TreeHouse/scripts.pory"
 	.string "RILLABOOM: It has been a long time\n"
 	.string "since someone visited me, my name is\l"
 	.string "Rillaboom. I'm sure you are wondering\l"
@@ -64,5 +73,4 @@ Text_Route202TreeHouse_Rillaboom::
 	.string "Have you seen the large facility on\l"
 	.string "your way here? There are very bad\l"
 	.string "things happening there. Will you be able\l"
-	.string "to stop them? Do return once in a while\l"
-	.string "and tell me of your stories...$"
+	.string "to stop them?$"

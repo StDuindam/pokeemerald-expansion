@@ -303,12 +303,12 @@ EventScript_NurseJoyRestartMewtwoArc::
 # 143 "data/maps/Mewtwo_Area_1/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq EventScript_NurseJoyRestartMewtwoArc_2
-# 151 "data/maps/Mewtwo_Area_1/scripts.pory"
-	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_2
 # 152 "data/maps/Mewtwo_Area_1/scripts.pory"
+	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_2
+# 153 "data/maps/Mewtwo_Area_1/scripts.pory"
 	waitmessage
 EventScript_NurseJoyRestartMewtwoArc_1:
-# 154 "data/maps/Mewtwo_Area_1/scripts.pory"
+# 155 "data/maps/Mewtwo_Area_1/scripts.pory"
 	release
 	return
 
@@ -320,10 +320,12 @@ EventScript_NurseJoyRestartMewtwoArc_2:
 # 146 "data/maps/Mewtwo_Area_1/scripts.pory"
 	setvar VAR_MEWTWO_TOURNEY_STATE, 0
 # 147 "data/maps/Mewtwo_Area_1/scripts.pory"
-	setflag FLAG_POST_MEWTWOEVENT
+	clearflag FLAG_MEWTWO_CHALLENGE_BEAT_SEVEN
 # 148 "data/maps/Mewtwo_Area_1/scripts.pory"
-	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_1
+	setflag FLAG_POST_MEWTWOEVENT
 # 149 "data/maps/Mewtwo_Area_1/scripts.pory"
+	msgbox EventScript_NurseJoyRestartMewtwoArc_Text_1
+# 150 "data/maps/Mewtwo_Area_1/scripts.pory"
 	waitmessage
 	goto EventScript_NurseJoyRestartMewtwoArc_1
 
@@ -384,7 +386,7 @@ EventScript_ArchieMewtwoIsland_One_Text_0:
 
 EventScript_GruntMewtwoIsland_One_Text_0:
 # 118 "data/maps/Mewtwo_Area_1/scripts.pory"
-	.string "GRUNT: I Don't want to be here.$"
+	.string "GRUNT: I... I Don't want to be here.$"
 
 EventScript_GiovanniMewtwoIsland_One_Text_0:
 # 126 "data/maps/Mewtwo_Area_1/scripts.pory"
@@ -402,10 +404,10 @@ EventScript_NurseJoyRestartMewtwoArc_Text_0:
 	.string "PLAY THE ENTIRE TOURNAMENT$"
 
 EventScript_NurseJoyRestartMewtwoArc_Text_1:
-# 148 "data/maps/Mewtwo_Area_1/scripts.pory"
+# 149 "data/maps/Mewtwo_Area_1/scripts.pory"
 	.string "Perfect, everything is prepared. Just\n"
 	.string "move into the room next to me.$"
 
 EventScript_NurseJoyRestartMewtwoArc_Text_2:
-# 151 "data/maps/Mewtwo_Area_1/scripts.pory"
+# 152 "data/maps/Mewtwo_Area_1/scripts.pory"
 	.string "No worries.$"

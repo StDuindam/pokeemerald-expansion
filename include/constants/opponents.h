@@ -908,9 +908,9 @@
 #define TRAINER_ROCKETF_LAVARIDGEGYM_LEADER                    905
 #define TRAINER_ROCKETM_LAVARIDGEGYM_ONE                       906
 #define TRAINER_ROCKETF_LAVARIDGEGYM_TWO                       907
-#define TRAINER_ROCKETF_FORTREEGYM_LEADER                    905
-#define TRAINER_ROCKETM_FORTREEGYM_ONE                       906
-#define TRAINER_ROCKETF_FORTREEGYM_TWO                       907
+#define TRAINER_ROCKETF_FORTREEGYM_LEADER                    927
+#define TRAINER_ROCKETM_FORTREEGYM_ONE                       928
+#define TRAINER_ROCKETF_FORTREEGYM_TWO                       929
 #define TRAINER_ROCKETF_MOSSDEEPGYM_LEADER                    908
 #define TRAINER_ROCKETM_MOSSDEEPGYM_ONE                       909
 #define TRAINER_ROCKETF_SOOTOPOLISGYM_LEADER                  910

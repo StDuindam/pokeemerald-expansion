@@ -140,13 +140,6 @@
       "elevation": 0,
       "dest_map": "MAP_INDOOR_ROUTE201_GENERIC_HOUSE",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 18,
-      "y": 31,
-      "elevation": 0,
-      "dest_map": "MAP_DEBUG_AREA",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

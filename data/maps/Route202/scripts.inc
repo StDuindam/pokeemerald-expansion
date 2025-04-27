@@ -223,6 +223,66 @@ EventScript_202_BirchSkipSafety::
 	return
 
 
+EventScriptPickup_Pokeball_one::
+# 130 "data/maps/Route202/scripts.pory"
+	lock
+# 131 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 132 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 133 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 134 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 135 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 136 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 137 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MAX_REVIVE
+# 138 "data/maps/Route202/scripts.pory"
+	setflag FLAG_ITEM_MAX_REVIVE_TWO
+# 139 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+EventScriptPickup_Pokeball_two::
+# 143 "data/maps/Route202/scripts.pory"
+	lock
+# 144 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 145 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 146 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 147 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 148 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 149 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 150 "data/maps/Route202/scripts.pory"
+	finditem ITEM_FULL_RESTORE
+# 151 "data/maps/Route202/scripts.pory"
+	setflag FLAG_ITEM_FULL_RESTORE_TWO
+# 152 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+EventScriptPickup_Pokeball_three::
+# 156 "data/maps/Route202/scripts.pory"
+	lock
+# 157 "data/maps/Route202/scripts.pory"
+	finditem ITEM_MASTER_BALL
+# 158 "data/maps/Route202/scripts.pory"
+	setflag FLAG_ITEM_MASTERBALL_TWO
+# 159 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
 EventScript_Route202_Maniac_Text_0:
 # 17 "data/maps/Route202/scripts.pory"
 	.string "Give me a moment, I'm studying this\n"

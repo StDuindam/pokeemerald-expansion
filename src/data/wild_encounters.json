@@ -12247,63 +12247,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_BASTIODON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_GOLEM_ALOLAN"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_GOLEM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_GARCHOMP"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_RAMPARDOS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_DURANT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_ORTHWORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_URSALUNA_BLOODMOON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_URSALUNA_BLOODMOON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_URSALUNA_BLOODMOON"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 55,
+                "max_level": 62,
                 "species": "SPECIES_URSALUNA_BLOODMOON"
               }
             ]

@@ -524,6 +524,30 @@ EventScript_Route201_Jens_One::
 	return
 
 
+EventScript_Route201_MomHeal::
+# 273 "data/maps/Route201/scripts.pory"
+	lock
+# 274 "data/maps/Route201/scripts.pory"
+	faceplayer
+# 275 "data/maps/Route201/scripts.pory"
+	msgbox EventScript_Route201_MomHeal_Text_0
+# 276 "data/maps/Route201/scripts.pory"
+	waitmessage
+# 277 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 278 "data/maps/Route201/scripts.pory"
+	special HealPlayerParty
+# 279 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 280 "data/maps/Route201/scripts.pory"
+	msgbox EventScript_Route201_MomHeal_Text_1
+# 281 "data/maps/Route201/scripts.pory"
+	waitmessage
+# 282 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
 EventScript_Route201_BoatAttendant_Text_0:
 # 8 "data/maps/Route201/scripts.pory"
 	.string "Hello champ, the boat goes whenever you\n"
@@ -698,3 +722,12 @@ EventScript_Route201_Jens_One_Text_0:
 # 267 "data/maps/Route201/scripts.pory"
 	.string "Whatever is hiding in that forest I'm\n"
 	.string "sure we can beat it, right?$"
+
+EventScript_Route201_MomHeal_Text_0:
+# 275 "data/maps/Route201/scripts.pory"
+	.string "Hi dear, let me quickly heal your\n"
+	.string "Pokemon.$"
+
+EventScript_Route201_MomHeal_Text_1:
+# 280 "data/maps/Route201/scripts.pory"
+	.string "There, all healthy. Stay safe out there!$"
